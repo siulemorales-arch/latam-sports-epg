@@ -3,11 +3,20 @@
   <channel id="adrenalina.sports.network.latam">
     <display-name lang="es">Adrenalina Sports Network</display-name>
   </channel>
+  <channel id="axn.venezuela.latam">
+    <display-name lang="es">AXN Venezuela</display-name>
+  </channel>
   <channel id="aym.sports.latam">
     <display-name lang="es">AYM Sports</display-name>
   </channel>
   <channel id="bein.sports.en.espanol.latam">
     <display-name lang="es">beIN Sports en Español</display-name>
+  </channel>
+  <channel id="caracol.colombia.latam">
+    <display-name lang="es">Caracol Colombia</display-name>
+  </channel>
+  <channel id="caracol.internacional.latam">
+    <display-name lang="es">Caracol Internacional</display-name>
   </channel>
   <channel id="cdn.deportes.latam">
     <display-name lang="es">CDN Deportes</display-name>
@@ -160,6 +169,15 @@
   <channel id="fox.sports.cono.sur.latam">
     <display-name lang="es">Fox Sports Cono Sur</display-name>
   </channel>
+  <channel id="rcn.colombia.latam">
+    <display-name lang="es">RCN Colombia</display-name>
+  </channel>
+  <channel id="rcn.internacional.latam">
+    <display-name lang="es">RCN Internacional</display-name>
+  </channel>
+  <channel id="rcn.novelas.latam">
+    <display-name lang="es">RCN Novelas</display-name>
+  </channel>
   <channel id="sky.sports.1.mexico.latam">
     <display-name lang="es">Sky Sports 1 México</display-name>
   </channel>
@@ -256,6 +274,26 @@
   </programme>
   <programme start="20260826223000 -0500" stop="20260827011000 -0500" channel="adrenalina.sports.network.latam">
     <title lang="es">Corrida de Toros</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826063000 -0500" channel="axn.venezuela.latam">
+    <title lang="es">Swiss Nature Labs</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826063000 -0500" stop="20260826070000 -0500" channel="axn.venezuela.latam">
+    <title lang="es">Swiss Nature Labs</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826073000 -0500" channel="axn.venezuela.latam">
+    <title lang="es">Swiss Nature Labs</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826073000 -0500" stop="20260826080000 -0500" channel="axn.venezuela.latam">
+    <title lang="es">Swiss Nature Labs</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826205500 -0500" stop="20260826214500 -0500" channel="axn.venezuela.latam">
+    <title lang="es">NCIS Sydney</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="aym.sports.latam">
@@ -414,6 +452,198 @@
     <title lang="es">Premier Padel</title>
     <category lang="es">Deportes</category>
   </programme>
+  <programme start="20260826000000 -0500" stop="20260826004500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Mi pecado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826004500 -0500" stop="20260826014500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Televentas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826014500 -0500" stop="20260826021500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">El diario de Diana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826021500 -0500" stop="20260826040000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">También Caerás</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826050000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Televentas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826051500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">La Finca de Hoy</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826051500 -0500" stop="20260826053000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Día a día I</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826053000 -0500" stop="20260826090000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Noticias Caracol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826104500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">2026 Vuelta a España</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826104500 -0500" stop="20260826120000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Día a día</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826123000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Rosalinda</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826123000 -0500" stop="20260826153000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Noticias Caracol Edición Mediodía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826153000 -0500" stop="20260826163000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Ciudad lejana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826163000 -0500" stop="20260826174500 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Alas rotas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826174500 -0500" stop="20260826190000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">El juego de mi destino</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826203000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Noticias Caracol Edición Central</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826203000 -0500" stop="20260826220000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Yo Me Llamo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826230000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">María la caprichosa</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Rafael Orozco, el idolo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="caracol.colombia.latam">
+    <title lang="es">Última edición</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">La reina de Indias y el conquistador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Lo que diga el corazón: Niche</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826023000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Travesía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826023000 -0500" stop="20260826030000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Deportes 360</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826033000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Las mujeres de mi tierra</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826043000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Tu voz estéreo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">El Diario de Diana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826051500 -0500" channel="caracol.internacional.latam">
+    <title lang="es">La Finca de Hoy</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826051500 -0500" stop="20260826053000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Día a día I</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826053000 -0500" stop="20260826090000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Noticias Caracol: Primera edición</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826094500 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Expediente Final</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826094500 -0500" stop="20260826101500 -0500" channel="caracol.internacional.latam">
+    <title lang="es">El Diario de Diana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826101500 -0500" stop="20260826104500 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Travesía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826104500 -0500" stop="20260826120000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Día a día</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826123000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">El Diario de Diana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826123000 -0500" stop="20260826150000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Noticias Caracol: Edición mediodía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">La reina de Indias y el conquistador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826170000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Lo que diga el corazón: Niche</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826173000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Travesía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826173000 -0500" stop="20260826180000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Travesía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826183000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Deportes 360</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826183000 -0500" stop="20260826190000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">El Diario de Diana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826203000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Noticias Caracol: Edición central</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826203000 -0500" stop="20260826213000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">La reina de Indias y el conquistador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826213000 -0500" stop="20260826223000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Lo que diga el corazón: Niche</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 -0500" stop="20260826230000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Una mirada al mundo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Travesía</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="caracol.internacional.latam">
+    <title lang="es">Última Edición</title>
+    <category lang="es">Deportes</category>
+  </programme>
   <programme start="20260826030000 -0500" stop="20260826070000 -0500" channel="cdn.deportes.latam">
     <title lang="es">CDN Sportmax</title>
     <category lang="es">Deportes</category>
@@ -436,34 +666,6 @@
   </programme>
   <programme start="20260826230000 -0500" stop="20260827030000 -0500" channel="cdn.deportes.latam">
     <title lang="es">CDN Sportmax</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="dsports.latam">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Puede pasar</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Puede pasar</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260826200000 +0000" stop="20260826210000 +0000" channel="dsports.latam">
@@ -522,23 +724,51 @@
     <title lang="es">Fútbol Total</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826203000 +0000" channel="dsports.2.latam">
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="dsports.latam">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DSPORTS | AR">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DSPORTS | CO">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260827000000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">CONMEBOL Sudamericana: River Plate vs. Independiente Santa Fe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826200000 +0000" stop="20260826203000 +0000" channel="dsports.2.latam">
     <title lang="es">Chile vs. Argentina</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826203000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260826200000 +0000" stop="20260826203000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Chile vs. Argentina</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826203000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260826200000 +0000" stop="20260826203000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Chile vs. Argentina</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826203000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260826200000 +0000" stop="20260826203000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Chile vs. Argentina</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826203000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260826200000 +0000" stop="20260826203000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Chile vs. Argentina</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -582,12 +812,24 @@
     <title lang="es">Colombia vs. Perú</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="dsports.latam">
-    <title lang="es">Tour de Turquía</title>
+  <programme start="20260826223000 +0000" stop="20260826230000 +0000" channel="dsports.2.latam">
+    <title lang="es">Liga de Portugal: Porto vs. Arouca</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260826190000 +0000" stop="20260826200000 +0000" channel="DSPORTS +">
-    <title lang="es">Tour de Turquía</title>
+  <programme start="20260826223000 +0000" stop="20260826230000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Liga de Portugal: Porto vs. Arouca</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260826230000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Liga de Portugal: Porto vs. Arouca</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260826230000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Liga de Portugal: Porto vs. Arouca</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260826230000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Liga de Portugal: Porto vs. Arouca</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260826200000 +0000" stop="20260826223000 +0000" channel="dsports.latam">
@@ -596,6 +838,14 @@
   </programme>
   <programme start="20260826200000 +0000" stop="20260826223000 +0000" channel="DSPORTS +">
     <title lang="es">Sesi/Franca vs. Boca Juniors</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260826233000 +0000" channel="dsports.latam">
+    <title lang="es">Maratón de París</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 +0000" stop="20260826233000 +0000" channel="DSPORTS +">
+    <title lang="es">Maratón de París</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260826003000 -0500" stop="20260826010000 -0500" channel="espn.2.colombia.latam">
@@ -2204,6 +2454,270 @@
   </programme>
   <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="fox.sports.cono.sur.latam">
     <title lang="es">Fútbol Conmebol Copa Libertadores Independiente del Valle vs. Deportes Tolima</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">La noche</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826023000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Casa de Reinas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826023000 -0500" stop="20260826033000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826043000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Programación no disponible</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Salud Para Todos</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Noticiero de alerta</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826083000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Mañana express</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826083000 -0500" stop="20260826103000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826103000 -0500" stop="20260826123000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Buen día, Colombia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826123000 -0500" stop="20260826143000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826143000 -0500" stop="20260826153000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Caso Cerrado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826153000 -0500" stop="20260826170000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Caso Cerrado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826190000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">La Rosa De Guadalupe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826200000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Pa' seguirte queriendo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826223000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Masterchef Celebrity Colombia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="rcn.colombia.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Mujeres sin filtro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Charla Técnica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826023000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826023000 -0500" stop="20260826030000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826033000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826040000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826043000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Entrevistas con Hernán</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Alerta Bogotá</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826083000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Mañana express</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826083000 -0500" stop="20260826093000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Garzón vive</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826093000 -0500" stop="20260826100000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Entrevistas con Hernán</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826123000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Educación y desarrollo sostenible</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826123000 -0500" stop="20260826143000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826143000 -0500" stop="20260826150000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Turistéate</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826153000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Deportistas de lujo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826153000 -0500" stop="20260826163000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Mujeres sin filtro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826163000 -0500" stop="20260826170000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">El despecho</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826180000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Garzón vive</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826200000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">América de Cali vs. Junior Fútbol Colombiano Primera División</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826220000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Atlético Nacional vs. Deportivo Cali Fútbol Colombiano Primera División</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826223000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Noticias RCN</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826223000 -0500" stop="20260826233000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">El despecho</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="rcn.internacional.latam">
+    <title lang="es">Ahora es cuando</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Las santísimas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">El Joe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Francisco, el matemático</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826040000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Chepe fortuna</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826050000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Lala's Spa</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Así es la vida</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826070000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Las santísimas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">El Joe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Francisco, el matemático</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826100000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Chepe fortuna</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826110000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Lala's Spa</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826120000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Así es la vida</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826130000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Las santísimas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826140000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">El Joe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826140000 -0500" stop="20260826150000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Francisco, el matemático</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Chepe fortuna</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826170000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Lala's Spa</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826180000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Así es la vida</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826190000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Las santísimas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826200000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">El Joe</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Francisco, el matemático</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826220000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Chepe fortuna</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826230000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Lala's Spa</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827000000 -0500" channel="rcn.novelas.latam">
+    <title lang="es">Así es la vida</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260826010000 -0500" stop="20260826030000 -0500" channel="sky.sports.1.mexico.latam">
