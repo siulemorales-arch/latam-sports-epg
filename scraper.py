@@ -4,7 +4,7 @@ import re
 import sys
 import time
 import unicodedata
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from xml.etree import ElementTree as ET
@@ -108,14 +108,24 @@ def parse_clock(text, day, tz):
     raise ValueError(text)
 
 def scrape_gato_channel(url, name):
-    soup = BeautifulSoup(get(url), "html.parser")
+    html = get(url)
+    soup = BeautifulSoup(html, "html.parser")
     target = None
     for table in soup.find_all("table"):
         heads = clean(table.get_text(" "))
         if "Hora Inicio" in heads and "Hora Fin" in heads and "Programa" in heads:
             target = table; break
     if target is None: return []
-    tz, day, out = timezone_for(name), datetime.now(timezone_for(name)).date(), []
+    # GatoTV ya convierte todos los relojes de la página a la zona elegida por
+    # el sitio y publica el desfase como `utcOffset`. No debemos volver a
+    # interpretar esos relojes como si fueran la zona del canal (AR/CO/MX),
+    # porque eso desplaza la guía al verla en Miami.
+    offset_match = re.search(r"utcOffset\s*:\s*(-?\d+(?:\.\d+)?)", html)
+    if offset_match:
+        tz = timezone(timedelta(hours=float(offset_match.group(1))))
+    else:
+        tz = timezone_for(name)
+    day, out = datetime.now(tz).date(), []
     for tr in target.find_all("tr"):
         times = [clean(x.get_text()) for x in tr.find_all("time")]
         cells = tr.find_all(["td", "th"])
