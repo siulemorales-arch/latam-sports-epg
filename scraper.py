@@ -56,6 +56,20 @@ DISPLAY_ALIASES = {
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
 }
 
+# IDs alternativos para proveedores Xtream que usan el nombre visible como
+# epg_channel_id. Se publican además del ID canónico, sin reemplazarlo.
+PROVIDER_CHANNEL_IDS = {
+    "DSPORTS": [
+        "DSPORTS | AR", "DSPORTS | CO", "DIRECTV SPORTS ARGENTINA",
+        "DIRECTV SPORTS CHILE", "DIRECTV SPORTS URUGUAY", "DIRECTV SPORTS PERU",
+    ],
+    "DSPORTS 2": [
+        "DSPORTS II COLOMBIA", "DSPORTS 2 || COLOMBIA",
+        "DSPORTS II ARGENTINA", "DSPORTS 2 | ARGENTINA",
+    ],
+    "DSPORTS+": ["DSPORTS +"],
+}
+
 def clean(s):
     return " ".join((s or "").split())
 
@@ -169,15 +183,19 @@ def main():
         ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
         for alias in DISPLAY_ALIASES.get(name, []):
             ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
+        for provider_id in PROVIDER_CHANNEL_IDS.get(name, []):
+            provider_ch = ET.SubElement(tv, "channel", {"id":provider_id})
+            ET.SubElement(provider_ch, "display-name", {"lang":"es"}).text = provider_id
     seen = set()
     for name in sorted(channels, key=str.casefold):
         for start, stop, title, source in sorted(channels[name], key=lambda x:x[0]):
-            key = (ids[name], fmt(start), fmt(stop), title.casefold())
-            if key in seen: continue
-            seen.add(key)
-            pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":ids[name]})
-            ET.SubElement(pr, "title", {"lang":"es"}).text = title
-            ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
+            for target_id in [ids[name], *PROVIDER_CHANNEL_IDS.get(name, [])]:
+                key = (target_id, fmt(start), fmt(stop), title.casefold())
+                if key in seen: continue
+                seen.add(key)
+                pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":target_id})
+                ET.SubElement(pr, "title", {"lang":"es"}).text = title
+                ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
     ET.indent(tv, space="  ")
     Path("epg.xml").write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8"))
     print(f"Generados {len(channels)} canales y {len(seen)} programas")
