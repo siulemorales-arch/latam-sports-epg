@@ -92,6 +92,40 @@ def timezone_for(name):
         if rx.search(name): return ZoneInfo(tz)
     return ZoneInfo("America/Bogota")
 
+def spanish_provider_aliases(name):
+    """Nombres observados en la categoría FÚTBOL ESPAÑA de WEIBTV."""
+    if not name.endswith(" (España)"):
+        return []
+    base = name[:-9]
+    aliases = {base, base.upper()}
+    for quality in ("SD", "HD", "FHD"):
+        aliases.add(f"{base} {quality}")
+        aliases.add(f"{base.upper()} {quality}")
+    m = re.fullmatch(r"M\+ Liga de Campeones(?: (\d+))?", base, re.I)
+    if m:
+        number = f" {m.group(1)}" if m.group(1) else ""
+        for quality in ("SD", "HD", "FHD"):
+            aliases.add(f"LIGA DE CAMPEONES{number} POR M+ {quality}")
+    m = re.fullmatch(r"M\+ LALIGA(?: (\d+))?(?: HDR)?", base, re.I)
+    if m:
+        number = f" {m.group(1)}" if m.group(1) else ""
+        for quality in ("SD", "HD", "FHD"):
+            aliases.add(f"LALIGA TV{number} POR M+ {quality}")
+            aliases.add(f"LALIGA{number} POR M+ {quality}")
+    if base.upper().startswith("DAZN LALIGA"):
+        number = base[len("DAZN LALIGA"):]
+        for quality in ("SD", "HD", "FHD"):
+            aliases.add(f"DAZN LALIGA{number} {quality}")
+            aliases.add(f"DZN LALIGA{number} {quality}")
+    if base.upper().startswith("LALIGA TV HYPERMOTION"):
+        number = base[len("LALIGA TV HYPERMOTION"):]
+        for quality in ("SD", "HD", "FHD"):
+            aliases.add(f"LALIGA TV HYPERMOTION{number} {quality}")
+    if base == "GOL": aliases.update({"GOL PLAY", "GOL PLAY HD", "GOL PLAY FHD"})
+    if base == "Real Madrid TV": aliases.update({"REAL MADRID TV HD", "REAL MADRID TV FHD"})
+    if base == "M+ Golf": aliases.update({"M+ GOL HD", "M+ GOL FHD"})
+    return sorted(aliases, key=str.casefold)
+
 def get(url, timeout=30):
     r = requests.get(url, headers={"User-Agent": UA}, timeout=timeout)
     r.raise_for_status()
@@ -257,6 +291,8 @@ def main():
         ch = ET.SubElement(tv, "channel", {"id":cid})
         ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
         for alias in DISPLAY_ALIASES.get(name, []):
+            ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
+        for alias in spanish_provider_aliases(name):
             ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
         for provider_id in PROVIDER_CHANNEL_IDS.get(name, []):
             provider_ch = ET.SubElement(tv, "channel", {"id":provider_id})
