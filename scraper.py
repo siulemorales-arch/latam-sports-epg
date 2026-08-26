@@ -16,6 +16,10 @@ GATO = "https://www.gatotv.com/guia_tv/completa"
 DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
+# Además de los deportes, el mismo XML incluye las señales colombianas
+# Caracol/RCN y todas las variantes que GatoTV identifique como Venezuela.
+# Esto mantiene el descubrimiento dinámico cuando aparezcan señales nuevas.
+GENERAL_LATAM = re.compile(r"\b(?:Caracol|RCN)\b|\bVenezuela\b", re.I)
 EXCLUDE = re.compile(r"Espa(?:n|ñ)a|France|Italia|UK|Portugal", re.I)
 
 TZ_RULES = [
@@ -93,7 +97,7 @@ def discover_gato_channels():
     found = {}
     for a in soup.select('a[href*="/canal/"]'):
         name, href = clean(a.get_text()), a.get("href", "")
-        if name and SPORTS.search(name) and not EXCLUDE.search(name):
+        if name and (SPORTS.search(name) or GENERAL_LATAM.search(name)) and not EXCLUDE.search(name):
             found[href] = name
     return sorted(found.items(), key=lambda x: x[1].casefold())
 
