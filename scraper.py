@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import hashlib
+import html as html_lib
+import json
 import re
 import sys
 import time
@@ -17,6 +19,7 @@ GATO_CATALOG = "https://www.gatotv.com/canales"
 DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
 DSPORTS_API = "https://epg.tbxapis.com/v0/epg/external/entries"
 MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
+TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -263,6 +266,30 @@ def scrape_movistar_sports():
         print(f"Movistar Plus omitido sin inventar datos: {e}", file=sys.stderr)
     return result
 
+def scrape_telemundo_sports():
+    """Usa toda la parrilla fechada que Telemundo publica en NEXT_DATA."""
+    name = "Telemundo Deportes Ahora (USA)"
+    try:
+        page = get(TELEMUNDO_SPORTS)
+        match = re.search(r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+        if not match:
+            raise ValueError("la página no publicó __NEXT_DATA__")
+        data = json.loads(html_lib.unescape(match.group(1)))
+        schedules = data["props"]["pageProps"]["ramenBentoAPISWRFallbackData"]["broadcastSchedules"]
+        items = schedules["TELEMUNDO_DEPORTES_AHORA"]["scheduleItems"]
+        shows = []
+        for item in items:
+            title = clean(item.get("title"))
+            if not title: continue
+            start = datetime.fromisoformat(item["startDateTime"].replace("Z", "+00:00"))
+            stop = datetime.fromisoformat(item["endDateTime"].replace("Z", "+00:00"))
+            if stop > start:
+                shows.append((start, stop, title, "Telemundo oficial"))
+        return {name: shows} if shows else {}
+    except Exception as e:
+        print(f"Telemundo Deportes Ahora omitido sin inventar datos: {e}", file=sys.stderr)
+        return {}
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def main():
@@ -281,6 +308,8 @@ def main():
     for name, shows in scrape_dsports().items():
         channels[name] = shows
     for name, shows in scrape_movistar_sports().items():
+        channels[name] = shows
+    for name, shows in scrape_telemundo_sports().items():
         channels[name] = shows
     tv = ET.Element("tv", {"generator-info-name":"latam-sports-epg", "generator-info-url":"https://github.com/siulemorales-arch/latam-sports-epg"})
     ids = {}
