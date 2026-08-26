@@ -142,15 +142,18 @@ def scrape_dsports():
             page = browser.new_page(viewport={"width": 1400, "height": 900})
             page.goto(DSPORTS, wait_until="domcontentloaded", timeout=60000)
             page.wait_for_selector('[data-testid="content"] .programBox', timeout=30000)
+            base_label = page.locator('.timelineTime').first.text_content().strip()
             data = page.eval_on_selector_all('[data-testid="content"] .programBox', """els => els.map(e => ({style:e.getAttribute('style')||'', title:(e.querySelector('.programTitle')?.textContent||'').trim()}))""")
             browser.close()
         day, tz = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).date(), ZoneInfo("America/Argentina/Buenos_Aires")
+        base_clock = datetime.strptime(base_label, "%H:%M").time()
+        base = datetime.combine(day, base_clock, tzinfo=tz)
         for item in data:
             nums = {k:float(v) for k,v in re.findall(r"(width|top|left):\s*([0-9.]+)px", item["style"])}
             if not item["title"] or not all(k in nums for k in ("width","top","left")): continue
             row = round(nums["top"] / 78)
             if row not in rows: continue
-            start = datetime.combine(day, datetime.min.time(), tzinfo=tz) + timedelta(minutes=nums["left"] / 7)
+            start = base + timedelta(minutes=nums["left"] / 7)
             stop = start + timedelta(minutes=nums["width"] / 7)
             if stop <= start: continue
             result[rows[row]].append((start, stop, item["title"], "DSPORTS oficial"))
