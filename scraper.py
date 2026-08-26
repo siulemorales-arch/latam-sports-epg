@@ -145,7 +145,10 @@ def scrape_dsports():
             base_label = page.locator('.timelineTime').first.text_content().strip()
             data = page.eval_on_selector_all('[data-testid="content"] .programBox', """els => els.map(e => ({style:e.getAttribute('style')||'', title:(e.querySelector('.programTitle')?.textContent||'').trim()}))""")
             browser.close()
-        day, tz = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).date(), ZoneInfo("America/Argentina/Buenos_Aires")
+        # Chromium en GitHub Actions renderiza el widget en UTC. Conservamos
+        # esa zona y dejamos que XMLTV/UHF convierta a la hora local.
+        tz = ZoneInfo("UTC")
+        day = datetime.now(tz).date()
         base_clock = datetime.strptime(base_label, "%H:%M").time()
         base = datetime.combine(day, base_clock, tzinfo=tz)
         for item in data:
