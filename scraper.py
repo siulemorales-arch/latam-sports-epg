@@ -39,6 +39,21 @@ DISPLAY_ALIASES = {
         "DSPORTS II ARGENTINA", "DSPORTS 2 | ARGENTINA",
     ],
     "DSPORTS+": ["DSPORTS +"],
+    "ESPN Chile": ["ESPN 1 CH HD", "ESPN 1 HD | CH"],
+    "ESPN México": ["ESPN 1 MEX HD", "ESPN 1 MEX FHD", "ESPN 1 HD | MX"],
+    "ESPN 4 México": ["ESPN 4 MX", "ESPN 4 HD | MX"],
+    "Fox Sports Cono Norte": [
+        "FOX SPORT 1 MX", "FOX SPORT 1 MX FHD",
+        "FOX SPORTS 1 MX", "FOX SPORTS 1 FHD | MX",
+    ],
+    "Fox Sports 2 Cono Norte": [
+        "FOX SPORTS 2 MX", "FOX SPORTS 2 FHD | MX",
+    ],
+    "Fox Sports 3 Cono Norte": [
+        "FOX SPORTS 3 MX", "FOX SPORTS 3 HD | MX", "FOX SPORTS 3 FHD | MX",
+    ],
+    "TUDN México": ["TUDN HD | MX", "TUDN MX FHD", "TUDN FHD | MX"],
+    "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
 }
 
 def clean(s):
