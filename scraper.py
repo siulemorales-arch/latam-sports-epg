@@ -26,6 +26,21 @@ TZ_RULES = [
     (re.compile(r"USA|Deportes", re.I), "America/New_York"),
 ]
 
+# Nombres observados en la lista Xtream "1- WEIBTV LAT". XMLTV permite
+# varios display-name por señal; así UHF puede asociar los nombres del
+# proveedor sin cambiar los IDs estables.
+DISPLAY_ALIASES = {
+    "DSPORTS": [
+        "DIRECTV SPORTS ARGENTINA", "DIRECTV SPORTS CHILE",
+        "DIRECTV SPORTS URUGUAY", "DIRECTV SPORTS PERU",
+    ],
+    "DSPORTS 2": [
+        "DSPORTS II COLOMBIA", "DSPORTS 2 | COLOMBIA",
+        "DSPORTS II ARGENTINA", "DSPORTS 2 | ARGENTINA",
+    ],
+    "DSPORTS+": ["DSPORTS +"],
+}
+
 def clean(s):
     return " ".join((s or "").split())
 
@@ -137,6 +152,8 @@ def main():
         cid = slug(name); ids[name] = cid
         ch = ET.SubElement(tv, "channel", {"id":cid})
         ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
+        for alias in DISPLAY_ALIASES.get(name, []):
+            ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
     seen = set()
     for name in sorted(channels, key=str.casefold):
         for start, stop, title, source in sorted(channels[name], key=lambda x:x[0]):
