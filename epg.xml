@@ -56,6 +56,8 @@
   </channel>
   <channel id="espn.4.mexico.latam">
     <display-name lang="es">ESPN 4 México</display-name>
+    <display-name lang="es">ESPN 4 MX</display-name>
+    <display-name lang="es">ESPN 4 HD | MX</display-name>
   </channel>
   <channel id="espn.4.norte.latam">
     <display-name lang="es">ESPN 4 Norte</display-name>
@@ -80,6 +82,8 @@
   </channel>
   <channel id="espn.chile.latam">
     <display-name lang="es">ESPN Chile</display-name>
+    <display-name lang="es">ESPN 1 CH HD</display-name>
+    <display-name lang="es">ESPN 1 HD | CH</display-name>
   </channel>
   <channel id="espn.colombia.latam">
     <display-name lang="es">ESPN Colombia</display-name>
@@ -89,6 +93,9 @@
   </channel>
   <channel id="espn.mexico.latam">
     <display-name lang="es">ESPN México</display-name>
+    <display-name lang="es">ESPN 1 MEX HD</display-name>
+    <display-name lang="es">ESPN 1 MEX FHD</display-name>
+    <display-name lang="es">ESPN 1 HD | MX</display-name>
   </channel>
   <channel id="espn.norte.latam">
     <display-name lang="es">ESPN Norte</display-name>
@@ -101,12 +108,21 @@
   </channel>
   <channel id="fox.sports.2.cono.norte.latam">
     <display-name lang="es">Fox Sports 2 Cono Norte</display-name>
+    <display-name lang="es">FOX SPORTS 2 MX</display-name>
+    <display-name lang="es">FOX SPORTS 2 FHD | MX</display-name>
   </channel>
   <channel id="fox.sports.3.cono.norte.latam">
     <display-name lang="es">Fox Sports 3 Cono Norte</display-name>
+    <display-name lang="es">FOX SPORTS 3 MX</display-name>
+    <display-name lang="es">FOX SPORTS 3 HD | MX</display-name>
+    <display-name lang="es">FOX SPORTS 3 FHD | MX</display-name>
   </channel>
   <channel id="fox.sports.cono.norte.latam">
     <display-name lang="es">Fox Sports Cono Norte</display-name>
+    <display-name lang="es">FOX SPORT 1 MX</display-name>
+    <display-name lang="es">FOX SPORT 1 MX FHD</display-name>
+    <display-name lang="es">FOX SPORTS 1 MX</display-name>
+    <display-name lang="es">FOX SPORTS 1 FHD | MX</display-name>
   </channel>
   <channel id="fox.sports.cono.sur.latam">
     <display-name lang="es">Fox Sports Cono Sur</display-name>
@@ -128,9 +144,14 @@
   </channel>
   <channel id="tudn.mexico.latam">
     <display-name lang="es">TUDN México</display-name>
+    <display-name lang="es">TUDN HD | MX</display-name>
+    <display-name lang="es">TUDN MX FHD</display-name>
+    <display-name lang="es">TUDN FHD | MX</display-name>
   </channel>
   <channel id="tudn.usa.latam">
     <display-name lang="es">TUDN USA</display-name>
+    <display-name lang="es">TUDN HD | USA</display-name>
+    <display-name lang="es">TUDN FHD | USA</display-name>
   </channel>
   <channel id="tv.azteca.deportes.latam">
     <display-name lang="es">TV Azteca Deportes</display-name>
