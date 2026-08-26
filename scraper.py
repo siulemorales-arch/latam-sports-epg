@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 GATO = "https://www.gatotv.com/guia_tv/completa"
 GATO_CATALOG = "https://www.gatotv.com/canales"
 DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
+DSPORTS_API = "https://epg.tbxapis.com/v0/epg/external/entries"
 MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
@@ -195,36 +196,25 @@ def scrape_gato_channel(url, name):
     return out
 
 def scrape_dsports():
+    # El widget visual recorta la parrilla al ancho visible. Su API oficial
+    # entrega la programación completa de varios días en UTC.
+    names = {
+        "1610": "DSPORTS", "1612": "DSPORTS 2", "1613": "DSPORTS+",
+        "1614": "DSPORTS Eventos 1", "1615": "DSPORTS Eventos 2",
+        "1616": "DSPORTS Eventos 3", "1618": "DSPORTS Eventos 4",
+    }
+    result = {name: [] for name in names.values()}
     try:
-        from playwright.sync_api import sync_playwright
-    except Exception as e:
-        print(f"DSPORTS omitido: Playwright no disponible: {e}", file=sys.stderr); return {}
-    rows = {0:"DSPORTS", 2:"DSPORTS 2", 3:"DSPORTS+"}
-    result = {v: [] for v in rows.values()}
-    try:
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            page = browser.new_page(viewport={"width": 1400, "height": 900})
-            page.goto(DSPORTS, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_selector('[data-testid="content"] .programBox', timeout=30000)
-            base_label = page.locator('.timelineTime').first.text_content().strip()
-            data = page.eval_on_selector_all('[data-testid="content"] .programBox', """els => els.map(e => ({style:e.getAttribute('style')||'', title:(e.querySelector('.programTitle')?.textContent||'').trim()}))""")
-            browser.close()
-        # Chromium en GitHub Actions renderiza el widget en UTC. Conservamos
-        # esa zona y dejamos que XMLTV/UHF convierta a la hora local.
-        tz = ZoneInfo("UTC")
-        day = datetime.now(tz).date()
-        base_clock = datetime.strptime(base_label, "%H:%M").time()
-        base = datetime.combine(day, base_clock, tzinfo=tz)
-        for item in data:
-            nums = {k:float(v) for k,v in re.findall(r"(width|top|left):\s*([0-9.]+)px", item["style"])}
-            if not item["title"] or not all(k in nums for k in ("width","top","left")): continue
-            row = round(nums["top"] / 78)
-            if row not in rows: continue
-            start = base + timedelta(minutes=nums["left"] / 7)
-            stop = start + timedelta(minutes=nums["width"] / 7)
-            if stop <= start: continue
-            result[rows[row]].append((start, stop, item["title"], "DSPORTS oficial"))
+        payload = requests.get(DSPORTS_API, headers={"User-Agent": UA}, timeout=30)
+        payload.raise_for_status()
+        for item in payload.json().get("data", {}).get("programs", []):
+            name = names.get(str(item.get("ChannelNum", "")))
+            title = clean(item.get("Title"))
+            if not name or not title: continue
+            start = datetime.fromisoformat(item["StartDate"].replace("Z", "+00:00"))
+            stop = datetime.fromisoformat(item["EndDate"].replace("Z", "+00:00"))
+            if stop > start:
+                result[name].append((start, stop, title, "DSPORTS API oficial"))
     except Exception as e:
         print(f"DSPORTS omitido sin inventar datos: {e}", file=sys.stderr)
     return {k:v for k,v in result.items() if v}
