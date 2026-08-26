@@ -21,6 +21,8 @@ SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|T
 # Caracol/RCN y todas las variantes que GatoTV identifique como Venezuela.
 # Esto mantiene el descubrimiento dinámico cuando aparezcan señales nuevas.
 GENERAL_LATAM = re.compile(r"\b(?:Caracol|RCN)\b|\bVenezuela\b", re.I)
+MOVIE_CHANNELS = re.compile(r"\b(?:AMC|Cinemax|Cinecanal|Cine Latino|Cinema Dinamita|De Película|DHE|Europa Europa|Film ?& ?Arts|FX|Golden|HBO|Max|Mórbido|Multipremier|Paramount Network|Sony Movies|Space|Star Channel|Studio Universal|TCM|TNT|Universal TV)\b", re.I)
+MOVIE_REGIONS = re.compile(r"\b(?:Latinoamérica|Latinoamerica|México|Mexico|Panregional)\b", re.I)
 EXCLUDE = re.compile(r"Espa(?:n|ñ)a|France|Italia|UK|Portugal", re.I)
 
 TZ_RULES = [
@@ -98,7 +100,8 @@ def discover_gato_channels():
     found = {}
     for a in soup.select('a[href*="/canal/"]'):
         name, href = clean(a.get_text()), a.get("href", "")
-        if name and (SPORTS.search(name) or GENERAL_LATAM.search(name)) and not EXCLUDE.search(name):
+        movie_feed = MOVIE_CHANNELS.search(name) and MOVIE_REGIONS.search(name)
+        if name and (SPORTS.search(name) or GENERAL_LATAM.search(name) or movie_feed) and not EXCLUDE.search(name):
             found[href] = name
     # La guía completa no siempre muestra todas las señales venezolanas.
     # Complementamos desde el catálogo, que actualmente enumera decenas de
@@ -108,7 +111,8 @@ def discover_gato_channels():
         name, href = clean(a.get_text()), a.get("href", "")
         if name.lower().startswith("canal "):
             name = name[6:]
-        if name and GENERAL_LATAM.search(name) and not EXCLUDE.search(name):
+        movie_feed = MOVIE_CHANNELS.search(name) and MOVIE_REGIONS.search(name)
+        if name and (GENERAL_LATAM.search(name) or movie_feed) and not EXCLUDE.search(name):
             found.setdefault(href, name)
     return sorted(found.items(), key=lambda x: x[1].casefold())
 
