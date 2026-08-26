@@ -233,27 +233,32 @@ def scrape_movistar_sports():
             name = clean(img.get("title")) if img else ""
             if name and SPAIN_SPORTS.search(name):
                 feeds[href.split("/2026-")[0]] = f"{name} (España)"
-        tz, day = ZoneInfo("Europe/Madrid"), datetime.now(ZoneInfo("Europe/Madrid")).date()
+        tz = ZoneInfo("Europe/Madrid")
+        today = datetime.now(tz).date()
         for url, name in sorted(feeds.items(), key=lambda x: x[1].casefold()):
-            try:
-                soup = BeautifulSoup(get(url), "html.parser")
+            shows = []
+            for day_offset in range(5):
+                guide_day = today + timedelta(days=day_offset)
+                page_url = f"{url.rstrip('/')}/{guide_day.isoformat()}"
+                try:
+                    soup = BeautifulSoup(get(page_url), "html.parser")
+                except Exception as e:
+                    print(f"{name} {guide_day} omitido: {e}", file=sys.stderr)
+                    continue
                 raw = []
                 for box in soup.select("div.box"):
                     title_el, time_el = box.select_one("li.title"), box.select_one("li.time")
                     if not title_el or not time_el: continue
                     title, clock = clean(title_el.get_text(" ")), clean(time_el.get_text(" "))
-                    try: moment = parse_clock(clock, day, tz)
+                    try: moment = parse_clock(clock, guide_day, tz)
                     except ValueError: continue
                     if raw and moment <= raw[-1][0]: moment += timedelta(days=1)
                     raw.append((moment, title))
-                shows = []
                 for i, (start, title) in enumerate(raw):
                     stop = raw[i + 1][0] if i + 1 < len(raw) else start + timedelta(hours=1)
                     if stop > start: shows.append((start, stop, title, "Movistar Plus oficial"))
-                if shows: result[name] = shows
-            except Exception as e:
-                print(f"{name} omitido: {e}", file=sys.stderr)
-            time.sleep(0.08)
+                time.sleep(0.06)
+            if shows: result[name] = shows
     except Exception as e:
         print(f"Movistar Plus omitido sin inventar datos: {e}", file=sys.stderr)
     return result
