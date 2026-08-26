@@ -13,6 +13,7 @@ import requests
 from bs4 import BeautifulSoup
 
 GATO = "https://www.gatotv.com/guia_tv/completa"
+GATO_CATALOG = "https://www.gatotv.com/canales"
 DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
@@ -99,6 +100,16 @@ def discover_gato_channels():
         name, href = clean(a.get_text()), a.get("href", "")
         if name and (SPORTS.search(name) or GENERAL_LATAM.search(name)) and not EXCLUDE.search(name):
             found[href] = name
+    # La guía completa no siempre muestra todas las señales venezolanas.
+    # Complementamos desde el catálogo, que actualmente enumera decenas de
+    # variantes y permite descubrir automáticamente las nuevas.
+    catalog = BeautifulSoup(get(GATO_CATALOG), "html.parser")
+    for a in catalog.select('a[href*="/canal/"]'):
+        name, href = clean(a.get_text()), a.get("href", "")
+        if name.lower().startswith("canal "):
+            name = name[6:]
+        if name and GENERAL_LATAM.search(name) and not EXCLUDE.search(name):
+            found.setdefault(href, name)
     return sorted(found.items(), key=lambda x: x[1].casefold())
 
 def parse_clock(text, day, tz):
