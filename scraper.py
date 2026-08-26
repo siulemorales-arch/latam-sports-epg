@@ -166,35 +166,36 @@ def parse_clock(text, day, tz):
     raise ValueError(text)
 
 def scrape_gato_channel(url, name):
-    html = get(url)
-    soup = BeautifulSoup(html, "html.parser")
-    target = None
-    for table in soup.find_all("table"):
-        heads = clean(table.get_text(" "))
-        if "Hora Inicio" in heads and "Hora Fin" in heads and "Programa" in heads:
-            target = table; break
-    if target is None: return []
-    # GatoTV ya convierte todos los relojes de la página a la zona elegida por
-    # el sitio y publica el desfase como `utcOffset`. No debemos volver a
-    # interpretar esos relojes como si fueran la zona del canal (AR/CO/MX),
-    # porque eso desplaza la guía al verla en Miami.
-    offset_match = re.search(r"utcOffset\s*:\s*(-?\d+(?:\.\d+)?)", html)
-    if offset_match:
-        tz = timezone(timedelta(hours=float(offset_match.group(1))))
-    else:
-        tz = timezone_for(name)
-    day, out = datetime.now(tz).date(), []
-    for tr in target.find_all("tr"):
-        times = [clean(x.get_text()) for x in tr.find_all("time")]
-        cells = tr.find_all(["td", "th"])
-        if len(times) < 2 or len(cells) < 3: continue
-        title = clean(cells[2].get_text(" "))
-        if not title or title.lower() == "canal no disponible": continue
-        try:
-            start, stop = parse_clock(times[0], day, tz), parse_clock(times[1], day, tz)
-        except ValueError: continue
-        if stop <= start: stop += timedelta(days=1)
-        out.append((start, stop, title, "GatoTV"))
+    out = []
+    fallback_tz = timezone_for(name)
+    today = datetime.now(fallback_tz).date()
+    guide_days = 5 if name.upper().startswith("ESPN") else 1
+    for day_offset in range(guide_days):
+        guide_day = today + timedelta(days=day_offset)
+        page_url = f"{url.rstrip('/')}/{guide_day.isoformat()}" if guide_days > 1 else url
+        html = get(page_url)
+        soup = BeautifulSoup(html, "html.parser")
+        target = None
+        for table in soup.find_all("table"):
+            heads = clean(table.get_text(" "))
+            if "Hora Inicio" in heads and "Hora Fin" in heads and "Programa" in heads:
+                target = table; break
+        if target is None: continue
+        # GatoTV ya convierte los relojes y publica el desfase usado.
+        offset_match = re.search(r"utcOffset\s*:\s*(-?\d+(?:\.\d+)?)", html)
+        tz = timezone(timedelta(hours=float(offset_match.group(1)))) if offset_match else fallback_tz
+        for tr in target.find_all("tr"):
+            times = [clean(x.get_text()) for x in tr.find_all("time")]
+            cells = tr.find_all(["td", "th"])
+            if len(times) < 2 or len(cells) < 3: continue
+            title = clean(cells[2].get_text(" "))
+            if not title or title.lower() == "canal no disponible": continue
+            try:
+                start = parse_clock(times[0], guide_day, tz)
+                stop = parse_clock(times[1], guide_day, tz)
+            except ValueError: continue
+            if stop <= start: stop += timedelta(days=1)
+            out.append((start, stop, title, "GatoTV"))
     return out
 
 def scrape_dsports():
