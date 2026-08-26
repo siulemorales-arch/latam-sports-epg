@@ -1,0 +1,3493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="latam-sports-epg" generator-info-url="https://github.com/siulemorales-arch/latam-sports-epg">
+  <channel id="adrenalina.sports.network.latam">
+    <display-name lang="es">Adrenalina Sports Network</display-name>
+  </channel>
+  <channel id="aym.sports.latam">
+    <display-name lang="es">AYM Sports</display-name>
+  </channel>
+  <channel id="bein.sports.en.espanol.latam">
+    <display-name lang="es">beIN Sports en Español</display-name>
+  </channel>
+  <channel id="cdn.deportes.latam">
+    <display-name lang="es">CDN Deportes</display-name>
+  </channel>
+  <channel id="dsports.latam">
+    <display-name lang="es">DSPORTS</display-name>
+  </channel>
+  <channel id="dsports.2.latam">
+    <display-name lang="es">DSPORTS 2</display-name>
+  </channel>
+  <channel id="dsports.latam">
+    <display-name lang="es">DSPORTS+</display-name>
+  </channel>
+  <channel id="espn.2.colombia.latam">
+    <display-name lang="es">ESPN 2 Colombia</display-name>
+  </channel>
+  <channel id="espn.2.mexico.latam">
+    <display-name lang="es">ESPN 2 México</display-name>
+  </channel>
+  <channel id="espn.2.norte.latam">
+    <display-name lang="es">ESPN 2 Norte</display-name>
+  </channel>
+  <channel id="espn.2.sur.latam">
+    <display-name lang="es">ESPN 2 Sur</display-name>
+  </channel>
+  <channel id="espn.2.venezuela.latam">
+    <display-name lang="es">ESPN 2 Venezuela</display-name>
+  </channel>
+  <channel id="espn.3.norte.latam">
+    <display-name lang="es">ESPN 3 Norte</display-name>
+  </channel>
+  <channel id="espn.3.sur.latam">
+    <display-name lang="es">ESPN 3 Sur</display-name>
+  </channel>
+  <channel id="espn.4.c.a.y.r.d.latam">
+    <display-name lang="es">ESPN 4 C. A. y R. D.</display-name>
+  </channel>
+  <channel id="espn.4.mexico.latam">
+    <display-name lang="es">ESPN 4 México</display-name>
+  </channel>
+  <channel id="espn.4.norte.latam">
+    <display-name lang="es">ESPN 4 Norte</display-name>
+  </channel>
+  <channel id="espn.4.sur.latam">
+    <display-name lang="es">ESPN 4 Sur</display-name>
+  </channel>
+  <channel id="espn.5.c.a.y.r.d.latam">
+    <display-name lang="es">ESPN 5 C. A. y R. D.</display-name>
+  </channel>
+  <channel id="espn.5.sur.latam">
+    <display-name lang="es">ESPN 5 Sur</display-name>
+  </channel>
+  <channel id="espn.6.c.a.y.r.d.latam">
+    <display-name lang="es">ESPN 6 C. A. y R. D.</display-name>
+  </channel>
+  <channel id="espn.6.sur.latam">
+    <display-name lang="es">ESPN 6 Sur</display-name>
+  </channel>
+  <channel id="espn.7.sudamerica.latam">
+    <display-name lang="es">ESPN 7 Sudamérica</display-name>
+  </channel>
+  <channel id="espn.chile.latam">
+    <display-name lang="es">ESPN Chile</display-name>
+  </channel>
+  <channel id="espn.colombia.latam">
+    <display-name lang="es">ESPN Colombia</display-name>
+  </channel>
+  <channel id="espn.deportes.latam">
+    <display-name lang="es">ESPN Deportes</display-name>
+  </channel>
+  <channel id="espn.mexico.latam">
+    <display-name lang="es">ESPN México</display-name>
+  </channel>
+  <channel id="espn.norte.latam">
+    <display-name lang="es">ESPN Norte</display-name>
+  </channel>
+  <channel id="espn.premium.chile.latam">
+    <display-name lang="es">ESPN Premium Chile</display-name>
+  </channel>
+  <channel id="espn.sur.latam">
+    <display-name lang="es">ESPN Sur</display-name>
+  </channel>
+  <channel id="fox.sports.2.cono.norte.latam">
+    <display-name lang="es">Fox Sports 2 Cono Norte</display-name>
+  </channel>
+  <channel id="fox.sports.3.cono.norte.latam">
+    <display-name lang="es">Fox Sports 3 Cono Norte</display-name>
+  </channel>
+  <channel id="fox.sports.cono.norte.latam">
+    <display-name lang="es">Fox Sports Cono Norte</display-name>
+  </channel>
+  <channel id="fox.sports.cono.sur.latam">
+    <display-name lang="es">Fox Sports Cono Sur</display-name>
+  </channel>
+  <channel id="sky.sports.1.mexico.latam">
+    <display-name lang="es">Sky Sports 1 México</display-name>
+  </channel>
+  <channel id="sky.sports.16.latam">
+    <display-name lang="es">Sky Sports 16</display-name>
+  </channel>
+  <channel id="sky.sports.24.latam">
+    <display-name lang="es">Sky Sports 24</display-name>
+  </channel>
+  <channel id="teledeporte.latam">
+    <display-name lang="es">Teledeporte</display-name>
+  </channel>
+  <channel id="tudn.centroamerica.latam">
+    <display-name lang="es">TUDN Centroamérica</display-name>
+  </channel>
+  <channel id="tudn.mexico.latam">
+    <display-name lang="es">TUDN México</display-name>
+  </channel>
+  <channel id="tudn.usa.latam">
+    <display-name lang="es">TUDN USA</display-name>
+  </channel>
+  <channel id="tv.azteca.deportes.latam">
+    <display-name lang="es">TV Azteca Deportes</display-name>
+  </channel>
+  <channel id="tvc.deportes.latam">
+    <display-name lang="es">TVC Deportes</display-name>
+  </channel>
+  <channel id="tyc.sports.latam">
+    <display-name lang="es">TyC Sports</display-name>
+  </channel>
+  <channel id="wapa.2.deportes.latam">
+    <display-name lang="es">WAPA 2 Deportes</display-name>
+  </channel>
+  <programme start="20260826001500 -0500" stop="20260826013000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Diego Lopes vs. Marco Beltran</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0500" stop="20260826031500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">El Inframundo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826031500 -0500" stop="20260826050500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Reto 4 Elementos</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050500 -0500" stop="20260826060000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">La guarida del Mostro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826084000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Corrida de Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826084000 -0500" stop="20260826095500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Drako vs. Hooligan 2 Repetición</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826095500 -0500" stop="20260826114000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">El Inframundo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826114000 -0500" stop="20260826133000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Reto 4 Elementos</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826133000 -0500" stop="20260826142500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">La guarida del Mostro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826142500 -0500" stop="20260826170000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Corrida de Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826184500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">El Inframundo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826184500 -0500" stop="20260826203500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Reto 4 Elementos</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203500 -0500" stop="20260826213000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">La guarida del Mostro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0500" stop="20260827001500 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Corrida de Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0500" stop="20260827001000 -0500" channel="adrenalina.sports.network.latam">
+    <title lang="es">Corrida de Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826020000 -0500" channel="aym.sports.latam">
+    <title lang="es">Baloncesto Mexicano LNBP Fuerza Regia de Monterrey vs. Gambusinos de Fresnillo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol tenis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826050000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol Mexicano Liga Expansión Tepatitlán vs. Tlaxcala</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826070000 -0500" channel="aym.sports.latam">
+    <title lang="es">Boxeo Jorge Tovar vs. Ulices Rivera</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826100000 -0500" channel="aym.sports.latam">
+    <title lang="es">Liga Mexicana de Beisbol Primer playoff, Zona Norte: Caliente de Durango vs. Acereros de Monclova</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol Mexicano Liga Expansión Piratas FC vs. Cancún</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826140000 -0500" channel="aym.sports.latam">
+    <title lang="es">Boxeo Jorge Tovar vs. Ulices Rivera</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0500" stop="20260826150000 -0500" channel="aym.sports.latam">
+    <title lang="es">Tras las cuerdas</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol Mexicano Liga Expansión Atlético La Paz vs. Cruz Azul Hidalgo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826173000 -0500" channel="aym.sports.latam">
+    <title lang="es">Clubhouse</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0500" stop="20260826190000 -0500" channel="aym.sports.latam">
+    <title lang="es">Lucha libre IWRG</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826220000 -0500" channel="aym.sports.latam">
+    <title lang="es">Liga Mexicana de Beisbol Series de Zona, Zona Sur: Pericos de Puebla vs. Diablos Rojos del México</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826223000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol Mexicano Liga Expansión Tampico Madero vs. Tepatitlán</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826223000 -0500" stop="20260826230000 -0500" channel="aym.sports.latam">
+    <title lang="es">Fútbol tenis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827000000 -0500" channel="aym.sports.latam">
+    <title lang="es">Hoy Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826013000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0500" stop="20260826020000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826023000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826023000 -0500" stop="20260826030000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826033000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826040000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826043000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">The Xtra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826063000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826063000 -0500" stop="20260826080000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">SailGP</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826083000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Copa Sudamericana 2026: Santa Fe vs. River Plate 90 in 30</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826083000 -0500" stop="20260826090000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826110000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Premier Padel</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826130000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Stade Rennais vs. Paris Saint-Germain Fútbol: Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826150000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Fenerbahçe vs. Konyaspor Fútbol Turco Superliga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">The Xtra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826170000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Copa Sudamericana Highlight Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826180000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">GT World Challenge America</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826182000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">The Express Preview</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826182000 -0500" stop="20260826203000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">River Plate vs. Independiente Santa Fe Fútbol Conmebol Copa Sudamericana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0500" stop="20260826213000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">The Xtra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0500" stop="20260826233000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">Premier Padel</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827010000 -0500" channel="bein.sports.en.espanol.latam">
+    <title lang="es">SailGP</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0400" stop="20260826060000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0400" stop="20260826100000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826140000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0400" stop="20260826180000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0400" stop="20260826220000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0400" stop="20260827020000 -0400" channel="cdn.deportes.latam">
+    <title lang="es">CDN Sportmax</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0300" stop="20260826010000 -0300" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826020000 -0300" channel="dsports.latam">
+    <title lang="es">Puede pasar</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826030000 -0300" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826003000 -0300" stop="20260826005000 -0300" channel="dsports.2.latam">
+    <title lang="es">Batacazos de la Copa Sudamericana</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826005000 -0300" stop="20260826023000 -0300" channel="dsports.2.latam">
+    <title lang="es">Chile vs. Argentina</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826023000 -0300" stop="20260826025000 -0300" channel="dsports.2.latam">
+    <title lang="es">Perlas En La Sudamericana: Parte 2</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826025000 -0300" stop="20260826043000 -0300" channel="dsports.2.latam">
+    <title lang="es">Colombia vs. Perú</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826000000 -0300" stop="20260826004500 -0300" channel="dsports.latam">
+    <title lang="es">Les Gets: Cross-country Pista Corta femenino y masculino; Renewi Tour: Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826004500 -0300" stop="20260826010000 -0300" channel="dsports.latam">
+    <title lang="es">Jonah Lomu</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826020000 -0300" channel="dsports.latam">
+    <title lang="es">Tour de Turquía</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826043000 -0300" channel="dsports.latam">
+    <title lang="es">Sesi/Franca vs. Boca Juniors</title>
+    <category lang="es">Deportes</category>
+    <source>DSPORTS oficial</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Italian Serie A Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826013000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0500" stop="20260826020000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Goles de la Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826070000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826100000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826103000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103000 -0500" stop="20260826104000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Futbol Internacional</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826104000 -0500" stop="20260826124000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0500" stop="20260826150000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0500" stop="20260826183000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Goles de la Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826183000 -0500" stop="20260826190000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Vuelta a España</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826210000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826220000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Real Madrid vs. Real Sociedad de Fútbol Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826223000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826223000 -0500" stop="20260826230000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="espn.2.colombia.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826003000 -0600" stop="20260826010000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">SportsCenter Isaac Del Toro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0600" stop="20260826020000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0600" stop="20260826070000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0600" stop="20260826100000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Spirit vs. Pride</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0600" stop="20260826110000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Dutch League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0600" stop="20260826113000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Lo Mejor de MotoGP 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826113000 -0600" stop="20260826120000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Vuelta a España 26 Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0600" stop="20260826123000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">EFL highlights show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0600" stop="20260826144500 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Tottenham Hotspur vs. Charlton</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826144500 -0600" stop="20260826150000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Mejores Jugadas 2025</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0600" stop="20260826170000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Cincinnati Open 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0600" stop="20260826210000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">US Open 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826224500 -0600" stop="20260826230000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0600" stop="20260827000000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0600" stop="20260827003000 -0600" channel="espn.2.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826003000 -0500" stop="20260826010000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826070000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">ESPN Knockout Nikita Tsyu vs. Ben Mahoney</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826100000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">Washington Spirit vs. Orlando Pride NWSL</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826110000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">Dutch League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826124000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">WTA Cincinnati Open Final, Lindner Family Tennis Center, Cincinnati, OH, USA</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0500" stop="20260826150000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">AEK vs. Levski UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826153000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">Goles de la Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826153000 -0500" stop="20260826160000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">EFL Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826210000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">US Open Final de Dobles Mixtos, USTA Billie Jean King Nat'l Tennis Ctr, Flushing, NY, USA</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826230000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827000000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827003000 -0500" channel="espn.2.norte.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0300" stop="20260826010000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Equipo Scrum</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826013000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0300" stop="20260826020000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Vuelta a España Temporada 2026 La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826030000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">ESPN F10</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826070000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">ESPN Knockout Temporada 2026 Nikita Tszyu vs. Ben Mahoney</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826080000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0300" stop="20260826100300 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Italian Serie A Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100300 -0300" stop="20260826120800 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League FK Bodø/Glimt vs. NEC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120800 -0300" stop="20260826124000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0300" stop="20260826150000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League Olympique Lyonnais vs. Fenerbahçe</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826160000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0300" stop="20260826193000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">ESPN Knockout Temporada 2026 Nikita Tszyu vs. Ben Mahoney</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826193000 -0300" stop="20260826200000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Vuelta a España Temporada 2026 La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0300" stop="20260826210000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Fútbol LaLiga Real Madrid vs. Real Sociedad de Fútbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826213000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0300" stop="20260826220000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Bundesliga Preview Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0300" stop="20260827000000 -0300" channel="espn.2.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League Olympique Lyonnais vs. Fenerbahçe</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0400" stop="20260826010000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Italian Serie A Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0400" stop="20260826013000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0400" stop="20260826020000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Goles de la Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0400" stop="20260826030000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0400" stop="20260826070000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0400" stop="20260826100000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826103000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103000 -0400" stop="20260826104000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Futbol Internacional</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826104000 -0400" stop="20260826124000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0400" stop="20260826150000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0400" stop="20260826160000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Goles de la Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0400" stop="20260826183000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Goles de la Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826183000 -0400" stop="20260826190000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Vuelta a España</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0400" stop="20260826210000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0400" stop="20260826220000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Real Madrid vs. Real Sociedad de Fútbol Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0400" stop="20260826223000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826223000 -0400" stop="20260826230000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260827010000 -0400" channel="espn.2.venezuela.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826030000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Béisbol MLB Houston Astros vs. New York Yankees</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826050000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Tenis Cincinnati Open 2026 Final ATP</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826064500 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Get Up</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826064500 -0500" stop="20260826100000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">La Vuelta a España 2026 Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826110000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">The Pat McAfee Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826130000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Serie Mundial de Pequeñas Ligas 2026 Nicaragua vs. Curazao</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826150000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Serie Mundial de Pequeñas Ligas 2026 Nevada vs. Iowa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Serie Mundial de Pequeñas Ligas 2026 Japón vs. A confirmar</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826200000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Béisbol MLB Los Angeles Dodgers vs. Atlanta Braves</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826213000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Vuelta a España Temporada 2026 La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0500" stop="20260826220000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Vuelta a España Temporada 2026 La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260827000000 -0500" channel="espn.3.norte.latam">
+    <title lang="es">Fútbol Inglés Copa de la Liga Tottenham Hotspur vs. Charlton Athletic</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826030000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Fútbol Premier League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826050000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Frosinone vs. Juventus Fútbol: Serie A</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826070000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Torino vs. Milan Fútbol: Serie A</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826090000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Inter vs. Monza Fútbol: Serie A</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0300" stop="20260826110000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">PSV vs. FC Groningen desde el estadio Philips Stadion, Fútbol Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0300" stop="20260826120000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Italian Serie A Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0300" stop="20260826123000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">ATP Tour Uncovered</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0300" stop="20260826124000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Futbol Internacional</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0300" stop="20260826150000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826170000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Frosinone vs. Juventus Fútbol: Serie A</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0300" stop="20260826173000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">ATP Tour Uncovered</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0300" stop="20260826180000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Vuelta a España</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826200000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0300" stop="20260826210000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Goles de la Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826213000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826213000 -0300" stop="20260826223000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">PGA Tour Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826223000 -0300" stop="20260826230000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">ATP Tour Uncovered</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.3.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826040000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Vuelta a España Etapa 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826043000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Goles de la Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826070000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Liga Mexicana de Béisbol Toros de Tijuana vs. Charros de Jalisco, Juego 6 - Series de Zona, Estadio Panamericano de Beisbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Get Up!</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">First Take</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826110000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Qualifying - US Open Segunda ronda, USTA Billie Jean King Nat'l Tennis Ctr, Flushing, NY, USA</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826120000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">The Pat McAfee Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826140000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Vuelta a España Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826190000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Little League World Series</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826210000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">El Paso Locomotive FC vs. Pittsburgh Riverhounds SC USL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826230000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Pretemporada - NFL Seattle Seahawks vs. Tennessee Titans, Nissan Stadium</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="espn.4.c.a.y.r.d.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0600" stop="20260826010000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Equipo Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0600" stop="20260826020000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">ESPN Enfocados</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0600" stop="20260826040000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0600" stop="20260826050000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Highlights BMW Championship 26</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0600" stop="20260826070000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Charros vs. Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0600" stop="20260826080000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Get Up</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0600" stop="20260826090000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">First Take</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0600" stop="20260826110000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">US Open Qualifying 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0600" stop="20260826120000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">The Pat McAfee Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0600" stop="20260826140000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Highlights BMW Championship 26</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0600" stop="20260826150000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">NFL Live NFL</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0600" stop="20260826170000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0600" stop="20260826185000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Little League World Series</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826185000 -0600" stop="20260826210000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Locomotive vs. Riverhounds</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0600" stop="20260826220000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Highlights BMW Championship 26</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0600" stop="20260826230000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">Generación Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0600" stop="20260827000000 -0600" channel="espn.4.mexico.latam">
+    <title lang="es">ESPN Beisbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826040000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Vuelta a España Etapa 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826043000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826050000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Goles de la Ligue 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826070000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Liga Mexicana de Béisbol Toros de Tijuana vs. Charros de Jalisco, Juego 6 - Series de Zona, Estadio Panamericano de Beisbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Get Up!</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">First Take</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826110000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Qualifying - US Open Segunda ronda, USTA Billie Jean King Nat'l Tennis Ctr, Flushing, NY, USA</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826120000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">The Pat McAfee Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826140000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Vuelta a España Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826190000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Little League World Series</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826210000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">El Paso Locomotive FC vs. Pittsburgh Riverhounds SC USL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826230000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Pretemporada - NFL Seattle Seahawks vs. Tennessee Titans, Nissan Stadium</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="espn.4.norte.latam">
+    <title lang="es">Highlights - UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826040000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Béisbol MLB Houston Astros vs. New York Yankees</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0300" stop="20260826050000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Equipo Scrum</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826070000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League Sabah FK vs. Hapoel Beer Sheva</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826090000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League FK Bodø/Glimt vs. NEC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0300" stop="20260826093000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826093000 -0300" stop="20260826103000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">ESPN Compact Temporada 2026 Serie A: AS Roma vs. ACF Fiorentina</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103000 -0300" stop="20260826123000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol LaLiga Valencia vs. Real Betis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0300" stop="20260826124000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Futbol Internacional PSG: Campeón UEFA Champions League 2025-2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0300" stop="20260826150000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League Viking FK vs. Dinamo Zagreb</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826160000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Italian Serie A Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0300" stop="20260826170000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Goles de la Eredivisie Dutch League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0300" stop="20260826173000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Rugby de Francia Top 14 Highlights Temporada 2026-2027: Previa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0300" stop="20260826180000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol LaLiga Temporada 2026 Goles de LaLiga 2026-27</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826200000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League Viking FK vs. Dinamo Zagreb</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0300" stop="20260826203000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Bundesliga Preview Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826210000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826220000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Goles de la Eredivisie Dutch League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0300" stop="20260826230000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">Fútbol LaLiga Real Madrid vs. Real Sociedad de Fútbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">La Vuelta a España 2026 Etapa 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.4.sur.latam">
+    <title lang="es">La Vuelta a España 2026 Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0500" stop="20260826020000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826040000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Sabah Baku (Aze) vs. H. Beer Sheva (Isr) UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826060000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">La Vuelta 26 Etapa 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826080000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">LASK (Aut) vs. Celtic (Esc) UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826105000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">CS Cartaginés (Crc) vs. FAS (Slv) CONCACAF Central American Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826105000 -0500" stop="20260826124000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Fórmula 1 Gran Premio de los Países Bajos, Circuito de Zandvoort</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0500" stop="20260826150000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Viking (Nor) vs. Dinamo Zagreb (Cro) UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">LASK (Aut) vs. Celtic (Esc) UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826200000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">AEK (Gre) vs. Levski UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0500" stop="20260826233000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Liga Mexicana de Béisbol Charros de Jalisco vs. Toros de Tijuana, Juego 7 - Series de Zona, Estadio Chevron</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827013000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Municipal (Gua) vs. Motagua (Hon) CONCACAF Central American Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827013000 -0500" channel="espn.5.c.a.y.r.d.latam">
+    <title lang="es">Marathón (Hon) vs. Real Estelí (Nic) CONCACAF Central American Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826030000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Valencia vs. Real Betis Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826050000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">2026 US Open: Roger Federer, An Icon Returns to New York</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826060000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0300" stop="20260826070000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Fútbol Supercopa de Alemania</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826073000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826073000 -0300" stop="20260826080000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">ATP Tour Uncovered</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0300" stop="20260826083000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">FIM Road Racing World Championship Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826083000 -0300" stop="20260826103500 -0300" channel="espn.5.sur.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103500 -0300" stop="20260826124000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0300" stop="20260826150000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826153000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">EFL Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826153000 -0300" stop="20260826163000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826163000 -0300" stop="20260826170000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">ATP Tour Uncovered</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0300" stop="20260826210000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Tenis US Open 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826230000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">Independiente del Valle vs. Deportes Tolima Fútbol Conmebol Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.5.sur.latam">
+    <title lang="es">River Plate vs. Independiente Santa Fe Fútbol Conmebol Copa Sudamericana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826030000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Vuelta a España Etapa 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826050000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">West Ham Unitedtd. vs. Charlton Athletic English League Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826070000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">UEFA champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826090000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">River Plate vs. Vélez Sársfield Liga Profesional 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826110000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Lincoln City vs. Portsmouth English League Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826130000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Racing Club vs. Boca Jrs. Liga Profesional 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826150000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">ESPN Knockout Nikita Tsyu vs. Ben Mahoney</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Vuelta a España Etapa 5</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826173000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0500" stop="20260826180000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">EFL Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826190000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826200000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Dutch League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826203000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0500" stop="20260826210000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">La vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826230000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">AEK (Gre) vs. Levski UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">Lincoln City vs. Portsmouth English League Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="espn.6.c.a.y.r.d.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826030000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826050000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Fútbol EFL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826070000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826090000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">River Plate vs. Vélez Sársfield Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0300" stop="20260826110000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Fútbol EFL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0300" stop="20260826130000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Boca vs. Racing Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0300" stop="20260826150000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826170000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0300" stop="20260826173000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0300" stop="20260826180000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">EFL Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826190000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0300" stop="20260826200000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Goles de la Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0300" stop="20260826203000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826210000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Vuelta a España</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826230000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">Fútbol EFL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260826233000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0300" stop="20260827000000 -0300" channel="espn.6.sur.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826030000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826050000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">River Plate vs. Vélez Sársfield Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826070000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Fútbol EFL Championship</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826090000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826110000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Boca vs. Racing Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826130000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">2026 Little League Baseball World Series</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826150000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826200000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Houston Astros vs. New York Yankees Béisbol MLB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Goles de la Eredivisie</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826230000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Boca vs. Racing Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="espn.7.sudamerica.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826033000 -0300" channel="espn.chile.latam">
+    <title lang="es">ESPN F Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0300" stop="20260826045500 -0300" channel="espn.chile.latam">
+    <title lang="es">ESPN F90</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826064500 -0300" stop="20260826100000 -0300" channel="espn.chile.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826125000 -0300" stop="20260826145500 -0300" channel="espn.chile.latam">
+    <title lang="es">Real Madrid vs. Real Sociedad de Fútbol Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826145500 -0300" stop="20260826170000 -0300" channel="espn.chile.latam">
+    <title lang="es">ESPN F360</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826203000 -0300" channel="espn.chile.latam">
+    <title lang="es">River Plate vs. Independiente Santa Fe Fútbol Conmebol Copa Sudamericana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826213000 -0300" channel="espn.chile.latam">
+    <title lang="es">ESPN F90</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826064500 -0500" stop="20260826100000 -0500" channel="espn.colombia.latam">
+    <title lang="es">La Vuelta a España 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826125000 -0500" stop="20260826145500 -0500" channel="espn.colombia.latam">
+    <title lang="es">Real Madrid vs. Real Sociedad de Fútbol Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826145500 -0500" stop="20260826160000 -0500" channel="espn.colombia.latam">
+    <title lang="es">Balón Dividido</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826180000 -0500" channel="espn.colombia.latam">
+    <title lang="es">ESPN F360</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826220000 -0500" channel="espn.colombia.latam">
+    <title lang="es">ESPN F90</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826003000 -0400" stop="20260826010000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0400" stop="20260826030000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0400" stop="20260826050000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0400" stop="20260826070000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Es así y punto</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0400" stop="20260826090000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826110000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0400" stop="20260826150000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Real Madrid vs. Real Sociedad de Fútbol Fútbol LaLiga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0400" stop="20260826160000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Ahora o nunca</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0400" stop="20260826170000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Generación F</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0400" stop="20260826190000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Béisbol MLB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0400" stop="20260826200000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Ahora o nunca</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826224500 -0400" stop="20260826230000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260827000000 -0400" channel="espn.deportes.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0600" stop="20260826030000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0600" stop="20260826050000 -0600" channel="espn.mexico.latam">
+    <title lang="es">ESPN Enfocados</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0600" stop="20260826060000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Generación Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0600" stop="20260826070000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0600" stop="20260826080000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0600" stop="20260826120000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Sheffield W. vs. Wolverhampton</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0600" stop="20260826140000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0600" stop="20260826150000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Equipo Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0600" stop="20260826160000 -0600" channel="espn.mexico.latam">
+    <title lang="es">ESPN Enfocados</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0600" stop="20260826170000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Generación Futbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826182000 -0600" stop="20260826203000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Palmeiras vs. Santos</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0600" stop="20260826233000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Charros vs. Toros</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0600" stop="20260827000000 -0600" channel="espn.mexico.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="espn.norte.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="espn.norte.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826070000 -0500" channel="espn.norte.latam">
+    <title lang="es">ESPN FC</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="espn.norte.latam">
+    <title lang="es">Sheffield Wednesday vs. Wolverhampton Wanderers Carabao Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0500" stop="20260826150000 -0500" channel="espn.norte.latam">
+    <title lang="es">Olympique Lyon vs. Fenerbahce UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826162000 -0500" channel="espn.norte.latam">
+    <title lang="es">Equipo F Centroamérica</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826162000 -0500" stop="20260826183000 -0500" channel="espn.norte.latam">
+    <title lang="es">CS Herediano (Crc) vs. Antigua GFC (Gua) CONCACAF Central American Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826183000 -0500" stop="20260826203000 -0500" channel="espn.norte.latam">
+    <title lang="es">LD Alajuelense (Crc) vs. Plaza Amador (Pan) CONCACAF Central American Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826224500 -0500" stop="20260826230000 -0500" channel="espn.norte.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827000000 -0500" channel="espn.norte.latam">
+    <title lang="es">Futbol Picante</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826030000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Independiente del Valle vs. Deportes Tolima Fútbol Conmebol Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826050000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826060000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Fútbol Supercopa de Alemania</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0300" stop="20260826080000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Independiente del Valle vs. Deportes Tolima Fútbol Conmebol Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0300" stop="20260826083000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826083000 -0300" stop="20260826103500 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Automovilismo Fórmula 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103500 -0300" stop="20260826124000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">2026 US Open: Roger Federer, An Icon Returns to New York</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124000 -0300" stop="20260826150000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826170000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Independiente del Valle vs. Deportes Tolima Fútbol Conmebol Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0300" stop="20260826190000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">ESPN Knockout</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0300" stop="20260826200000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0300" stop="20260826203000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Vuelta a España</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826210000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">FIM Road Racing World Championship Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826230000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827010000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Automovilismo Fórmula 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260826233000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">UEFA Champions League Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0300" stop="20260827000000 -0300" channel="espn.premium.chile.latam">
+    <title lang="es">Bundesliga Preview Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0300" stop="20260826080000 -0300" channel="espn.sur.latam">
+    <title lang="es">Buen día ESPN</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0300" stop="20260826100000 -0300" channel="espn.sur.latam">
+    <title lang="es">ESPN F12</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0300" stop="20260826120000 -0300" channel="espn.sur.latam">
+    <title lang="es">ESPN F90</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0300" stop="20260826125000 -0300" channel="espn.sur.latam">
+    <title lang="es">ESPN F3</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826125000 -0300" stop="20260826145500 -0300" channel="espn.sur.latam">
+    <title lang="es">Fútbol LaLiga Real Madrid vs. Real Sociedad de Fútbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826145500 -0300" stop="20260826160000 -0300" channel="espn.sur.latam">
+    <title lang="es">ESPN F360</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0300" stop="20260826173000 -0300" channel="espn.sur.latam">
+    <title lang="es">Equipo F</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826213000 -0300" channel="espn.sur.latam">
+    <title lang="es">ESPN F10</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">La última palabra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826020000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">ALL Elite Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826033000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Gearing Up</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826060000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Major Arena Soccer League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826070000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox Gol Femenil</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">La última palabra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826083000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox Fit</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826083000 -0500" stop="20260826090000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox Fit</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826110000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">La última palabra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0500" stop="20260826120000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox Gol Femenil</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826140000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Lobos vs. Fuerza Regia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0500" stop="20260826150000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826153000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826153000 -0500" stop="20260826160000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826170000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">ALL Elite Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826180000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox Sports Radio</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826200000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">AEW DYNAMITE</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826233000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Lucha libre CMLL</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0500" stop="20260827000000 -0500" channel="fox.sports.2.cono.norte.latam">
+    <title lang="es">Fox fight club</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826003000 -0500" stop="20260826010000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Gearing Up</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826013000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826013000 -0500" stop="20260826020000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826040000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Lobos vs. Fuerza Regia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826043000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Mediterranean Games</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826043000 -0500" stop="20260826080000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">UIPM Pentathlon World Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826100000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Lobos vs. Fuerza Regia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">AEW DYNAMITE</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826140000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">UIPM Pentathlon World Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0500" stop="20260826143000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826143000 -0500" stop="20260826150000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826180000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Juegos Centroamericanos y del</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826200000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">UIPM Pentathlon World Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826220000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">UIPM Pentathlon World Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260827003000 -0500" channel="fox.sports.3.cono.norte.latam">
+    <title lang="es">Major Arena Soccer League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826033000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Major Arena Soccer League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826040000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Kumho FIA TCR World Tour</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826060000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">FIBA Basketball World Cup Qual</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826080000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">AEW Collision</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826100000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">ALL Elite Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826123000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Major Arena Soccer League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0500" stop="20260826130000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826140000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">CMLL Retro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0500" stop="20260826143000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Hellas Rally Raid</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826143000 -0500" stop="20260826150000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">FIBA Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826170000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">UIPM Pentathlon World Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826180000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">ALL Elite Show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826200000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">AEW DYNAMITE</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Súper Copa Speedfest Gran Turi</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826220000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Súper Copa Speedfest Tractocam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260826223000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826223000 -0500" stop="20260826230000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Monster Jam</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">AEW DYNAMITE</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827010000 -0500" channel="fox.sports.cono.norte.latam">
+    <title lang="es">Lobos vs. Fuerza Regia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0300" stop="20260826020000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol Conmebol Copa Libertadores Palmeiras vs. Cerro Porteño</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826030000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Marketing registrado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826040000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">El Show de la Copa Libertadores</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0300" stop="20260826060000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Todo pelota</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0300" stop="20260826080000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League LASK vs. Celtic</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0300" stop="20260826100000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol Conmebol Copa Libertadores Independiente del Valle vs. Deportes Tolima</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0300" stop="20260826113000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Línea de 3</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826113000 -0300" stop="20260826123000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Siga, siga</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0300" stop="20260826150000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League AEK vs. Levski Sofia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0300" stop="20260826160000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">La Vuelta</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0300" stop="20260826180000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Todo pelota</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826190000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Manos arriba</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0300" stop="20260826210000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League AEK vs. Levski Sofia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0300" stop="20260826230000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Fútbol UEFA Champions League NK Celje vs. Slovan Bratislava</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827000000 -0300" channel="fox.sports.cono.sur.latam">
+    <title lang="es">Telemétrico</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0600" stop="20260826020000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Real Sporting de Gijón vs. Burg</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0600" stop="20260826040000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Wanda diamond league 2026 Món</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0600" stop="20260826060000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Tenerife vs. Almería</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0600" stop="20260826080000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">World athletics continental</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0600" stop="20260826100000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">RC Celta Fortuna vs. FC Andorra</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0600" stop="20260826121500 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Mónaco Athletics Festival 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826121500 -0600" stop="20260826123000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">SKY Sports</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0600" stop="20260826160000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Granada vs. RCD Mallorca</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0600" stop="20260826180000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Wanda diamond league 2026 Lon</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0600" stop="20260826200000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Albacete BP vs. Real Sociedad b</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0600" stop="20260826220000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">Real Sporting de Gijón vs. Burg</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0600" stop="20260827000000 -0600" channel="sky.sports.1.mexico.latam">
+    <title lang="es">World athletics continental to</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826040000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0500" stop="20260826080000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826120000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826160000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826200000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260827000000 -0500" channel="sky.sports.16.latam">
+    <title lang="es">Sky Sports 16</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826010000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Valencia vs. Real Betis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0500" stop="20260826030000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Real Betis vs. Real Sociedad</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826033000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Sky Sports 24</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0500" stop="20260826053000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Getafe vs. R. Racing Club</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826053000 -0500" stop="20260826061500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Sky Sports 24</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826061500 -0500" stop="20260826081500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Valencia vs. Celta de Vigo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826081500 -0500" stop="20260826084500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Sky Sports 24</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826084500 -0500" stop="20260826104500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Rayo Vallecano vs. Deportivo Al</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826104500 -0500" stop="20260826124500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Málaga vs. Deportivo La Coru</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826124500 -0500" stop="20260826144500 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Athletic Club vs. Sevilla</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826144500 -0500" stop="20260826150000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Previo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0500" stop="20260826190000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Valencia vs. Real Betis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826210000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">Real Betis vs. Real Sociedad</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260826233000 -0500" channel="sky.sports.24.latam">
+    <title lang="es">LaLiga Highlights</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826001000 -0500" stop="20260826005000 -0500" channel="teledeporte.latam">
+    <title lang="es">F4 Spanish Championship Racing Series 3ª Carrera Desde El Circuito De El Jarama</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826005000 -0500" stop="20260826005500 -0500" channel="teledeporte.latam">
+    <title lang="es">Informativo - Bloque Deportes Td-1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826005500 -0500" stop="20260826024000 -0500" channel="teledeporte.latam">
+    <title lang="es">Voleibol femenino Campeonato De Europa Femenino Países Bajos - España Desde Baku: Netherlands - Spain</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826024000 -0500" stop="20260826030500 -0500" channel="teledeporte.latam">
+    <title lang="es">La Vuelta Temporada 2026 4ª Etapa Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030500 -0500" stop="20260826060500 -0500" channel="teledeporte.latam">
+    <title lang="es">Gimnasia rítmica Campeonato De Europa Masculino Final Equipos Desde Zagreb</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060500 -0500" stop="20260826062000 -0500" channel="teledeporte.latam">
+    <title lang="es">LaLiga EA Sports Temporada 2026 J1 Valencia CF - Real Betis Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826062000 -0500" stop="20260826064500 -0500" channel="teledeporte.latam">
+    <title lang="es">Estudio Estadio</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826064500 -0500" stop="20260826081500 -0500" channel="teledeporte.latam">
+    <title lang="es">Ciclismo: La Vuelta a España 2026 5ª Etapa: Falset. Costa Daurada - Roquetes. Terres De L'ebre</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826081500 -0500" stop="20260826082000 -0500" channel="teledeporte.latam">
+    <title lang="es">Informativo - Bloque Deportes Td-1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826082000 -0500" stop="20260826100000 -0500" channel="teledeporte.latam">
+    <title lang="es">LaLiga HyperMotion Temporada 2026 Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="teledeporte.latam">
+    <title lang="es">CEV Women's EuroVolley 2026 España - Portugal</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826130000 -0500" channel="teledeporte.latam">
+    <title lang="es">LaLiga EA Sports Temporada 2026 Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826133000 -0500" channel="teledeporte.latam">
+    <title lang="es">La Vuelta Temporada 2026 5ª Etapa Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826133000 -0500" stop="20260826145500 -0500" channel="teledeporte.latam">
+    <title lang="es">LaLiga EA Sports Temporada 2026 Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826145500 -0500" stop="20260826160000 -0500" channel="teledeporte.latam">
+    <title lang="es">Estudio Estadio</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826161500 -0500" channel="teledeporte.latam">
+    <title lang="es">LaLiga EA Sports Temporada 2026 Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826161500 -0500" stop="20260826171500 -0500" channel="teledeporte.latam">
+    <title lang="es">Denominación de origen Temporada 1 | Episodio 1</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826171500 -0500" stop="20260826180500 -0500" channel="teledeporte.latam">
+    <title lang="es">Denominación de origen Temporada 1 | Episodio 2</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180500 -0500" stop="20260826185500 -0500" channel="teledeporte.latam">
+    <title lang="es">Denominación de origen Temporada 1 | Episodio 3</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826185500 -0500" stop="20260826194500 -0500" channel="teledeporte.latam">
+    <title lang="es">Denominación de origen Temporada 1 | Episodio 4</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826194500 -0500" stop="20260826214500 -0500" channel="teledeporte.latam">
+    <title lang="es">CEV Women's EuroVolley 2026 España - Portugal</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826214500 -0500" stop="20260826220000 -0500" channel="teledeporte.latam">
+    <title lang="es">La Vuelta Temporada 2026 5ª Etapa Resumen</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0500" stop="20260827020000 -0500" channel="teledeporte.latam">
+    <title lang="es">Programa a determinar</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826224500 -0500" stop="20260827001000 -0500" channel="teledeporte.latam">
+    <title lang="es">Baloncesto femenino</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0500" stop="20260826020000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Santos vs. Guadalajara</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0500" stop="20260826030000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Contacto deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0500" stop="20260826050000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">UNAM vs. Necaxa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0500" stop="20260826060000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Contacto deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0500" stop="20260826070000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0500" stop="20260826080000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Contacto deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0500" stop="20260826090000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Hazaña del deporte Vive</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0500" stop="20260826100000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Fut en 60</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0500" stop="20260826120000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">América vs. Atl San Luis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0500" stop="20260826130000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Hazaña del deporte Vive</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0500" stop="20260826150000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Toluca vs. Necaxa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0500" stop="20260826160000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Tricolor al día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0500" stop="20260826180000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Monterrey vs. FC Juárez</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0500" stop="20260826190000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0500" stop="20260826200000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">BOX Televisa el show</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0500" stop="20260826210000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Fútbol Central</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826210000 -0500" stop="20260826230000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Leagues Cup 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0500" stop="20260827000000 -0500" channel="tudn.centroamerica.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0600" stop="20260826020000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Mexicano Primera División Santos Laguna vs. Chivas de Guadalajara</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0600" stop="20260826030000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0600" stop="20260826050000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Mexicano Primera División Pumas UNAM vs. Necaxa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0600" stop="20260826060000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0600" stop="20260826070000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0600" stop="20260826080000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0600" stop="20260826090000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Hazaña: El deporte vive Temporada 1 | Episodio 26 Jorge Campos, rey del arco</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0600" stop="20260826100000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fut en 60 Temporada 2026 | Episodio 16 Liga MX, Apertura: Cruz Azul vs. Atlas</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0600" stop="20260826120000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Mexicano Primera División América vs. Atlético San Luis</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0600" stop="20260826130000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Hazaña: El deporte vive Historia del béisbol mexicano, la gran epopeya</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0600" stop="20260826150000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Mexicano Primera División Toluca vs. Necaxa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0600" stop="20260826160000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Tricolor al día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0600" stop="20260826180000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Mexicano Primera División Monterrey vs. Juárez</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0600" stop="20260826190000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0600" stop="20260826200000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">BOX Televisa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0600" stop="20260826204500 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Central</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826204500 -0600" stop="20260826230000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Fútbol Leagues Cup Club América vs. Columbus Crew</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0600" stop="20260827000000 -0600" channel="tudn.mexico.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0400" stop="20260826010000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0400" stop="20260826020000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Tricolor al día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0400" stop="20260826030000 -0400" channel="tudn.usa.latam">
+    <title lang="es">América vs. Atlético de San Luis Liga MX en 60</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0400" stop="20260826040000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0400" stop="20260826050000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0400" stop="20260826060000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Tricolor al día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0400" stop="20260826070000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0400" stop="20260826080000 -0400" channel="tudn.usa.latam">
+    <title lang="es">USL Championship en 60</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0400" stop="20260826090000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Contacto Deportivo</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0400" stop="20260826100000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Faitelson sin censura</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826110000 -0400" channel="tudn.usa.latam">
+    <title lang="es">UEFA Champions League en 60</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0400" stop="20260826120000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Misión Europa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826120000 -0400" stop="20260826123000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Fútbol Central</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826123000 -0400" stop="20260826150000 -0400" channel="tudn.usa.latam">
+    <title lang="es">AEK vs. Levski Sofia Fútbol UEFA Champions League</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0400" stop="20260826160000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Misión Europa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0400" stop="20260826170000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Misión Europa</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0400" stop="20260826180000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Fútbol Central</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0400" stop="20260826204000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Toluca vs. Austin FC Fútbol Leagues Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826204000 -0400" stop="20260826230000 -0400" channel="tudn.usa.latam">
+    <title lang="es">América vs. Columbus Crew Fútbol Leagues Cup</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260827000000 -0400" channel="tudn.usa.latam">
+    <title lang="es">Línea de cuatro</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826003000 -0400" stop="20260826010000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">FIBA 3x3 Lausana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0400" stop="20260826030000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Palmeiras vs. Vasco Da Gama Brasileirao</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0400" stop="20260826050000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">EuroLeague Zalgiris Kaunas vs. Barcelona, Fecha 35, Zalgirio Arena</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0400" stop="20260826053000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">FIBA 3x3 Lausana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826053000 -0400" stop="20260826060000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">FIBA 3x3 Lausana</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0400" stop="20260826070000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Depor tv</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0400" stop="20260826073000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Azteca fit</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826073000 -0400" stop="20260826080000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Azteca fit</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0400" stop="20260826100000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Chicago Stars vs. Racing Louisville NWSL</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826103000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">FIBA 3X3 Marsella</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826103000 -0400" stop="20260826110000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">FIBA 3X3 Marsella</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0400" stop="20260826130000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Hammarby IF vs. Gais Liga sueca</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0400" stop="20260826140000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Depor tv</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0400" stop="20260826160000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Vasco da Gama vs. Santos Brasileirao</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0400" stop="20260826180000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Santos vs. Mirassol Brasileirao</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0400" stop="20260826200000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">North Carolina Courage vs. Angel City NWSL</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0400" stop="20260826210000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">World Chase Tag</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260826231900 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">World Chase Tag</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826231900 -0400" stop="20260827003000 -0400" channel="tv.azteca.deportes.latam">
+    <title lang="es">Los protagonistas (Uno)</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0400" stop="20260826010000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Total</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0400" stop="20260826023000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Béisbol sin fronteras</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826023000 -0400" stop="20260826030000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Al Día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0400" stop="20260826033000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Todo Deporte DW</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0400" stop="20260826063000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Liga Mexicana de Beisbol Series de Zona, Zona Sur: Diablos Rojos del México vs. Pericos de Puebla</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826063000 -0400" stop="20260826073000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Total</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826073000 -0400" stop="20260826080000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">UCI ProSeries Cycling Tour de la República Checa 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0400" stop="20260826110000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Liga Mexicana de Beisbol Series de Zona, Zona Sur: Diablos Rojos del México vs. Pericos de Puebla</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0400" stop="20260826130000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Fase de Grupos de la Copa Mundial de Béisbol Femenino WBSC 2026 Cuba vs. Taiwán</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0400" stop="20260826150000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Fase de Grupos de la Copa Mundial de Béisbol Femenino WBSC 2026 Japón vs. Gran Bretaña</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0400" stop="20260826153000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Al Día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826153000 -0400" stop="20260826160000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Al Día</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0400" stop="20260826173000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Béisbol sin fronteras</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826173000 -0400" stop="20260826183000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">UCI ProSeries Cycling Arctic Race of Norway 2026</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826183000 -0400" stop="20260826190000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Previo LMB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826190000 -0400" stop="20260826220000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Liga Mexicana de Beisbol Series de Zona, Zona Sur: Pericos de Puebla vs. Diablos Rojos del México</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0400" stop="20260826230000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Tvc Deportes Total</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260827000000 -0400" channel="tvc.deportes.latam">
+    <title lang="es">Fase de Grupos de la Copa Mundial de Béisbol Femenino WBSC 2026 Venezuela vs. Filipinas</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0300" stop="20260826010000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0300" stop="20260826020000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0300" stop="20260826030000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0300" stop="20260826040000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0300" stop="20260826050000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0300" stop="20260826070000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Talleres (C) vs. Rosario Central Fútbol Argentino Primera División</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0300" stop="20260826080000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Superfútbol</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0300" stop="20260826090000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0300" stop="20260826110000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Dale al medio</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0300" stop="20260826130000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Líbero</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826130000 -0300" stop="20260826160000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0300" stop="20260826180000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Aldosivi vs. Independiente Rivadavia Fútbol Copa Argentina</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826180000 -0300" stop="20260826203000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826203000 -0300" stop="20260826220000 -0300" channel="tyc.sports.latam">
+    <title lang="es">La noche de TyC Sports</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826220000 -0300" stop="20260826230000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0300" stop="20260827000000 -0300" channel="tyc.sports.latam">
+    <title lang="es">Sportia</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826000000 -0400" stop="20260826010000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">La línea deportiva</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826010000 -0400" stop="20260826020000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Super Estrellas de la Lucha Libre</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826020000 -0400" stop="20260826030000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Super Estrellas de la Lucha Libre</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826030000 -0400" stop="20260826033000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826033000 -0400" stop="20260826040000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826040000 -0400" stop="20260826043000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826043000 -0400" stop="20260826050000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826050000 -0400" stop="20260826053000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826053000 -0400" stop="20260826060000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826060000 -0400" stop="20260826063000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826063000 -0400" stop="20260826070000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826070000 -0400" stop="20260826073000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826073000 -0400" stop="20260826080000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826080000 -0400" stop="20260826083000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826083000 -0400" stop="20260826090000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826090000 -0400" stop="20260826093000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826093000 -0400" stop="20260826100000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Programa Pagado</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826100000 -0400" stop="20260826110000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">La línea deportiva</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826110000 -0400" stop="20260826140000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Béisbol MLB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826140000 -0400" stop="20260826143000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Boat Racing</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826143000 -0400" stop="20260826150000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">MB Sports</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826150000 -0400" stop="20260826153000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">MLB Plays Of The Week</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826153000 -0400" stop="20260826160000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Play Ball</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826160000 -0400" stop="20260826170000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">La línea deportiva</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826170000 -0400" stop="20260826200000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Béisbol MLB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826200000 -0400" stop="20260826230000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Béisbol MLB</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826230000 -0400" stop="20260826233000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">MLB Plays Of The Week</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+  <programme start="20260826233000 -0400" stop="20260827000000 -0400" channel="wapa.2.deportes.latam">
+    <title lang="es">Play Ball</title>
+    <category lang="es">Deportes</category>
+    <source>GatoTV</source>
+  </programme>
+</tv>
