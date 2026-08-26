@@ -1,0 +1,155 @@
+#!/usr/bin/env python3
+import hashlib
+import re
+import sys
+import time
+import unicodedata
+from datetime import datetime, timedelta
+from pathlib import Path
+from zoneinfo import ZoneInfo
+from xml.etree import ElementTree as ET
+
+import requests
+from bs4 import BeautifulSoup
+
+GATO = "https://www.gatotv.com/guia_tv/completa"
+DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
+UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
+SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
+EXCLUDE = re.compile(r"Espa(?:n|ñ)a|France|Italia|UK|Portugal", re.I)
+
+TZ_RULES = [
+    (re.compile(r"Mexico|México", re.I), "America/Mexico_City"),
+    (re.compile(r"Chile|Sur|Argentina|TyC|TNT Sports", re.I), "America/Argentina/Buenos_Aires"),
+    (re.compile(r"Colombia|Per[uú]|Ecuador|Win Sports", re.I), "America/Bogota"),
+    (re.compile(r"Venezuela", re.I), "America/Caracas"),
+    (re.compile(r"USA|Deportes", re.I), "America/New_York"),
+]
+
+def clean(s):
+    return " ".join((s or "").split())
+
+def slug(s):
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    s = re.sub(r"[^a-z0-9]+", ".", s).strip(".")
+    return s + ".latam"
+
+def timezone_for(name):
+    for rx, tz in TZ_RULES:
+        if rx.search(name): return ZoneInfo(tz)
+    return ZoneInfo("America/Bogota")
+
+def get(url, timeout=30):
+    r = requests.get(url, headers={"User-Agent": UA}, timeout=timeout)
+    r.raise_for_status()
+    return r.text
+
+def discover_gato_channels():
+    soup = BeautifulSoup(get(GATO), "html.parser")
+    found = {}
+    for a in soup.select('a[href*="/canal/"]'):
+        name, href = clean(a.get_text()), a.get("href", "")
+        if name and SPORTS.search(name) and not EXCLUDE.search(name):
+            found[href] = name
+    return sorted(found.items(), key=lambda x: x[1].casefold())
+
+def parse_clock(text, day, tz):
+    text = clean(text).upper().replace("A. M.", "AM").replace("P. M.", "PM")
+    for fmt in ("%I:%M %p", "%H:%M"):
+        try:
+            t = datetime.strptime(text, fmt).time()
+            return datetime.combine(day, t, tzinfo=tz)
+        except ValueError:
+            pass
+    raise ValueError(text)
+
+def scrape_gato_channel(url, name):
+    soup = BeautifulSoup(get(url), "html.parser")
+    target = None
+    for table in soup.find_all("table"):
+        heads = clean(table.get_text(" "))
+        if "Hora Inicio" in heads and "Hora Fin" in heads and "Programa" in heads:
+            target = table; break
+    if target is None: return []
+    tz, day, out = timezone_for(name), datetime.now(timezone_for(name)).date(), []
+    for tr in target.find_all("tr"):
+        times = [clean(x.get_text()) for x in tr.find_all("time")]
+        cells = tr.find_all(["td", "th"])
+        if len(times) < 2 or len(cells) < 3: continue
+        title = clean(cells[2].get_text(" "))
+        if not title or title.lower() == "canal no disponible": continue
+        try:
+            start, stop = parse_clock(times[0], day, tz), parse_clock(times[1], day, tz)
+        except ValueError: continue
+        if stop <= start: stop += timedelta(days=1)
+        out.append((start, stop, title, "GatoTV"))
+    return out
+
+def scrape_dsports():
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as e:
+        print(f"DSPORTS omitido: Playwright no disponible: {e}", file=sys.stderr); return {}
+    rows = {0:"DSPORTS", 2:"DSPORTS 2", 3:"DSPORTS+"}
+    result = {v: [] for v in rows.values()}
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page(viewport={"width": 1400, "height": 900})
+            page.goto(DSPORTS, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_selector('[data-testid="content"] .programBox', timeout=30000)
+            data = page.eval_on_selector_all('[data-testid="content"] .programBox', """els => els.map(e => ({style:e.getAttribute('style')||'', title:(e.querySelector('.programTitle')?.textContent||'').trim()}))""")
+            browser.close()
+        day, tz = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).date(), ZoneInfo("America/Argentina/Buenos_Aires")
+        for item in data:
+            nums = {k:float(v) for k,v in re.findall(r"(width|top|left):\s*([0-9.]+)px", item["style"])}
+            if not item["title"] or not all(k in nums for k in ("width","top","left")): continue
+            row = round(nums["top"] / 78)
+            if row not in rows: continue
+            start = datetime.combine(day, datetime.min.time(), tzinfo=tz) + timedelta(minutes=nums["left"] / 7)
+            stop = start + timedelta(minutes=nums["width"] / 7)
+            if stop <= start: continue
+            result[rows[row]].append((start, stop, item["title"], "DSPORTS oficial"))
+    except Exception as e:
+        print(f"DSPORTS omitido sin inventar datos: {e}", file=sys.stderr)
+    return {k:v for k,v in result.items() if v}
+
+def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
+
+def main():
+    channels = {}
+    try:
+        discovered = discover_gato_channels()
+    except Exception as e:
+        print(f"GatoTV falló: {e}", file=sys.stderr); discovered = []
+    for i, (url, name) in enumerate(discovered, 1):
+        try:
+            shows = scrape_gato_channel(url, name)
+            if shows: channels[name] = shows
+        except Exception as e:
+            print(f"{name} omitido: {e}", file=sys.stderr)
+        time.sleep(0.12)
+    for name, shows in scrape_dsports().items():
+        channels[name] = shows
+    tv = ET.Element("tv", {"generator-info-name":"latam-sports-epg", "generator-info-url":"https://github.com/siulemorales-arch/latam-sports-epg"})
+    ids = {}
+    for name in sorted(channels, key=str.casefold):
+        cid = slug(name); ids[name] = cid
+        ch = ET.SubElement(tv, "channel", {"id":cid})
+        ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
+    seen = set()
+    for name in sorted(channels, key=str.casefold):
+        for start, stop, title, source in sorted(channels[name], key=lambda x:x[0]):
+            key = (ids[name], fmt(start), fmt(stop), title.casefold())
+            if key in seen: continue
+            seen.add(key)
+            pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":ids[name]})
+            ET.SubElement(pr, "title", {"lang":"es"}).text = title
+            ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
+            ET.SubElement(pr, "source").text = source
+    ET.indent(tv, space="  ")
+    Path("epg.xml").write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8"))
+    print(f"Generados {len(channels)} canales y {len(seen)} programas")
+    if not channels or not seen: raise SystemExit("No se obtuvo programación real; no se publicará un XML vacío")
+
+if __name__ == "__main__": main()
