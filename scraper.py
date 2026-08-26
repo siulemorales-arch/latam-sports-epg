@@ -146,7 +146,6 @@ def main():
             pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":ids[name]})
             ET.SubElement(pr, "title", {"lang":"es"}).text = title
             ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
-            ET.SubElement(pr, "source").text = source
     ET.indent(tv, space="  ")
     Path("epg.xml").write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8"))
     print(f"Generados {len(channels)} canales y {len(seen)} programas")
