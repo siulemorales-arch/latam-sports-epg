@@ -84,6 +84,8 @@ def clean(s):
     return " ".join((s or "").split())
 
 def slug(s):
+    if s == "DSPORTS+":
+        return "dsports.plus.latam"
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"[^a-z0-9]+", ".", s).strip(".")
     return s + ".latam"
