@@ -35,7 +35,12 @@ jobs:
           import xml.etree.ElementTree as ET
           root=ET.parse('epg.xml').getroot()
           channels=root.findall('channel'); programmes=root.findall('programme')
-          assert channels and programmes
+          assert len(channels) >= 80, f'Solo {len(channels)} canales'
+          assert len(programmes) >= 1500, f'Solo {len(programmes)} programas'
+          names={c.findtext('display-name') for c in channels}
+          required={'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)'}
+          missing=required-names
+          assert not missing, f'Faltan señales críticas: {sorted(missing)}'
           print(f'{len(channels)} canales, {len(programmes)} programas')
           PY
       - name: Guardar XML actualizado
