@@ -279,25 +279,44 @@ def scrape_movistar_sports():
                     title, clock = clean(title_el.get_text(" ")), clean(time_el.get_text(" "))
                     try: moment = parse_clock(clock, guide_day, tz)
                     except ValueError: continue
-                    if raw and moment <= raw[-1][0]: moment += timedelta(days=1)
                     raw.append((moment, title))
+                # Algunas parrillas empiezan mostrando el programa que
+                # comenzó la noche anterior (p. ej. 23:30) y luego pasan a
+                # las 08:00 del día elegido. Esa primera hora pertenece al
+                # día anterior, no convierte las 08:00 en el día siguiente.
+                if (len(raw) >= 2 and raw[0][0].hour >= 18
+                        and raw[1][0].hour < 12 and raw[1][0] <= raw[0][0]):
+                    raw[0] = (raw[0][0] - timedelta(days=1), raw[0][1])
+                for i in range(1, len(raw)):
+                    moment, title = raw[i]
+                    while moment <= raw[i - 1][0]:
+                        moment += timedelta(days=1)
+                    raw[i] = (moment, title)
                 for i, (start, title) in enumerate(raw):
                     stop = raw[i + 1][0] if i + 1 < len(raw) else start + timedelta(hours=1)
                     if stop > start: shows.append((start, stop, title, "Movistar Plus oficial"))
                 time.sleep(0.06)
             if shows: result[name] = shows
-        # Las señales HDR son simulcast de su equivalente M+ LALIGA. La
-        # web oficial suele publicar en HDR largos bloques con el nombre del
-        # canal y solo detalla los eventos, mientras que la señal base sí
-        # contiene la parrilla completa. Reutilizamos esa parrilla oficial
-        # para que la versión HDR tenga cobertura continua desde temprano.
+        # En las señales HDR/eventos, UHF debe mostrar una guía continua.
+        # Conservamos cada programa oficial y rellenamos únicamente huecos
+        # reales con un aviso explícito, tal como pidió el usuario.
         for hdr_name in [name for name in result if " HDR (España)" in name]:
-            base_name = hdr_name.replace(" HDR (España)", " (España)")
-            if base_name in result:
-                result[hdr_name] = [
-                    (start, stop, title, "Movistar Plus oficial (simulcast HDR)")
-                    for start, stop, title, _source in result[base_name]
-                ]
+            original = sorted(result[hdr_name], key=lambda x: x[0])
+            fillers = []
+            for day_offset in range(5):
+                day_start = datetime.combine(today + timedelta(days=day_offset), datetime.min.time(), tzinfo=tz)
+                day_stop = day_start + timedelta(days=1)
+                cursor = day_start
+                for start, stop, _title, _source in original:
+                    if stop <= day_start or start >= day_stop:
+                        continue
+                    clipped_start, clipped_stop = max(start, day_start), min(stop, day_stop)
+                    if clipped_start > cursor:
+                        fillers.append((cursor, clipped_start, f"{hdr_name[:-9]} — Sin emisión", "Relleno explícito"))
+                    cursor = max(cursor, clipped_stop)
+                if cursor < day_stop:
+                    fillers.append((cursor, day_stop, f"{hdr_name[:-9]} — Sin emisión", "Relleno explícito"))
+            result[hdr_name] = original + fillers
     except Exception as e:
         print(f"Movistar Plus omitido sin inventar datos: {e}", file=sys.stderr)
     return result
