@@ -215,7 +215,11 @@ def scrape_gato_channel(url, name):
             times = [clean(x.get_text()) for x in tr.find_all("time")]
             cells = tr.find_all(["td", "th"])
             if len(times) < 2 or len(cells) < 3: continue
-            title = clean(cells[2].get_text(" "))
+            # Cuando GatoTV incluye una miniatura, la tercera celda es solo
+            # la imagen y el título real pasa a una cuarta celda. Esto ocurre
+            # mucho con SportsCenter y antes producía huecos en ESPN Sur.
+            programme_title = tr.select_one(".div_program_title_on_channel")
+            title = clean(programme_title.get_text(" ")) if programme_title else clean(cells[-1].get_text(" "))
             if not title or title.lower() == "canal no disponible": continue
             try:
                 start = parse_clock(times[0], guide_day, tz)
