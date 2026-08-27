@@ -286,6 +286,18 @@ def scrape_movistar_sports():
                     if stop > start: shows.append((start, stop, title, "Movistar Plus oficial"))
                 time.sleep(0.06)
             if shows: result[name] = shows
+        # Las señales HDR son simulcast de su equivalente M+ LALIGA. La
+        # web oficial suele publicar en HDR largos bloques con el nombre del
+        # canal y solo detalla los eventos, mientras que la señal base sí
+        # contiene la parrilla completa. Reutilizamos esa parrilla oficial
+        # para que la versión HDR tenga cobertura continua desde temprano.
+        for hdr_name in [name for name in result if " HDR (España)" in name]:
+            base_name = hdr_name.replace(" HDR (España)", " (España)")
+            if base_name in result:
+                result[hdr_name] = [
+                    (start, stop, title, "Movistar Plus oficial (simulcast HDR)")
+                    for start, stop, title, _source in result[base_name]
+                ]
     except Exception as e:
         print(f"Movistar Plus omitido sin inventar datos: {e}", file=sys.stderr)
     return result
