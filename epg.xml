@@ -32,14 +32,14 @@
   </channel>
   <channel id="canal.futbol.replay.espana.latam">
     <display-name lang="es">Canal Fútbol Replay (España)</display-name>
-    <display-name lang="es">CANAL FÚTBOL REPLAY</display-name>
     <display-name lang="es">Canal Fútbol Replay</display-name>
+    <display-name lang="es">CANAL FÚTBOL REPLAY</display-name>
     <display-name lang="es">Canal Fútbol Replay FHD</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY FHD</display-name>
-    <display-name lang="es">Canal Fútbol Replay HD</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY HD</display-name>
-    <display-name lang="es">Canal Fútbol Replay SD</display-name>
+    <display-name lang="es">Canal Fútbol Replay HD</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY SD</display-name>
+    <display-name lang="es">Canal Fútbol Replay SD</display-name>
   </channel>
   <channel id="caracol.colombia.latam">
     <display-name lang="es">Caracol Colombia</display-name>
@@ -112,8 +112,8 @@
   </channel>
   <channel id="dazn.baloncesto.espana.latam">
     <display-name lang="es">DAZN Baloncesto (España)</display-name>
-    <display-name lang="es">DAZN BALONCESTO</display-name>
     <display-name lang="es">DAZN Baloncesto</display-name>
+    <display-name lang="es">DAZN BALONCESTO</display-name>
     <display-name lang="es">DAZN Baloncesto FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO FHD</display-name>
     <display-name lang="es">DAZN Baloncesto HD</display-name>
@@ -123,10 +123,10 @@
   </channel>
   <channel id="dazn.baloncesto.2.espana.latam">
     <display-name lang="es">DAZN Baloncesto 2 (España)</display-name>
-    <display-name lang="es">DAZN Baloncesto 2</display-name>
     <display-name lang="es">DAZN BALONCESTO 2</display-name>
-    <display-name lang="es">DAZN Baloncesto 2 FHD</display-name>
+    <display-name lang="es">DAZN Baloncesto 2</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 FHD</display-name>
+    <display-name lang="es">DAZN Baloncesto 2 FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 2 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 SD</display-name>
@@ -138,8 +138,8 @@
     <display-name lang="es">DAZN Baloncesto 3</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 FHD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 FHD</display-name>
-    <display-name lang="es">DAZN Baloncesto 3 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 HD</display-name>
+    <display-name lang="es">DAZN Baloncesto 3 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 SD</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 SD</display-name>
   </channel>
@@ -172,14 +172,14 @@
   </channel>
   <channel id="dazn.motogp.espana.latam">
     <display-name lang="es">DAZN MotoGP (España)</display-name>
-    <display-name lang="es">DAZN MOTOGP</display-name>
     <display-name lang="es">DAZN MotoGP</display-name>
-    <display-name lang="es">DAZN MotoGP FHD</display-name>
+    <display-name lang="es">DAZN MOTOGP</display-name>
     <display-name lang="es">DAZN MOTOGP FHD</display-name>
-    <display-name lang="es">DAZN MotoGP HD</display-name>
+    <display-name lang="es">DAZN MotoGP FHD</display-name>
     <display-name lang="es">DAZN MOTOGP HD</display-name>
-    <display-name lang="es">DAZN MotoGP SD</display-name>
+    <display-name lang="es">DAZN MotoGP HD</display-name>
     <display-name lang="es">DAZN MOTOGP SD</display-name>
+    <display-name lang="es">DAZN MotoGP SD</display-name>
   </channel>
   <channel id="discovery.channel.venezuela.latam">
     <display-name lang="es">Discovery Channel (Venezuela)</display-name>
@@ -358,23 +358,23 @@
   </channel>
   <channel id="eurosport.1.espana.latam">
     <display-name lang="es">Eurosport 1 (España)</display-name>
-    <display-name lang="es">EUROSPORT 1</display-name>
     <display-name lang="es">Eurosport 1</display-name>
+    <display-name lang="es">EUROSPORT 1</display-name>
     <display-name lang="es">EUROSPORT 1 FHD</display-name>
     <display-name lang="es">Eurosport 1 FHD</display-name>
-    <display-name lang="es">Eurosport 1 HD</display-name>
     <display-name lang="es">EUROSPORT 1 HD</display-name>
+    <display-name lang="es">Eurosport 1 HD</display-name>
     <display-name lang="es">EUROSPORT 1 SD</display-name>
     <display-name lang="es">Eurosport 1 SD</display-name>
   </channel>
   <channel id="eurosport.2.espana.latam">
     <display-name lang="es">Eurosport 2 (España)</display-name>
-    <display-name lang="es">Eurosport 2</display-name>
     <display-name lang="es">EUROSPORT 2</display-name>
-    <display-name lang="es">EUROSPORT 2 FHD</display-name>
+    <display-name lang="es">Eurosport 2</display-name>
     <display-name lang="es">Eurosport 2 FHD</display-name>
-    <display-name lang="es">EUROSPORT 2 HD</display-name>
+    <display-name lang="es">EUROSPORT 2 FHD</display-name>
     <display-name lang="es">Eurosport 2 HD</display-name>
+    <display-name lang="es">EUROSPORT 2 HD</display-name>
     <display-name lang="es">Eurosport 2 SD</display-name>
     <display-name lang="es">EUROSPORT 2 SD</display-name>
   </channel>
@@ -486,12 +486,12 @@
     <display-name lang="es">M+ Baloncesto (España)</display-name>
     <display-name lang="es">M+ Baloncesto</display-name>
     <display-name lang="es">M+ BALONCESTO</display-name>
-    <display-name lang="es">M+ BALONCESTO FHD</display-name>
     <display-name lang="es">M+ Baloncesto FHD</display-name>
+    <display-name lang="es">M+ BALONCESTO FHD</display-name>
     <display-name lang="es">M+ Baloncesto HD</display-name>
     <display-name lang="es">M+ BALONCESTO HD</display-name>
-    <display-name lang="es">M+ BALONCESTO SD</display-name>
     <display-name lang="es">M+ Baloncesto SD</display-name>
+    <display-name lang="es">M+ BALONCESTO SD</display-name>
   </channel>
   <channel id="m.baloncesto.2.espana.latam">
     <display-name lang="es">M+ Baloncesto 2 (España)</display-name>
@@ -499,17 +499,17 @@
     <display-name lang="es">M+ Baloncesto 2</display-name>
     <display-name lang="es">M+ Baloncesto 2 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 FHD</display-name>
-    <display-name lang="es">M+ Baloncesto 2 HD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 HD</display-name>
-    <display-name lang="es">M+ Baloncesto 2 SD</display-name>
+    <display-name lang="es">M+ Baloncesto 2 HD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 SD</display-name>
+    <display-name lang="es">M+ Baloncesto 2 SD</display-name>
   </channel>
   <channel id="m.baloncesto.3.espana.latam">
     <display-name lang="es">M+ Baloncesto 3 (España)</display-name>
     <display-name lang="es">M+ BALONCESTO 3</display-name>
     <display-name lang="es">M+ Baloncesto 3</display-name>
-    <display-name lang="es">M+ BALONCESTO 3 FHD</display-name>
     <display-name lang="es">M+ Baloncesto 3 FHD</display-name>
+    <display-name lang="es">M+ BALONCESTO 3 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 3 HD</display-name>
     <display-name lang="es">M+ Baloncesto 3 HD</display-name>
     <display-name lang="es">M+ Baloncesto 3 SD</display-name>
@@ -517,17 +517,49 @@
   </channel>
   <channel id="m.deportes.espana.latam">
     <display-name lang="es">M+ Deportes (España)</display-name>
+    <display-name lang="es">DEPORTES 1 POR M+</display-name>
+    <display-name lang="es">DEPORTES 1 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 1 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 1 POR M+ SD</display-name>
+    <display-name lang="es">DEPORTES POR M+</display-name>
+    <display-name lang="es">DEPORTES POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 1</display-name>
+    <display-name lang="es">M DEPORTES 1 FHD</display-name>
+    <display-name lang="es">M DEPORTES 1 HD</display-name>
+    <display-name lang="es">M DEPORTES 1 SD</display-name>
     <display-name lang="es">M+ Deportes</display-name>
     <display-name lang="es">M+ DEPORTES</display-name>
+    <display-name lang="es">M+ DEPORTES 1</display-name>
+    <display-name lang="es">M+ DEPORTES 1 FHD</display-name>
+    <display-name lang="es">M+ DEPORTES 1 HD</display-name>
+    <display-name lang="es">M+ DEPORTES 1 SD</display-name>
     <display-name lang="es">M+ DEPORTES FHD</display-name>
     <display-name lang="es">M+ Deportes FHD</display-name>
     <display-name lang="es">M+ DEPORTES HD</display-name>
     <display-name lang="es">M+ Deportes HD</display-name>
     <display-name lang="es">M+ DEPORTES SD</display-name>
     <display-name lang="es">M+ Deportes SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 1</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 1 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 1 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 1 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES SD</display-name>
   </channel>
   <channel id="m.deportes.2.espana.latam">
     <display-name lang="es">M+ Deportes 2 (España)</display-name>
+    <display-name lang="es">DEPORTES 2 POR M+</display-name>
+    <display-name lang="es">DEPORTES 2 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 2 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 2 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 2</display-name>
+    <display-name lang="es">M DEPORTES 2 FHD</display-name>
+    <display-name lang="es">M DEPORTES 2 HD</display-name>
+    <display-name lang="es">M DEPORTES 2 SD</display-name>
     <display-name lang="es">M+ DEPORTES 2</display-name>
     <display-name lang="es">M+ Deportes 2</display-name>
     <display-name lang="es">M+ DEPORTES 2 FHD</display-name>
@@ -536,61 +568,125 @@
     <display-name lang="es">M+ DEPORTES 2 HD</display-name>
     <display-name lang="es">M+ DEPORTES 2 SD</display-name>
     <display-name lang="es">M+ Deportes 2 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 2</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 2 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 2 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 2 SD</display-name>
   </channel>
   <channel id="m.deportes.3.espana.latam">
     <display-name lang="es">M+ Deportes 3 (España)</display-name>
-    <display-name lang="es">M+ DEPORTES 3</display-name>
+    <display-name lang="es">DEPORTES 3 POR M+</display-name>
+    <display-name lang="es">DEPORTES 3 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 3 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 3 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 3</display-name>
+    <display-name lang="es">M DEPORTES 3 FHD</display-name>
+    <display-name lang="es">M DEPORTES 3 HD</display-name>
+    <display-name lang="es">M DEPORTES 3 SD</display-name>
     <display-name lang="es">M+ Deportes 3</display-name>
+    <display-name lang="es">M+ DEPORTES 3</display-name>
     <display-name lang="es">M+ DEPORTES 3 FHD</display-name>
     <display-name lang="es">M+ Deportes 3 FHD</display-name>
-    <display-name lang="es">M+ DEPORTES 3 HD</display-name>
     <display-name lang="es">M+ Deportes 3 HD</display-name>
+    <display-name lang="es">M+ DEPORTES 3 HD</display-name>
     <display-name lang="es">M+ Deportes 3 SD</display-name>
     <display-name lang="es">M+ DEPORTES 3 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 3</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 3 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 3 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 3 SD</display-name>
   </channel>
   <channel id="m.deportes.4.espana.latam">
     <display-name lang="es">M+ Deportes 4 (España)</display-name>
-    <display-name lang="es">M+ Deportes 4</display-name>
+    <display-name lang="es">DEPORTES 4 POR M+</display-name>
+    <display-name lang="es">DEPORTES 4 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 4 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 4 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 4</display-name>
+    <display-name lang="es">M DEPORTES 4 FHD</display-name>
+    <display-name lang="es">M DEPORTES 4 HD</display-name>
+    <display-name lang="es">M DEPORTES 4 SD</display-name>
     <display-name lang="es">M+ DEPORTES 4</display-name>
+    <display-name lang="es">M+ Deportes 4</display-name>
     <display-name lang="es">M+ DEPORTES 4 FHD</display-name>
     <display-name lang="es">M+ Deportes 4 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 4 HD</display-name>
     <display-name lang="es">M+ Deportes 4 HD</display-name>
     <display-name lang="es">M+ DEPORTES 4 SD</display-name>
     <display-name lang="es">M+ Deportes 4 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 4</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 4 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 4 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 4 SD</display-name>
   </channel>
   <channel id="m.deportes.5.espana.latam">
     <display-name lang="es">M+ Deportes 5 (España)</display-name>
-    <display-name lang="es">M+ DEPORTES 5</display-name>
+    <display-name lang="es">DEPORTES 5 POR M+</display-name>
+    <display-name lang="es">DEPORTES 5 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 5 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 5 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 5</display-name>
+    <display-name lang="es">M DEPORTES 5 FHD</display-name>
+    <display-name lang="es">M DEPORTES 5 HD</display-name>
+    <display-name lang="es">M DEPORTES 5 SD</display-name>
     <display-name lang="es">M+ Deportes 5</display-name>
-    <display-name lang="es">M+ Deportes 5 FHD</display-name>
+    <display-name lang="es">M+ DEPORTES 5</display-name>
     <display-name lang="es">M+ DEPORTES 5 FHD</display-name>
-    <display-name lang="es">M+ Deportes 5 HD</display-name>
+    <display-name lang="es">M+ Deportes 5 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 5 HD</display-name>
-    <display-name lang="es">M+ DEPORTES 5 SD</display-name>
+    <display-name lang="es">M+ Deportes 5 HD</display-name>
     <display-name lang="es">M+ Deportes 5 SD</display-name>
+    <display-name lang="es">M+ DEPORTES 5 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 5</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 5 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 5 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 5 SD</display-name>
   </channel>
   <channel id="m.deportes.6.espana.latam">
     <display-name lang="es">M+ Deportes 6 (España)</display-name>
+    <display-name lang="es">DEPORTES 6 POR M+</display-name>
+    <display-name lang="es">DEPORTES 6 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 6 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 6 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 6</display-name>
+    <display-name lang="es">M DEPORTES 6 FHD</display-name>
+    <display-name lang="es">M DEPORTES 6 HD</display-name>
+    <display-name lang="es">M DEPORTES 6 SD</display-name>
     <display-name lang="es">M+ Deportes 6</display-name>
     <display-name lang="es">M+ DEPORTES 6</display-name>
     <display-name lang="es">M+ Deportes 6 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 6 FHD</display-name>
-    <display-name lang="es">M+ Deportes 6 HD</display-name>
     <display-name lang="es">M+ DEPORTES 6 HD</display-name>
-    <display-name lang="es">M+ Deportes 6 SD</display-name>
+    <display-name lang="es">M+ Deportes 6 HD</display-name>
     <display-name lang="es">M+ DEPORTES 6 SD</display-name>
+    <display-name lang="es">M+ Deportes 6 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 6</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 6 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 6 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 6 SD</display-name>
   </channel>
   <channel id="m.deportes.7.espana.latam">
     <display-name lang="es">M+ Deportes 7 (España)</display-name>
+    <display-name lang="es">DEPORTES 7 POR M+</display-name>
+    <display-name lang="es">DEPORTES 7 POR M+ FHD</display-name>
+    <display-name lang="es">DEPORTES 7 POR M+ HD</display-name>
+    <display-name lang="es">DEPORTES 7 POR M+ SD</display-name>
+    <display-name lang="es">M DEPORTES 7</display-name>
+    <display-name lang="es">M DEPORTES 7 FHD</display-name>
+    <display-name lang="es">M DEPORTES 7 HD</display-name>
+    <display-name lang="es">M DEPORTES 7 SD</display-name>
     <display-name lang="es">M+ Deportes 7</display-name>
     <display-name lang="es">M+ DEPORTES 7</display-name>
-    <display-name lang="es">M+ DEPORTES 7 FHD</display-name>
     <display-name lang="es">M+ Deportes 7 FHD</display-name>
+    <display-name lang="es">M+ DEPORTES 7 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 7 HD</display-name>
     <display-name lang="es">M+ Deportes 7 HD</display-name>
     <display-name lang="es">M+ Deportes 7 SD</display-name>
     <display-name lang="es">M+ DEPORTES 7 SD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 7</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 7 FHD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 7 HD</display-name>
+    <display-name lang="es">MOVISTAR DEPORTES 7 SD</display-name>
   </channel>
   <channel id="m.golf.espana.latam">
     <display-name lang="es">M+ Golf (España)</display-name>
@@ -598,19 +694,19 @@
     <display-name lang="es">M+ GOL HD</display-name>
     <display-name lang="es">M+ GOLF</display-name>
     <display-name lang="es">M+ Golf</display-name>
-    <display-name lang="es">M+ Golf FHD</display-name>
     <display-name lang="es">M+ GOLF FHD</display-name>
-    <display-name lang="es">M+ Golf HD</display-name>
+    <display-name lang="es">M+ Golf FHD</display-name>
     <display-name lang="es">M+ GOLF HD</display-name>
+    <display-name lang="es">M+ Golf HD</display-name>
     <display-name lang="es">M+ Golf SD</display-name>
     <display-name lang="es">M+ GOLF SD</display-name>
   </channel>
   <channel id="m.golf.2.espana.latam">
     <display-name lang="es">M+ Golf 2 (España)</display-name>
-    <display-name lang="es">M+ Golf 2</display-name>
     <display-name lang="es">M+ GOLF 2</display-name>
-    <display-name lang="es">M+ Golf 2 FHD</display-name>
+    <display-name lang="es">M+ Golf 2</display-name>
     <display-name lang="es">M+ GOLF 2 FHD</display-name>
+    <display-name lang="es">M+ Golf 2 FHD</display-name>
     <display-name lang="es">M+ GOLF 2 HD</display-name>
     <display-name lang="es">M+ Golf 2 HD</display-name>
     <display-name lang="es">M+ Golf 2 SD</display-name>
@@ -699,12 +795,12 @@
     <display-name lang="es">LIGA DE CAMPEONES POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones</display-name>
     <display-name lang="es">M+ Liga de Campeones FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES HD</display-name>
+    <display-name lang="es">M+ Liga de Campeones HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES SD</display-name>
     <display-name lang="es">M+ Liga de Campeones SD</display-name>
   </channel>
@@ -713,14 +809,14 @@
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 2</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2</display-name>
+    <display-name lang="es">M+ Liga de Campeones 2</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 2 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 2 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.3.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 3 (España)</display-name>
@@ -733,8 +829,8 @@
     <display-name lang="es">M+ Liga de Campeones 3 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 3 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 HD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 3 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 3 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 3 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.4.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 4 (España)</display-name>
@@ -745,8 +841,8 @@
     <display-name lang="es">M+ LIGA DE CAMPEONES 4</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 4 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 4 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 4 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 4 SD</display-name>
   </channel>
@@ -755,8 +851,8 @@
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 5</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5</display-name>
+    <display-name lang="es">M+ Liga de Campeones 5</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5 HD</display-name>
@@ -768,8 +864,8 @@
     <display-name lang="es">M+ Vamos (España)</display-name>
     <display-name lang="es">M+ Vamos</display-name>
     <display-name lang="es">M+ VAMOS</display-name>
-    <display-name lang="es">M+ Vamos FHD</display-name>
     <display-name lang="es">M+ VAMOS FHD</display-name>
+    <display-name lang="es">M+ Vamos FHD</display-name>
     <display-name lang="es">M+ VAMOS HD</display-name>
     <display-name lang="es">M+ Vamos HD</display-name>
     <display-name lang="es">M+ VAMOS SD</display-name>
@@ -779,8 +875,8 @@
     <display-name lang="es">M+ Vamos 2 (España)</display-name>
     <display-name lang="es">M+ Vamos 2</display-name>
     <display-name lang="es">M+ VAMOS 2</display-name>
-    <display-name lang="es">M+ VAMOS 2 FHD</display-name>
     <display-name lang="es">M+ Vamos 2 FHD</display-name>
+    <display-name lang="es">M+ VAMOS 2 FHD</display-name>
     <display-name lang="es">M+ VAMOS 2 HD</display-name>
     <display-name lang="es">M+ Vamos 2 HD</display-name>
     <display-name lang="es">M+ VAMOS 2 SD</display-name>
@@ -790,12 +886,12 @@
     <display-name lang="es">M+ Vamos 3 (España)</display-name>
     <display-name lang="es">M+ VAMOS 3</display-name>
     <display-name lang="es">M+ Vamos 3</display-name>
-    <display-name lang="es">M+ VAMOS 3 FHD</display-name>
     <display-name lang="es">M+ Vamos 3 FHD</display-name>
-    <display-name lang="es">M+ VAMOS 3 HD</display-name>
+    <display-name lang="es">M+ VAMOS 3 FHD</display-name>
     <display-name lang="es">M+ Vamos 3 HD</display-name>
-    <display-name lang="es">M+ Vamos 3 SD</display-name>
+    <display-name lang="es">M+ VAMOS 3 HD</display-name>
     <display-name lang="es">M+ VAMOS 3 SD</display-name>
+    <display-name lang="es">M+ Vamos 3 SD</display-name>
   </channel>
   <channel id="max.anime.latinoamerica.latam">
     <display-name lang="es">Max Anime (Latinoamérica)</display-name>
