@@ -20,6 +20,7 @@ DSPORTS = "https://dsports-widgets.tbxnet.com/widgets/epg/sports"
 DSPORTS_API = "https://epg.tbxapis.com/v0/epg/external/entries"
 MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
 TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
+TELEVEN_EPG = "https://app.televen.com/modules/epg"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -67,6 +68,13 @@ DISPLAY_ALIASES = {
     ],
     "TUDN México": ["TUDN HD | MX", "TUDN MX FHD", "TUDN FHD | MX"],
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
+    "Telemundo Deportes Ahora (USA)": ["Telemundo Deportes Ahora"],
+    "Televen (Venezuela)": ["Televen", "Televen HD"],
+    "Venevisión (Venezuela)": ["Venevisión", "Venevision"],
+    "Meridiano TV (Venezuela)": ["Meridiano TV", "Meridiano"],
+    "Globovisión (Venezuela)": ["Globovisión", "Globovision"],
+    "TVES (Venezuela)": ["TVES", "TVes"],
+    "IVC (Venezuela)": ["IVC", "IVC Network"],
 }
 
 # IDs alternativos para proveedores Xtream que usan el nombre visible como
@@ -290,6 +298,110 @@ def scrape_telemundo_sports():
         print(f"Telemundo Deportes Ahora omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def scrape_venezuela_epg():
+    """Extrae la ventana máxima (hoy + 7 días) publicada por Televen Max.
+
+    La aplicación es dinámica. Playwright inicia su sesión de invitado y
+    reutilizamos exactamente la llamada EPG que realiza la propia página.
+    """
+    wanted = {
+        "televen": "Televen (Venezuela)",
+        "venevision": "Venevisión (Venezuela)",
+        "meridiano": "Meridiano TV (Venezuela)",
+        "globovision": "Globovisión (Venezuela)",
+        "tves": "TVES (Venezuela)",
+        "ivc": "IVC (Venezuela)",
+    }
+
+    def normalized(value):
+        return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", value or "")
+                      .encode("ascii", "ignore").decode().lower())
+
+    result = {display: [] for display in wanted.values()}
+    try:
+        from playwright.sync_api import sync_playwright
+
+        tz = ZoneInfo("America/Caracas")
+        today = datetime.now(tz).date()
+        page_url = f"{TELEVEN_EPG}?categoryName=All&date={today.isoformat()}"
+        channel_payloads, epg_requests = [], []
+
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=UA, locale="es-VE")
+            page = context.new_page()
+
+            def remember_request(request):
+                if "/media/tv/epg" in request.url and request.method == "POST":
+                    epg_requests.append(request)
+
+            def remember_response(response):
+                if "/v3/channels?" in response.url and "type=TV" in response.url:
+                    try:
+                        channel_payloads.append(response.json())
+                    except Exception:
+                        pass
+
+            page.on("request", remember_request)
+            page.on("response", remember_response)
+            page.goto(page_url, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(12000)
+            if not epg_requests:
+                raise ValueError("la aplicación no emitió la solicitud EPG")
+
+            channels = []
+            for payload in channel_payloads:
+                body = payload.get("payload", payload) if isinstance(payload, dict) else {}
+                content = body.get("content", []) if isinstance(body, dict) else []
+                channels.extend(x for x in content if isinstance(x, dict))
+
+            selected = {}
+            for channel in channels:
+                label = normalized(channel.get("name", ""))
+                for key, display in wanted.items():
+                    # Evita confundir Televen con canales de nombre parecido.
+                    if (key == "televen" and label in {"televen", "televenhd"}) or (
+                        key != "televen" and key in label
+                    ):
+                        epg_id = str(channel.get("epgId") or "")
+                        if epg_id:
+                            selected[display] = epg_id
+
+            if not selected:
+                raise ValueError("no se encontraron IDs de los seis canales solicitados")
+
+            original = epg_requests[-1]
+            epg_url = original.url
+            headers = {
+                k: v for k, v in original.headers.items()
+                if k.lower() not in {"content-length", "host", "cookie"}
+            }
+            start = datetime.combine(today, datetime.min.time(), tzinfo=tz)
+            stop = start + timedelta(days=8)
+            body = {
+                "channelEpgIds": sorted(set(selected.values())),
+                "fromDate": start.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "toDate": stop.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            }
+            response = context.request.post(epg_url, headers=headers, data=body, timeout=60000)
+            if not response.ok:
+                raise ValueError(f"servicio EPG respondió HTTP {response.status}")
+            epg = response.json()
+
+            for display, epg_id in selected.items():
+                for item in epg.get(epg_id, []) if isinstance(epg, dict) else []:
+                    title = clean(item.get("title"))
+                    if not title or not item.get("start") or not item.get("stop"):
+                        continue
+                    begin = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
+                    end = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
+                    if end > begin:
+                        result[display].append((begin, end, title, "Televen Max oficial"))
+            browser.close()
+    except Exception as e:
+        print(f"Televen Max omitido sin inventar datos: {e}", file=sys.stderr)
+    return {name: shows for name, shows in result.items() if shows}
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def main():
@@ -310,6 +422,8 @@ def main():
     for name, shows in scrape_movistar_sports().items():
         channels[name] = shows
     for name, shows in scrape_telemundo_sports().items():
+        channels[name] = shows
+    for name, shows in scrape_venezuela_epg().items():
         channels[name] = shows
     tv = ET.Element("tv", {"generator-info-name":"latam-sports-epg", "generator-info-url":"https://github.com/siulemorales-arch/latam-sports-epg"})
     ids = {}
