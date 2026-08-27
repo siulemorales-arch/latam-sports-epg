@@ -274,7 +274,10 @@ def scrape_movistar_sports():
         today = datetime.now(tz).date()
         for url, name in sorted(feeds.items(), key=lambda x: x[1].casefold()):
             shows = []
-            for day_offset in range(5):
+            # Movistar asigna la madrugada (00:00-05:00 aprox.) a la
+            # parrilla del día anterior. Consultarla evita que UHF muestre
+            # huecos durante esas horas en DAZN y en las señales M+.
+            for day_offset in range(-1, 5):
                 guide_day = today + timedelta(days=day_offset)
                 page_url = f"{url.rstrip('/')}/{guide_day.isoformat()}"
                 try:
