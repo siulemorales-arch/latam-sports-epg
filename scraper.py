@@ -22,6 +22,9 @@ MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
 TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
+# Imágenes oficiales por programa. Se mantiene fuera de las tuplas de la guía
+# para conservar la compatibilidad con las validaciones y respaldos existentes.
+PROGRAMME_ICONS = {}
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
 # Caracol/RCN y todas las variantes que GatoTV identifique como Venezuela.
@@ -249,6 +252,9 @@ def scrape_dsports():
             stop = datetime.fromisoformat(item["EndDate"].replace("Z", "+00:00"))
             if stop > start:
                 result[name].append((start, stop, title, "DSPORTS API oficial"))
+                image_url = clean(item.get("ImageURL"))
+                if image_url.startswith("https://"):
+                    PROGRAMME_ICONS[(name, start.isoformat(), stop.isoformat(), title.casefold())] = image_url
     except Exception as e:
         print(f"DSPORTS omitido sin inventar datos: {e}", file=sys.stderr)
     return {k:v for k,v in result.items() if v}
@@ -586,6 +592,9 @@ def main():
                 pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":target_id})
                 ET.SubElement(pr, "title", {"lang":"es"}).text = title
                 ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
+                icon_url = PROGRAMME_ICONS.get((name, start.isoformat(), stop.isoformat(), title.casefold()))
+                if icon_url:
+                    ET.SubElement(pr, "icon", {"src":icon_url})
     ET.indent(tv, space="  ")
     output = b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8")
     Path("epg.xml.tmp").write_bytes(output)
