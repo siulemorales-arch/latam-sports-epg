@@ -455,6 +455,82 @@ def scrape_venezuela_epg():
 
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
+def parse_xmltv_datetime(value):
+    return datetime.strptime(value, "%Y%m%d%H%M%S %z")
+
+def load_previous_guide(path="epg.xml"):
+    """Recupera programas aún vigentes del último XML publicado.
+
+    Solo se usa para señales que desaparecieron de la extracción actual. Los
+    cuatro grupos críticos se validan antes, de modo que una caída importante
+    detiene la publicación y conserva íntegramente el XML anterior.
+    """
+    previous = {}
+    xml_path = Path(path)
+    if not xml_path.exists():
+        return previous
+    try:
+        root = ET.parse(xml_path).getroot()
+        names = {}
+        for channel in root.findall("channel"):
+            cid = channel.get("id", "")
+            display = channel.findtext("display-name")
+            if cid.endswith(".latam") and display:
+                names[cid] = display
+        now = datetime.now(timezone.utc)
+        for programme in root.findall("programme"):
+            name = names.get(programme.get("channel", ""))
+            title = clean(programme.findtext("title"))
+            if not name or not title:
+                continue
+            start = parse_xmltv_datetime(programme.get("start", ""))
+            stop = parse_xmltv_datetime(programme.get("stop", ""))
+            if stop > now and stop > start:
+                previous.setdefault(name, []).append(
+                    (start, stop, title, "Última guía válida")
+                )
+    except Exception as e:
+        print(f"No se pudo recuperar la guía anterior: {e}", file=sys.stderr)
+        return {}
+    return previous
+
+def validate_fresh_guide(channels):
+    """Impide publicar una extracción incompleta o degradada."""
+    programme_count = sum(len(shows) for shows in channels.values())
+    errors = []
+    if len(channels) < 80:
+        errors.append(f"solo {len(channels)} canales frescos (mínimo 80)")
+    if programme_count < 1500:
+        errors.append(f"solo {programme_count} programas frescos (mínimo 1500)")
+
+    critical = {
+        "DSPORTS": lambda name: name == "DSPORTS",
+        "ESPN Argentina/Sur": lambda name: name == "ESPN Sur",
+        "DAZN": lambda name: name.startswith("DAZN ") or name == "DAZN (España)",
+        "M+ LALIGA": lambda name: name == "M+ LALIGA (España)",
+    }
+    for label, predicate in critical.items():
+        matches = [name for name, shows in channels.items() if predicate(name) and shows]
+        if not matches:
+            errors.append(f"faltó el grupo crítico {label}")
+
+    # ESPN Sur y ESPN 2 Sur son señales continuas. Un hueco interno superior
+    # a 30 minutos suele indicar que cambió el HTML de GatoTV.
+    for name in ("ESPN Sur", "ESPN 2 Sur"):
+        shows = sorted(channels.get(name, []), key=lambda item: item[0])
+        coverage_end = None
+        largest_gap = timedelta(0)
+        for start, stop, _title, _source in shows:
+            if coverage_end is not None and start > coverage_end:
+                largest_gap = max(largest_gap, start - coverage_end)
+            coverage_end = max(coverage_end, stop) if coverage_end else stop
+        if shows and largest_gap > timedelta(minutes=30):
+            errors.append(f"{name} tiene un hueco de {largest_gap}")
+
+    if errors:
+        raise SystemExit("Control de calidad rechazó la actualización: " + "; ".join(errors))
+    print(f"Control de calidad aprobado: {len(channels)} canales y {programme_count} programas frescos")
+
 def main():
     channels = {}
     try:
@@ -476,6 +552,17 @@ def main():
         channels[name] = shows
     for name, shows in scrape_venezuela_epg().items():
         channels[name] = shows
+    validate_fresh_guide(channels)
+
+    previous = load_previous_guide()
+    restored = 0
+    for name, shows in previous.items():
+        if name not in channels and shows:
+            channels[name] = shows
+            restored += 1
+            print(f"Restaurado desde la última guía válida: {name}", file=sys.stderr)
+    print(f"Canales restaurados desde el XML anterior: {restored}")
+
     tv = ET.Element("tv", {"generator-info-name":"latam-sports-epg", "generator-info-url":"https://github.com/siulemorales-arch/latam-sports-epg"})
     ids = {}
     for name in sorted(channels, key=str.casefold):
@@ -500,7 +587,9 @@ def main():
                 ET.SubElement(pr, "title", {"lang":"es"}).text = title
                 ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
     ET.indent(tv, space="  ")
-    Path("epg.xml").write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8"))
+    output = b'<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tv, encoding="utf-8")
+    Path("epg.xml.tmp").write_bytes(output)
+    Path("epg.xml.tmp").replace("epg.xml")
     print(f"Generados {len(channels)} canales y {len(seen)} programas")
     if not channels or not seen: raise SystemExit("No se obtuvo programación real; no se publicará un XML vacío")
 
