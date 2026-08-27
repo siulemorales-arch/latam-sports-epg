@@ -115,6 +115,22 @@ def spanish_provider_aliases(name):
     for quality in ("SD", "HD", "FHD"):
         aliases.add(f"{base} {quality}")
         aliases.add(f"{base.upper()} {quality}")
+    # El canal principal aparece como "M+ Deportes" en Movistar, pero
+    # muchos proveedores IPTV lo numeran como Deportes 1. Incluimos ambas
+    # formas y las variantes "por M+" para que UHF pueda asociarlas solo.
+    m = re.fullmatch(r"M\+ Deportes(?: (\d+))?", base, re.I)
+    if m:
+        number = m.group(1) or "1"
+        provider_names = {
+            f"M+ DEPORTES {number}", f"MOVISTAR DEPORTES {number}",
+            f"DEPORTES {number} POR M+", f"M DEPORTES {number}",
+        }
+        if number == "1":
+            provider_names.update({"MOVISTAR DEPORTES", "DEPORTES POR M+"})
+        for provider_name in provider_names:
+            aliases.add(provider_name)
+            for quality in ("SD", "HD", "FHD"):
+                aliases.add(f"{provider_name} {quality}")
     m = re.fullmatch(r"M\+ Liga de Campeones(?: (\d+))?", base, re.I)
     if m:
         number = f" {m.group(1)}" if m.group(1) else ""
