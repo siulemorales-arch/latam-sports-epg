@@ -25,6 +25,11 @@ UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemo
 # Imágenes oficiales por programa. Se mantiene fuera de las tuplas de la guía
 # para conservar la compatibilidad con las validaciones y respaldos existentes.
 PROGRAMME_ICONS = {}
+# La API de parrilla entrega miniaturas de 255x143. Cuando DSPORTS publica
+# una imagen editorial HD del mismo evento, preferimos esa versión oficial.
+DSPORTS_HD_ICONS = {
+    "internacional vs. grêmio": "https://assets.directvsports.com/__export/1787874466410/sites/dsports/img/2026/08/27/grenal.jpg_1702176420.jpg",
+}
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
 # Caracol/RCN y todas las variantes que GatoTV identifique como Venezuela.
@@ -252,7 +257,7 @@ def scrape_dsports():
             stop = datetime.fromisoformat(item["EndDate"].replace("Z", "+00:00"))
             if stop > start:
                 result[name].append((start, stop, title, "DSPORTS API oficial"))
-                image_url = clean(item.get("ImageURL"))
+                image_url = DSPORTS_HD_ICONS.get(title.casefold(), clean(item.get("ImageURL")))
                 if image_url.startswith("https://"):
                     PROGRAMME_ICONS[(name, start.isoformat(), stop.isoformat(), title.casefold())] = image_url
     except Exception as e:
