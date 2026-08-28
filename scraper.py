@@ -8,6 +8,7 @@ import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 from xml.etree import ElementTree as ET
 
@@ -659,12 +660,24 @@ def scrape_private_iptv_events():
     una URL de vídeo. Si faltan los secretos, el EPG público continúa
     funcionando exactamente como antes.
     """
-    server = clean(os.getenv("IPTV_SERVER", "")).rstrip("/")
+    raw_server = clean(os.getenv("IPTV_SERVER", ""))
     username = os.getenv("IPTV_USERNAME", "").strip()
     password = os.getenv("IPTV_PASSWORD", "").strip()
-    if not (server and username and password):
+    if not (raw_server and username and password):
         print("Eventos IPTV privados desactivados: faltan secretos", file=sys.stderr)
         return {}
+
+    # Acepta URL base, enlace M3U completo, Markdown copiado desde un chat o
+    # texto adicional. Conservamos únicamente esquema, host y puerto.
+    url_match = re.search(r"https?://[^\s\])>]+", raw_server, re.I)
+    candidate = url_match.group(0) if url_match else raw_server.split()[0]
+    if not re.match(r"https?://", candidate, re.I):
+        candidate = "http://" + candidate
+    parsed_server = urlsplit(candidate)
+    if not parsed_server.netloc:
+        print("Eventos IPTV privados desactivados: servidor no válido", file=sys.stderr)
+        return {}
+    server = f"{parsed_server.scheme}://{parsed_server.netloc}"
 
     event_words = re.compile(
         r"(?:\bvs\.?\b|\bv\b|\bcontra\b|\bfinal\b|\bsemifinal\b|"
