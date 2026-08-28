@@ -735,7 +735,7 @@ def scrape_private_iptv_events():
                 day_start = datetime.combine(parsed.date(), datetime.min.time(), tzinfo=tz)
                 countdown_start = max(day_start, parsed - timedelta(hours=3))
                 if countdown_start > day_start:
-                    shows.append((day_start, countdown_start, f"Próximo evento: {title} • {parsed.strftime('%-I:%M %p')} ET", "Nombre del canal IPTV"))
+                    shows.append((day_start, countdown_start, f"UPCOMING LIVE EVENT • {parsed.strftime('%-I:%M %p')} ET: {title}", "IPTV channel name"))
                 # La cuenta regresiva está precalculada en XMLTV. UHF cambia
                 # de bloque con el reloj sin generar consultas adicionales.
                 for hours_left in (3, 2, 1):
@@ -743,16 +743,16 @@ def scrape_private_iptv_events():
                     block_stop = parsed - timedelta(hours=hours_left - 1)
                     if block_stop > day_start:
                         shows.append((max(block_start, day_start), block_stop,
-                                      f"Evento en {hours_left} {'hora' if hours_left == 1 else 'horas'}: {title}",
-                                      "Nombre del canal IPTV"))
-                shows.append((parsed, parsed + timedelta(hours=3), f"EN VIVO: {title}", "Nombre del canal IPTV"))
+                                      f"LIVE EVENT IN {hours_left} {'HOUR' if hours_left == 1 else 'HOURS'}: {title}",
+                                      "IPTV channel name"))
+                shows.append((parsed, parsed + timedelta(hours=3), f"LIVE NOW: {title}", "IPTV channel name"))
             else:
                 # Sin hora publicada solo aceptamos una indicación explícita
                 # de directo; un simple "A vs. B" podría ser un nombre viejo.
                 if not re.search(r"\b(?:live|en vivo)\b", event, re.I):
                     continue
                 start = now.replace(minute=0, second=0, microsecond=0)
-                shows.append((start, start + timedelta(hours=8), f"Evento: {event}", "Nombre del canal IPTV"))
+                shows.append((start, start + timedelta(hours=8), f"LIVE EVENT: {event}", "IPTV channel name"))
             result[canonical] = shows
         print(f"Eventos IPTV detectados: {len(result)}")
     except Exception as e:
