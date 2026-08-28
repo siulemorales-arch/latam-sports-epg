@@ -463,45 +463,30 @@ def scrape_venezuela_epg():
     return {name: shows for name, shows in result.items() if shows}
 
 def scrape_fox_one_mexico():
-    """Extrae la parrilla XMLTV oficial usada por la página de FOX One."""
+    """Extrae la parrilla oficial Gracenote usada por FOX One México."""
     name = "FOX One México"
     try:
-        api = "https://foxone-cached.api.viewlift.com/graphql"
-        query = """query($site:String!,$path:String,$device:Device!){
-          page(site:$site,path:$path,device:$device,includeContent:true,
-               moduleLimit:10,moduleOffset:0){modules{
-            ... on LinearchannelStandaloneModule{contentData{
-              ... on Linearchannel{channels{id title epgInfo{vlUrl}}}
-            }}
-          }}
-        }"""
-        response = requests.post(api, headers={
-            "User-Agent": UA,
-            "x-api-key": "WX41iaJiOw7hJW8sNbDP5JpVwmjaH6t6y3xbQUsc",
-        }, json={"query": query, "variables": {
-            "site": "caliente", "path": "/linearchannel/caliente-live",
-            "device": "WEB",
-        }}, timeout=30)
-        response.raise_for_status()
-        modules = response.json()["data"]["page"]["modules"]
-        channels = []
-        for module in modules:
-            for content in module.get("contentData") or []:
-                channels.extend(content.get("channels") or [])
-        fox = next(channel for channel in channels if channel.get("title") == "FOX")
-        xml_response = requests.get(fox["epgInfo"]["vlUrl"], headers={"User-Agent": UA}, timeout=30)
-        xml_response.raise_for_status()
-        root = ET.fromstring(xml_response.content)
         shows = []
-        for programme in root.findall("programme"):
-            title = clean(programme.findtext("title"))
-            if not title: continue
-            start = parse_xmltv_datetime(programme.get("start", ""))
-            stop = parse_xmltv_datetime(programme.get("stop", ""))
-            if stop > start:
-                shows.append((start, stop, title, "FOX One oficial"))
+        today = datetime.now(timezone.utc).date()
+        api = "https://data.tmsapi.com/v1.1/stations/155368/airings"
+        for day_offset in range(5):
+            day = today + timedelta(days=day_offset)
+            response = requests.get(api, headers={"User-Agent": UA}, params={
+                "api_key": "hj5e3a2skerqupcuqsg9x758",
+                "startDateTime": f"{day.isoformat()}T00:00Z",
+                "duration": 1440,
+            }, timeout=30)
+            response.raise_for_status()
+            for airing in response.json():
+                program = airing.get("program") or {}
+                title = clean(program.get("eventTitle") or program.get("title"))
+                if not title: continue
+                start = datetime.fromisoformat(airing["startTime"].replace("Z", "+00:00"))
+                stop = datetime.fromisoformat(airing["endTime"].replace("Z", "+00:00"))
+                if stop > start:
+                    shows.append((start, stop, title, "FOX One oficial"))
         if not shows:
-            raise ValueError("la fuente XMLTV oficial llegó vacía")
+            raise ValueError("la parrilla oficial llegó vacía")
         return {name: shows}
     except Exception as e:
         print(f"FOX One México omitido sin inventar datos: {e}", file=sys.stderr)
