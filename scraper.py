@@ -21,6 +21,7 @@ MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
 TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
 FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
+DAZN_1_ITALIA = "https://tv-programmi.it/dazn-1"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -69,6 +70,7 @@ DISPLAY_ALIASES = {
     "TUDN México": ["TUDN HD | MX", "TUDN MX FHD", "TUDN FHD | MX"],
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
     "FOX One México": ["FOX ONE", "FOX ONE MX", "FOX ONE MEXICO", "CALIENTE TV"],
+    "DAZN 1 Italia": ["DAZN 1", "DAZN 1 IT", "DAZN 1 ITALIA", "ZONA DAZN"],
     "Telemundo Deportes Ahora (USA)": ["Telemundo Deportes Ahora"],
     "Televen (Venezuela)": ["Televen", "Televen HD"],
     "Venevisión (Venezuela)": ["Venevisión", "Venevision"],
@@ -474,7 +476,7 @@ def scrape_fox_one_mexico():
             response = requests.get(api, headers={"User-Agent": UA}, params={
                 "api_key": "hj5e3a2skerqupcuqsg9x758",
                 "startDateTime": f"{day.isoformat()}T00:00Z",
-                "duration": 1440,
+                "endDateTime": f"{(day + timedelta(days=1)).isoformat()}T00:00Z",
             }, timeout=30)
             response.raise_for_status()
             for airing in response.json():
@@ -490,6 +492,44 @@ def scrape_fox_one_mexico():
         return {name: shows}
     except Exception as e:
         print(f"FOX One México omitido sin inventar datos: {e}", file=sys.stderr)
+        return {}
+
+def scrape_dazn_1_italia():
+    """Extrae la parrilla publicada de DAZN 1 Italia para hoy y seis días más."""
+    name = "DAZN 1 Italia"
+    tz = ZoneInfo("Europe/Rome")
+    today = datetime.now(tz).date()
+    shows = []
+    try:
+        for day_offset in range(7):
+            guide_day = today + timedelta(days=day_offset)
+            soup = BeautifulSoup(get(f"{DAZN_1_ITALIA}/{guide_day.isoformat()}"), "html.parser")
+            items = soup.select("article.channel-day-item")
+            for index, item in enumerate(items):
+                start_node = item.select_one(".channel-day-start")
+                stop_node = item.select_one(".channel-day-end")
+                title_node = item.select_one(".channel-day-heading h2")
+                if not start_node or not stop_node or not title_node:
+                    continue
+                title = clean(title_node.get_text(" "))
+                if not title:
+                    continue
+                start = parse_clock(start_node.get_text(), guide_day, tz)
+                stop = parse_clock(stop_node.get_text(), guide_day, tz)
+                # El primer bloque puede ser la continuación de la noche
+                # anterior (por ejemplo 20:45-00:30) y aparece antes de las
+                # emisiones de las 06:00 del día seleccionado.
+                if stop <= start:
+                    if index == 0 and len(items) > 1:
+                        start -= timedelta(days=1)
+                    else:
+                        stop += timedelta(days=1)
+                shows.append((start, stop, title, "tv-programmi.it"))
+        if not shows:
+            raise ValueError("la parrilla llegó vacía")
+        return {name: shows}
+    except Exception as e:
+        print(f"DAZN 1 Italia omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
@@ -592,6 +632,8 @@ def main():
     for name, shows in scrape_venezuela_epg().items():
         channels[name] = shows
     for name, shows in scrape_fox_one_mexico().items():
+        channels[name] = shows
+    for name, shows in scrape_dazn_1_italia().items():
         channels[name] = shows
 
     validate_fresh_guide(channels)
