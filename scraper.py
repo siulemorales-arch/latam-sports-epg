@@ -463,54 +463,45 @@ def scrape_venezuela_epg():
     return {name: shows for name, shows in result.items() if shows}
 
 def scrape_fox_one_mexico():
-    """Extrae la parrilla lineal oficial de FOX One México.
-
-    La página se renderiza con JavaScript y cada bloque FOX expone por
-    separado el título y el intervalo horario. Se ignora la segunda fila
-    FOX/Tubi porque es otra señal distinta.
-    """
+    """Extrae la parrilla XMLTV oficial usada por la página de FOX One."""
     name = "FOX One México"
     try:
-        from playwright.sync_api import sync_playwright
-
-        tz = ZoneInfo("America/Mexico_City")
-        guide_day = datetime.now(tz).date()
+        api = "https://foxone-cached.api.viewlift.com/graphql"
+        query = """query($site:String!,$path:String,$device:Device!){
+          page(site:$site,path:$path,device:$device,includeContent:true,
+               moduleLimit:10,moduleOffset:0){modules{
+            ... on LinearchannelStandaloneModule{contentData{
+              ... on Linearchannel{channels{id title epgInfo{vlUrl}}}
+            }}
+          }}
+        }"""
+        response = requests.post(api, headers={
+            "User-Agent": UA,
+            "x-api-key": "WX41iaJiOw7hJW8sNbDP5JpVwmjaH6t6y3xbQUsc",
+        }, json={"query": query, "variables": {
+            "site": "caliente", "path": "/linearchannel/caliente-live",
+            "device": "WEB",
+        }}, timeout=30)
+        response.raise_for_status()
+        modules = response.json()["data"]["page"]["modules"]
+        channels = []
+        for module in modules:
+            for content in module.get("contentData") or []:
+                channels.extend(content.get("channels") or [])
+        fox = next(channel for channel in channels if channel.get("title") == "FOX")
+        xml_response = requests.get(fox["epgInfo"]["vlUrl"], headers={"User-Agent": UA}, timeout=30)
+        xml_response.raise_for_status()
+        root = ET.fromstring(xml_response.content)
         shows = []
-        with sync_playwright() as pw:
-            browser = pw.chromium.launch(headless=True)
-            context = browser.new_context(user_agent=UA, locale="es-MX")
-            page = context.new_page()
-            page.goto(FOX_ONE_MX, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(10000)
-
-            # La etiqueta accesible se calcula a partir del contenido y no
-            # siempre existe como atributo HTML en Chromium sin interfaz.
-            # Leemos las líneas visibles de todos los botones de la guía.
-            cards = page.locator("main button")
-            for index in range(cards.count()):
-                card = cards.nth(index)
-                raw = card.inner_text()
-                parts = [clean(x) for x in raw.splitlines() if clean(x)]
-                label = clean(raw)
-                time_match = re.search(
-                    r"(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$",
-                    label, re.I,
-                )
-                if not time_match:
-                    continue
-                title = parts[0] if parts else ""
-                # Los títulos del carril FOX/Tubi terminan con una fecha.
-                if not title or re.search(r"\|\s*\d{2}/\d{2}/\d{4}$", title):
-                    continue
-                start = parse_clock(time_match.group(1), guide_day, tz)
-                stop = parse_clock(time_match.group(2), guide_day, tz)
-                if stop <= start:
-                    stop += timedelta(days=1)
+        for programme in root.findall("programme"):
+            title = clean(programme.findtext("title"))
+            if not title: continue
+            start = parse_xmltv_datetime(programme.get("start", ""))
+            stop = parse_xmltv_datetime(programme.get("stop", ""))
+            if stop > start:
                 shows.append((start, stop, title, "FOX One oficial"))
-            browser.close()
-
         if not shows:
-            raise ValueError("la página no publicó tarjetas FOX reconocibles")
+            raise ValueError("la fuente XMLTV oficial llegó vacía")
         return {name: shows}
     except Exception as e:
         print(f"FOX One México omitido sin inventar datos: {e}", file=sys.stderr)
