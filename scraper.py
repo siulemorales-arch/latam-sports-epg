@@ -20,6 +20,7 @@ DSPORTS_API = "https://epg.tbxapis.com/v0/epg/external/entries"
 MOVISTAR_SPORTS = "https://www.movistarplus.es/programacion-tv/cpdep"
 TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
+FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -67,6 +68,7 @@ DISPLAY_ALIASES = {
     ],
     "TUDN México": ["TUDN HD | MX", "TUDN MX FHD", "TUDN FHD | MX"],
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
+    "FOX One México": ["FOX ONE", "FOX ONE MX", "FOX ONE MEXICO", "CALIENTE TV"],
     "Telemundo Deportes Ahora (USA)": ["Telemundo Deportes Ahora"],
     "Televen (Venezuela)": ["Televen", "Televen HD"],
     "Venevisión (Venezuela)": ["Venevisión", "Venevision"],
@@ -460,6 +462,55 @@ def scrape_venezuela_epg():
         print(f"Televen Max omitido sin inventar datos: {e}", file=sys.stderr)
     return {name: shows for name, shows in result.items() if shows}
 
+def scrape_fox_one_mexico():
+    """Extrae la parrilla lineal oficial de FOX One México.
+
+    La página se renderiza con JavaScript y cada bloque FOX expone por
+    separado el título y el intervalo horario. Se ignora la segunda fila
+    FOX/Tubi porque es otra señal distinta.
+    """
+    name = "FOX One México"
+    try:
+        from playwright.sync_api import sync_playwright
+
+        tz = ZoneInfo("America/Mexico_City")
+        guide_day = datetime.now(tz).date()
+        shows = []
+        with sync_playwright() as pw:
+            browser = pw.chromium.launch(headless=True)
+            context = browser.new_context(user_agent=UA, locale="es-MX")
+            page = context.new_page()
+            page.goto(FOX_ONE_MX, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(10000)
+
+            # El primer carril de la guía usa la etiqueta accesible "FOX ".
+            # Los hijos visibles contienen título, descripción y horario.
+            cards = page.locator('main button[aria-label^="FOX "]')
+            for index in range(cards.count()):
+                card = cards.nth(index)
+                label = clean(card.get_attribute("aria-label"))
+                parts = [clean(x) for x in card.locator(":scope > *").all_inner_texts() if clean(x)]
+                time_match = re.search(
+                    r"(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$",
+                    label, re.I,
+                )
+                if not time_match:
+                    continue
+                title = parts[0] if parts else ""
+                if not title or title.upper().startswith("FOX | TUBI"):
+                    continue
+                start = parse_clock(time_match.group(1), guide_day, tz)
+                stop = parse_clock(time_match.group(2), guide_day, tz)
+                if stop <= start:
+                    stop += timedelta(days=1)
+                shows.append((start, stop, title, "FOX One oficial"))
+            browser.close()
+
+        return {name: shows} if shows else {}
+    except Exception as e:
+        print(f"FOX One México omitido sin inventar datos: {e}", file=sys.stderr)
+        return {}
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def parse_xmltv_datetime(value):
@@ -558,6 +609,8 @@ def main():
     for name, shows in scrape_telemundo_sports().items():
         channels[name] = shows
     for name, shows in scrape_venezuela_epg().items():
+        channels[name] = shows
+    for name, shows in scrape_fox_one_mexico().items():
         channels[name] = shows
 
     validate_fresh_guide(channels)
