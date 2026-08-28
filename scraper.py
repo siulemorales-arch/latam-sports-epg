@@ -627,7 +627,13 @@ def scrape_espn_premium_argentina():
             cursor = window_start
             for show in scheduled:
                 if show[0] > cursor:
-                    fillers.append([cursor, show[0], "ESPN Premium Argentina — Sin partidos en vivo", "Agenda ESPN Premium Argentina"])
+                    next_miami = show[0].astimezone(ZoneInfo("America/New_York"))
+                    next_time = next_miami.strftime("%I:%M %p").lstrip("0")
+                    next_title = (
+                        f"Sin partido en vivo • Próximo: {next_miami.strftime('%d/%m')} "
+                        f"{next_time} ET — {show[2]}"
+                    )
+                    fillers.append([cursor, show[0], next_title, "Agenda ESPN Premium Argentina"])
                 cursor = max(cursor, show[1])
             if cursor < window_stop:
                 fillers.append([cursor, window_stop, "ESPN Premium Argentina — Sin partidos en vivo", "Agenda ESPN Premium Argentina"])
