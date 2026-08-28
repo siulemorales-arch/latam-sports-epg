@@ -726,6 +726,11 @@ def scrape_private_iptv_events():
                 # Maneja correctamente eventos de enero anunciados en diciembre.
                 if parsed < now - timedelta(days=120):
                     parsed = parsed.replace(year=parsed.year + 1)
+                # Muchos proveedores conservan durante semanas nombres de
+                # eventos terminados. Solo publicamos los activos y la
+                # ventana futura útil para UHF.
+                if parsed + timedelta(hours=3) < now or parsed > now + timedelta(days=8):
+                    continue
                 title = clean(event[:match.start()].rstrip(" -@")) or event
                 day_start = datetime.combine(parsed.date(), datetime.min.time(), tzinfo=tz)
                 countdown_start = max(day_start, parsed - timedelta(hours=3))
@@ -742,8 +747,10 @@ def scrape_private_iptv_events():
                                       "Nombre del canal IPTV"))
                 shows.append((parsed, parsed + timedelta(hours=3), f"EN VIVO: {title}", "Nombre del canal IPTV"))
             else:
-                # Sin hora publicada no afirmamos una hora de inicio: mostramos
-                # literalmente el evento del proveedor hasta la próxima revisión.
+                # Sin hora publicada solo aceptamos una indicación explícita
+                # de directo; un simple "A vs. B" podría ser un nombre viejo.
+                if not re.search(r"\b(?:live|en vivo)\b", event, re.I):
+                    continue
                 start = now.replace(minute=0, second=0, microsecond=0)
                 shows.append((start, start + timedelta(hours=8), f"Evento: {event}", "Nombre del canal IPTV"))
             result[canonical] = shows
