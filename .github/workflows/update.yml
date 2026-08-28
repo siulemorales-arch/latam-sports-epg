@@ -3,7 +3,8 @@ name: Actualizar EPG
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */4 * * *"
+    # Tres veces al día, aproximadamente cada ocho horas (UTC).
+    - cron: "17 0,8,16 * * *"
 
 permissions:
   contents: write
@@ -28,7 +29,12 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: playwright install --with-deps chromium
-      - run: python scraper.py
+      - name: Generar EPG
+        env:
+          IPTV_SERVER: ${{ secrets.IPTV_SERVER }}
+          IPTV_USERNAME: ${{ secrets.IPTV_USERNAME }}
+          IPTV_PASSWORD: ${{ secrets.IPTV_PASSWORD }}
+        run: python scraper.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
