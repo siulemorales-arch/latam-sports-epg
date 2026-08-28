@@ -6,13 +6,16 @@ import re
 import sys
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
+from io import BytesIO
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from xml.etree import ElementTree as ET
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image, ImageOps
 
 GATO = "https://www.gatotv.com/guia_tv/completa"
 GATO_CATALOG = "https://www.gatotv.com/canales"
@@ -25,6 +28,12 @@ UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemo
 # Imágenes oficiales por programa. Se mantiene fuera de las tuplas de la guía
 # para conservar la compatibilidad con las validaciones y respaldos existentes.
 PROGRAMME_ICONS = {}
+CHANNEL_ICONS = {}
+CHANNEL_ICON_SOURCES = {
+    "TyC Sports": "https://imagenes.gatotv.com/logos/canales/oscuros/tyc_sports.png",
+    "TNT Sports Argentina": "https://imagenes.gatotv.com/logos/canales/oscuros/tnt_sports.png",
+}
+PAGES_BASE = "https://siulemorales-arch.github.io/latam-sports-epg"
 # La API de parrilla entrega miniaturas de 255x143. Cuando DSPORTS publica
 # una imagen editorial HD del mismo evento, preferimos esa versión oficial.
 DSPORTS_HD_ICONS = {
@@ -169,6 +178,45 @@ def get(url, timeout=30):
     r.raise_for_status()
     return r.text
 
+def normalized_image(url, key, logo=False):
+    """Descarga y publica una copia JPEG 16:9 estable para UHF."""
+    if not url or not url.startswith("http"):
+        return None
+    folder = Path("images/programmes")
+    folder.mkdir(parents=True, exist_ok=True)
+    filename = hashlib.sha1(key.encode("utf-8")).hexdigest()[:24] + ".jpg"
+    output = folder / filename
+    try:
+        if not output.exists():
+            response = requests.get(url, headers={"User-Agent": UA}, timeout=20)
+            response.raise_for_status()
+            image = Image.open(BytesIO(response.content)).convert("RGB")
+            if logo:
+                canvas = Image.new("RGB", (1280, 720), (22, 24, 30))
+                image.thumbnail((820, 360), Image.Resampling.LANCZOS)
+                canvas.paste(image, ((1280-image.width)//2, (720-image.height)//2))
+                image = canvas
+            else:
+                image = ImageOps.fit(image, (1280, 720), Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+            image.save(output, "JPEG", quality=90, optimize=True)
+        return f"{PAGES_BASE}/{output.as_posix()}"
+    except Exception as e:
+        print(f"Imagen omitida {url}: {e}", file=sys.stderr)
+        return None
+
+def movistar_event_image(job):
+    """Resuelve la carátula oficial de una ficha Movistar y la normaliza."""
+    name, start, stop, title, detail_url = job
+    try:
+        soup = BeautifulSoup(get(detail_url, timeout=20), "html.parser")
+        meta = soup.select_one('meta[property="og:image"]')
+        image_url = clean(meta.get("content")) if meta else ""
+        public_url = normalized_image(image_url, f"event:{detail_url}")
+        return name, start, stop, title, public_url
+    except Exception as e:
+        print(f"Carátula Movistar omitida {detail_url}: {e}", file=sys.stderr)
+        return name, start, stop, title, None
+
 def discover_gato_channels():
     soup = BeautifulSoup(get(GATO), "html.parser")
     found = {}
@@ -259,7 +307,10 @@ def scrape_dsports():
                 result[name].append((start, stop, title, "DSPORTS API oficial"))
                 image_url = DSPORTS_HD_ICONS.get(title.casefold(), clean(item.get("ImageURL")))
                 if image_url.startswith("https://"):
-                    PROGRAMME_ICONS[(name, start.isoformat(), stop.isoformat(), title.casefold())] = image_url
+                    image_key = item.get("Content_Id") or item.get("EventId") or image_url
+                    public_image = normalized_image(image_url, f"dsports:{image_key}")
+                    if public_image:
+                        PROGRAMME_ICONS[(name, start.isoformat(), stop.isoformat(), title.casefold())] = public_image
     except Exception as e:
         print(f"DSPORTS omitido sin inventar datos: {e}", file=sys.stderr)
     return {k:v for k,v in result.items() if v}
@@ -274,9 +325,16 @@ def scrape_movistar_sports():
             img, href = a.find("img"), a.get("href", "")
             name = clean(img.get("title")) if img else ""
             if name and SPAIN_SPORTS.search(name):
-                feeds[href.split("/2026-")[0]] = f"{name} (España)"
+                display = f"{name} (España)"
+                feeds[href.split("/2026-")[0]] = display
+                logo_url = img.get("src", "") if img else ""
+                if logo_url:
+                    CHANNEL_ICON_SOURCES[display] = logo_url
         tz = ZoneInfo("Europe/Madrid")
         today = datetime.now(tz).date()
+        image_jobs = []
+        image_window_start = datetime.now(tz) - timedelta(hours=6)
+        image_window_stop = datetime.now(tz) + timedelta(hours=36)
         for url, name in sorted(feeds.items(), key=lambda x: x[1].casefold()):
             shows = []
             # Movistar asigna la madrugada (00:00-05:00 aprox.) a la
@@ -297,22 +355,28 @@ def scrape_movistar_sports():
                     title, clock = clean(title_el.get_text(" ")), clean(time_el.get_text(" "))
                     try: moment = parse_clock(clock, guide_day, tz)
                     except ValueError: continue
-                    raw.append((moment, title))
+                    detail = box.find_parent("a", href=True)
+                    detail_url = detail.get("href", "") if detail else ""
+                    raw.append((moment, title, detail_url))
                 # Algunas parrillas empiezan mostrando el programa que
                 # comenzó la noche anterior (p. ej. 23:30) y luego pasan a
                 # las 08:00 del día elegido. Esa primera hora pertenece al
                 # día anterior, no convierte las 08:00 en el día siguiente.
                 if (len(raw) >= 2 and raw[0][0].hour >= 18
                         and raw[1][0].hour < 12 and raw[1][0] <= raw[0][0]):
-                    raw[0] = (raw[0][0] - timedelta(days=1), raw[0][1])
+                    raw[0] = (raw[0][0] - timedelta(days=1), raw[0][1], raw[0][2])
                 for i in range(1, len(raw)):
-                    moment, title = raw[i]
+                    moment, title, detail_url = raw[i]
                     while moment <= raw[i - 1][0]:
                         moment += timedelta(days=1)
-                    raw[i] = (moment, title)
-                for i, (start, title) in enumerate(raw):
+                    raw[i] = (moment, title, detail_url)
+                for i, (start, title, detail_url) in enumerate(raw):
                     stop = raw[i + 1][0] if i + 1 < len(raw) else start + timedelta(hours=1)
-                    if stop > start: shows.append((start, stop, title, "Movistar Plus oficial"))
+                    if stop > start:
+                        shows.append((start, stop, title, "Movistar Plus oficial"))
+                        if (detail_url and image_window_start <= stop
+                                and start <= image_window_stop):
+                            image_jobs.append((name, start, stop, title, detail_url))
                 time.sleep(0.06)
             if shows: result[name] = shows
         # En las señales HDR/eventos, UHF debe mostrar una guía continua.
@@ -335,6 +399,18 @@ def scrape_movistar_sports():
                 if cursor < day_stop:
                     fillers.append((cursor, day_stop, f"{hdr_name[:-9]} — Sin emisión", "Relleno explícito"))
             result[hdr_name] = original + fillers
+
+        # Las fichas oficiales aportan carátulas HD. Se resuelven en paralelo
+        # solo para la ventana que UHF necesita ahora y en las próximas horas.
+        unique_jobs = {}
+        for job in image_jobs:
+            unique_jobs.setdefault(job[4], job)
+        with ThreadPoolExecutor(max_workers=10) as pool:
+            futures = [pool.submit(movistar_event_image, job) for job in unique_jobs.values()]
+            for future in as_completed(futures):
+                name, start, stop, title, image_url = future.result()
+                if image_url:
+                    PROGRAMME_ICONS[(name, start.isoformat(), stop.isoformat(), title.casefold())] = image_url
     except Exception as e:
         print(f"Movistar Plus omitido sin inventar datos: {e}", file=sys.stderr)
     return result
@@ -566,6 +642,17 @@ def main():
         channels[name] = shows
     for name, shows in scrape_venezuela_epg().items():
         channels[name] = shows
+
+    # Tarjeta 16:9 con logo como respaldo para los grupos solicitados. Así
+    # siempre hay una imagen correcta aunque la fuente no publique carátula.
+    for name in channels:
+        if (name.startswith("DAZN") or name.startswith("M+")
+                or name in {"TyC Sports", "TNT Sports Argentina"}):
+            source = CHANNEL_ICON_SOURCES.get(name)
+            if source:
+                icon = normalized_image(source, f"channel:{name}", logo=True)
+                if icon:
+                    CHANNEL_ICONS[name] = icon
     validate_fresh_guide(channels)
 
     previous = load_previous_guide()
@@ -583,6 +670,8 @@ def main():
         cid = slug(name); ids[name] = cid
         ch = ET.SubElement(tv, "channel", {"id":cid})
         ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
+        if CHANNEL_ICONS.get(name):
+            ET.SubElement(ch, "icon", {"src":CHANNEL_ICONS[name]})
         for alias in DISPLAY_ALIASES.get(name, []):
             ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
         for alias in spanish_provider_aliases(name):
@@ -600,7 +689,8 @@ def main():
                 pr = ET.SubElement(tv, "programme", {"start":fmt(start), "stop":fmt(stop), "channel":target_id})
                 ET.SubElement(pr, "title", {"lang":"es"}).text = title
                 ET.SubElement(pr, "category", {"lang":"es"}).text = "Deportes"
-                icon_url = PROGRAMME_ICONS.get((name, start.isoformat(), stop.isoformat(), title.casefold()))
+                icon_url = (PROGRAMME_ICONS.get((name, start.isoformat(), stop.isoformat(), title.casefold()))
+                            or CHANNEL_ICONS.get(name))
                 if icon_url:
                     ET.SubElement(pr, "icon", {"src":icon_url})
     ET.indent(tv, space="  ")
