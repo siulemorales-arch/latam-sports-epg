@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import html as html_lib
 import json
+import os
 import re
 import sys
 import time
@@ -99,6 +100,12 @@ PROVIDER_CHANNEL_IDS = {
     ],
     "DSPORTS+": ["DSPORTS +"],
 }
+
+# Canales de eventos descubiertos en la playlist privada. Estas tablas se
+# llenan en cada ejecución y permiten conservar un ID estable aunque el
+# proveedor cambie diariamente el texto del evento.
+DYNAMIC_CHANNEL_IDS = {}
+DYNAMIC_DISPLAY_ALIASES = {}
 
 def clean(s):
     return " ".join((s or "").split())
@@ -645,6 +652,93 @@ def scrape_espn_premium_argentina():
         print(f"ESPN Premium Argentina omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def scrape_private_iptv_events():
+    """Convierte nombres de canales-evento Xtream en bloques XMLTV.
+
+    Solo consulta ``get_live_streams`` (metadatos); nunca solicita ni abre
+    una URL de vídeo. Si faltan los secretos, el EPG público continúa
+    funcionando exactamente como antes.
+    """
+    server = clean(os.getenv("IPTV_SERVER", "")).rstrip("/")
+    username = os.getenv("IPTV_USERNAME", "").strip()
+    password = os.getenv("IPTV_PASSWORD", "").strip()
+    if not (server and username and password):
+        print("Eventos IPTV privados desactivados: faltan secretos", file=sys.stderr)
+        return {}
+
+    event_words = re.compile(
+        r"(?:\bvs\.?\b|\bv\b|\bcontra\b|\bfinal\b|\bsemifinal\b|"
+        r"\bround\b|\bmatch\b|\bdraw\b|\bgrand prix\b|\bpractice\b|"
+        r"\bqualif(?:ying|icación)\b|\bplayoffs?\b|\bcup\b|\bleague\b)",
+        re.I,
+    )
+    dated = re.compile(
+        r"@\s*([A-Za-z]{3})\s+(\d{1,2})\s+(\d{1,2}:\d{2})\s*([AP]M)", re.I
+    )
+    tz = ZoneInfo("America/New_York")
+    now = datetime.now(tz)
+    result = {}
+    try:
+        response = requests.get(
+            f"{server}/player_api.php",
+            params={"username": username, "password": password, "action": "get_live_streams"},
+            headers={"User-Agent": UA}, timeout=45,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        if not isinstance(payload, list):
+            raise ValueError("el servidor no devolvió el catálogo esperado")
+
+        for item in payload:
+            raw_name = clean(item.get("name"))
+            stream_id = str(item.get("stream_id") or "").strip()
+            if not raw_name or not stream_id or ":" not in raw_name:
+                continue
+            base, event = [clean(part) for part in raw_name.split(":", 1)]
+            if not base or not event or not event_words.search(event):
+                continue
+
+            canonical = base
+            epg_id = clean(item.get("epg_channel_id")) or f"iptv.event.{stream_id}"
+            DYNAMIC_CHANNEL_IDS[canonical] = epg_id
+            DYNAMIC_DISPLAY_ALIASES.setdefault(canonical, set()).add(raw_name)
+            shows = []
+            match = dated.search(event)
+            if match:
+                month, day, clock, meridiem = match.groups()
+                parsed = datetime.strptime(
+                    f"{now.year} {month.title()} {day} {clock} {meridiem.upper()}",
+                    "%Y %b %d %I:%M %p",
+                ).replace(tzinfo=tz)
+                # Maneja correctamente eventos de enero anunciados en diciembre.
+                if parsed < now - timedelta(days=120):
+                    parsed = parsed.replace(year=parsed.year + 1)
+                title = clean(event[:match.start()].rstrip(" -@")) or event
+                day_start = datetime.combine(parsed.date(), datetime.min.time(), tzinfo=tz)
+                countdown_start = max(day_start, parsed - timedelta(hours=3))
+                if countdown_start > day_start:
+                    shows.append((day_start, countdown_start, f"Próximo evento: {title} • {parsed.strftime('%-I:%M %p')} ET", "Nombre del canal IPTV"))
+                # La cuenta regresiva está precalculada en XMLTV. UHF cambia
+                # de bloque con el reloj sin generar consultas adicionales.
+                for hours_left in (3, 2, 1):
+                    block_start = parsed - timedelta(hours=hours_left)
+                    block_stop = parsed - timedelta(hours=hours_left - 1)
+                    if block_stop > day_start:
+                        shows.append((max(block_start, day_start), block_stop,
+                                      f"Evento en {hours_left} {'hora' if hours_left == 1 else 'horas'}: {title}",
+                                      "Nombre del canal IPTV"))
+                shows.append((parsed, parsed + timedelta(hours=3), f"EN VIVO: {title}", "Nombre del canal IPTV"))
+            else:
+                # Sin hora publicada no afirmamos una hora de inicio: mostramos
+                # literalmente el evento del proveedor hasta la próxima revisión.
+                start = now.replace(minute=0, second=0, microsecond=0)
+                shows.append((start, start + timedelta(hours=8), f"Evento: {event}", "Nombre del canal IPTV"))
+            result[canonical] = shows
+        print(f"Eventos IPTV detectados: {len(result)}")
+    except Exception as e:
+        print(f"Eventos IPTV privados omitidos sin afectar el EPG: {type(e).__name__}: {e}", file=sys.stderr)
+    return result
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def parse_xmltv_datetime(value):
@@ -751,6 +845,11 @@ def main():
     for name, shows in scrape_espn_premium_argentina().items():
         channels[name] = shows
 
+    # Esta fuente privada es complementaria: nunca reemplaza ni degrada las
+    # guías oficiales anteriores.
+    for name, shows in scrape_private_iptv_events().items():
+        channels[name] = shows
+
     validate_fresh_guide(channels)
 
     previous = load_previous_guide()
@@ -765,9 +864,11 @@ def main():
     tv = ET.Element("tv", {"generator-info-name":"latam-sports-epg", "generator-info-url":"https://github.com/siulemorales-arch/latam-sports-epg"})
     ids = {}
     for name in sorted(channels, key=str.casefold):
-        cid = slug(name); ids[name] = cid
+        cid = DYNAMIC_CHANNEL_IDS.get(name, slug(name)); ids[name] = cid
         ch = ET.SubElement(tv, "channel", {"id":cid})
         ET.SubElement(ch, "display-name", {"lang":"es"}).text = name
+        for alias in sorted(DYNAMIC_DISPLAY_ALIASES.get(name, []), key=str.casefold):
+            ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
         for alias in DISPLAY_ALIASES.get(name, []):
             ET.SubElement(ch, "display-name", {"lang":"es"}).text = alias
         for alias in spanish_provider_aliases(name):
