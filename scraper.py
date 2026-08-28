@@ -593,7 +593,7 @@ def scrape_espn_premium_argentina():
                 r",\s*(\d{1,2}) de ([a-záéíóú]+) de (\d{4}) a las (\d{2}):(\d{2})",
                 description, re.I,
             )
-            if not game_title or not match:
+            if not game_title or re.search(r"\b(?:TBD|por confirmar)\b", game_title, re.I) or not match:
                 continue
             day_num, month_text, year, hour, minute = match.groups()
             month = month_names.get(month_text.casefold())
