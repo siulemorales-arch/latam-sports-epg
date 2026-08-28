@@ -613,6 +613,25 @@ def scrape_espn_premium_argentina():
                 covering[3] = "Agenda ESPN Premium Argentina"
             else:
                 shows.append([game_start, game_stop, game_title, "Agenda ESPN Premium Argentina"])
+        if not starts:
+            # Si la parrilla genérica bloquea a GitHub, cubrimos siete días
+            # con un rótulo honesto. No afirmamos que el canal esté apagado:
+            # únicamente que la agenda no registra un partido en directo.
+            window_start = datetime.combine(today, datetime.min.time(), tzinfo=tz)
+            window_stop = window_start + timedelta(days=7)
+            scheduled = sorted(
+                (show for show in shows if show[1] > window_start and show[0] < window_stop),
+                key=lambda item: item[0],
+            )
+            fillers = []
+            cursor = window_start
+            for show in scheduled:
+                if show[0] > cursor:
+                    fillers.append([cursor, show[0], "ESPN Premium Argentina — Sin partidos en vivo", "Agenda ESPN Premium Argentina"])
+                cursor = max(cursor, show[1])
+            if cursor < window_stop:
+                fillers.append([cursor, window_stop, "ESPN Premium Argentina — Sin partidos en vivo", "Agenda ESPN Premium Argentina"])
+            shows.extend(fillers)
         if not shows:
             raise ValueError("la parrilla llegó vacía")
         return {name: [tuple(show) for show in sorted(shows, key=lambda item: item[0])]}
