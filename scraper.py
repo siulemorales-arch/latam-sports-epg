@@ -483,13 +483,15 @@ def scrape_fox_one_mexico():
             page.goto(FOX_ONE_MX, wait_until="domcontentloaded", timeout=60000)
             page.wait_for_timeout(10000)
 
-            # El primer carril de la guía usa la etiqueta accesible "FOX ".
-            # Los hijos visibles contienen título, descripción y horario.
-            cards = page.locator('main button[aria-label^="FOX "]')
+            # La etiqueta accesible se calcula a partir del contenido y no
+            # siempre existe como atributo HTML en Chromium sin interfaz.
+            # Leemos las líneas visibles de todos los botones de la guía.
+            cards = page.locator("main button")
             for index in range(cards.count()):
                 card = cards.nth(index)
-                label = clean(card.get_attribute("aria-label"))
-                parts = [clean(x) for x in card.locator(":scope > *").all_inner_texts() if clean(x)]
+                raw = card.inner_text()
+                parts = [clean(x) for x in raw.splitlines() if clean(x)]
+                label = clean(raw)
                 time_match = re.search(
                     r"(\d{1,2}:\d{2}\s*[AP]M)\s*-\s*(\d{1,2}:\d{2}\s*[AP]M)\s*$",
                     label, re.I,
@@ -497,7 +499,8 @@ def scrape_fox_one_mexico():
                 if not time_match:
                     continue
                 title = parts[0] if parts else ""
-                if not title or title.upper().startswith("FOX | TUBI"):
+                # Los títulos del carril FOX/Tubi terminan con una fecha.
+                if not title or re.search(r"\|\s*\d{2}/\d{2}/\d{4}$", title):
                     continue
                 start = parse_clock(time_match.group(1), guide_day, tz)
                 stop = parse_clock(time_match.group(2), guide_day, tz)
@@ -506,7 +509,9 @@ def scrape_fox_one_mexico():
                 shows.append((start, stop, title, "FOX One oficial"))
             browser.close()
 
-        return {name: shows} if shows else {}
+        if not shows:
+            raise ValueError("la página no publicó tarjetas FOX reconocibles")
+        return {name: shows}
     except Exception as e:
         print(f"FOX One México omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
