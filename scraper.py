@@ -22,6 +22,8 @@ TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
 FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
 DAZN_1_ITALIA = "https://tv-programmi.it/dazn-1"
+ESPN_PREMIUM_AR = "https://americatvguide.com/es/ar/channel/espn_premium"
+ESPN_PREMIUM_GAMES = "https://www.futbolenvivoargentina.com/canal/espn-premium-argentina"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -71,6 +73,10 @@ DISPLAY_ALIASES = {
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
     "FOX One México": ["FOX ONE", "FOX ONE MX", "FOX ONE MEXICO", "CALIENTE TV"],
     "DAZN 1 Italia": ["DAZN 1", "DAZN 1 IT", "DAZN 1 ITALIA", "ZONA DAZN"],
+    "ESPN Premium Argentina": [
+        "ESPN PREMIUM | AR", "ESPN PREMIUM AR", "ESPN PREMIUM ARGENTINA",
+        "ESPN PREMIUM FHD | AR", "ESPN PREMIUM HD | AR",
+    ],
     "Telemundo Deportes Ahora (USA)": ["Telemundo Deportes Ahora"],
     "Televen (Venezuela)": ["Televen", "Televen HD"],
     "Venevisión (Venezuela)": ["Venevisión", "Venevision"],
@@ -532,6 +538,82 @@ def scrape_dazn_1_italia():
         print(f"DAZN 1 Italia omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def scrape_espn_premium_argentina():
+    """Parrilla continua enriquecida con los partidos confirmados y sus equipos."""
+    name = "ESPN Premium Argentina"
+    tz = ZoneInfo("America/Argentina/Buenos_Aires")
+    today = datetime.now(tz).date()
+    try:
+        soup = BeautifulSoup(get(ESPN_PREMIUM_AR), "html.parser")
+        starts = []
+        # Los enlaces codifican día, hora y minuto: /280910/... = día 28, 09:10.
+        for a in soup.select('a[href*="/es/ar/c/espn-premium/"]'):
+            match = re.search(r"/espn-premium/(\d{2})(\d{2})(\d{2})/", a.get("href", ""))
+            if not match:
+                continue
+            day_num, hour, minute = map(int, match.groups())
+            day = next((today + timedelta(days=delta) for delta in range(-2, 4)
+                        if (today + timedelta(days=delta)).day == day_num), None)
+            if day is None:
+                continue
+            title = clean((a.get("title") or a.get_text(" "))[5:])
+            if title:
+                starts.append((datetime.combine(day, datetime.min.time(), tzinfo=tz).replace(
+                    hour=hour, minute=minute), title))
+        starts = sorted(set(starts), key=lambda item: item[0])
+        shows = []
+        for index, (start, title) in enumerate(starts):
+            stop = starts[index + 1][0] if index + 1 < len(starts) else start + timedelta(hours=2)
+            if stop > start:
+                shows.append([start, stop, title, "AmericaTVGuide"])
+
+        # La agenda de fútbol proporciona equipo local, visitante, fecha y hora.
+        games_soup = BeautifulSoup(get(ESPN_PREMIUM_GAMES), "html.parser")
+        month_names = {
+            "enero": 1, "febrero": 2, "marzo": 3, "abril": 4,
+            "mayo": 5, "junio": 6, "julio": 7, "agosto": 8,
+            "septiembre": 9, "octubre": 10, "noviembre": 11, "diciembre": 12,
+        }
+        games = []
+        for event in games_soup.select('div[itemtype="https://schema.org/Event"]'):
+            title_node = event.select_one('meta[itemprop="name"]')
+            desc_node = event.select_one('meta[itemprop="description"]')
+            duration_node = event.select_one('meta[itemprop="duration"]')
+            if not title_node or not desc_node:
+                continue
+            game_title = clean(title_node.get("content", "")).replace(" - ", " vs. ")
+            description = desc_node.get("content", "")
+            match = re.search(
+                r",\s*(\d{1,2}) de ([a-záéíóú]+) de (\d{4}) a las (\d{2}):(\d{2})",
+                description, re.I,
+            )
+            if not game_title or not match:
+                continue
+            day_num, month_text, year, hour, minute = match.groups()
+            month = month_names.get(month_text.casefold())
+            if not month:
+                continue
+            start = datetime(int(year), month, int(day_num), int(hour), int(minute), tzinfo=tz)
+            duration_text = duration_node.get("content", "") if duration_node else ""
+            duration_match = re.fullmatch(r"T(?:(\d+)H)?(?:(\d+)M)?", duration_text)
+            duration = timedelta(hours=int(duration_match.group(1) or 0),
+                                 minutes=int(duration_match.group(2) or 0)) if duration_match else timedelta(hours=2)
+            games.append((start, start + max(duration, timedelta(minutes=90)), game_title))
+
+        for game_start, game_stop, game_title in games:
+            covering = next((show for show in shows if show[0] <= game_start < show[1]), None)
+            if covering:
+                covering[2] = game_title
+                covering[3] = "Agenda ESPN Premium Argentina"
+            else:
+                shows.append([game_start, game_stop, game_title, "Agenda ESPN Premium Argentina"])
+        if not shows:
+            raise ValueError("la parrilla llegó vacía")
+        return {name: [tuple(show) for show in sorted(shows, key=lambda item: item[0])]}
+    except Exception as e:
+        print(f"ESPN Premium Argentina omitido sin inventar datos: {e}", file=sys.stderr)
+        return {}
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def parse_xmltv_datetime(value):
@@ -634,6 +716,8 @@ def main():
     for name, shows in scrape_fox_one_mexico().items():
         channels[name] = shows
     for name, shows in scrape_dazn_1_italia().items():
+        channels[name] = shows
+    for name, shows in scrape_espn_premium_argentina().items():
         channels[name] = shows
 
     validate_fresh_guide(channels)
