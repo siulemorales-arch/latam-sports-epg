@@ -544,22 +544,28 @@ def scrape_espn_premium_argentina():
     tz = ZoneInfo("America/Argentina/Buenos_Aires")
     today = datetime.now(tz).date()
     try:
-        soup = BeautifulSoup(get(ESPN_PREMIUM_AR), "html.parser")
         starts = []
-        # Los enlaces codifican día, hora y minuto: /280910/... = día 28, 09:10.
-        for a in soup.select('a[href*="/es/ar/c/espn-premium/"]'):
-            match = re.search(r"/espn-premium/(\d{2})(\d{2})(\d{2})/", a.get("href", ""))
-            if not match:
-                continue
-            day_num, hour, minute = map(int, match.groups())
-            day = next((today + timedelta(days=delta) for delta in range(-2, 4)
-                        if (today + timedelta(days=delta)).day == day_num), None)
-            if day is None:
-                continue
-            title = clean((a.get("title") or a.get_text(" "))[5:])
-            if title:
-                starts.append((datetime.combine(day, datetime.min.time(), tzinfo=tz).replace(
-                    hour=hour, minute=minute), title))
+        try:
+            soup = BeautifulSoup(get(ESPN_PREMIUM_AR), "html.parser")
+            # Los enlaces codifican día, hora y minuto: /280910/... = día 28, 09:10.
+            for a in soup.select('a[href*="/es/ar/c/espn-premium/"]'):
+                match = re.search(r"/espn-premium/(\d{2})(\d{2})(\d{2})/", a.get("href", ""))
+                if not match:
+                    continue
+                day_num, hour, minute = map(int, match.groups())
+                day = next((today + timedelta(days=delta) for delta in range(-2, 4)
+                            if (today + timedelta(days=delta)).day == day_num), None)
+                if day is None:
+                    continue
+                title = clean((a.get("title") or a.get_text(" "))[5:])
+                if title:
+                    starts.append((datetime.combine(day, datetime.min.time(), tzinfo=tz).replace(
+                        hour=hour, minute=minute), title))
+        except Exception as e:
+            # Esta fuente a veces bloquea las IP de GitHub. La agenda exacta
+            # de partidos que se procesa debajo sigue siendo suficiente para
+            # publicar la señal sin inventar ni perder los eventos en vivo.
+            print(f"Parrilla genérica ESPN Premium no disponible: {e}", file=sys.stderr)
         starts = sorted(set(starts), key=lambda item: item[0])
         shows = []
         for index, (start, title) in enumerate(starts):
