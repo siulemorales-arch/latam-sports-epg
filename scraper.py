@@ -107,6 +107,7 @@ PROVIDER_CHANNEL_IDS = {
 # proveedor cambie diariamente el texto del evento.
 DYNAMIC_CHANNEL_IDS = {}
 DYNAMIC_DISPLAY_ALIASES = {}
+DYNAMIC_PROVIDER_IDS = {}
 
 def clean(s):
     return " ".join((s or "").split())
@@ -715,6 +716,10 @@ def scrape_private_iptv_events():
             epg_id = clean(item.get("epg_channel_id")) or f"iptv.event.{stream_id}"
             DYNAMIC_CHANNEL_IDS[canonical] = epg_id
             DYNAMIC_DISPLAY_ALIASES.setdefault(canonical, set()).add(raw_name)
+            # UHF/Xtream suele dejar epg_channel_id vacío en canales-evento.
+            # Publicar también el nombre exacto como ID permite asociación
+            # automática por el texto visible de la playlist.
+            DYNAMIC_PROVIDER_IDS.setdefault(canonical, set()).add(raw_name)
             shows = []
             match = dated.search(event)
             if match:
@@ -896,10 +901,14 @@ def main():
         for provider_id in PROVIDER_CHANNEL_IDS.get(name, []):
             provider_ch = ET.SubElement(tv, "channel", {"id":provider_id})
             ET.SubElement(provider_ch, "display-name", {"lang":"es"}).text = provider_id
+        for provider_id in sorted(DYNAMIC_PROVIDER_IDS.get(name, []), key=str.casefold):
+            provider_ch = ET.SubElement(tv, "channel", {"id":provider_id})
+            ET.SubElement(provider_ch, "display-name", {"lang":"es"}).text = provider_id
     seen = set()
     for name in sorted(channels, key=str.casefold):
         for start, stop, title, source in sorted(channels[name], key=lambda x:x[0]):
-            for target_id in [ids[name], *PROVIDER_CHANNEL_IDS.get(name, [])]:
+            for target_id in [ids[name], *PROVIDER_CHANNEL_IDS.get(name, []),
+                              *sorted(DYNAMIC_PROVIDER_IDS.get(name, []), key=str.casefold)]:
                 key = (target_id, fmt(start), fmt(stop), title.casefold())
                 if key in seen: continue
                 seen.add(key)
