@@ -588,6 +588,34 @@ def scrape_sky_sport_italia():
                 continue
             seen.add(key)
             result[names[channel]].append((start, stop, title, "GuidaTV Italia / dati Sky"))
+
+    tz = ZoneInfo("Europe/Rome")
+    today = datetime.now(tz).date()
+    window_start = datetime.combine(today, datetime.min.time(), tzinfo=tz)
+    window_stop = window_start + timedelta(days=3)
+    for name, shows in result.items():
+        scheduled = sorted(shows, key=lambda item: item[0])
+        filled = []
+        cursor = window_start
+        for show in scheduled:
+            start, stop, title, source = show
+            local_start = start.astimezone(tz)
+            if start > cursor:
+                next_label = local_start.strftime("%d/%m %H:%M")
+                filled.append((
+                    cursor, start,
+                    f"Nessuna trasmissione • Prossimo evento: {next_label} — {title}",
+                    "Intervallo esplicito Sky Sport Italia",
+                ))
+            filled.append(show)
+            cursor = max(cursor, stop)
+        if cursor < window_stop:
+            filled.append((
+                cursor, window_stop,
+                "Nessuna trasmissione • Prossimo evento non ancora annunciato",
+                "Intervallo esplicito Sky Sport Italia",
+            ))
+        result[name] = filled
     return result
 
 def scrape_espn_premium_argentina():
