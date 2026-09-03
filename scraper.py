@@ -22,6 +22,7 @@ TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
 FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
 DAZN_1_ITALIA = "https://tv-programmi.it/dazn-1"
+SKY_SPORT_ITALIA = "https://guidatv.org/canali/sky-sport-hd-1"
 ESPN_PREMIUM_AR = "https://americatvguide.com/es/ar/channel/espn_premium"
 ESPN_PREMIUM_GAMES = "https://www.futbolenvivoargentina.com/canal/espn-premium-argentina"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
@@ -47,6 +48,13 @@ TZ_RULES = [
 # varios display-name por señal; así UHF puede asociar los nombres del
 # proveedor sin cambiar los IDs estables.
 DISPLAY_ALIASES = {
+    **{
+        f"Sky Sport {channel} Italia": [
+            f"SKY SPORT {channel}", f"SKY SPORT {channel} IT",
+            f"SKY SPORT HD {channel - 250}",
+        ]
+        for channel in range(251, 260)
+    },
     "DSPORTS": [
         "DIRECTV SPORTS ARGENTINA", "DIRECTV SPORTS CHILE",
         "DIRECTV SPORTS URUGUAY", "DIRECTV SPORTS PERU",
@@ -538,6 +546,50 @@ def scrape_dazn_1_italia():
         print(f"DAZN 1 Italia omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def scrape_sky_sport_italia():
+    """Extrae Sky Sport 251–259 usando los horarios publicados por la guía italiana.
+
+    Estas señales son canales de evento: cuando Sky no programa una emisión,
+    el canal se conserva en XMLTV sin inventar bloques ni restaurar eventos
+    antiguos. Las horas ISO de la fuente vienen en UTC y XMLTV preserva ese
+    instante; los reproductores las convierten a Europe/Rome automáticamente.
+    """
+    names = {str(number): f"Sky Sport {number} Italia" for number in range(251, 260)}
+    result = {name: [] for name in names.values()}
+    seen = set()
+    # La web ofrece hoy, mañana y pasado mañana. Cada página también incrusta
+    # datos de otras señales; filtramos estrictamente los números 251–259.
+    for suffix in ("", "/domani", "/dopodomani"):
+        try:
+            page = get(SKY_SPORT_ITALIA + suffix)
+        except Exception as e:
+            print(f"Sky Sport Italia {suffix or '/oggi'} omitido: {e}", file=sys.stderr)
+            continue
+        # Next.js serializa el catálogo dentro de self.__next_f con comillas
+        # escapadas. Acotamos cada coincidencia al objeto de un solo programa.
+        pattern = re.compile(
+            r'\\"number\\":\\"(25[1-9])\\".*?\\"prog\\":\{'
+            r'.*?\\"title\\":\\"(.*?)\\"'
+            r'.*?\\"inizio\\":\\"([^\\"]+)\\"'
+            r'.*?\\"fine\\":\\"([^\\"]+)\\"',
+            re.S,
+        )
+        for channel, raw_title, raw_start, raw_stop in pattern.findall(page):
+            title = clean(raw_title.replace(r'\\"', '"').replace(r'\\n', ' '))
+            if not title or title.casefold().startswith("programmazione "):
+                continue
+            try:
+                start = datetime.fromisoformat(raw_start.replace("Z", "+00:00"))
+                stop = datetime.fromisoformat(raw_stop.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            key = (channel, start, stop, title.casefold())
+            if stop <= start or key in seen:
+                continue
+            seen.add(key)
+            result[names[channel]].append((start, stop, title, "GuidaTV Italia / dati Sky"))
+    return result
+
 def scrape_espn_premium_argentina():
     """Parrilla continua enriquecida con los partidos confirmados y sus equipos."""
     name = "ESPN Premium Argentina"
@@ -747,6 +799,8 @@ def main():
     for name, shows in scrape_fox_one_mexico().items():
         channels[name] = shows
     for name, shows in scrape_dazn_1_italia().items():
+        channels[name] = shows
+    for name, shows in scrape_sky_sport_italia().items():
         channels[name] = shows
     for name, shows in scrape_espn_premium_argentina().items():
         channels[name] = shows
