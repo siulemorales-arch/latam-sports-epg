@@ -5,6 +5,7 @@ EPG XMLTV automático para señales deportivas de Sudamérica, Centroamérica y 
 - Descubre automáticamente señales deportivas en la guía completa de GatoTV.
 - Mantiene separadas las variantes regionales (ESPN, Fox Sports, TUDN y otras).
 - Añade DSPORTS, DSPORTS 2 y DSPORTS+ desde el widget oficial cuando responde.
+- Añade Sky Sport Italia 251–259 como canales de evento, con inicio/fin y horario de Roma.
 - No crea programación ficticia cuando una fuente falla.
 - Se actualiza cada 4 horas con GitHub Actions y se publica con GitHub Pages.
 
