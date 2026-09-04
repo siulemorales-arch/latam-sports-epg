@@ -633,9 +633,9 @@ def scrape_prime_ucl():
     si dos territorios emiten partidos distintos a la vez, ambos aparecen en
     un solo título para evitar programas XMLTV superpuestos.
     """
-    # Todos los kickoffs conocidos equivalen a las 3:00 PM de Miami. Se usa
+    # Todos los kickoffs conocidos equivalen a las 3:00 PM ET. Se usa
     # America/New_York para que el cambio estacional quede calculado bien.
-    miami_tz = ZoneInfo("America/New_York")
+    et_tz = ZoneInfo("America/New_York")
     events = [
         (2026, 9, 8, "UK/IE: FC Porto vs. Manchester City | DE: Borussia Dortmund vs. Villarreal"),
         (2026, 9, 9, "IT (previsto): Napoli vs. Arsenal"),
@@ -653,12 +653,50 @@ def scrape_prime_ucl():
         (2027, 1, 20, "IT (previsto): Como vs. PSG"),
         (2027, 1, 27, "IT: por anunciar"),
     ]
-    shows = []
+    scheduled = []
     for year, month, day, matches in events:
-        start = datetime(year, month, day, 15, 0, tzinfo=miami_tz)
+        start = datetime(year, month, day, 15, 0, tzinfo=et_tz)
         stop = start + timedelta(hours=2, minutes=45)
-        title = f"UCL on Prime Video • {matches} • 3:00 PM Miami"
-        shows.append((start, stop, title, "Agenda territorial Prime Video"))
+        title = f"UCL on Prime Video • {matches} • 3:00 PM ET"
+        scheduled.append((start, stop, title, "Agenda territorial Prime Video"))
+
+    month_it = ("gen", "feb", "mar", "apr", "mag", "giu",
+                "lug", "ago", "set", "ott", "nov", "dic")
+
+    def territory_match(matches, territory):
+        if territory == "uk":
+            match = re.search(r"UK/IE(?: \+ DE)?:\s*([^|]+)", matches)
+        else:
+            match = re.search(r"IT(?: \(previsto\))?:\s*([^|]+)", matches)
+        if not match:
+            return None
+        game = clean(match.group(1))
+        if game.casefold() in {"por anunciar", "to be announced"}:
+            return None
+        return game
+
+    def next_territory(after, territory):
+        for (year, month, day, matches), show in zip(events, scheduled):
+            start = show[0]
+            game = territory_match(matches, territory)
+            if start >= after and game:
+                if territory == "uk":
+                    date_label = start.strftime("%-d %b")
+                    return f"UK/IE: No live match • Next: {game} • {date_label}, 3:00 PM ET"
+                date_label = f"{start.day} {month_it[start.month - 1]}"
+                return f"IT: Nessuna partita in diretta • Prossima: {game} • {date_label}, 3:00 PM ET"
+        return ("UK/IE: No live match • Next match not announced" if territory == "uk"
+                else "IT: Nessuna partita in diretta • Prossima partita non ancora annunciata")
+
+    shows = []
+    cursor = datetime.combine(datetime.now(et_tz).date(), datetime.min.time(), tzinfo=et_tz)
+    for show in scheduled:
+        start, stop, title, source = show
+        if start > cursor:
+            status = f"{next_territory(cursor, 'uk')} | {next_territory(cursor, 'it')}"
+            shows.append((cursor, start, status, "Agenda territorial Prime Video"))
+        shows.append(show)
+        cursor = max(cursor, stop)
     return {channel: list(shows) for channel in PRIME_UCL_CHANNELS}
 
 def scrape_espn_premium_argentina():
