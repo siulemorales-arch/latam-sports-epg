@@ -916,6 +916,10 @@ def main():
     previous = load_previous_guide()
     restored = 0
     for name, shows in previous.items():
+        # Retirados al separar las agendas de Prime UK/IE e Italia. No deben
+        # reaparecer desde el XML anterior porque incluían también Alemania.
+        if name.startswith("UCL on Prime Video "):
+            continue
         if name not in channels and shows:
             channels[name] = shows
             restored += 1
