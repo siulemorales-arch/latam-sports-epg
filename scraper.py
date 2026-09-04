@@ -23,6 +23,7 @@ TELEVEN_EPG = "https://app.televen.com/modules/epg"
 FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
 DAZN_1_ITALIA = "https://tv-programmi.it/dazn-1"
 SKY_SPORT_ITALIA = "https://guidatv.org/canali/sky-sport-hd-1"
+PRIME_UCL_CHANNELS = [f"UCL on Prime Video {number:02d}" for number in range(1, 11)]
 ESPN_PREMIUM_AR = "https://americatvguide.com/es/ar/channel/espn_premium"
 ESPN_PREMIUM_GAMES = "https://www.futbolenvivoargentina.com/canal/espn-premium-argentina"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
@@ -48,6 +49,10 @@ TZ_RULES = [
 # varios display-name por señal; así UHF puede asociar los nombres del
 # proveedor sin cambiar los IDs estables.
 DISPLAY_ALIASES = {
+    **{
+        name: [name.upper(), name.replace("UCL", "CHAMPIONS LEAGUE")]
+        for name in PRIME_UCL_CHANNELS
+    },
     **{
         f"Sky Sport {channel} Italia": [
             f"SKY SPORT {channel}", f"SKY SPORT {channel} IT",
@@ -590,6 +595,7 @@ def scrape_sky_sport_italia():
             result[names[channel]].append((start, stop, title, "GuidaTV Italia / dati Sky"))
 
     tz = ZoneInfo("Europe/Rome")
+    miami_tz = ZoneInfo("America/New_York")
     today = datetime.now(tz).date()
     window_start = datetime.combine(today, datetime.min.time(), tzinfo=tz)
     window_stop = window_start + timedelta(days=3)
@@ -599,12 +605,12 @@ def scrape_sky_sport_italia():
         cursor = window_start
         for show in scheduled:
             start, stop, title, source = show
-            local_start = start.astimezone(tz)
+            miami_start = start.astimezone(miami_tz)
             if start > cursor:
-                next_label = local_start.strftime("%d/%m %H:%M")
+                next_label = miami_start.strftime("%d/%m %I:%M %p").replace(" 0", " ")
                 filled.append((
                     cursor, start,
-                    f"Nessuna trasmissione • Prossimo evento: {next_label} — {title}",
+                    f"Nessuna trasmissione • Prossimo evento: {next_label} Miami — {title}",
                     "Intervallo esplicito Sky Sport Italia",
                 ))
             filled.append(show)
@@ -617,6 +623,43 @@ def scrape_sky_sport_italia():
             ))
         result[name] = filled
     return result
+
+def scrape_prime_ucl():
+    """Publica diez canales espejo para las selecciones territoriales de Prime.
+
+    Prime no expone un canal lineal XMLTV y muchos proveedores IPTV cambian
+    el nombre de la señal en cada jornada. Los diez IDs estables permiten
+    asociar manualmente cualquier señal en UHF. Todos repiten la misma agenda;
+    si dos territorios emiten partidos distintos a la vez, ambos aparecen en
+    un solo título para evitar programas XMLTV superpuestos.
+    """
+    # Todos los kickoffs conocidos equivalen a las 3:00 PM de Miami. Se usa
+    # America/New_York para que el cambio estacional quede calculado bien.
+    miami_tz = ZoneInfo("America/New_York")
+    events = [
+        (2026, 9, 8, "UK/IE: FC Porto vs. Manchester City | DE: Borussia Dortmund vs. Villarreal"),
+        (2026, 9, 9, "IT (previsto): Napoli vs. Arsenal"),
+        (2026, 10, 13, "UK/IE: Atlético Madrid vs. Manchester United | DE: Viking Stavanger vs. Bayern München"),
+        (2026, 10, 14, "IT (previsto): Roma vs. Real Madrid"),
+        (2026, 10, 20, "UK/IE: Liverpool vs. Villarreal | DE: VfB Stuttgart vs. Atlético Madrid"),
+        (2026, 10, 21, "IT (previsto): Inter vs. Shakhtar Donetsk"),
+        (2026, 11, 3, "UK/IE: Manchester United vs. Roma | DE: Atlético Madrid vs. Bayern München"),
+        (2026, 11, 4, "IT (previsto): Porto vs. Napoli"),
+        (2026, 11, 24, "UK/IE + DE: Arsenal vs. Borussia Dortmund"),
+        (2026, 11, 25, "IT (previsto): PSG vs. Roma"),
+        (2026, 12, 8, "UK/IE: por anunciar | DE: Bayern München vs. Slavia Praha"),
+        (2026, 12, 9, "IT (previsto): Borussia Dortmund vs. Inter"),
+        (2027, 1, 19, "UK/IE: por anunciar | DE: por anunciar"),
+        (2027, 1, 20, "IT (previsto): Como vs. PSG"),
+        (2027, 1, 27, "IT: por anunciar"),
+    ]
+    shows = []
+    for year, month, day, matches in events:
+        start = datetime(year, month, day, 15, 0, tzinfo=miami_tz)
+        stop = start + timedelta(hours=2, minutes=45)
+        title = f"UCL on Prime Video • {matches} • 3:00 PM Miami"
+        shows.append((start, stop, title, "Agenda territorial Prime Video"))
+    return {channel: list(shows) for channel in PRIME_UCL_CHANNELS}
 
 def scrape_espn_premium_argentina():
     """Parrilla continua enriquecida con los partidos confirmados y sus equipos."""
@@ -829,6 +872,8 @@ def main():
     for name, shows in scrape_dazn_1_italia().items():
         channels[name] = shows
     for name, shows in scrape_sky_sport_italia().items():
+        channels[name] = shows
+    for name, shows in scrape_prime_ucl().items():
         channels[name] = shows
     for name, shows in scrape_espn_premium_argentina().items():
         channels[name] = shows
