@@ -809,12 +809,14 @@ def scrape_espn_premium_argentina():
         return {}
 
 def load_manual_channels(path=MANUAL_CHANNELS):
-    """Carga emisiones recibidas por captura sin alterar las fuentes automáticas."""
+    """Carga emisiones recibidas por captura y mantiene visibles sus canales."""
     if not path.exists():
         return {}
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
         result = {}
+        now = datetime.now(timezone.utc)
+        window_stop = now + timedelta(days=3)
         for name, items in payload.get("channels", {}).items():
             shows = []
             for item in items:
@@ -825,8 +827,26 @@ def load_manual_channels(path=MANUAL_CHANNELS):
                 stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
                 if stop > start:
                     shows.append((start, stop, title, "Captura manual verificada"))
-            if shows:
-                result[name] = shows
+            shows.sort(key=lambda item: item[0])
+            fillers = []
+            cursor = now
+            for show_start, show_stop, _title, _source in shows:
+                if show_stop <= now or show_start >= window_stop:
+                    continue
+                if show_start > cursor:
+                    fillers.append((
+                        cursor, show_start,
+                        f"{name} — Sin evento anunciado • Próxima actualización pendiente",
+                        "Relleno manual explícito",
+                    ))
+                cursor = max(cursor, show_stop)
+            if cursor < window_stop:
+                fillers.append((
+                    cursor, window_stop,
+                    f"{name} — Sin evento anunciado • Próxima actualización pendiente",
+                    "Relleno manual explícito",
+                ))
+            result[name] = shows + fillers
         return result
     except Exception as e:
         print(f"Programación manual omitida: {e}", file=sys.stderr)
