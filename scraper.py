@@ -837,14 +837,14 @@ def load_manual_channels(path=MANUAL_CHANNELS):
                 if show_start > cursor:
                     fillers.append((
                         cursor, show_start,
-                        f"{name} — Sin evento anunciado • Próxima actualización pendiente",
+                        f"{name} — No event scheduled",
                         "Relleno manual explícito",
                     ))
                 cursor = max(cursor, show_stop)
             if cursor < window_stop:
                 fillers.append((
                     cursor, window_stop,
-                    f"{name} — Sin evento anunciado • Próxima actualización pendiente",
+                    f"{name} — No event scheduled",
                     "Relleno manual explícito",
                 ))
             result[name] = shows + fillers
