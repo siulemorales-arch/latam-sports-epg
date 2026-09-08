@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tv generator-info-name="latam-sports-epg" generator-info-url="https://github.com/siulemorales-arch/latam-sports-epg">
+  <channel id="peacock.01.latam"><display-name lang="es">Peacock 01</display-name><display-name lang="es">PEACOCK 01</display-name><display-name lang="es">PEACOCK 1</display-name><display-name lang="es">US| PEACOCK PPV 01</display-name></channel>
+  <channel id="peacock.02.latam"><display-name lang="es">Peacock 02</display-name><display-name lang="es">PEACOCK 02</display-name><display-name lang="es">PEACOCK 2</display-name><display-name lang="es">US| PEACOCK PPV 02</display-name></channel>
+  <channel id="peacock.03.latam"><display-name lang="es">Peacock 03</display-name><display-name lang="es">PEACOCK 03</display-name><display-name lang="es">PEACOCK 3</display-name><display-name lang="es">US| PEACOCK PPV 03</display-name></channel>
+  <channel id="peacock.04.latam"><display-name lang="es">Peacock 04</display-name><display-name lang="es">PEACOCK 04</display-name><display-name lang="es">PEACOCK 4</display-name><display-name lang="es">US| PEACOCK PPV 04</display-name></channel>
+  <channel id="peacock.05.latam"><display-name lang="es">Peacock 05</display-name><display-name lang="es">PEACOCK 05</display-name><display-name lang="es">PEACOCK 5</display-name><display-name lang="es">US| PEACOCK PPV 05</display-name></channel>
   <channel id="a.e.venezuela.latam">
     <display-name lang="es">A&amp;E (Venezuela)</display-name>
   </channel>
@@ -39504,4 +39509,11 @@
     <title lang="es">La línea deportiva</title>
     <category lang="es">Deportes</category>
   </programme>
+  <programme start="20260907170000 +0000" stop="20260907200000 +0000" channel="peacock.01.latam"><title lang="es">Cagliari vs. Lecce (Español)</title><category lang="es">Deportes</category></programme>
+  <programme start="20260908010000 +0000" stop="20260908043000 +0000" channel="peacock.01.latam"><title lang="es">Cardinals vs. Giants (Español)</title><category lang="es">Deportes</category></programme>
+  <programme start="20260907170500 +0000" stop="20260908013000 +0000" channel="peacock.02.latam"><title lang="es">Kentucky Downs: Day 5</title><category lang="es">Deportes</category></programme>
+  <programme start="20260907180000 +0000" stop="20260907213000 +0000" channel="peacock.03.latam"><title lang="es">Away Feed: ATL at PHI</title><category lang="es">Deportes</category></programme>
+  <programme start="20260908010000 +0000" stop="20260908043000 +0000" channel="peacock.03.latam"><title lang="es">Cardinals at Giants</title><category lang="es">Deportes</category></programme>
+  <programme start="20260907180000 +0000" stop="20260907213000 +0000" channel="peacock.04.latam"><title lang="es">Home Feed: ATL at PHI</title><category lang="es">Deportes</category></programme>
+  <programme start="20260907193000 +0000" stop="20260907223000 +0000" channel="peacock.05.latam"><title lang="es">Udinese vs. Lazio (Español)</title><category lang="es">Deportes</category></programme>
 </tv>
