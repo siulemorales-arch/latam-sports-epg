@@ -1,0 +1,51 @@
+{
+  "timezone": "UTC",
+  "updated_at": "2026-09-08T00:00:00Z",
+  "channels": {
+    "Peacock 01": [
+      {
+        "title": "Cagliari vs. Lecce (Español)",
+        "start": "2026-09-07T17:00:00Z",
+        "stop": "2026-09-07T20:00:00Z"
+      },
+      {
+        "title": "Cardinals vs. Giants (Español)",
+        "start": "2026-09-08T01:00:00Z",
+        "stop": "2026-09-08T04:30:00Z"
+      }
+    ],
+    "Peacock 02": [
+      {
+        "title": "Kentucky Downs: Day 5",
+        "start": "2026-09-07T17:05:00Z",
+        "stop": "2026-09-08T01:30:00Z"
+      }
+    ],
+    "Peacock 03": [
+      {
+        "title": "Away Feed: ATL at PHI",
+        "start": "2026-09-07T18:00:00Z",
+        "stop": "2026-09-07T21:30:00Z"
+      },
+      {
+        "title": "Cardinals at Giants",
+        "start": "2026-09-08T01:00:00Z",
+        "stop": "2026-09-08T04:30:00Z"
+      }
+    ],
+    "Peacock 04": [
+      {
+        "title": "Home Feed: ATL at PHI",
+        "start": "2026-09-07T18:00:00Z",
+        "stop": "2026-09-07T21:30:00Z"
+      }
+    ],
+    "Peacock 05": [
+      {
+        "title": "Udinese vs. Lazio (Español)",
+        "start": "2026-09-07T19:30:00Z",
+        "stop": "2026-09-07T22:30:00Z"
+      }
+    ]
+  }
+}
