@@ -52,6 +52,13 @@ TZ_RULES = [
 # proveedor sin cambiar los IDs estables.
 DISPLAY_ALIASES = {
     **{
+        f"Peacock {number:02d}": [
+            f"PEACOCK {number:02d}", f"PEACOCK {number}",
+            f"US| PEACOCK PPV {number:02d}",
+        ]
+        for number in range(1, 21)
+    },
+    **{
         name: [name.upper(), name.replace("UCL", "CHAMPIONS LEAGUE")]
         for name in PRIME_UCL_CHANNELS
     },
@@ -801,6 +808,30 @@ def scrape_espn_premium_argentina():
         print(f"ESPN Premium Argentina omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def load_manual_channels(path=MANUAL_CHANNELS):
+    """Carga emisiones recibidas por captura sin alterar las fuentes automáticas."""
+    if not path.exists():
+        return {}
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        result = {}
+        for name, items in payload.get("channels", {}).items():
+            shows = []
+            for item in items:
+                title = clean(item.get("title"))
+                if not title:
+                    continue
+                start = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
+                stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
+                if stop > start:
+                    shows.append((start, stop, title, "Captura manual verificada"))
+            if shows:
+                result[name] = shows
+        return result
+    except Exception as e:
+        print(f"Programación manual omitida: {e}", file=sys.stderr)
+        return {}
+
 def fmt(dt): return dt.strftime("%Y%m%d%H%M%S %z")
 
 def parse_xmltv_datetime(value):
@@ -907,6 +938,8 @@ def main():
     for name, shows in scrape_sky_sport_italia().items():
         channels[name] = shows
     for name, shows in scrape_prime_ucl().items():
+        channels[name] = shows
+    for name, shows in load_manual_channels().items():
         channels[name] = shows
     for name, shows in scrape_espn_premium_argentina().items():
         channels[name] = shows
