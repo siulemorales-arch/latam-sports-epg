@@ -46,6 +46,76 @@
         "start": "2026-09-07T19:30:00Z",
         "stop": "2026-09-07T22:30:00Z"
       }
+    ],
+    "Sky Sports+ 1": [
+      {
+        "title": "Blackburn vs. Sheffield United",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 2": [
+      {
+        "title": "Cardiff vs. Stoke",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 3": [
+      {
+        "title": "Southampton vs. Swansea",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 4": [
+      {
+        "title": "Watford vs. Preston",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 5": [
+      {
+        "title": "Bournemouth vs. Lincoln",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 6": [
+      {
+        "title": "Leyton Orient vs. Bradford",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 7": [
+      {
+        "title": "Crystal Palace vs. Middlesbrough",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 8": [
+      {
+        "title": "Sunderland vs. Hull",
+        "start": "2026-09-08T18:30:00Z",
+        "stop": "2026-09-08T21:00:00Z"
+      }
+    ],
+    "Sky Sports+ 9": [
+      {
+        "title": "Doncaster vs. Huddersfield",
+        "start": "2026-09-08T17:45:00Z",
+        "stop": "2026-09-08T20:15:00Z"
+      }
+    ],
+    "Sky Sports+ 10": [
+      {
+        "title": "Exeter vs. Tottenham Hotspur U21",
+        "start": "2026-09-08T17:45:00Z",
+        "stop": "2026-09-08T20:15:00Z"
+      }
     ]
   }
 }
