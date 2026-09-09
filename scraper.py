@@ -27,6 +27,7 @@ PRIME_UCL_UK_CHANNELS = [f"UCL on Prime UK {number:02d}" for number in range(1, 
 PRIME_UCL_IT_CHANNELS = [f"UCL on Prime Italia {number:02d}" for number in range(1, 11)]
 PRIME_UCL_CHANNELS = PRIME_UCL_UK_CHANNELS + PRIME_UCL_IT_CHANNELS
 MANUAL_CHANNELS = Path("manual_channels.json")
+# Los cambios diarios en manual_channels.json disparan la publicación del EPG.
 ESPN_PREMIUM_AR = "https://americatvguide.com/es/ar/channel/espn_premium"
 ESPN_PREMIUM_GAMES = "https://www.futbolenvivoargentina.com/canal/espn-premium-argentina"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
