@@ -1,120 +1,96 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-08T00:00:00Z",
+  "updated_at": "2026-09-09T09:00:00Z",
   "channels": {
     "Peacock 01": [
       {
-        "title": "Cagliari vs. Lecce (Español)",
-        "start": "2026-09-07T17:00:00Z",
-        "stop": "2026-09-07T20:00:00Z"
+        "title": "Morning News Now LL",
+        "start": "2026-09-09T11:00:00Z",
+        "stop": "2026-09-09T23:30:00Z"
       },
       {
-        "title": "Cardinals vs. Giants (Español)",
-        "start": "2026-09-08T01:00:00Z",
-        "stop": "2026-09-08T04:30:00Z"
+        "title": "Patriots vs. Seahawks",
+        "start": "2026-09-10T00:00:00Z",
+        "stop": "2026-09-10T05:00:00Z"
       }
     ],
     "Peacock 02": [
       {
-        "title": "Kentucky Downs: Day 5",
-        "start": "2026-09-07T17:05:00Z",
-        "stop": "2026-09-08T01:30:00Z"
+        "title": "Morning News Now MV2",
+        "start": "2026-09-09T11:00:00Z",
+        "stop": "2026-09-09T23:30:00Z"
+      },
+      {
+        "title": "Home Feed: PIT at CWS",
+        "start": "2026-09-10T00:30:00Z",
+        "stop": "2026-09-10T04:00:00Z"
       }
     ],
     "Peacock 03": [
       {
-        "title": "Away Feed: ATL at PHI",
-        "start": "2026-09-07T18:00:00Z",
-        "stop": "2026-09-07T21:30:00Z"
+        "title": "Morning News Now MV1",
+        "start": "2026-09-09T11:00:00Z",
+        "stop": "2026-09-09T23:30:00Z"
       },
       {
-        "title": "Cardinals at Giants",
-        "start": "2026-09-08T01:00:00Z",
-        "stop": "2026-09-08T04:30:00Z"
+        "title": "Away Feed: PIT at CWS",
+        "start": "2026-09-10T00:30:00Z",
+        "stop": "2026-09-10T04:00:00Z"
       }
     ],
     "Peacock 04": [
       {
-        "title": "Home Feed: ATL at PHI",
-        "start": "2026-09-07T18:00:00Z",
-        "stop": "2026-09-07T21:30:00Z"
+        "title": "Morning News Now ISO 2 V",
+        "start": "2026-09-09T12:00:00Z",
+        "stop": "2026-09-10T00:30:00Z"
+      },
+      {
+        "title": "Patriots vs. Seahawks (Spanish)",
+        "start": "2026-09-10T01:00:00Z",
+        "stop": "2026-09-10T05:00:00Z"
       }
     ],
     "Peacock 05": [
       {
-        "title": "Udinese vs. Lazio (Español)",
-        "start": "2026-09-07T19:30:00Z",
-        "stop": "2026-09-07T22:30:00Z"
+        "title": "Morning News Now CC V",
+        "start": "2026-09-09T12:00:00Z",
+        "stop": "2026-09-10T00:30:00Z"
+      }
+    ],
+    "Peacock 06": [],
+    "Peacock 07": [
+      {
+        "title": "La Vuelta a España: Stage 17",
+        "start": "2026-09-09T13:30:00Z",
+        "stop": "2026-09-09T17:30:00Z"
+      }
+    ],
+    "Peacock 08": [
+      {
+        "title": "Japan vs. USA (Spanish)",
+        "start": "2026-09-09T16:55:00Z",
+        "stop": "2026-09-09T19:35:00Z"
+      }
+    ],
+    "Peacock 09": [
+      {
+        "title": "Kentucky Downs: Day 6",
+        "start": "2026-09-09T17:05:00Z",
+        "stop": "2026-09-10T01:30:00Z"
       }
     ],
     "Sky Sports+ 1": [
       {
-        "title": "Blackburn vs. Sheffield United",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
+        "title": "Norwich vs. Birmingham",
+        "start": "2026-09-09T18:30:00Z",
+        "stop": "2026-09-09T21:30:00Z"
       }
     ],
     "Sky Sports+ 2": [
       {
-        "title": "Cardiff vs. Stoke",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 3": [
-      {
-        "title": "Southampton vs. Swansea",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 4": [
-      {
-        "title": "Watford vs. Preston",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 5": [
-      {
-        "title": "Bournemouth vs. Lincoln",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 6": [
-      {
-        "title": "Leyton Orient vs. Bradford",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 7": [
-      {
-        "title": "Crystal Palace vs. Middlesbrough",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 8": [
-      {
-        "title": "Sunderland vs. Hull",
-        "start": "2026-09-08T18:30:00Z",
-        "stop": "2026-09-08T21:00:00Z"
-      }
-    ],
-    "Sky Sports+ 9": [
-      {
-        "title": "Doncaster vs. Huddersfield",
-        "start": "2026-09-08T17:45:00Z",
-        "stop": "2026-09-08T20:15:00Z"
-      }
-    ],
-    "Sky Sports+ 10": [
-      {
-        "title": "Exeter vs. Tottenham Hotspur U21",
-        "start": "2026-09-08T17:45:00Z",
-        "stop": "2026-09-08T20:15:00Z"
+        "title": "Derby vs. West Brom",
+        "start": "2026-09-09T18:30:00Z",
+        "stop": "2026-09-09T21:30:00Z"
       }
     ]
   }
