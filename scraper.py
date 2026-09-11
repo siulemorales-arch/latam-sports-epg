@@ -30,6 +30,7 @@ MANUAL_CHANNELS = Path("manual_channels.json")
 # Los cambios diarios en manual_channels.json disparan la publicación del EPG.
 ESPN_PREMIUM_AR = "https://americatvguide.com/es/ar/channel/espn_premium"
 ESPN_PREMIUM_GAMES = "https://www.futbolenvivoargentina.com/canal/espn-premium-argentina"
+TYC_SPORTS_AR = "https://mi.tv/ar/async/channel/tyc-sports"
 UA = "Mozilla/5.0 (compatible; latam-sports-epg/1.0; +https://github.com/siulemorales-arch/latam-sports-epg)"
 SPORTS = re.compile(r"(?:^|\b)(?:ESPN(?:\s|$)|Fox Sports|TNT Sports|TyC Sports|TUDN|Win Sports|DSports|DirecTV Sports|Claro Sports|Sky Sports|TVC Deportes|Azteca Deportes|CDN Deportes|WAPA 2 Deportes|GolTV|Gol Peru|Gol Caracol|beIN Sports|AYM Sports|Adrenalina Sports|Teledeporte)(?:\b|$)", re.I)
 # Además de los deportes, el mismo XML incluye las señales colombianas
@@ -53,7 +54,7 @@ TZ_RULES = [
 # varios display-name por señal; así UHF puede asociar los nombres del
 # proveedor sin cambiar los IDs estables.
 DISPLAY_ALIASES = {
-        **{
+    **{
         f"Fubo Sports {number}": [
             f"FUBO SPORTS {number}", f"FUBO SPORTS {number:02d}",
             f"CA| FUBO PPV {number:02d}",
@@ -107,6 +108,10 @@ DISPLAY_ALIASES = {
     "ESPN Premium Argentina": [
         "ESPN PREMIUM | AR", "ESPN PREMIUM AR", "ESPN PREMIUM ARGENTINA",
         "ESPN PREMIUM FHD | AR", "ESPN PREMIUM HD | AR",
+    ],
+    "TyC Sports Argentina": [
+        "TYC SPORTS ARG", "TYC SPORTS | AR", "TYC SPORTS AR",
+        "TYC SPORTS ARGENTINA", "TYC SPORTS HD | AR", "TYC SPORTS FHD | AR",
     ],
     "Telemundo Deportes Ahora (USA)": ["Telemundo Deportes Ahora"],
     "Televen (Venezuela)": ["Televen", "Televen HD"],
@@ -710,6 +715,51 @@ def scrape_prime_ucl():
         **{channel: list(it_shows) for channel in PRIME_UCL_IT_CHANNELS},
     }
 
+def scrape_tyc_sports_argentina():
+    """Obtiene la parrilla argentina de TyC Sports directamente de mi.tv."""
+    name = "TyC Sports Argentina"
+    tz = ZoneInfo("America/Argentina/Buenos_Aires")
+    today = datetime.now(tz).date()
+    shows = []
+    try:
+        for day_offset in range(5):
+            guide_day = today + timedelta(days=day_offset)
+            url = f"{TYC_SPORTS_AR}/{guide_day.isoformat()}/-180"
+            soup = BeautifulSoup(get(url), "html.parser")
+            day_shows = []
+            for item in soup.select("ul.broadcasts li"):
+                time_node = item.select_one("span.time")
+                title_node = item.select_one("h2")
+                if not time_node or not title_node:
+                    continue
+                title = clean(title_node.get_text(" "))
+                subtitle_node = item.select_one("span.sub-title")
+                subtitle = clean(subtitle_node.get_text(" ")) if subtitle_node else ""
+                if subtitle and subtitle.casefold() != title.casefold():
+                    title = f"{subtitle}: {title}"
+                try:
+                    start = parse_clock(time_node.get_text(), guide_day, tz)
+                except ValueError:
+                    continue
+                day_shows.append([start, None, title, "mi.tv Argentina"])
+            day_shows.sort(key=lambda item: item[0])
+            for index, show in enumerate(day_shows):
+                if index + 1 < len(day_shows):
+                    show[1] = day_shows[index + 1][0]
+                else:
+                    show[1] = datetime.combine(
+                        guide_day + timedelta(days=1), datetime.min.time(), tzinfo=tz
+                    )
+                if show[1] > show[0]:
+                    shows.append(tuple(show))
+        if not shows:
+            raise ValueError("la parrilla llegó vacía")
+        return {name: shows}
+    except Exception as e:
+        print(f"TyC Sports Argentina omitido sin inventar datos: {e}", file=sys.stderr)
+        return {}
+
+
 def scrape_espn_premium_argentina():
     """Parrilla continua enriquecida con los partidos confirmados y sus equipos."""
     name = "ESPN Premium Argentina"
@@ -967,6 +1017,8 @@ def main():
     for name, shows in scrape_sky_sport_italia().items():
         channels[name] = shows
     for name, shows in scrape_prime_ucl().items():
+        channels[name] = shows
+    for name, shows in scrape_tyc_sports_argentina().items():
         channels[name] = shows
     for name, shows in load_manual_channels().items():
         channels[name] = shows
