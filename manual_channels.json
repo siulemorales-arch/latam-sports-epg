@@ -1,97 +1,71 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-09T09:00:00Z",
+  "updated_at": "2026-09-11T14:00:00Z",
   "channels": {
     "Peacock 01": [
-      {
-        "title": "Morning News Now LL",
-        "start": "2026-09-09T11:00:00Z",
-        "stop": "2026-09-09T23:30:00Z"
-      },
-      {
-        "title": "Patriots vs. Seahawks",
-        "start": "2026-09-10T00:00:00Z",
-        "stop": "2026-09-10T05:00:00Z"
-      }
+      {"title": "Morning News Now LL 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
+      {"title": "Lexington SC v. Ascent FC", "start": "2026-09-12T00:30:00Z", "stop": "2026-09-12T03:00:00Z"}
     ],
     "Peacock 02": [
-      {
-        "title": "Morning News Now MV2",
-        "start": "2026-09-09T11:00:00Z",
-        "stop": "2026-09-09T23:30:00Z"
-      },
-      {
-        "title": "Home Feed: PIT at CWS",
-        "start": "2026-09-10T00:30:00Z",
-        "stop": "2026-09-10T04:00:00Z"
-      }
+      {"title": "Morning News Now MV 2 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
+      {"title": "Away Feed: CLE at MIN", "start": "2026-09-12T01:00:00Z", "stop": "2026-09-12T04:30:00Z"}
     ],
     "Peacock 03": [
-      {
-        "title": "Morning News Now MV1",
-        "start": "2026-09-09T11:00:00Z",
-        "stop": "2026-09-09T23:30:00Z"
-      },
-      {
-        "title": "Away Feed: PIT at CWS",
-        "start": "2026-09-10T00:30:00Z",
-        "stop": "2026-09-10T04:00:00Z"
-      }
+      {"title": "Morning News Now MV 1 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
+      {"title": "Home Feed: CLE at MIN", "start": "2026-09-12T01:00:00Z", "stop": "2026-09-12T04:30:00Z"}
     ],
     "Peacock 04": [
-      {
-        "title": "Morning News Now ISO 2 V",
-        "start": "2026-09-09T12:00:00Z",
-        "stop": "2026-09-10T00:30:00Z"
-      },
-      {
-        "title": "Patriots vs. Seahawks (Spanish)",
-        "start": "2026-09-10T01:00:00Z",
-        "stop": "2026-09-10T05:00:00Z"
-      }
+      {"title": "La Vuelta a España: Stage 19", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-11T17:30:00Z"},
+      {"title": "Ultimate Championship: Day 1", "start": "2026-09-11T18:00:00Z", "stop": "2026-09-11T21:30:00Z"},
+      {"title": "Group Stage: BRA vs. USA", "start": "2026-09-11T22:00:00Z", "stop": "2026-09-12T00:30:00Z"}
     ],
     "Peacock 05": [
-      {
-        "title": "Morning News Now CC V",
-        "start": "2026-09-09T12:00:00Z",
-        "stop": "2026-09-10T00:30:00Z"
-      }
+      {"title": "Morning News Now ISO 1 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"},
+      {"title": "Home Feed: TEX at AZ", "start": "2026-09-12T02:30:00Z", "stop": "2026-09-12T06:00:00Z"}
     ],
-    "Peacock 06": [],
-    "Peacock 07": [
-      {
-        "title": "La Vuelta a España: Stage 17",
-        "start": "2026-09-09T13:30:00Z",
-        "stop": "2026-09-09T17:30:00Z"
-      }
+    "Peacock 06": [
+      {"title": "Morning News Now ISO 1 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"},
+      {"title": "Away Feed: TEX at AZ", "start": "2026-09-12T02:30:00Z", "stop": "2026-09-12T06:00:00Z"}
     ],
-    "Peacock 08": [
-      {
-        "title": "Japan vs. USA (Spanish)",
-        "start": "2026-09-09T16:55:00Z",
-        "stop": "2026-09-09T19:35:00Z"
-      }
+    "Peacock 07": [{"title": "Morning News Now ISO 2 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"}],
+    "Peacock 08": [{"title": "Morning News Now CC V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"}],
+    "Peacock 09": [{"title": "Union Berlin vs. Schalke (Español)", "start": "2026-09-11T19:00:00Z", "stop": "2026-09-11T22:00:00Z"}],
+    "Peacock 10": [{"title": "Venezia vs. Fiorentina (Español)", "start": "2026-09-11T19:35:00Z", "stop": "2026-09-11T22:10:00Z"}],
+    "Fubo Sports 1": [
+      {"title": "Football Report", "start": "2026-09-11T13:30:00Z", "stop": "2026-09-11T14:00:00Z"},
+      {"title": "Real Madrid Pass", "start": "2026-09-11T14:00:00Z", "stop": "2026-09-11T15:00:00Z"},
+      {"title": "Simms Complete", "start": "2026-09-11T15:00:00Z", "stop": "2026-09-11T15:30:00Z"},
+      {"title": "The Short List", "start": "2026-09-11T15:30:00Z", "stop": "2026-09-11T16:00:00Z"},
+      {"title": "Premier League Match Highlights", "start": "2026-09-11T16:00:00Z", "stop": "2026-09-11T16:30:00Z"},
+      {"title": "Premier League Match Highlights", "start": "2026-09-11T16:30:00Z", "stop": "2026-09-11T17:00:00Z"},
+      {"title": "Premier League Match Highlights", "start": "2026-09-11T17:00:00Z", "stop": "2026-09-11T17:30:00Z"},
+      {"title": "Premier League Match Highlights", "start": "2026-09-11T17:30:00Z", "stop": "2026-09-11T18:00:00Z"},
+      {"title": "Inside Serie A", "start": "2026-09-11T18:00:00Z", "stop": "2026-09-11T18:30:00Z"},
+      {"title": "Venezia vs. Fiorentina", "start": "2026-09-11T18:30:00Z", "stop": "2026-09-11T20:45:00Z"},
+      {"title": "Fubo Sports Network Presents", "start": "2026-09-11T20:45:00Z", "stop": "2026-09-11T21:00:00Z"},
+      {"title": "BKFC Knuckle Up", "start": "2026-09-11T21:00:00Z", "stop": "2026-09-11T22:00:00Z"},
+      {"title": "BKFC Knuckle Up", "start": "2026-09-11T22:00:00Z", "stop": "2026-09-11T23:00:00Z"},
+      {"title": "BKFC 93 Hollywood Perdomo vs. Hill", "start": "2026-09-11T23:00:00Z", "stop": "2026-09-12T03:00:00Z"},
+      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T03:00:00Z", "stop": "2026-09-12T05:00:00Z"},
+      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T05:00:00Z", "stop": "2026-09-12T07:00:00Z"},
+      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T07:00:00Z", "stop": "2026-09-12T09:00:00Z"},
+      {"title": "BKFC Knuckle Up", "start": "2026-09-12T09:00:00Z", "stop": "2026-09-12T10:00:00Z"},
+      {"title": "PBR Unleash the Beast", "start": "2026-09-12T10:00:00Z", "stop": "2026-09-12T12:00:00Z"}
     ],
-    "Peacock 09": [
-      {
-        "title": "Kentucky Downs: Day 6",
-        "start": "2026-09-09T17:05:00Z",
-        "stop": "2026-09-10T01:30:00Z"
-      }
-    ],
+    "Fubo Sports 2": [],
+    "Fubo Sports 3": [],
+    "Fubo Sports 4": [],
+    "Fubo Sports 5": [],
+    "Fubo Sports 6": [],
+    "Fubo Sports 7": [],
+    "Fubo Sports 8": [],
+    "Fubo Sports 9": [],
+    "Fubo Sports 10": [],
     "Sky Sports+ 1": [
-      {
-        "title": "Norwich vs. Birmingham",
-        "start": "2026-09-09T18:30:00Z",
-        "stop": "2026-09-09T21:30:00Z"
-      }
+      {"title": "Norwich vs. Birmingham", "start": "2026-09-09T18:30:00Z", "stop": "2026-09-09T21:30:00Z"}
     ],
     "Sky Sports+ 2": [
-      {
-        "title": "Derby vs. West Brom",
-        "start": "2026-09-09T18:30:00Z",
-        "stop": "2026-09-09T21:30:00Z"
-      }
+      {"title": "Derby vs. West Brom", "start": "2026-09-09T18:30:00Z", "stop": "2026-09-09T21:30:00Z"}
     ]
   }
 }
