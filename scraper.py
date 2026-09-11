@@ -53,6 +53,13 @@ TZ_RULES = [
 # varios display-name por señal; así UHF puede asociar los nombres del
 # proveedor sin cambiar los IDs estables.
 DISPLAY_ALIASES = {
+        **{
+        f"Fubo Sports {number}": [
+            f"FUBO SPORTS {number}", f"FUBO SPORTS {number:02d}",
+            f"CA| FUBO PPV {number:02d}",
+        ]
+        for number in range(1, 11)
+    },
     **{
         f"Peacock {number:02d}": [
             f"PEACOCK {number:02d}", f"PEACOCK {number}",
