@@ -1,71 +1,412 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-11T14:00:00Z",
+  "updated_at": "2026-09-12T13:00:00Z",
   "channels": {
     "Peacock 01": [
-      {"title": "Morning News Now LL 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
-      {"title": "Lexington SC v. Ascent FC", "start": "2026-09-12T00:30:00Z", "stop": "2026-09-12T03:00:00Z"}
+      {
+        "title": "La Vuelta a España: Stage 20",
+        "start": "2026-09-12T11:00:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      },
+      {
+        "title": "Atalanta vs. Cagliari (Spanish)",
+        "start": "2026-09-12T19:30:00Z",
+        "stop": "2026-09-12T22:30:00Z"
+      },
+      {
+        "title": "Sun FC v. FTL United",
+        "start": "2026-09-12T23:00:00Z",
+        "stop": "2026-09-13T01:30:00Z"
+      }
     ],
     "Peacock 02": [
-      {"title": "Morning News Now MV 2 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
-      {"title": "Away Feed: CLE at MIN", "start": "2026-09-12T01:00:00Z", "stop": "2026-09-12T04:30:00Z"}
+      {
+        "title": "New Zealand vs. USA (Spanish)",
+        "start": "2026-09-12T13:50:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      },
+      {
+        "title": "Ultimate Championship: Day 2",
+        "start": "2026-09-12T17:00:00Z",
+        "stop": "2026-09-12T20:30:00Z"
+      }
     ],
     "Peacock 03": [
-      {"title": "Morning News Now MV 1 9.11.26", "start": "2026-09-11T11:00:00Z", "stop": "2026-09-11T23:30:00Z"},
-      {"title": "Home Feed: CLE at MIN", "start": "2026-09-12T01:00:00Z", "stop": "2026-09-12T04:30:00Z"}
+      {
+        "title": "Genoa vs. Frosinone (Spanish)",
+        "start": "2026-09-12T13:50:00Z",
+        "stop": "2026-09-12T16:25:00Z"
+      },
+      {
+        "title": "Lazio vs. AC Milan (Spanish)",
+        "start": "2026-09-12T16:30:00Z",
+        "stop": "2026-09-12T19:30:00Z"
+      },
+      {
+        "title": "Rice vs. Notre Dame",
+        "start": "2026-09-12T20:00:00Z",
+        "stop": "2026-09-13T00:30:00Z"
+      }
     ],
     "Peacock 04": [
-      {"title": "La Vuelta a España: Stage 19", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-11T17:30:00Z"},
-      {"title": "Ultimate Championship: Day 1", "start": "2026-09-11T18:00:00Z", "stop": "2026-09-11T21:30:00Z"},
-      {"title": "Group Stage: BRA vs. USA", "start": "2026-09-11T22:00:00Z", "stop": "2026-09-12T00:30:00Z"}
+      {
+        "title": "Borussia Dortmund vs. Paderborn (Spanish)",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      },
+      {
+        "title": "Rd. 29 Playoff 1: Columbus",
+        "start": "2026-09-12T19:30:00Z",
+        "stop": "2026-09-13T00:00:00Z"
+      }
     ],
     "Peacock 05": [
-      {"title": "Morning News Now ISO 1 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"},
-      {"title": "Home Feed: TEX at AZ", "start": "2026-09-12T02:30:00Z", "stop": "2026-09-12T06:00:00Z"}
+      {
+        "title": "Race Day Live: Columbus",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T18:00:00Z"
+      }
     ],
     "Peacock 06": [
-      {"title": "Morning News Now ISO 1 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"},
-      {"title": "Away Feed: TEX at AZ", "start": "2026-09-12T02:30:00Z", "stop": "2026-09-12T06:00:00Z"}
+      {
+        "title": "Mainz vs. Eintracht Frankfurt (Spanish)",
+        "start": "2026-09-12T14:20:00Z",
+        "stop": "2026-09-12T16:55:00Z"
+      },
+      {
+        "title": "Cologne vs. Werder Bremen (Spanish)",
+        "start": "2026-09-12T17:25:00Z",
+        "stop": "2026-09-12T20:00:00Z"
+      }
     ],
-    "Peacock 07": [{"title": "Morning News Now ISO 2 V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"}],
-    "Peacock 08": [{"title": "Morning News Now CC V 9.11.26", "start": "2026-09-11T12:00:00Z", "stop": "2026-09-12T00:30:00Z"}],
-    "Peacock 09": [{"title": "Union Berlin vs. Schalke (Español)", "start": "2026-09-11T19:00:00Z", "stop": "2026-09-11T22:00:00Z"}],
-    "Peacock 10": [{"title": "Venezia vs. Fiorentina (Español)", "start": "2026-09-11T19:35:00Z", "stop": "2026-09-11T22:10:00Z"}],
+    "Peacock 07": [
+      {
+        "title": "Freiburg vs. Borussia Mönchengladbach (Spanish)",
+        "start": "2026-09-12T14:20:00Z",
+        "stop": "2026-09-12T16:55:00Z"
+      },
+      {
+        "title": "Spurs v. Everton",
+        "start": "2026-09-12T17:30:00Z",
+        "stop": "2026-09-12T20:30:00Z"
+      }
+    ],
+    "Peacock 08": [
+      {
+        "title": "Hoffenheim vs. VfB Stuttgart (Spanish)",
+        "start": "2026-09-12T14:20:00Z",
+        "stop": "2026-09-12T16:55:00Z"
+      }
+    ],
+    "Peacock 09": [
+      {
+        "title": "Augsburg vs. Bayer Leverkusen (Spanish)",
+        "start": "2026-09-12T14:25:00Z",
+        "stop": "2026-09-12T17:00:00Z"
+      }
+    ],
+    "Peacock 10": [
+      {
+        "title": "Liverpool v. Fulham (Spanish)",
+        "start": "2026-09-12T14:30:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 11": [
+      {
+        "title": "Liverpool v. Fulham",
+        "start": "2026-09-12T14:50:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 12": [
+      {
+        "title": "Aston Villa v. Nottingham Forest",
+        "start": "2026-09-12T14:50:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 13": [
+      {
+        "title": "Bournemouth v. Brentford",
+        "start": "2026-09-12T14:50:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 14": [
+      {
+        "title": "Crystal Palace v. Ipswich",
+        "start": "2026-09-12T14:50:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 15": [
+      {
+        "title": "Goal Rush: Matchweek 4",
+        "start": "2026-09-12T14:50:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      }
+    ],
+    "Peacock 16": [
+      {
+        "title": "Group Stage: ALG vs. USA",
+        "start": "2026-09-12T15:15:00Z",
+        "stop": "2026-09-12T17:45:00Z"
+      }
+    ],
+    "Peacock 17": [
+      {
+        "title": "Aerobic Gymnastics Champs: Day 1",
+        "start": "2026-09-12T15:55:00Z",
+        "stop": "2026-09-12T18:30:00Z"
+      }
+    ],
     "Fubo Sports 1": [
-      {"title": "Football Report", "start": "2026-09-11T13:30:00Z", "stop": "2026-09-11T14:00:00Z"},
-      {"title": "Real Madrid Pass", "start": "2026-09-11T14:00:00Z", "stop": "2026-09-11T15:00:00Z"},
-      {"title": "Simms Complete", "start": "2026-09-11T15:00:00Z", "stop": "2026-09-11T15:30:00Z"},
-      {"title": "The Short List", "start": "2026-09-11T15:30:00Z", "stop": "2026-09-11T16:00:00Z"},
-      {"title": "Premier League Match Highlights", "start": "2026-09-11T16:00:00Z", "stop": "2026-09-11T16:30:00Z"},
-      {"title": "Premier League Match Highlights", "start": "2026-09-11T16:30:00Z", "stop": "2026-09-11T17:00:00Z"},
-      {"title": "Premier League Match Highlights", "start": "2026-09-11T17:00:00Z", "stop": "2026-09-11T17:30:00Z"},
-      {"title": "Premier League Match Highlights", "start": "2026-09-11T17:30:00Z", "stop": "2026-09-11T18:00:00Z"},
-      {"title": "Inside Serie A", "start": "2026-09-11T18:00:00Z", "stop": "2026-09-11T18:30:00Z"},
-      {"title": "Venezia vs. Fiorentina", "start": "2026-09-11T18:30:00Z", "stop": "2026-09-11T20:45:00Z"},
-      {"title": "Fubo Sports Network Presents", "start": "2026-09-11T20:45:00Z", "stop": "2026-09-11T21:00:00Z"},
-      {"title": "BKFC Knuckle Up", "start": "2026-09-11T21:00:00Z", "stop": "2026-09-11T22:00:00Z"},
-      {"title": "BKFC Knuckle Up", "start": "2026-09-11T22:00:00Z", "stop": "2026-09-11T23:00:00Z"},
-      {"title": "BKFC 93 Hollywood Perdomo vs. Hill", "start": "2026-09-11T23:00:00Z", "stop": "2026-09-12T03:00:00Z"},
-      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T03:00:00Z", "stop": "2026-09-12T05:00:00Z"},
-      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T05:00:00Z", "stop": "2026-09-12T07:00:00Z"},
-      {"title": "Bare Knuckle Fighting Championship", "start": "2026-09-12T07:00:00Z", "stop": "2026-09-12T09:00:00Z"},
-      {"title": "BKFC Knuckle Up", "start": "2026-09-12T09:00:00Z", "stop": "2026-09-12T10:00:00Z"},
-      {"title": "PBR Unleash the Beast", "start": "2026-09-12T10:00:00Z", "stop": "2026-09-12T12:00:00Z"}
+      {
+        "title": "BKFC Knuckle Up",
+        "start": "2026-09-12T09:00:00Z",
+        "stop": "2026-09-12T10:00:00Z"
+      },
+      {
+        "title": "PBR Unleash the Beast",
+        "start": "2026-09-12T10:00:00Z",
+        "stop": "2026-09-12T12:00:00Z"
+      },
+      {
+        "title": "Heroines",
+        "start": "2026-09-12T12:00:00Z",
+        "stop": "2026-09-12T12:30:00Z"
+      },
+      {
+        "title": "Simms Complete",
+        "start": "2026-09-12T12:30:00Z",
+        "stop": "2026-09-12T13:00:00Z"
+      },
+      {
+        "title": "Fubo Sports News",
+        "start": "2026-09-12T13:00:00Z",
+        "stop": "2026-09-12T13:30:00Z"
+      },
+      {
+        "title": "Fubo Sports Network Presents",
+        "start": "2026-09-12T13:30:00Z",
+        "stop": "2026-09-12T13:45:00Z"
+      },
+      {
+        "title": "Liverpool vs. Fulham",
+        "start": "2026-09-12T13:45:00Z",
+        "stop": "2026-09-12T16:00:00Z"
+      },
+      {
+        "title": "Premier League Match Highlights",
+        "start": "2026-09-12T16:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      },
+      {
+        "title": "Premier League Match Highlights",
+        "start": "2026-09-12T16:30:00Z",
+        "stop": "2026-09-12T17:00:00Z"
+      },
+      {
+        "title": "Premier League Match Highlights",
+        "start": "2026-09-12T17:00:00Z",
+        "stop": "2026-09-12T17:30:00Z"
+      },
+      {
+        "title": "Premier League Review",
+        "start": "2026-09-12T17:30:00Z",
+        "stop": "2026-09-12T18:30:00Z"
+      },
+      {
+        "title": "Fubo Sports Network Presents",
+        "start": "2026-09-12T18:30:00Z",
+        "stop": "2026-09-12T18:45:00Z"
+      },
+      {
+        "title": "Sunderland vs. Arsenal FC",
+        "start": "2026-09-12T18:45:00Z",
+        "stop": "2026-09-12T21:00:00Z"
+      },
+      {
+        "title": "PFL 5 Featherweights/Lightweights",
+        "start": "2026-09-12T21:00:00Z",
+        "stop": "2026-09-13T00:00:00Z"
+      },
+      {
+        "title": "PFL 6 Light Heavyweights/Heavyweights",
+        "start": "2026-09-13T00:00:00Z",
+        "stop": "2026-09-13T03:00:00Z"
+      }
     ],
-    "Fubo Sports 2": [],
-    "Fubo Sports 3": [],
-    "Fubo Sports 4": [],
-    "Fubo Sports 5": [],
-    "Fubo Sports 6": [],
+    "Fubo Sports 2": [
+      {
+        "title": "Genoa vs. Frosinone",
+        "start": "2026-09-12T12:45:00Z",
+        "stop": "2026-09-12T15:15:00Z"
+      },
+      {
+        "title": "Upcoming Coventry City vs. Brighton & Hove Albion",
+        "start": "2026-09-12T15:15:00Z",
+        "stop": "2026-09-12T18:15:00Z"
+      }
+    ],
+    "Fubo Sports 3": [
+      {
+        "title": "Crystal Palace vs. Ipswich Town",
+        "start": "2026-09-12T13:45:00Z",
+        "stop": "2026-09-12T16:15:00Z"
+      },
+      {
+        "title": "Upcoming Como vs. Parma",
+        "start": "2026-09-12T16:15:00Z",
+        "stop": "2026-09-12T19:15:00Z"
+      }
+    ],
+    "Fubo Sports 4": [
+      {
+        "title": "Bournemouth vs. Brentford",
+        "start": "2026-09-12T13:45:00Z",
+        "stop": "2026-09-12T16:15:00Z"
+      },
+      {
+        "title": "Upcoming Lecce vs. Monza",
+        "start": "2026-09-12T16:15:00Z",
+        "stop": "2026-09-12T19:15:00Z"
+      }
+    ],
+    "Fubo Sports 5": [
+      {
+        "title": "Aston Villa vs. Nottingham Forest",
+        "start": "2026-09-12T13:45:00Z",
+        "stop": "2026-09-12T16:15:00Z"
+      },
+      {
+        "title": "Upcoming Napoli vs. Bologna",
+        "start": "2026-09-12T16:15:00Z",
+        "stop": "2026-09-12T19:15:00Z"
+      }
+    ],
+    "Fubo Sports 6": [
+      {
+        "title": "Chelsea FC vs. Hull City",
+        "start": "2026-09-12T13:45:00Z",
+        "stop": "2026-09-12T16:15:00Z"
+      },
+      {
+        "title": "Upcoming Sassuolo vs. Juventus FC",
+        "start": "2026-09-12T16:15:00Z",
+        "stop": "2026-09-12T19:15:00Z"
+      }
+    ],
     "Fubo Sports 7": [],
-    "Fubo Sports 8": [],
-    "Fubo Sports 9": [],
-    "Fubo Sports 10": [],
-    "Sky Sports+ 1": [
-      {"title": "Norwich vs. Birmingham", "start": "2026-09-09T18:30:00Z", "stop": "2026-09-09T21:30:00Z"}
+    "Fubo Sports 8": [
+      {
+        "title": "Tottenham Hotspur FC vs. Everton FC",
+        "start": "2026-09-12T16:15:00Z",
+        "stop": "2026-09-12T19:00:00Z"
+      }
     ],
+    "Fubo Sports 9": [
+      {
+        "title": "Atalanta BC vs. Cagliari",
+        "start": "2026-09-12T18:30:00Z",
+        "stop": "2026-09-12T21:30:00Z"
+      }
+    ],
+    "Fubo Sports 10": [
+      {
+        "title": "SS Lazio vs. AC Milan",
+        "start": "2026-09-12T15:45:00Z",
+        "stop": "2026-09-12T18:45:00Z"
+      }
+    ],
+    "Sky Sports+ 1": [],
     "Sky Sports+ 2": [
-      {"title": "Derby vs. West Brom", "start": "2026-09-09T18:30:00Z", "stop": "2026-09-09T21:30:00Z"}
+      {
+        "title": "Bolton vs. Cardiff",
+        "start": "2026-09-12T11:15:00Z",
+        "stop": "2026-09-12T14:15:00Z"
+      }
+    ],
+    "Sky Sports+ 3": [
+      {
+        "title": "Leyton Orient vs. Wycombe",
+        "start": "2026-09-12T11:15:00Z",
+        "stop": "2026-09-12T14:15:00Z"
+      }
+    ],
+    "Sky Sports+ 4": [
+      {
+        "title": "Notts County vs. Bradford",
+        "start": "2026-09-12T11:15:00Z",
+        "stop": "2026-09-12T14:15:00Z"
+      }
+    ],
+    "Sky Sports+ 5": [
+      {
+        "title": "Crawley vs. Cheltenham",
+        "start": "2026-09-12T11:15:00Z",
+        "stop": "2026-09-12T14:15:00Z"
+      }
+    ],
+    "Sky Sports+ 6": [
+      {
+        "title": "Grimsby vs. Bristol Rovers",
+        "start": "2026-09-12T11:15:00Z",
+        "stop": "2026-09-12T14:15:00Z"
+      }
+    ],
+    "Sky Sports+ 14": [
+      {
+        "title": "Huddersfield Giants vs. Castleford Tigers",
+        "start": "2026-09-12T13:50:00Z",
+        "stop": "2026-09-12T16:20:00Z"
+      }
+    ],
+    "Premier League+ 1": [
+      {
+        "title": "Bournemouth vs. Brentford",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      },
+      {
+        "title": "Tottenham Hotspur vs. Everton",
+        "start": "2026-09-12T16:30:00Z",
+        "stop": "2026-09-12T19:00:00Z"
+      },
+      {
+        "title": "Sunderland vs. Arsenal",
+        "start": "2026-09-12T19:00:00Z",
+        "stop": "2026-09-12T21:30:00Z"
+      }
+    ],
+    "Premier League+ 2": [
+      {
+        "title": "Aston Villa vs. Nottingham Forest",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      }
+    ],
+    "Premier League+ 3": [
+      {
+        "title": "Chelsea vs. Hull City",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      }
+    ],
+    "Premier League+ 4": [
+      {
+        "title": "Crystal Palace vs. Ipswich Town",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      }
+    ],
+    "Premier League+ 5": [
+      {
+        "title": "Liverpool vs. Fulham",
+        "start": "2026-09-12T14:00:00Z",
+        "stop": "2026-09-12T16:30:00Z"
+      }
     ]
   }
 }
