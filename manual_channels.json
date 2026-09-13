@@ -1,166 +1,143 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-12T13:00:00Z",
+  "updated_at": "2026-09-13T12:40:00Z",
   "channels": {
-    "Peacock 01": [
-      {
-        "title": "La Vuelta a España: Stage 20",
-        "start": "2026-09-12T11:00:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      },
-      {
-        "title": "Atalanta vs. Cagliari (Spanish)",
-        "start": "2026-09-12T19:30:00Z",
-        "stop": "2026-09-12T22:30:00Z"
-      },
-      {
-        "title": "Sun FC v. FTL United",
-        "start": "2026-09-12T23:00:00Z",
-        "stop": "2026-09-13T01:30:00Z"
-      }
-    ],
+    "Peacock 01": [],
     "Peacock 02": [
       {
-        "title": "New Zealand vs. USA (Spanish)",
-        "start": "2026-09-12T13:50:00Z",
-        "stop": "2026-09-12T16:30:00Z"
+        "title": "Lecce vs. Monza (Spanish)",
+        "start": "2026-09-13T13:50:00Z",
+        "stop": "2026-09-13T16:25:00Z"
       },
       {
-        "title": "Ultimate Championship: Day 2",
-        "start": "2026-09-12T17:00:00Z",
-        "stop": "2026-09-12T20:30:00Z"
+        "title": "Man United v. Man City",
+        "start": "2026-09-13T16:30:00Z",
+        "stop": "2026-09-13T20:00:00Z"
+      },
+      {
+        "title": "Group Stage: USA vs. ITA",
+        "start": "2026-09-13T22:00:00Z",
+        "stop": "2026-09-14T00:30:00Z"
+      },
+      {
+        "title": "Cowboys vs. Giants (Spanish)",
+        "start": "2026-09-14T01:00:00Z",
+        "stop": "2026-09-14T05:00:00Z"
       }
     ],
     "Peacock 03": [
       {
-        "title": "Genoa vs. Frosinone (Spanish)",
-        "start": "2026-09-12T13:50:00Z",
-        "stop": "2026-09-12T16:25:00Z"
+        "title": "Aerobic Gymnastics Champs: Day 2",
+        "start": "2026-09-13T13:55:00Z",
+        "stop": "2026-09-13T17:05:00Z"
       },
       {
-        "title": "Lazio vs. AC Milan (Spanish)",
-        "start": "2026-09-12T16:30:00Z",
-        "stop": "2026-09-12T19:30:00Z"
+        "title": "Group Stage: USA vs. NED",
+        "start": "2026-09-13T17:30:00Z",
+        "stop": "2026-09-13T20:00:00Z"
       },
       {
-        "title": "Rice vs. Notre Dame",
-        "start": "2026-09-12T20:00:00Z",
-        "stop": "2026-09-13T00:30:00Z"
+        "title": "Padres at Giants",
+        "start": "2026-09-14T00:00:00Z",
+        "stop": "2026-09-14T03:30:00Z"
+      },
+      {
+        "title": "Sunday Night Football Final",
+        "start": "2026-09-14T04:30:00Z",
+        "stop": "2026-09-14T06:00:00Z"
       }
     ],
     "Peacock 04": [
       {
-        "title": "Borussia Dortmund vs. Paderborn (Spanish)",
-        "start": "2026-09-12T14:00:00Z",
-        "stop": "2026-09-12T17:30:00Z"
+        "title": "RB Leipzig vs. Hamburg (Spanish)",
+        "start": "2026-09-13T14:00:00Z",
+        "stop": "2026-09-13T17:00:00Z"
       },
       {
-        "title": "Rd. 29 Playoff 1: Columbus",
-        "start": "2026-09-12T19:30:00Z",
-        "stop": "2026-09-13T00:00:00Z"
+        "title": "Away Feed: NYM at NYY",
+        "start": "2026-09-13T18:30:00Z",
+        "stop": "2026-09-13T22:00:00Z"
+      },
+      {
+        "title": "Cowboys vs. Giants",
+        "start": "2026-09-14T00:00:00Z",
+        "stop": "2026-09-14T05:00:00Z"
       }
     ],
     "Peacock 05": [
       {
-        "title": "Race Day Live: Columbus",
-        "start": "2026-09-12T14:00:00Z",
-        "stop": "2026-09-12T18:00:00Z"
+        "title": "La Vuelta a España: Stage 21",
+        "start": "2026-09-13T15:00:00Z",
+        "stop": "2026-09-13T20:00:00Z"
+      },
+      {
+        "title": "Trinity FC v. Power FC",
+        "start": "2026-09-14T00:30:00Z",
+        "stop": "2026-09-14T03:00:00Z"
       }
     ],
     "Peacock 06": [
       {
-        "title": "Mainz vs. Eintracht Frankfurt (Spanish)",
-        "start": "2026-09-12T14:20:00Z",
-        "stop": "2026-09-12T16:55:00Z"
+        "title": "Elversberg vs. Bayern Munich (Spanish)",
+        "start": "2026-09-13T16:25:00Z",
+        "stop": "2026-09-13T19:00:00Z"
       },
       {
-        "title": "Cologne vs. Werder Bremen (Spanish)",
-        "start": "2026-09-12T17:25:00Z",
-        "stop": "2026-09-12T20:00:00Z"
+        "title": "Brooklyn FC v. Sporting JAX",
+        "start": "2026-09-13T20:00:00Z",
+        "stop": "2026-09-13T22:30:00Z"
+      },
+      {
+        "title": "Chivas vs. Pumas (Spanish)",
+        "start": "2026-09-14T02:00:00Z",
+        "stop": "2026-09-14T04:30:00Z"
       }
     ],
     "Peacock 07": [
       {
-        "title": "Freiburg vs. Borussia Mönchengladbach (Spanish)",
-        "start": "2026-09-12T14:20:00Z",
-        "stop": "2026-09-12T16:55:00Z"
+        "title": "Napoli vs. Bologna (Spanish)",
+        "start": "2026-09-13T16:30:00Z",
+        "stop": "2026-09-13T19:30:00Z"
       },
       {
-        "title": "Spurs v. Everton",
-        "start": "2026-09-12T17:30:00Z",
-        "stop": "2026-09-12T20:30:00Z"
+        "title": "Torino vs. Roma (Spanish)",
+        "start": "2026-09-14T17:00:00Z",
+        "stop": "2026-09-14T20:00:00Z"
       }
     ],
     "Peacock 08": [
       {
-        "title": "Hoffenheim vs. VfB Stuttgart (Spanish)",
-        "start": "2026-09-12T14:20:00Z",
-        "stop": "2026-09-12T16:55:00Z"
+        "title": "Ultimate Championship: Day 3",
+        "start": "2026-09-13T17:00:00Z",
+        "stop": "2026-09-13T20:30:00Z"
       }
     ],
     "Peacock 09": [
       {
-        "title": "Augsburg vs. Bayer Leverkusen (Spanish)",
-        "start": "2026-09-12T14:25:00Z",
-        "stop": "2026-09-12T17:00:00Z"
+        "title": "Home Feed: NYM at NYY",
+        "start": "2026-09-13T18:30:00Z",
+        "stop": "2026-09-13T22:00:00Z"
+      },
+      {
+        "title": "Mens Round of 16",
+        "start": "2026-09-14T17:30:00Z",
+        "stop": "2026-09-14T20:00:00Z"
       }
     ],
     "Peacock 10": [
       {
-        "title": "Liverpool v. Fulham (Spanish)",
-        "start": "2026-09-12T14:30:00Z",
-        "stop": "2026-09-12T17:30:00Z"
+        "title": "Sassuolo vs. Juventus (Spanish)",
+        "start": "2026-09-13T19:00:00Z",
+        "stop": "2026-09-13T22:30:00Z"
       }
     ],
-    "Peacock 11": [
-      {
-        "title": "Liverpool v. Fulham",
-        "start": "2026-09-12T14:50:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      }
-    ],
-    "Peacock 12": [
-      {
-        "title": "Aston Villa v. Nottingham Forest",
-        "start": "2026-09-12T14:50:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      }
-    ],
-    "Peacock 13": [
-      {
-        "title": "Bournemouth v. Brentford",
-        "start": "2026-09-12T14:50:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      }
-    ],
-    "Peacock 14": [
-      {
-        "title": "Crystal Palace v. Ipswich",
-        "start": "2026-09-12T14:50:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      }
-    ],
-    "Peacock 15": [
-      {
-        "title": "Goal Rush: Matchweek 4",
-        "start": "2026-09-12T14:50:00Z",
-        "stop": "2026-09-12T17:30:00Z"
-      }
-    ],
-    "Peacock 16": [
-      {
-        "title": "Group Stage: ALG vs. USA",
-        "start": "2026-09-12T15:15:00Z",
-        "stop": "2026-09-12T17:45:00Z"
-      }
-    ],
-    "Peacock 17": [
-      {
-        "title": "Aerobic Gymnastics Champs: Day 1",
-        "start": "2026-09-12T15:55:00Z",
-        "stop": "2026-09-12T18:30:00Z"
-      }
-    ],
+    "Peacock 11": [],
+    "Peacock 12": [],
+    "Peacock 13": [],
+    "Peacock 14": [],
+    "Peacock 15": [],
+    "Peacock 16": [],
+    "Peacock 17": [],
     "Fubo Sports 1": [
       {
         "title": "BKFC Knuckle Up",
