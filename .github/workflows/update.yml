@@ -44,7 +44,10 @@ jobs:
           assert len(channels) >= 80, f'Solo {len(channels)} canales'
           assert len(programmes) >= 1500, f'Solo {len(programmes)} programas'
           names={c.findtext('display-name') for c in channels}
-          required={'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)'}
+          required={
+              'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)',
+              'DAZN 2 Italia',
+          }
           missing=required-names
           assert not missing, f'Faltan señales críticas: {sorted(missing)}'
           print(f'{len(channels)} canales, {len(programmes)} programas')
