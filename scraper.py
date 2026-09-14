@@ -69,6 +69,15 @@ DISPLAY_ALIASES = {
         for number in range(1, 21)
     },
     **{
+        f"MonoMax {number}": [
+            f"MONOMAX {number}", f"MONOMAX {number:02d}",
+            f"MONO MAX {number}", f"MONO MAX {number:02d}",
+            f"UK| MONO MAX PPV {number:02d}",
+            *(["UK| MONO MAX PPV"] if number == 1 else []),
+        ]
+        for number in range(1, 11)
+    },
+    **{
         name: [name.upper(), name.replace("UCL", "CHAMPIONS LEAGUE")]
         for name in PRIME_UCL_CHANNELS
     },
