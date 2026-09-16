@@ -22,6 +22,7 @@ TELEMUNDO_SPORTS = "https://www.telemundo.com/deportes/telemundo-deportes-ahora"
 TELEVEN_EPG = "https://app.televen.com/modules/epg"
 FOX_ONE_MX = "https://www.foxone.mx/linearchannel/caliente-live"
 DAZN_1_ITALIA = "https://tv-programmi.it/dazn-1"
+DAZN_2_ITALIA = "https://guidatv.org/canali/zona-dazn-2"
 SKY_SPORT_ITALIA = "https://guidatv.org/canali/sky-sport-hd-1"
 PRIME_UCL_UK_CHANNELS = [f"UCL on Prime UK {number:02d}" for number in range(1, 11)]
 PRIME_UCL_IT_CHANNELS = [f"UCL on Prime Italia {number:02d}" for number in range(1, 11)]
@@ -62,6 +63,13 @@ DISPLAY_ALIASES = {
         for number in range(1, 11)
     },
     **{
+        f"Sky Sports+ {number}": [
+            f"SKY SPORTS+ {number}", f"SKY SPORT+ {number}",
+            f"UK| SKY SPORT+ {number:02d}",
+        ]
+        for number in range(1, 11)
+    },
+    **{
         f"Peacock {number:02d}": [
             f"PEACOCK {number:02d}", f"PEACOCK {number}",
             f"US| PEACOCK PPV {number:02d}",
@@ -75,7 +83,7 @@ DISPLAY_ALIASES = {
             f"UK| MONO MAX PPV {number:02d}",
             *(["UK| MONO MAX PPV"] if number == 1 else []),
         ]
-        for number in range(1, 11)
+        for number in range(1, 24)
     },
     **{
         name: [name.upper(), name.replace("UCL", "CHAMPIONS LEAGUE")]
@@ -114,6 +122,10 @@ DISPLAY_ALIASES = {
     "TUDN USA": ["TUDN HD | USA", "TUDN FHD | USA"],
     "FOX One México": ["FOX ONE", "FOX ONE MX", "FOX ONE MEXICO", "CALIENTE TV"],
     "DAZN 1 Italia": ["DAZN 1", "DAZN 1 IT", "DAZN 1 ITALIA", "ZONA DAZN"],
+    "DAZN 2 Italia": [
+        "DAZN 2", "DAZN 2 IT", "DAZN 2 ITALIA", "ZONA DAZN 2",
+        "DAZN 2 HD", "ZONA DAZN 2 HD", "SKY 215",
+    ],
     "ESPN Premium Argentina": [
         "ESPN PREMIUM | AR", "ESPN PREMIUM AR", "ESPN PREMIUM ARGENTINA",
         "ESPN PREMIUM FHD | AR", "ESPN PREMIUM HD | AR",
@@ -583,6 +595,90 @@ def scrape_dazn_1_italia():
         print(f"DAZN 1 Italia omitido sin inventar datos: {e}", file=sys.stderr)
         return {}
 
+def scrape_dazn_2_italia():
+    """Crea Zona DAZN 2 (Sky 215) con su agenda lineal confirmada."""
+    name = "DAZN 2 Italia"
+    rome_tz = ZoneInfo("Europe/Rome")
+    miami_tz = ZoneInfo("America/New_York")
+    today = datetime.now(rome_tz).date()
+    window_start = datetime.combine(today, datetime.min.time(), tzinfo=rome_tz)
+    window_stop = window_start + timedelta(days=7)
+    shows = []
+    seen = set()
+
+    for suffix in ("", "/domani", "/dopodomani"):
+        try:
+            page = get(DAZN_2_ITALIA + suffix)
+        except Exception as e:
+            print(f"DAZN 2 Italia {suffix or '/oggi'} no disponible: {e}", file=sys.stderr)
+            continue
+        pattern = re.compile(
+            r'\\"canale\\":\\{[^{}]*?\\"number\\":\\"215\\"[^{}]*?\\},'
+            r'\\"prog\\":\\{.*?\\"title\\":\\"(.*?)\\"'
+            r'.*?\\"inizio\\":\\"([^\\"]+)\\"'
+            r'.*?\\"fine\\":\\"([^\\"]+)\\"',
+            re.S,
+        )
+        for raw_title, raw_start, raw_stop in pattern.findall(page):
+            title = clean(raw_title.replace(r'\\"', '"').replace(r'\\n', ' '))
+            try:
+                start = datetime.fromisoformat(raw_start.replace("Z", "+00:00"))
+                stop = datetime.fromisoformat(raw_stop.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            key = (start, stop, title.casefold())
+            is_placeholder = re.search(
+                r"^(?:nessun evento|programmazione (?:non disponibile|da definire))",
+                title,
+                re.I,
+            )
+            if title and not is_placeholder and stop > start and key not in seen:
+                seen.add(key)
+                shows.append((start, stop, title, "GuidaTV Italia"))
+
+    confirmed = [
+        (
+            datetime(2026, 9, 19, 15, 0, tzinfo=rome_tz),
+            datetime(2026, 9, 19, 17, 30, tzinfo=rome_tz),
+            "Udinese vs. Cagliari",
+        ),
+        (
+            datetime(2026, 9, 20, 15, 0, tzinfo=rome_tz),
+            datetime(2026, 9, 20, 17, 30, tzinfo=rome_tz),
+            "Parma vs. Genoa",
+        ),
+    ]
+    for start, stop, title in confirmed:
+        if stop <= window_start or start >= window_stop:
+            continue
+        if not any(existing[0] < stop and existing[1] > start for existing in shows):
+            shows.append((start, stop, title, "Agenda DAZN 2 Italia confirmada"))
+
+    scheduled = sorted(
+        (show for show in shows if show[1] > window_start and show[0] < window_stop),
+        key=lambda item: item[0],
+    )
+    filled = []
+    cursor = window_start
+    for start, stop, title, source in scheduled:
+        if start > cursor:
+            next_miami = start.astimezone(miami_tz)
+            next_label = next_miami.strftime("%m/%d %I:%M %p").replace(" 0", " ")
+            filled.append((
+                cursor, start,
+                f"No event • Next: {next_label} Miami — {title}",
+                "DAZN 2 Italia off-air interval",
+            ))
+        filled.append((start, stop, title, source))
+        cursor = max(cursor, stop)
+    if cursor < window_stop:
+        filled.append((
+            cursor, window_stop,
+            "No event • Next event not announced",
+            "DAZN 2 Italia off-air interval",
+        ))
+    return {name: filled}
+
 def scrape_sky_sport_italia():
     """Extrae Sky Sport 251–259 usando los horarios publicados por la guía italiana.
 
@@ -1022,6 +1118,8 @@ def main():
     for name, shows in scrape_fox_one_mexico().items():
         channels[name] = shows
     for name, shows in scrape_dazn_1_italia().items():
+        channels[name] = shows
+    for name, shows in scrape_dazn_2_italia().items():
         channels[name] = shows
     for name, shows in scrape_sky_sport_italia().items():
         channels[name] = shows
