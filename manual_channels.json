@@ -1,91 +1,91 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-18T16:44:00Z",
+  "updated_at": "2026-09-18T18:00:00Z",
   "channels": {
     "Peacock 01": [
       {
         "title": "Morning News Now LL 9.18.26",
-        "start": "2026-09-18T11:00:00Z",
-        "stop": "2026-09-18T23:30:00Z"
+        "start": "2026-09-18T10:00:00Z",
+        "stop": "2026-09-18T22:30:00Z"
       },
       {
         "title": "Power FC v. Sun FC",
-        "start": "2026-09-19T00:00:00Z",
-        "stop": "2026-09-19T02:30:00Z"
+        "start": "2026-09-18T23:00:00Z",
+        "stop": "2026-09-19T01:30:00Z"
       },
       {
         "title": "Juárez vs. Tigres (Español)",
-        "start": "2026-09-19T03:30:00Z",
-        "stop": "2026-09-19T06:30:00Z"
+        "start": "2026-09-19T02:30:00Z",
+        "stop": "2026-09-19T05:30:00Z"
       },
       {
         "title": "Men & Womens Road Mile",
-        "start": "2026-09-19T09:10:00Z",
-        "stop": "2026-09-19T10:20:00Z"
+        "start": "2026-09-19T08:10:00Z",
+        "stop": "2026-09-19T09:20:00Z"
       }
     ],
     "Peacock 02": [
       {
         "title": "Morning News Now MV 1 9.18.26",
-        "start": "2026-09-18T11:00:00Z",
-        "stop": "2026-09-18T23:30:00Z"
+        "start": "2026-09-18T10:00:00Z",
+        "stop": "2026-09-18T22:30:00Z"
       },
       {
         "title": "FTL United v. Trinity FC",
-        "start": "2026-09-19T00:30:00Z",
-        "stop": "2026-09-19T03:00:00Z"
+        "start": "2026-09-18T23:30:00Z",
+        "stop": "2026-09-19T02:00:00Z"
       }
     ],
     "Peacock 03": [
       {
         "title": "Morning News Now MV 2 9.18.26",
-        "start": "2026-09-18T11:00:00Z",
-        "stop": "2026-09-18T23:30:00Z"
+        "start": "2026-09-18T10:00:00Z",
+        "stop": "2026-09-18T22:30:00Z"
       },
       {
         "title": "Home Feed: ATL at HOU",
-        "start": "2026-09-19T01:00:00Z",
-        "stop": "2026-09-19T04:30:00Z"
+        "start": "2026-09-19T00:00:00Z",
+        "stop": "2026-09-19T03:30:00Z"
       }
     ],
     "Peacock 04": [
       {
         "title": "Morning News Now CC V 9.18.26",
-        "start": "2026-09-18T12:00:00Z",
-        "stop": "2026-09-19T00:30:00Z"
+        "start": "2026-09-18T11:00:00Z",
+        "stop": "2026-09-18T23:30:00Z"
       },
       {
         "title": "Away Feed: ATL at HOU",
-        "start": "2026-09-19T01:00:00Z",
-        "stop": "2026-09-19T04:30:00Z"
+        "start": "2026-09-19T00:00:00Z",
+        "stop": "2026-09-19T03:30:00Z"
       }
     ],
     "Peacock 05": [
       {
         "title": "Morning News Now ISO 1 V 9.18.26",
-        "start": "2026-09-18T12:00:00Z",
-        "stop": "2026-09-19T00:30:00Z"
+        "start": "2026-09-18T11:00:00Z",
+        "stop": "2026-09-18T23:30:00Z"
       }
     ],
     "Peacock 06": [
       {
         "title": "Morning News Now ISO 2 V 9.18.26",
-        "start": "2026-09-18T12:00:00Z",
-        "stop": "2026-09-19T00:30:00Z"
+        "start": "2026-09-18T11:00:00Z",
+        "stop": "2026-09-18T23:30:00Z"
       }
     ],
     "Peacock 07": [
       {
         "title": "Bayern Munich vs. Union Berlin (Español)",
-        "start": "2026-09-18T19:00:00Z",
-        "stop": "2026-09-18T22:00:00Z"
+        "start": "2026-09-18T18:00:00Z",
+        "stop": "2026-09-18T21:00:00Z"
       }
     ],
     "Peacock 08": [
       {
         "title": "Monza vs. Sassuolo (Español)",
-        "start": "2026-09-18T19:30:00Z",
-        "stop": "2026-09-18T22:30:00Z"
+        "start": "2026-09-18T18:30:00Z",
+        "stop": "2026-09-18T21:30:00Z"
       }
     ],
     "Peacock 09": [
