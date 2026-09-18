@@ -77,6 +77,22 @@ DISPLAY_ALIASES = {
         for number in range(1, 21)
     },
     **{
+        f"Coupang Play {number}": [
+            f"COUPANG PLAY {number}", f"COUPANG PLAY {number:02d}",
+            f"KR| COUPANG PLAY PPV {number:02d}",
+            *(["KR| COUPANG PLAY PPV"] if number == 1 else []),
+        ]
+        for number in range(1, 9)
+    },
+    **{
+        f"Setanta {number}": [
+            f"SETANTA {number}", f"SETANTA {number:02d}",
+            f"IE| SETANTA PPV {number:02d}",
+            *(["IE| SETANTA PPV"] if number == 1 else []),
+        ]
+        for number in range(1, 6)
+    },
+    **{
         f"MonoMax {number}": [
             f"MONOMAX {number}", f"MONOMAX {number:02d}",
             f"MONO MAX {number}", f"MONO MAX {number:02d}",

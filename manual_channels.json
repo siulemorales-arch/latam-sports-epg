@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-18T16:05:35Z",
+  "updated_at": "2026-09-18T16:28:00Z",
   "channels": {
     "Peacock 01": [
       {
@@ -210,15 +210,146 @@
     "Fubo Sports 8": [],
     "Fubo Sports 9": [],
     "Fubo Sports 10": [],
+    "Coupang Play 1": [
+      {
+        "title": "Monaco vs Lens",
+        "start": "2026-09-18T18:45:00Z",
+        "stop": "2026-09-18T21:45:00Z"
+      },
+      {
+        "title": "Jeonnam vs Suwon FC",
+        "start": "2026-09-19T07:30:00Z",
+        "stop": "2026-09-19T10:30:00Z"
+      }
+    ],
+    "Coupang Play 2": [
+      {
+        "title": "Brentford vs Chelsea",
+        "start": "2026-09-18T19:00:00Z",
+        "stop": "2026-09-18T22:00:00Z"
+      },
+      {
+        "title": "Chungnam Asan vs Cheonan",
+        "start": "2026-09-19T07:30:00Z",
+        "stop": "2026-09-19T10:30:00Z"
+      }
+    ],
+    "Coupang Play 3": [
+      {
+        "title": "FC Bayern München vs 1. FC Union Berlin",
+        "start": "2026-09-18T18:30:00Z",
+        "stop": "2026-09-18T21:30:00Z"
+      },
+      {
+        "title": "Gimpo vs Busan",
+        "start": "2026-09-19T10:00:00Z",
+        "stop": "2026-09-19T13:00:00Z"
+      }
+    ],
+    "Coupang Play 4": [
+      {
+        "title": "VfL Wolfsburg vs SV Darmstadt 98",
+        "start": "2026-09-18T16:30:00Z",
+        "stop": "2026-09-18T19:30:00Z"
+      },
+      {
+        "title": "Seoul Eland vs Daegu",
+        "start": "2026-09-19T10:00:00Z",
+        "stop": "2026-09-19T13:00:00Z"
+      }
+    ],
+    "Coupang Play 5": [
+      {
+        "title": "RCD Espanyol de Barcelona vs Elche CF",
+        "start": "2026-09-18T19:00:00Z",
+        "stop": "2026-09-18T22:00:00Z"
+      },
+      {
+        "title": "Bucheon vs Gimcheon",
+        "start": "2026-09-19T07:30:00Z",
+        "stop": "2026-09-19T10:30:00Z"
+      }
+    ],
+    "Coupang Play 6": [
+      {
+        "title": "Anyang vs Ulsan",
+        "start": "2026-09-19T10:00:00Z",
+        "stop": "2026-09-19T13:00:00Z"
+      }
+    ],
+    "Coupang Play 7": [],
+    "Coupang Play 8": [
+      {
+        "title": "Pocheon Citizen FC vs Busan Transportation",
+        "start": "2026-09-19T07:50:00Z",
+        "stop": "2026-09-19T10:50:00Z"
+      }
+    ],
+    "Setanta 1": [
+      {
+        "title": "EuroLeague Supercup 2026, Olympiacos - Fenerbahce",
+        "start": "2026-09-18T14:55:09Z",
+        "stop": "2026-09-18T19:00:09Z"
+      },
+      {
+        "title": "Bayern Munich - Union Berlin",
+        "start": "2026-09-18T19:25:20Z",
+        "stop": "2026-09-18T23:30:20Z"
+      },
+      {
+        "title": "NASCAR EURO SERIES, Grand Prix Italy - Semi-Final 1",
+        "start": "2026-09-19T09:35:46Z",
+        "stop": "2026-09-19T17:40:46Z"
+      }
+    ],
+    "Setanta 2": [
+      {
+        "title": "EuroLeague Supercup 2026, Dubai - Real Madrid",
+        "start": "2026-09-18T17:55:09Z",
+        "stop": "2026-09-18T22:00:09Z"
+      },
+      {
+        "title": "Holstein Kiel - VfL Osnabruck",
+        "start": "2026-09-19T11:55:29Z",
+        "stop": "2026-09-19T15:00:29Z"
+      }
+    ],
+    "Setanta 3": [
+      {
+        "title": "Monaco - Lens",
+        "start": "2026-09-18T19:40:17Z",
+        "stop": "2026-09-19T00:45:17Z"
+      }
+    ],
+    "Setanta 4": [
+      {
+        "title": "Espanyol - Elche",
+        "start": "2026-09-18T19:55:12Z",
+        "stop": "2026-09-18T23:30:12Z"
+      }
+    ],
+    "Setanta 5": [
+      {
+        "title": "Brentford - Chelsea",
+        "start": "2026-09-18T19:55:26Z",
+        "stop": "2026-09-18T23:00:26Z"
+      }
+    ],
     "MonoMax 1": [
       {
-        "title": "Leeds United - Newcastle United",
-        "start": "2026-09-14T19:00:00Z",
-        "stop": "2026-09-14T22:00:00Z"
+        "title": "Brentford - Chelsea",
+        "start": "2026-09-18T19:00:00Z",
+        "stop": "2026-09-18T22:00:00Z"
       }
     ],
     "MonoMax 2": [],
-    "MonoMax 3": [],
+    "MonoMax 3": [
+      {
+        "title": "FC Groningen - Ajax Amsterdam",
+        "start": "2026-10-18T14:45:00Z",
+        "stop": "2026-10-18T17:45:00Z"
+      }
+    ],
     "MonoMax 4": [],
     "MonoMax 5": [],
     "MonoMax 6": [],
@@ -243,9 +374,9 @@
     "MonoMax 11": [],
     "MonoMax 12": [
       {
-        "title": "Argentina - Korea Republic",
-        "start": "2026-09-16T13:00:00Z",
-        "stop": "2026-09-16T16:00:00Z"
+        "title": "Bristol City - Watford",
+        "start": "2026-09-18T19:00:00Z",
+        "stop": "2026-09-18T22:00:00Z"
       }
     ],
     "MonoMax 13": [
@@ -257,9 +388,9 @@
     ],
     "MonoMax 14": [
       {
-        "title": "Italy - China PR",
-        "start": "2026-09-16T16:30:00Z",
-        "stop": "2026-09-16T19:30:00Z"
+        "title": "Ayutthaya United - Uthai Thani FC",
+        "start": "2026-09-18T12:00:00Z",
+        "stop": "2026-09-18T15:00:00Z"
       }
     ],
     "MonoMax 15": [
