@@ -34,10 +34,10 @@
     <display-name lang="es">Canal Fútbol Replay (España)</display-name>
     <display-name lang="es">Canal Fútbol Replay</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY</display-name>
-    <display-name lang="es">CANAL FÚTBOL REPLAY FHD</display-name>
     <display-name lang="es">Canal Fútbol Replay FHD</display-name>
-    <display-name lang="es">Canal Fútbol Replay HD</display-name>
+    <display-name lang="es">CANAL FÚTBOL REPLAY FHD</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY HD</display-name>
+    <display-name lang="es">Canal Fútbol Replay HD</display-name>
     <display-name lang="es">Canal Fútbol Replay SD</display-name>
     <display-name lang="es">CANAL FÚTBOL REPLAY SD</display-name>
   </channel>
@@ -57,12 +57,12 @@
     <display-name lang="es">Caza y Pesca (España)</display-name>
     <display-name lang="es">Caza y Pesca</display-name>
     <display-name lang="es">CAZA Y PESCA</display-name>
-    <display-name lang="es">CAZA Y PESCA FHD</display-name>
     <display-name lang="es">Caza y Pesca FHD</display-name>
-    <display-name lang="es">CAZA Y PESCA HD</display-name>
+    <display-name lang="es">CAZA Y PESCA FHD</display-name>
     <display-name lang="es">Caza y Pesca HD</display-name>
-    <display-name lang="es">CAZA Y PESCA SD</display-name>
+    <display-name lang="es">CAZA Y PESCA HD</display-name>
     <display-name lang="es">Caza y Pesca SD</display-name>
+    <display-name lang="es">CAZA Y PESCA SD</display-name>
   </channel>
   <channel id="cdn.deportes.latam">
     <display-name lang="es">CDN Deportes</display-name>
@@ -133,17 +133,17 @@
     <display-name lang="es">DAZN Baloncesto</display-name>
     <display-name lang="es">DAZN Baloncesto FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO FHD</display-name>
-    <display-name lang="es">DAZN BALONCESTO HD</display-name>
     <display-name lang="es">DAZN Baloncesto HD</display-name>
-    <display-name lang="es">DAZN BALONCESTO SD</display-name>
+    <display-name lang="es">DAZN BALONCESTO HD</display-name>
     <display-name lang="es">DAZN Baloncesto SD</display-name>
+    <display-name lang="es">DAZN BALONCESTO SD</display-name>
   </channel>
   <channel id="dazn.baloncesto.2.espana.latam">
     <display-name lang="es">DAZN Baloncesto 2 (España)</display-name>
-    <display-name lang="es">DAZN BALONCESTO 2</display-name>
     <display-name lang="es">DAZN Baloncesto 2</display-name>
-    <display-name lang="es">DAZN BALONCESTO 2 FHD</display-name>
+    <display-name lang="es">DAZN BALONCESTO 2</display-name>
     <display-name lang="es">DAZN Baloncesto 2 FHD</display-name>
+    <display-name lang="es">DAZN BALONCESTO 2 FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 2 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 SD</display-name>
@@ -153,8 +153,8 @@
     <display-name lang="es">DAZN Baloncesto 3 (España)</display-name>
     <display-name lang="es">DAZN BALONCESTO 3</display-name>
     <display-name lang="es">DAZN Baloncesto 3</display-name>
-    <display-name lang="es">DAZN Baloncesto 3 FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 FHD</display-name>
+    <display-name lang="es">DAZN Baloncesto 3 FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 SD</display-name>
@@ -191,10 +191,10 @@
     <display-name lang="es">DAZN MotoGP (España)</display-name>
     <display-name lang="es">DAZN MOTOGP</display-name>
     <display-name lang="es">DAZN MotoGP</display-name>
-    <display-name lang="es">DAZN MotoGP FHD</display-name>
     <display-name lang="es">DAZN MOTOGP FHD</display-name>
-    <display-name lang="es">DAZN MOTOGP HD</display-name>
+    <display-name lang="es">DAZN MotoGP FHD</display-name>
     <display-name lang="es">DAZN MotoGP HD</display-name>
+    <display-name lang="es">DAZN MOTOGP HD</display-name>
     <display-name lang="es">DAZN MotoGP SD</display-name>
     <display-name lang="es">DAZN MOTOGP SD</display-name>
   </channel>
@@ -389,19 +389,19 @@
     <display-name lang="es">Eurosport 1 FHD</display-name>
     <display-name lang="es">EUROSPORT 1 HD</display-name>
     <display-name lang="es">Eurosport 1 HD</display-name>
-    <display-name lang="es">EUROSPORT 1 SD</display-name>
     <display-name lang="es">Eurosport 1 SD</display-name>
+    <display-name lang="es">EUROSPORT 1 SD</display-name>
   </channel>
   <channel id="eurosport.2.espana.latam">
     <display-name lang="es">Eurosport 2 (España)</display-name>
-    <display-name lang="es">EUROSPORT 2</display-name>
     <display-name lang="es">Eurosport 2</display-name>
+    <display-name lang="es">EUROSPORT 2</display-name>
     <display-name lang="es">Eurosport 2 FHD</display-name>
     <display-name lang="es">EUROSPORT 2 FHD</display-name>
     <display-name lang="es">EUROSPORT 2 HD</display-name>
     <display-name lang="es">Eurosport 2 HD</display-name>
-    <display-name lang="es">EUROSPORT 2 SD</display-name>
     <display-name lang="es">Eurosport 2 SD</display-name>
+    <display-name lang="es">EUROSPORT 2 SD</display-name>
   </channel>
   <channel id="fox.one.mexico.latam">
     <display-name lang="es">FOX One México</display-name>
@@ -571,8 +571,8 @@
   </channel>
   <channel id="m.baloncesto.espana.latam">
     <display-name lang="es">M+ Baloncesto (España)</display-name>
-    <display-name lang="es">M+ BALONCESTO</display-name>
     <display-name lang="es">M+ Baloncesto</display-name>
+    <display-name lang="es">M+ BALONCESTO</display-name>
     <display-name lang="es">M+ BALONCESTO FHD</display-name>
     <display-name lang="es">M+ Baloncesto FHD</display-name>
     <display-name lang="es">M+ BALONCESTO HD</display-name>
@@ -584,8 +584,8 @@
     <display-name lang="es">M+ Baloncesto 2 (España)</display-name>
     <display-name lang="es">M+ BALONCESTO 2</display-name>
     <display-name lang="es">M+ Baloncesto 2</display-name>
-    <display-name lang="es">M+ Baloncesto 2 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 FHD</display-name>
+    <display-name lang="es">M+ Baloncesto 2 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 HD</display-name>
     <display-name lang="es">M+ Baloncesto 2 HD</display-name>
     <display-name lang="es">M+ Baloncesto 2 SD</display-name>
@@ -593,12 +593,12 @@
   </channel>
   <channel id="m.baloncesto.3.espana.latam">
     <display-name lang="es">M+ Baloncesto 3 (España)</display-name>
-    <display-name lang="es">M+ Baloncesto 3</display-name>
     <display-name lang="es">M+ BALONCESTO 3</display-name>
-    <display-name lang="es">M+ Baloncesto 3 FHD</display-name>
+    <display-name lang="es">M+ Baloncesto 3</display-name>
     <display-name lang="es">M+ BALONCESTO 3 FHD</display-name>
-    <display-name lang="es">M+ Baloncesto 3 HD</display-name>
+    <display-name lang="es">M+ Baloncesto 3 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 3 HD</display-name>
+    <display-name lang="es">M+ Baloncesto 3 HD</display-name>
     <display-name lang="es">M+ Baloncesto 3 SD</display-name>
     <display-name lang="es">M+ BALONCESTO 3 SD</display-name>
   </channel>
@@ -622,10 +622,10 @@
     <display-name lang="es">M+ DEPORTES 1 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 1 HD</display-name>
     <display-name lang="es">M+ DEPORTES 1 SD</display-name>
-    <display-name lang="es">M+ DEPORTES FHD</display-name>
     <display-name lang="es">M+ Deportes FHD</display-name>
-    <display-name lang="es">M+ Deportes HD</display-name>
+    <display-name lang="es">M+ DEPORTES FHD</display-name>
     <display-name lang="es">M+ DEPORTES HD</display-name>
+    <display-name lang="es">M+ Deportes HD</display-name>
     <display-name lang="es">M+ Deportes SD</display-name>
     <display-name lang="es">M+ DEPORTES SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES</display-name>
@@ -647,14 +647,14 @@
     <display-name lang="es">M DEPORTES 2 FHD</display-name>
     <display-name lang="es">M DEPORTES 2 HD</display-name>
     <display-name lang="es">M DEPORTES 2 SD</display-name>
-    <display-name lang="es">M+ Deportes 2</display-name>
     <display-name lang="es">M+ DEPORTES 2</display-name>
+    <display-name lang="es">M+ Deportes 2</display-name>
     <display-name lang="es">M+ DEPORTES 2 FHD</display-name>
     <display-name lang="es">M+ Deportes 2 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 2 HD</display-name>
     <display-name lang="es">M+ Deportes 2 HD</display-name>
-    <display-name lang="es">M+ DEPORTES 2 SD</display-name>
     <display-name lang="es">M+ Deportes 2 SD</display-name>
+    <display-name lang="es">M+ DEPORTES 2 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2 FHD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2 HD</display-name>
@@ -670,14 +670,14 @@
     <display-name lang="es">M DEPORTES 3 FHD</display-name>
     <display-name lang="es">M DEPORTES 3 HD</display-name>
     <display-name lang="es">M DEPORTES 3 SD</display-name>
-    <display-name lang="es">M+ Deportes 3</display-name>
     <display-name lang="es">M+ DEPORTES 3</display-name>
+    <display-name lang="es">M+ Deportes 3</display-name>
     <display-name lang="es">M+ DEPORTES 3 FHD</display-name>
     <display-name lang="es">M+ Deportes 3 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 3 HD</display-name>
     <display-name lang="es">M+ Deportes 3 HD</display-name>
-    <display-name lang="es">M+ Deportes 3 SD</display-name>
     <display-name lang="es">M+ DEPORTES 3 SD</display-name>
+    <display-name lang="es">M+ Deportes 3 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 3</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 3 FHD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 3 HD</display-name>
@@ -739,14 +739,14 @@
     <display-name lang="es">M DEPORTES 6 FHD</display-name>
     <display-name lang="es">M DEPORTES 6 HD</display-name>
     <display-name lang="es">M DEPORTES 6 SD</display-name>
-    <display-name lang="es">M+ Deportes 6</display-name>
     <display-name lang="es">M+ DEPORTES 6</display-name>
-    <display-name lang="es">M+ Deportes 6 FHD</display-name>
+    <display-name lang="es">M+ Deportes 6</display-name>
     <display-name lang="es">M+ DEPORTES 6 FHD</display-name>
+    <display-name lang="es">M+ Deportes 6 FHD</display-name>
     <display-name lang="es">M+ Deportes 6 HD</display-name>
     <display-name lang="es">M+ DEPORTES 6 HD</display-name>
-    <display-name lang="es">M+ Deportes 6 SD</display-name>
     <display-name lang="es">M+ DEPORTES 6 SD</display-name>
+    <display-name lang="es">M+ Deportes 6 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 6</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 6 FHD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 6 HD</display-name>
@@ -764,8 +764,8 @@
     <display-name lang="es">M DEPORTES 7 SD</display-name>
     <display-name lang="es">M+ DEPORTES 7</display-name>
     <display-name lang="es">M+ Deportes 7</display-name>
-    <display-name lang="es">M+ Deportes 7 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 7 FHD</display-name>
+    <display-name lang="es">M+ Deportes 7 FHD</display-name>
     <display-name lang="es">M+ Deportes 7 HD</display-name>
     <display-name lang="es">M+ DEPORTES 7 HD</display-name>
     <display-name lang="es">M+ Deportes 7 SD</display-name>
@@ -779,25 +779,25 @@
     <display-name lang="es">M+ Golf (España)</display-name>
     <display-name lang="es">M+ GOL FHD</display-name>
     <display-name lang="es">M+ GOL HD</display-name>
-    <display-name lang="es">M+ GOLF</display-name>
     <display-name lang="es">M+ Golf</display-name>
+    <display-name lang="es">M+ GOLF</display-name>
     <display-name lang="es">M+ Golf FHD</display-name>
     <display-name lang="es">M+ GOLF FHD</display-name>
     <display-name lang="es">M+ GOLF HD</display-name>
     <display-name lang="es">M+ Golf HD</display-name>
-    <display-name lang="es">M+ Golf SD</display-name>
     <display-name lang="es">M+ GOLF SD</display-name>
+    <display-name lang="es">M+ Golf SD</display-name>
   </channel>
   <channel id="m.golf.2.espana.latam">
     <display-name lang="es">M+ Golf 2 (España)</display-name>
-    <display-name lang="es">M+ Golf 2</display-name>
     <display-name lang="es">M+ GOLF 2</display-name>
+    <display-name lang="es">M+ Golf 2</display-name>
     <display-name lang="es">M+ GOLF 2 FHD</display-name>
     <display-name lang="es">M+ Golf 2 FHD</display-name>
     <display-name lang="es">M+ Golf 2 HD</display-name>
     <display-name lang="es">M+ GOLF 2 HD</display-name>
-    <display-name lang="es">M+ GOLF 2 SD</display-name>
     <display-name lang="es">M+ Golf 2 SD</display-name>
+    <display-name lang="es">M+ GOLF 2 SD</display-name>
   </channel>
   <channel id="m.laliga.espana.latam">
     <display-name lang="es">M+ LALIGA (España)</display-name>
@@ -882,12 +882,12 @@
     <display-name lang="es">LIGA DE CAMPEONES POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones</display-name>
     <display-name lang="es">M+ Liga de Campeones FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES HD</display-name>
+    <display-name lang="es">M+ Liga de Campeones HD</display-name>
     <display-name lang="es">M+ Liga de Campeones SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES SD</display-name>
   </channel>
@@ -896,10 +896,10 @@
     <display-name lang="es">LIGA DE CAMPEONES 10 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 10 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 10 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 10</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10</display-name>
-    <display-name lang="es">M+ Liga de Campeones 10 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 10</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 10 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 10 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10 SD</display-name>
@@ -910,12 +910,12 @@
     <display-name lang="es">LIGA DE CAMPEONES 11 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 11 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 11 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 11</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11</display-name>
+    <display-name lang="es">M+ Liga de Campeones 11</display-name>
     <display-name lang="es">M+ Liga de Campeones 11 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11 FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 11 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11 HD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 11 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 11 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11 SD</display-name>
   </channel>
@@ -926,34 +926,34 @@
     <display-name lang="es">LIGA DE CAMPEONES 12 POR M+ SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 12</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 12</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 12 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 12 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 12 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 12 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 12 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 12 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 12 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 12 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 12 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.13.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 13 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 13 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 13 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 13 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 13</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 13</display-name>
-    <display-name lang="es">M+ Liga de Campeones 13 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 13</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 13 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 13 HD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 13 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 13 HD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 13 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 13 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 13 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 13 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.2.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 2 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 2</display-name>
     <display-name lang="es">M+ Liga de Campeones 2</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 2</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 HD</display-name>
@@ -968,8 +968,8 @@
     <display-name lang="es">LIGA DE CAMPEONES 3 POR M+ SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 3</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 3 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 FHD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 3 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 3 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 SD</display-name>
@@ -980,22 +980,22 @@
     <display-name lang="es">LIGA DE CAMPEONES 4 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 4 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 4 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 4</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 4</display-name>
+    <display-name lang="es">M+ Liga de Campeones 4</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 4 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 4 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 4 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 4 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 4 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 4 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.5.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 5 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 5</display-name>
     <display-name lang="es">M+ Liga de Campeones 5</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 5</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 HD</display-name>
@@ -1008,14 +1008,14 @@
     <display-name lang="es">LIGA DE CAMPEONES 6 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 6 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 6 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 6</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6</display-name>
+    <display-name lang="es">M+ Liga de Campeones 6</display-name>
     <display-name lang="es">M+ Liga de Campeones 6 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 6 HD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 6 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 6 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.7.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 7 (España)</display-name>
@@ -1026,8 +1026,8 @@
     <display-name lang="es">M+ LIGA DE CAMPEONES 7</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 7 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 7 FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 7 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 7 HD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 7 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 7 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 7 SD</display-name>
   </channel>
@@ -1036,14 +1036,14 @@
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 8</display-name>
     <display-name lang="es">M+ Liga de Campeones 8</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 8 FHD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 8</display-name>
     <display-name lang="es">M+ Liga de Campeones 8 FHD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 8 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 8 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 8 HD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 8 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 8 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 8 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.9.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 9 (España)</display-name>
@@ -1052,12 +1052,12 @@
     <display-name lang="es">LIGA DE CAMPEONES 9 POR M+ SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 9</display-name>
     <display-name lang="es">M+ Liga de Campeones 9</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 9 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 9 FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 9 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 9 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 9 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 9 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 9 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 9 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 9 SD</display-name>
   </channel>
   <channel id="m.vamos.espana.latam">
     <display-name lang="es">M+ Vamos (España)</display-name>
@@ -1065,21 +1065,21 @@
     <display-name lang="es">M+ Vamos</display-name>
     <display-name lang="es">M+ VAMOS FHD</display-name>
     <display-name lang="es">M+ Vamos FHD</display-name>
-    <display-name lang="es">M+ Vamos HD</display-name>
     <display-name lang="es">M+ VAMOS HD</display-name>
+    <display-name lang="es">M+ Vamos HD</display-name>
     <display-name lang="es">M+ Vamos SD</display-name>
     <display-name lang="es">M+ VAMOS SD</display-name>
   </channel>
   <channel id="m.vamos.2.espana.latam">
     <display-name lang="es">M+ Vamos 2 (España)</display-name>
-    <display-name lang="es">M+ VAMOS 2</display-name>
     <display-name lang="es">M+ Vamos 2</display-name>
-    <display-name lang="es">M+ Vamos 2 FHD</display-name>
+    <display-name lang="es">M+ VAMOS 2</display-name>
     <display-name lang="es">M+ VAMOS 2 FHD</display-name>
+    <display-name lang="es">M+ Vamos 2 FHD</display-name>
     <display-name lang="es">M+ Vamos 2 HD</display-name>
     <display-name lang="es">M+ VAMOS 2 HD</display-name>
-    <display-name lang="es">M+ VAMOS 2 SD</display-name>
     <display-name lang="es">M+ Vamos 2 SD</display-name>
+    <display-name lang="es">M+ VAMOS 2 SD</display-name>
   </channel>
   <channel id="m.vamos.3.espana.latam">
     <display-name lang="es">M+ Vamos 3 (España)</display-name>
@@ -1378,8 +1378,8 @@
     <display-name lang="es">REAL MADRID TV</display-name>
     <display-name lang="es">REAL MADRID TV FHD</display-name>
     <display-name lang="es">Real Madrid TV FHD</display-name>
-    <display-name lang="es">REAL MADRID TV HD</display-name>
     <display-name lang="es">Real Madrid TV HD</display-name>
+    <display-name lang="es">REAL MADRID TV HD</display-name>
     <display-name lang="es">Real Madrid TV SD</display-name>
     <display-name lang="es">REAL MADRID TV SD</display-name>
   </channel>
@@ -1519,12 +1519,12 @@
     <display-name lang="es">Teledeporte (España)</display-name>
     <display-name lang="es">TELEDEPORTE</display-name>
     <display-name lang="es">Teledeporte</display-name>
-    <display-name lang="es">Teledeporte FHD</display-name>
     <display-name lang="es">TELEDEPORTE FHD</display-name>
+    <display-name lang="es">Teledeporte FHD</display-name>
     <display-name lang="es">TELEDEPORTE HD</display-name>
     <display-name lang="es">Teledeporte HD</display-name>
-    <display-name lang="es">Teledeporte SD</display-name>
     <display-name lang="es">TELEDEPORTE SD</display-name>
+    <display-name lang="es">Teledeporte SD</display-name>
   </channel>
   <channel id="telemundo.venezuela.latam">
     <display-name lang="es">Telemundo (Venezuela)</display-name>
@@ -6104,18 +6104,6 @@
     <title lang="es">Disfruta de DAZN en Movistar Plus</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918101600 +0200" stop="20260918120300 +0200" channel="dazn.1.italia.latam">
-    <title lang="es">Sassuolo - Juventus</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918120300 +0200" stop="20260918123600 +0200" channel="dazn.1.italia.latam">
-    <title lang="es">Bordocam corsa Champions MD38</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918123600 +0200" stop="20260918142200 +0200" channel="dazn.1.italia.latam">
-    <title lang="es">Torino - Roma</title>
-    <category lang="es">Deportes</category>
-  </programme>
   <programme start="20260918142200 +0200" stop="20260918144400 +0200" channel="dazn.1.italia.latam">
     <title lang="es">Tarik Muharemovic</title>
     <category lang="es">Deportes</category>
@@ -6585,7 +6573,7 @@
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260921021400 +0200" stop="20260921054400 +0200" channel="dazn.2.espana.latam">
-    <title lang="es">NFL (T26/27): Indianapolis Colts - Kansas City Chiefs</title>
+    <title lang="es">NFL (T26/27): Kansas City Chiefs - Indianapolis Colts</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260921054400 +0200" stop="20260921064400 +0200" channel="dazn.2.espana.latam">
@@ -9708,118 +9696,6 @@
     <title lang="es">El Show de Peabody y Sherman</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="dsports.latam">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918053000 +0000" stop="20260918070000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Fútbol Total</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="dsports.latam">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Real Betis vs. Getafe CF</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="dsports.latam">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS | AR">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS | CO">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">DSPORTS Noticias Nite</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="dsports.latam">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DSPORTS | AR">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DSPORTS | CO">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918130000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
-    <category lang="es">Deportes</category>
-  </programme>
   <programme start="20260918130000 +0000" stop="20260918133000 +0000" channel="dsports.latam">
     <title lang="es">Zinedine Zidane</title>
     <category lang="es">Deportes</category>
@@ -10437,31 +10313,31 @@
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="dsports.latam">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DSPORTS | AR">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DSPORTS | CO">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919180000 +0000" stop="20260919183000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">República Checa vs. Estados Unidos</title>
+    <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919183000 +0000" stop="20260919185500 +0000" channel="dsports.latam">
@@ -10520,116 +10396,256 @@
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="dsports.latam">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="dsports.latam">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DSPORTS | AR">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DSPORTS | AR">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DSPORTS | CO">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DSPORTS | CO">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DIRECTV SPORTS ARGENTINA">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DIRECTV SPORTS ARGENTINA">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DIRECTV SPORTS CHILE">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DIRECTV SPORTS CHILE">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DIRECTV SPORTS URUGUAY">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DIRECTV SPORTS URUGUAY">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919215500 +0000" stop="20260920005500 +0000" channel="DIRECTV SPORTS PERU">
+  <programme start="20260919215500 +0000" stop="20260920000000 +0000" channel="DIRECTV SPORTS PERU">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="dsports.latam">
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920013000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="dsports.latam">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920013000 +0000" stop="20260920020000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="dsports.latam">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920023000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="dsports.latam">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="dsports.latam">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="dsports.latam">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DSPORTS | AR">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DSPORTS | AR">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DSPORTS | CO">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DSPORTS | CO">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DIRECTV SPORTS ARGENTINA">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DIRECTV SPORTS ARGENTINA">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DIRECTV SPORTS CHILE">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DIRECTV SPORTS CHILE">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DIRECTV SPORTS URUGUAY">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DIRECTV SPORTS URUGUAY">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920005500 +0000" stop="20260920035500 +0000" channel="DIRECTV SPORTS PERU">
+  <programme start="20260920033000 +0000" stop="20260920053000 +0000" channel="DIRECTV SPORTS PERU">
     <title lang="es">Sevilla vs. Barcelona</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="dsports.latam">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DSPORTS | AR">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DSPORTS | CO">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920035500 +0000" stop="20260920065500 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920053000 +0000" stop="20260920070000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="dsports.latam">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="dsports.latam">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920065500 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Sevilla vs. Barcelona</title>
+  <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920090000 +0000" stop="20260920103000 +0000" channel="dsports.latam">
@@ -10828,88 +10844,88 @@
     <title lang="es">Serena Williams</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="dsports.latam">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="dsports.latam">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DSPORTS | AR">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DSPORTS | AR">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DSPORTS | CO">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DSPORTS | CO">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DIRECTV SPORTS ARGENTINA">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DIRECTV SPORTS CHILE">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DIRECTV SPORTS CHILE">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DIRECTV SPORTS URUGUAY">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DIRECTV SPORTS URUGUAY">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920144000 +0000" stop="20260920170000 +0000" channel="DIRECTV SPORTS PERU">
+  <programme start="20260920144000 +0000" stop="20260920174000 +0000" channel="DIRECTV SPORTS PERU">
     <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="dsports.latam">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="dsports.latam">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920170000 +0000" stop="20260920200000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920174000 +0000" stop="20260920204000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="dsports.latam">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="dsports.latam">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DSPORTS | AR">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DSPORTS | CO">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920200000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">Canadá vs. Francia</title>
+  <programme start="20260920204000 +0000" stop="20260920210000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Chile vs. España</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920210000 +0000" stop="20260920230000 +0000" channel="dsports.latam">
@@ -10940,132 +10956,396 @@
     <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="dsports.latam">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="dsports.latam">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DSPORTS | AR">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DSPORTS | AR">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DSPORTS | CO">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DSPORTS | CO">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DIRECTV SPORTS ARGENTINA">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DIRECTV SPORTS CHILE">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DIRECTV SPORTS CHILE">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DIRECTV SPORTS URUGUAY">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DIRECTV SPORTS URUGUAY">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920230000 +0000" stop="20260921000000 +0000" channel="DIRECTV SPORTS PERU">
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="DIRECTV SPORTS PERU">
     <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="dsports.2.latam">
-    <title lang="es">CONMEBOL Sudamericana: Vasco Da Gama vs. Independiente Santa Fe</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">CONMEBOL Sudamericana: Vasco Da Gama vs. Independiente Santa Fe</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">CONMEBOL Sudamericana: Vasco Da Gama vs. Independiente Santa Fe</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">CONMEBOL Sudamericana: Vasco Da Gama vs. Independiente Santa Fe</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">CONMEBOL Sudamericana: Vasco Da Gama vs. Independiente Santa Fe</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918070000 +0000" channel="dsports.2.latam">
-    <title lang="es">LaLiga Show</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918070000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">LaLiga Show</title>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918070000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">LaLiga Show</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="dsports.latam">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918070000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">LaLiga Show</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918070000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">LaLiga Show</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="dsports.2.latam">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Deportivo de La Coruña vs. Real Betis</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918090000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">São Paulo vs. Boca Juniors</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="dsports.2.latam">
-    <title lang="es">Barcelona vs. Real Racing</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Barcelona vs. Real Racing</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Barcelona vs. Real Racing</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Barcelona vs. Real Racing</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Barcelona vs. Real Racing</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918110000 +0000" stop="20260918113000 +0000" channel="dsports.2.latam">
-    <title lang="es">Manu Ginóbili</title>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918110000 +0000" stop="20260918113000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Manu Ginóbili</title>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="dsports.latam">
+    <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918110000 +0000" stop="20260918113000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Manu Ginóbili</title>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS | AR">
+    <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918110000 +0000" stop="20260918113000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Manu Ginóbili</title>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS | CO">
+    <title lang="es">FC Porto vs. Benfica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918110000 +0000" stop="20260918113000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Manu Ginóbili</title>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="dsports.latam">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921130000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="dsports.latam">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Messi vs. Cristiano, Temporada 5: Liga-copas 2013/14, parte 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="dsports.latam">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921140000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="dsports.latam">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DSPORTS | AR">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DSPORTS | CO">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921140000 +0000" stop="20260921170000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="dsports.latam">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DSPORTS | AR">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DSPORTS | CO">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921200000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="dsports.latam">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DSPORTS | AR">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DSPORTS | CO">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921200000 +0000" stop="20260921213000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">DSPORTS Noticias Lite Tarde</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="dsports.latam">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DSPORTS | AR">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DSPORTS | CO">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921230000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">Fútbol Total</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="dsports.latam">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DSPORTS | AR">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DSPORTS | CO">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DIRECTV SPORTS ARGENTINA">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DIRECTV SPORTS CHILE">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DIRECTV SPORTS URUGUAY">
+    <title lang="es">El juego</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921230000 +0000" stop="20260922000000 +0000" channel="DIRECTV SPORTS PERU">
+    <title lang="es">El juego</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260918113000 +0000" stop="20260918120000 +0000" channel="dsports.2.latam">
@@ -11248,23 +11528,63 @@
     <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918200000 +0000" stop="20260918230000 +0000" channel="dsports.2.latam">
+  <programme start="20260918200000 +0000" stop="20260918203000 +0000" channel="dsports.2.latam">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918200000 +0000" stop="20260918203000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918200000 +0000" stop="20260918203000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918200000 +0000" stop="20260918203000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918200000 +0000" stop="20260918203000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918203000 +0000" stop="20260918210000 +0000" channel="dsports.2.latam">
+    <title lang="es">Rafael Nadal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918203000 +0000" stop="20260918210000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Rafael Nadal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918203000 +0000" stop="20260918210000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Rafael Nadal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918203000 +0000" stop="20260918210000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Rafael Nadal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918203000 +0000" stop="20260918210000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Rafael Nadal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260918210000 +0000" stop="20260918230000 +0000" channel="dsports.2.latam">
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918200000 +0000" stop="20260918230000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260918210000 +0000" stop="20260918230000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918200000 +0000" stop="20260918230000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260918210000 +0000" stop="20260918230000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918200000 +0000" stop="20260918230000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260918210000 +0000" stop="20260918230000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918200000 +0000" stop="20260918230000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260918210000 +0000" stop="20260918230000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -11288,104 +11608,84 @@
     <title lang="es">Canadá vs. Francia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919010000 +0000" stop="20260919013000 +0000" channel="dsports.2.latam">
+  <programme start="20260919010000 +0000" stop="20260919020000 +0000" channel="dsports.2.latam">
+    <title lang="es">Canadá vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919010000 +0000" stop="20260919020000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Canadá vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919010000 +0000" stop="20260919020000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Canadá vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919010000 +0000" stop="20260919020000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Canadá vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919010000 +0000" stop="20260919020000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Canadá vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919020000 +0000" stop="20260919023000 +0000" channel="dsports.2.latam">
     <title lang="es">Gabriela Sabatini</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919010000 +0000" stop="20260919013000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260919020000 +0000" stop="20260919023000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Gabriela Sabatini</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919010000 +0000" stop="20260919013000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260919020000 +0000" stop="20260919023000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Gabriela Sabatini</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919010000 +0000" stop="20260919013000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260919020000 +0000" stop="20260919023000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Gabriela Sabatini</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919010000 +0000" stop="20260919013000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260919020000 +0000" stop="20260919023000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Gabriela Sabatini</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919013000 +0000" stop="20260919020000 +0000" channel="dsports.2.latam">
+  <programme start="20260919023000 +0000" stop="20260919030000 +0000" channel="dsports.2.latam">
     <title lang="es">Atlas, la otra pasión</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919013000 +0000" stop="20260919020000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260919023000 +0000" stop="20260919030000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Atlas, la otra pasión</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919013000 +0000" stop="20260919020000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260919023000 +0000" stop="20260919030000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Atlas, la otra pasión</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919013000 +0000" stop="20260919020000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260919023000 +0000" stop="20260919030000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Atlas, la otra pasión</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919013000 +0000" stop="20260919020000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260919023000 +0000" stop="20260919030000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Atlas, la otra pasión</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919020000 +0000" stop="20260919040000 +0000" channel="dsports.2.latam">
+  <programme start="20260919030000 +0000" stop="20260919050000 +0000" channel="dsports.2.latam">
     <title lang="es">Espanyol vs. Elche</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919020000 +0000" stop="20260919040000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260919030000 +0000" stop="20260919050000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Espanyol vs. Elche</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919020000 +0000" stop="20260919040000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260919030000 +0000" stop="20260919050000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Espanyol vs. Elche</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919020000 +0000" stop="20260919040000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260919030000 +0000" stop="20260919050000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Espanyol vs. Elche</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919020000 +0000" stop="20260919040000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260919030000 +0000" stop="20260919050000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Espanyol vs. Elche</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919040000 +0000" stop="20260919043000 +0000" channel="dsports.2.latam">
-    <title lang="es">CONMEBOL Sudamericana: Atlético Mineiro vs. Santos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919040000 +0000" stop="20260919043000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">CONMEBOL Sudamericana: Atlético Mineiro vs. Santos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919040000 +0000" stop="20260919043000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">CONMEBOL Sudamericana: Atlético Mineiro vs. Santos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919040000 +0000" stop="20260919043000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">CONMEBOL Sudamericana: Atlético Mineiro vs. Santos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919040000 +0000" stop="20260919043000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">CONMEBOL Sudamericana: Atlético Mineiro vs. Santos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919043000 +0000" stop="20260919050000 +0000" channel="dsports.2.latam">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919043000 +0000" stop="20260919050000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919043000 +0000" stop="20260919050000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919043000 +0000" stop="20260919050000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919043000 +0000" stop="20260919050000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260919050000 +0000" stop="20260919060000 +0000" channel="dsports.2.latam">
@@ -11708,64 +12008,144 @@
     <title lang="es">Tour de Luxemburgo: Etapa 4</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920013000 +0000" stop="20260920033000 +0000" channel="dsports.2.latam">
+  <programme start="20260920013000 +0000" stop="20260920023000 +0000" channel="dsports.2.latam">
     <title lang="es">Soldier Hollow, día 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920013000 +0000" stop="20260920033000 +0000" channel="DSPORTS II COLOMBIA">
+  <programme start="20260920013000 +0000" stop="20260920023000 +0000" channel="DSPORTS II COLOMBIA">
     <title lang="es">Soldier Hollow, día 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920013000 +0000" stop="20260920033000 +0000" channel="DSPORTS 2 || COLOMBIA">
+  <programme start="20260920013000 +0000" stop="20260920023000 +0000" channel="DSPORTS 2 || COLOMBIA">
     <title lang="es">Soldier Hollow, día 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920013000 +0000" stop="20260920033000 +0000" channel="DSPORTS II ARGENTINA">
+  <programme start="20260920013000 +0000" stop="20260920023000 +0000" channel="DSPORTS II ARGENTINA">
     <title lang="es">Soldier Hollow, día 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920013000 +0000" stop="20260920033000 +0000" channel="DSPORTS 2 | ARGENTINA">
+  <programme start="20260920013000 +0000" stop="20260920023000 +0000" channel="DSPORTS 2 | ARGENTINA">
     <title lang="es">Soldier Hollow, día 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920033000 +0000" stop="20260920050000 +0000" channel="dsports.2.latam">
-    <title lang="es">DSPORTS Noticias</title>
+  <programme start="20260920023000 +0000" stop="20260920043000 +0000" channel="dsports.2.latam">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920033000 +0000" stop="20260920050000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">DSPORTS Noticias</title>
+  <programme start="20260920023000 +0000" stop="20260920043000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920033000 +0000" stop="20260920050000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">DSPORTS Noticias</title>
+  <programme start="20260920023000 +0000" stop="20260920043000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920033000 +0000" stop="20260920050000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">DSPORTS Noticias</title>
+  <programme start="20260920023000 +0000" stop="20260920043000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920033000 +0000" stop="20260920050000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">DSPORTS Noticias</title>
+  <programme start="20260920023000 +0000" stop="20260920043000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920050000 +0000" stop="20260920070000 +0000" channel="dsports.2.latam">
-    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+  <programme start="20260920043000 +0000" stop="20260920050000 +0000" channel="dsports.2.latam">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920050000 +0000" stop="20260920070000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+  <programme start="20260920043000 +0000" stop="20260920050000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920050000 +0000" stop="20260920070000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+  <programme start="20260920043000 +0000" stop="20260920050000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920050000 +0000" stop="20260920070000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+  <programme start="20260920043000 +0000" stop="20260920050000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920050000 +0000" stop="20260920070000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+  <programme start="20260920043000 +0000" stop="20260920050000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920050000 +0000" stop="20260920053000 +0000" channel="dsports.2.latam">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920050000 +0000" stop="20260920053000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920050000 +0000" stop="20260920053000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920050000 +0000" stop="20260920053000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920050000 +0000" stop="20260920053000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920053000 +0000" stop="20260920060000 +0000" channel="dsports.2.latam">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920053000 +0000" stop="20260920060000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920053000 +0000" stop="20260920060000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920053000 +0000" stop="20260920060000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920053000 +0000" stop="20260920060000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Puro Concepto</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920060000 +0000" stop="20260920063000 +0000" channel="dsports.2.latam">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920060000 +0000" stop="20260920063000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920060000 +0000" stop="20260920063000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920060000 +0000" stop="20260920063000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920060000 +0000" stop="20260920063000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920063000 +0000" stop="20260920070000 +0000" channel="dsports.2.latam">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920063000 +0000" stop="20260920070000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920063000 +0000" stop="20260920070000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920063000 +0000" stop="20260920070000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920063000 +0000" stop="20260920070000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920070000 +0000" stop="20260920090000 +0000" channel="dsports.2.latam">
@@ -11969,71 +12349,383 @@
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920213000 +0000" stop="20260920220000 +0000" channel="dsports.2.latam">
-    <title lang="es">Eschborn, Frankfurt</title>
+    <title lang="es">Nahuel Tenaglia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920213000 +0000" stop="20260920220000 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Eschborn, Frankfurt</title>
+    <title lang="es">Nahuel Tenaglia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920213000 +0000" stop="20260920220000 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Eschborn, Frankfurt</title>
+    <title lang="es">Nahuel Tenaglia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920213000 +0000" stop="20260920220000 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Eschborn, Frankfurt</title>
+    <title lang="es">Nahuel Tenaglia</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920213000 +0000" stop="20260920220000 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Eschborn, Frankfurt</title>
+    <title lang="es">Nahuel Tenaglia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920221500 +0000" channel="dsports.2.latam">
-    <title lang="es">Usain Bolt</title>
+  <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="dsports.2.latam">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920221500 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Usain Bolt</title>
+  <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920221500 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Usain Bolt</title>
+  <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920221500 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Usain Bolt</title>
+  <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920220000 +0000" stop="20260920221500 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Usain Bolt</title>
+  <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920221500 +0000" stop="20260921004500 +0000" channel="dsports.2.latam">
-    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="dsports.2.latam">
+    <title lang="es">Alessandro del Piero</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920221500 +0000" stop="20260921004500 +0000" channel="DSPORTS II COLOMBIA">
-    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Alessandro del Piero</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920221500 +0000" stop="20260921004500 +0000" channel="DSPORTS 2 || COLOMBIA">
-    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Alessandro del Piero</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920221500 +0000" stop="20260921004500 +0000" channel="DSPORTS II ARGENTINA">
-    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Alessandro del Piero</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920221500 +0000" stop="20260921004500 +0000" channel="DSPORTS 2 | ARGENTINA">
-    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Alessandro del Piero</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918070000 +0000" stop="20260918100000 +0000" channel="dsports.eventos.1.latam">
-    <title lang="es">Corea vs. India</title>
+  <programme start="20260921003000 +0000" stop="20260921010000 +0000" channel="dsports.2.latam">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918100000 +0000" stop="20260918120000 +0000" channel="dsports.eventos.1.latam">
-    <title lang="es">DSPORTS</title>
+  <programme start="20260921003000 +0000" stop="20260921010000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921003000 +0000" stop="20260921010000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921003000 +0000" stop="20260921010000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921003000 +0000" stop="20260921010000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="dsports.2.latam">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921010000 +0000" stop="20260921030000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="dsports.2.latam">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921050000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="dsports.2.latam">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921050000 +0000" stop="20260921070000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="dsports.2.latam">
+    <title lang="es">Genoa vs. FC Südtirol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Genoa vs. FC Südtirol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Genoa vs. FC Südtirol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Genoa vs. FC Südtirol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921090000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Genoa vs. FC Südtirol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="dsports.2.latam">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921110000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921125000 +0000" channel="dsports.2.latam">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921125000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921125000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921125000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921110000 +0000" stop="20260921125000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">DSPORTS Noticias</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921125000 +0000" stop="20260921150000 +0000" channel="dsports.2.latam">
+    <title lang="es">Montreal, Day 2: Women U23 Individual Time Trial</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921125000 +0000" stop="20260921150000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Montreal, Day 2: Women U23 Individual Time Trial</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921125000 +0000" stop="20260921150000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Montreal, Day 2: Women U23 Individual Time Trial</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921125000 +0000" stop="20260921150000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Montreal, Day 2: Women U23 Individual Time Trial</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921125000 +0000" stop="20260921150000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Montreal, Day 2: Women U23 Individual Time Trial</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921153000 +0000" channel="dsports.2.latam">
+    <title lang="es">Yongpyong: Men's Elite</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921153000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Yongpyong: Men's Elite</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921153000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Yongpyong: Men's Elite</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921153000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Yongpyong: Men's Elite</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921153000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Yongpyong: Men's Elite</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921153000 +0000" stop="20260921155000 +0000" channel="dsports.2.latam">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921153000 +0000" stop="20260921155000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921153000 +0000" stop="20260921155000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921153000 +0000" stop="20260921155000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921153000 +0000" stop="20260921155000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921155000 +0000" stop="20260921185000 +0000" channel="dsports.2.latam">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921155000 +0000" stop="20260921185000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921155000 +0000" stop="20260921185000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921155000 +0000" stop="20260921185000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921155000 +0000" stop="20260921185000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921185000 +0000" stop="20260921190000 +0000" channel="dsports.2.latam">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921185000 +0000" stop="20260921190000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921185000 +0000" stop="20260921190000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921185000 +0000" stop="20260921190000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921185000 +0000" stop="20260921190000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Montreal, día 2: Prueba contrarreloj individual masculina sub-23</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="dsports.2.latam">
+    <title lang="es">Alessandro del Piero</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Alessandro del Piero</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Alessandro del Piero</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Alessandro del Piero</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Alessandro del Piero</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921213000 +0000" channel="dsports.2.latam">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921213000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921213000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921213000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921213000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Atlético de Madrid vs. Real Madrid</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921233000 +0000" channel="dsports.2.latam">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921233000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921233000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921233000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921213000 +0000" stop="20260921233000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">FC Porto vs. Benfica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922003000 +0000" channel="dsports.2.latam">
+    <title lang="es">Fútbol Portugués Primeira Liga</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922003000 +0000" channel="DSPORTS II COLOMBIA">
+    <title lang="es">Fútbol Portugués Primeira Liga</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922003000 +0000" channel="DSPORTS 2 || COLOMBIA">
+    <title lang="es">Fútbol Portugués Primeira Liga</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922003000 +0000" channel="DSPORTS II ARGENTINA">
+    <title lang="es">Fútbol Portugués Primeira Liga</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922003000 +0000" channel="DSPORTS 2 | ARGENTINA">
+    <title lang="es">Fútbol Portugués Primeira Liga</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260918120000 +0000" stop="20260918150000 +0000" channel="dsports.eventos.1.latam">
@@ -12056,31 +12748,63 @@
     <title lang="es">Corea vs. India</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919060000 +0000" stop="20260919090000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260919060000 +0000" stop="20260919100000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">Corea vs. India</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919150000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260919100000 +0000" stop="20260919120000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919150000 +0000" stop="20260919210000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260919120000 +0000" stop="20260919142000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Gran Bretaña vs. Ecuador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919142000 +0000" stop="20260919170000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Gran Bretaña vs. Ecuador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919170000 +0000" stop="20260919174500 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919210000 +0000" stop="20260920030000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260919174500 +0000" stop="20260919200000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919200000 +0000" stop="20260919222000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919222000 +0000" stop="20260920010000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920010000 +0000" stop="20260920040000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920030000 +0000" stop="20260920090000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260920040000 +0000" stop="20260920090000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920090000 +0000" stop="20260920150000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260920090000 +0000" stop="20260920110000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920150000 +0000" stop="20260920210000 +0000" channel="dsports.eventos.1.latam">
+  <programme start="20260920110000 +0000" stop="20260920140000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Gran Bretaña vs. Ecuador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920140000 +0000" stop="20260920160000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Gran Bretaña vs. Ecuador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920160000 +0000" stop="20260920180000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">Gran Bretaña vs. Ecuador</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920180000 +0000" stop="20260920210000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12088,7 +12812,19 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918150000 +0000" channel="dsports.eventos.2.latam">
+  <programme start="20260921030000 +0000" stop="20260921090000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921150000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921210000 +0000" channel="dsports.eventos.1.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921210000 +0000" stop="20260922030000 +0000" channel="dsports.eventos.1.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12104,15 +12840,31 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919150000 +0000" channel="dsports.eventos.2.latam">
+  <programme start="20260919090000 +0000" stop="20260919141000 +0000" channel="dsports.eventos.2.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919150000 +0000" stop="20260919210000 +0000" channel="dsports.eventos.2.latam">
+  <programme start="20260919141000 +0000" stop="20260919161500 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">Athletic de Bilbao vs. Deportivo Alavés</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919161500 +0000" stop="20260919163000 +0000" channel="dsports.eventos.2.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919210000 +0000" stop="20260920030000 +0000" channel="dsports.eventos.2.latam">
+  <programme start="20260919163000 +0000" stop="20260919183000 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919183000 +0000" stop="20260919192500 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919192500 +0000" stop="20260919213000 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">Sporting Club de Portugal vs. Arouca</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919213000 +0000" stop="20260920030000 +0000" channel="dsports.eventos.2.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12132,11 +12884,19 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918090000 +0000" channel="dsports.eventos.3.latam">
+  <programme start="20260921030000 +0000" stop="20260921090000 +0000" channel="dsports.eventos.2.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918120000 +0000" channel="dsports.eventos.3.latam">
+  <programme start="20260921090000 +0000" stop="20260921150000 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921210000 +0000" channel="dsports.eventos.2.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921210000 +0000" stop="20260922030000 +0000" channel="dsports.eventos.2.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12168,15 +12928,35 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919150000 +0000" channel="dsports.eventos.3.latam">
+  <programme start="20260919090000 +0000" stop="20260919120000 +0000" channel="dsports.eventos.3.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919150000 +0000" stop="20260919210000 +0000" channel="dsports.eventos.3.latam">
-    <title lang="es">DSPORTS</title>
+  <programme start="20260919120000 +0000" stop="20260919150000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Países Bajos vs. Colombia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919210000 +0000" stop="20260920030000 +0000" channel="dsports.eventos.3.latam">
+  <programme start="20260919150000 +0000" stop="20260919170000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Países Bajos vs. Colombia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919170000 +0000" stop="20260919190000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Países Bajos vs. Colombia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919190000 +0000" stop="20260919220000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919220000 +0000" stop="20260920000000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920020000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">Tenis: Copa Davis 2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920020000 +0000" stop="20260920030000 +0000" channel="dsports.eventos.3.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12196,7 +12976,19 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918090000 +0000" stop="20260918150000 +0000" channel="dsports.eventos.4.latam">
+  <programme start="20260921030000 +0000" stop="20260921090000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921150000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921150000 +0000" stop="20260921210000 +0000" channel="dsports.eventos.3.latam">
+    <title lang="es">DSPORTS</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921210000 +0000" stop="20260922030000 +0000" channel="dsports.eventos.3.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12212,11 +13004,19 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919090000 +0000" stop="20260919150000 +0000" channel="dsports.eventos.4.latam">
-    <title lang="es">DSPORTS</title>
+  <programme start="20260919090000 +0000" stop="20260919120000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">Austria vs. Bélgica</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919150000 +0000" stop="20260919210000 +0000" channel="dsports.eventos.4.latam">
+  <programme start="20260919120000 +0000" stop="20260919140000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">Austria vs. Bélgica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919140000 +0000" stop="20260919160000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">Austria vs. Bélgica</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260919160000 +0000" stop="20260919210000 +0000" channel="dsports.eventos.4.latam">
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -12240,36 +13040,20 @@
     <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Martín Vidaurre</title>
+  <programme start="20260921030000 +0000" stop="20260921090000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918060000 +0000" stop="20260918063000 +0000" channel="DSPORTS +">
-    <title lang="es">Martín Vidaurre</title>
+  <programme start="20260921090000 +0000" stop="20260921150000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918090000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Power Slap</title>
+  <programme start="20260921150000 +0000" stop="20260921210000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918063000 +0000" stop="20260918090000 +0000" channel="DSPORTS +">
-    <title lang="es">Power Slap</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Octavos de final: Argentina Sub-20 vs. Corea del Sur Sub-20</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918110000 +0000" channel="DSPORTS +">
-    <title lang="es">Octavos de final: Argentina Sub-20 vs. Corea del Sur Sub-20</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918140000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Austria vs. Bélgica</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918110000 +0000" stop="20260918140000 +0000" channel="DSPORTS +">
-    <title lang="es">Austria vs. Bélgica</title>
+  <programme start="20260921210000 +0000" stop="20260922030000 +0000" channel="dsports.eventos.4.latam">
+    <title lang="es">DSPORTS</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260918140000 +0000" stop="20260918160000 +0000" channel="dsports.plus.latam">
@@ -12440,92 +13224,36 @@
     <title lang="es">Argentina vs. Turquía</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919200000 +0000" stop="20260919203000 +0000" channel="dsports.plus.latam">
+  <programme start="20260919200000 +0000" stop="20260919230000 +0000" channel="dsports.plus.latam">
     <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919200000 +0000" stop="20260919203000 +0000" channel="DSPORTS +">
+  <programme start="20260919200000 +0000" stop="20260919230000 +0000" channel="DSPORTS +">
     <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919203000 +0000" stop="20260919210000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Simplemente Diego: Regreso a la Selección</title>
+  <programme start="20260919230000 +0000" stop="20260920020000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919203000 +0000" stop="20260919210000 +0000" channel="DSPORTS +">
-    <title lang="es">Simplemente Diego: Regreso a la Selección</title>
+  <programme start="20260919230000 +0000" stop="20260920020000 +0000" channel="DSPORTS +">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919210000 +0000" stop="20260919213000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+  <programme start="20260920020000 +0000" stop="20260920050000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919210000 +0000" stop="20260919213000 +0000" channel="DSPORTS +">
-    <title lang="es">Magazine CONMEBOL Sudamericana</title>
+  <programme start="20260920020000 +0000" stop="20260920050000 +0000" channel="DSPORTS +">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919213000 +0000" stop="20260919220000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
+  <programme start="20260920050000 +0000" stop="20260920090000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260919213000 +0000" stop="20260919220000 +0000" channel="DSPORTS +">
-    <title lang="es">Los goles de Cristiano Ronaldo al Atlético de Madrid</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919220000 +0000" stop="20260920000000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Sevilla vs. Barcelona</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260919220000 +0000" stop="20260920000000 +0000" channel="DSPORTS +">
-    <title lang="es">Sevilla vs. Barcelona</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920000000 +0000" stop="20260920003000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Manu Ginóbili: The last dance en la selección</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920000000 +0000" stop="20260920003000 +0000" channel="DSPORTS +">
-    <title lang="es">Manu Ginóbili: The last dance en la selección</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920003000 +0000" stop="20260920023000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Córdoba Athletic vs. Jockey Club Córdoba</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920003000 +0000" stop="20260920023000 +0000" channel="DSPORTS +">
-    <title lang="es">Córdoba Athletic vs. Jockey Club Córdoba</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="dsports.plus.latam">
-    <title lang="es">Dirk Nowitzki</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920023000 +0000" stop="20260920030000 +0000" channel="DSPORTS +">
-    <title lang="es">Dirk Nowitzki</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="dsports.plus.latam">
-    <title lang="es">2018</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920030000 +0000" stop="20260920033000 +0000" channel="DSPORTS +">
-    <title lang="es">2018</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920033000 +0000" stop="20260920063000 +0000" channel="dsports.plus.latam">
-    <title lang="es">PFL Charlotte</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920033000 +0000" stop="20260920063000 +0000" channel="DSPORTS +">
-    <title lang="es">PFL Charlotte</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920063000 +0000" stop="20260920090000 +0000" channel="dsports.plus.latam">
-    <title lang="es">PFL Charlotte</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260920063000 +0000" stop="20260920090000 +0000" channel="DSPORTS +">
-    <title lang="es">PFL Charlotte</title>
+  <programme start="20260920050000 +0000" stop="20260920090000 +0000" channel="DSPORTS +">
+    <title lang="es">Guga Kuerten</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920090000 +0000" stop="20260920113000 +0000" channel="dsports.plus.latam">
@@ -12606,6 +13334,158 @@
   </programme>
   <programme start="20260920220000 +0000" stop="20260921000000 +0000" channel="DSPORTS +">
     <title lang="es">Córdoba Athletic vs. Jockey Club Córdoba</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Jonny Wilkinson</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921000000 +0000" stop="20260921003000 +0000" channel="DSPORTS +">
+    <title lang="es">Jonny Wilkinson</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921003000 +0000" stop="20260921023000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Gimnasia y Esgrima de Rosario vs. Jockey Club Rosario</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921003000 +0000" stop="20260921023000 +0000" channel="DSPORTS +">
+    <title lang="es">Gimnasia y Esgrima de Rosario vs. Jockey Club Rosario</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921023000 +0000" stop="20260921030000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921023000 +0000" stop="20260921030000 +0000" channel="DSPORTS +">
+    <title lang="es">Gabriela Sabatini</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921033000 +0000" channel="dsports.plus.latam">
+    <title lang="es">2018</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921030000 +0000" stop="20260921033000 +0000" channel="DSPORTS +">
+    <title lang="es">2018</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921033000 +0000" stop="20260921040000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Jonny Wilkinson</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921033000 +0000" stop="20260921040000 +0000" channel="DSPORTS +">
+    <title lang="es">Jonny Wilkinson</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921040000 +0000" stop="20260921060000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Córdoba Athletic vs. Jockey Club Córdoba</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921040000 +0000" stop="20260921060000 +0000" channel="DSPORTS +">
+    <title lang="es">Córdoba Athletic vs. Jockey Club Córdoba</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921060000 +0000" stop="20260921090000 +0000" channel="dsports.plus.latam">
+    <title lang="es">ONE Friday Fights 171</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921060000 +0000" stop="20260921090000 +0000" channel="DSPORTS +">
+    <title lang="es">ONE Friday Fights 171</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921114500 +0000" channel="dsports.plus.latam">
+    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921090000 +0000" stop="20260921114500 +0000" channel="DSPORTS +">
+    <title lang="es">Tour de Luxemburgo: Etapa 5</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921114500 +0000" stop="20260921120000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Usain Bolt</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921114500 +0000" stop="20260921120000 +0000" channel="DSPORTS +">
+    <title lang="es">Usain Bolt</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921120000 +0000" stop="20260921130000 +0000" channel="dsports.plus.latam">
+    <title lang="es">World's Strongest Man</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921120000 +0000" stop="20260921130000 +0000" channel="DSPORTS +">
+    <title lang="es">World's Strongest Man</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Manu Ginóbili</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921130000 +0000" stop="20260921133000 +0000" channel="DSPORTS +">
+    <title lang="es">Manu Ginóbili</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921160000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Estados Unidos vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921133000 +0000" stop="20260921160000 +0000" channel="DSPORTS +">
+    <title lang="es">Estados Unidos vs. Francia</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921160000 +0000" stop="20260921163000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921160000 +0000" stop="20260921163000 +0000" channel="DSPORTS +">
+    <title lang="es">Todo en 30</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921163000 +0000" stop="20260921170000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Iker Casillas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921163000 +0000" stop="20260921170000 +0000" channel="DSPORTS +">
+    <title lang="es">Iker Casillas</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921190000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921170000 +0000" stop="20260921190000 +0000" channel="DSPORTS +">
+    <title lang="es">Sevilla vs. Barcelona</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="dsports.plus.latam">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921190000 +0000" stop="20260921193000 +0000" channel="DSPORTS +">
+    <title lang="es">2026 La Vuelta Highlights</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921223000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Montreal, día 1: Prueba contrarreloj individual élite femenina</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921193000 +0000" stop="20260921223000 +0000" channel="DSPORTS +">
+    <title lang="es">Montreal, día 1: Prueba contrarreloj individual élite femenina</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921223000 +0000" stop="20260921233000 +0000" channel="dsports.plus.latam">
+    <title lang="es">Artic Race of Norway</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921223000 +0000" stop="20260921233000 +0000" channel="DSPORTS +">
+    <title lang="es">Artic Race of Norway</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922000000 +0000" channel="dsports.plus.latam">
+    <title lang="es">De ciclismo se habla así</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260921233000 +0000" stop="20260922000000 +0000" channel="DSPORTS +">
+    <title lang="es">De ciclismo se habla así</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260918002500 -0700" stop="20260918013500 -0700" channel="e.entertainment.television.venezuela.latam">
@@ -21932,11 +22812,11 @@
     <title lang="es">Invicta FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.1.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.1.latam">
     <title lang="es">Fubo Sports 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.10.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.10.latam">
     <title lang="es">Fubo Sports 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -21948,7 +22828,7 @@
     <title lang="es">Upcoming Genoa vs FC Südtirol</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.2.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.2.latam">
     <title lang="es">Fubo Sports 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -21960,7 +22840,7 @@
     <title lang="es">Upcoming Bologna vs Torino</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.3.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.3.latam">
     <title lang="es">Fubo Sports 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -21972,27 +22852,27 @@
     <title lang="es">Upcoming Everton FC vs Ipswich Town</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.4.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.4.latam">
     <title lang="es">Fubo Sports 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.5.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.5.latam">
     <title lang="es">Fubo Sports 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.6.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.6.latam">
     <title lang="es">Fubo Sports 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.7.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.7.latam">
     <title lang="es">Fubo Sports 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.8.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.8.latam">
     <title lang="es">Fubo Sports 8 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="fubo.sports.9.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="fubo.sports.9.latam">
     <title lang="es">Fubo Sports 9 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -26696,19 +27576,19 @@
     <title lang="es">PGA Tour The Cut (T2026): Episodio 30</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920060000 +0200" stop="20260920070000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260920060000 +0200" stop="20260920065500 +0200" channel="m.golf.espana.latam">
     <title lang="es">The Legends Tour (T2026): NI Legends</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920070000 +0200" stop="20260920073000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260920065500 +0200" stop="20260920072800 +0200" channel="m.golf.espana.latam">
     <title lang="es">HotelPlanner Tour Series (T2026): English Challenge</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920073000 +0200" stop="20260920075000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260920072800 +0200" stop="20260920074500 +0200" channel="m.golf.espana.latam">
     <title lang="es">Torneos Profesionales (T2026): Alps de Las Castillas</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260920075000 +0200" stop="20260920080000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260920074500 +0200" stop="20260920080000 +0200" channel="m.golf.espana.latam">
     <title lang="es">Ruta 21 (T2026): Kingsbarns</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -26764,11 +27644,11 @@
     <title lang="es">HotelPlanner Tour Series (T2026): English Challenge</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921103500 +0200" stop="20260921111000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260921103500 +0200" stop="20260921110500 +0200" channel="m.golf.espana.latam">
     <title lang="es">PGA Tour Champions Learning Center (T2026): Episodio 21 (VO)</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921111000 +0200" stop="20260921131000 +0200" channel="m.golf.espana.latam">
+  <programme start="20260921110500 +0200" stop="20260921131000 +0200" channel="m.golf.espana.latam">
     <title lang="es">DP World Tour (T25/26): BMW PGA Championship. Jornada 3. Parte 2</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -30044,27 +30924,27 @@
     <title lang="es">DeportePlus con Juanma Castaño (T26/27): 20/09/2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921103000 +0200" stop="20260921121500 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921103000 +0200" stop="20260921121800 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Brasileirao (T2026): Corinthians - Fluminense</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921121500 +0200" stop="20260921130000 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921121800 +0200" stop="20260921130500 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Antoine Griezmann. Enamorado del Atleti</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921130000 +0200" stop="20260921143300 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921130500 +0200" stop="20260921144000 +0200" channel="m.vamos.espana.latam">
     <title lang="es">El rey Puma</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921143300 +0200" stop="20260921153500 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921144000 +0200" stop="20260921153900 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Universo Valdano (T10): Lamine Yamal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921153500 +0200" stop="20260921171500 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921153900 +0200" stop="20260921172700 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Liga Argentina. Torneo Clausura (T2026): San Lorenzo - Boca Juniors</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921171500 +0200" stop="20260921183000 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921172700 +0200" stop="20260921183000 +0200" channel="m.vamos.espana.latam">
     <title lang="es">DeportePlus con Juanma Castaño (T26/27): 20/09/2026</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -30072,11 +30952,11 @@
     <title lang="es">El tercer tiempo (T26/27): Episodio 3</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921200000 +0200" stop="20260921210000 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921200000 +0200" stop="20260921210200 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Informe Plus. Ba-lon-ces-to. 2006. Más allá del oro</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260921210000 +0200" stop="20260921220000 +0200" channel="m.vamos.espana.latam">
+  <programme start="20260921210200 +0200" stop="20260921220000 +0200" channel="m.vamos.espana.latam">
     <title lang="es">Informe Plus+. Andrea Fuentes, locura artística</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31508,15 +32388,15 @@
     <title lang="es">Leeds United - Newcastle United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.1.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.1.latam">
     <title lang="es">MonoMax 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.10.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.10.latam">
     <title lang="es">MonoMax 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.11.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.11.latam">
     <title lang="es">MonoMax 11 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31524,7 +32404,7 @@
     <title lang="es">Argentina - Korea Republic</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.12.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.12.latam">
     <title lang="es">MonoMax 12 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31532,7 +32412,7 @@
     <title lang="es">Brazil - USA</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.13.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.13.latam">
     <title lang="es">MonoMax 13 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31540,7 +32420,7 @@
     <title lang="es">Italy - China PR</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.14.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.14.latam">
     <title lang="es">MonoMax 14 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31548,11 +32428,11 @@
     <title lang="es">Spain - Portugal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.15.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.15.latam">
     <title lang="es">MonoMax 15 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.16.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.16.latam">
     <title lang="es">MonoMax 16 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31560,7 +32440,7 @@
     <title lang="es">Everton - Wolverhampton Wanderers</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.17.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.17.latam">
     <title lang="es">MonoMax 17 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31568,7 +32448,7 @@
     <title lang="es">Manchester United - Brighton &amp; Hove Albion</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.18.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.18.latam">
     <title lang="es">MonoMax 18 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31576,11 +32456,11 @@
     <title lang="es">Coventry City - Aston Villa</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.19.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.19.latam">
     <title lang="es">MonoMax 19 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.2.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.2.latam">
     <title lang="es">MonoMax 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31588,7 +32468,7 @@
     <title lang="es">Uttaradit FC - Nongbua Pitchaya FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.20.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.20.latam">
     <title lang="es">MonoMax 20 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31596,7 +32476,7 @@
     <title lang="es">Chainat Hornbill - Pattaya United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.21.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.21.latam">
     <title lang="es">MonoMax 21 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31604,7 +32484,7 @@
     <title lang="es">Nakhonpathom United - Kanchanaburi Power FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.22.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.22.latam">
     <title lang="es">MonoMax 22 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -31612,35 +32492,35 @@
     <title lang="es">Mahasarakham CC FC - Nakhonratchasima Mazda FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.23.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.23.latam">
     <title lang="es">MonoMax 23 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.3.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.3.latam">
     <title lang="es">MonoMax 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.4.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.4.latam">
     <title lang="es">MonoMax 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.5.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.5.latam">
     <title lang="es">MonoMax 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.6.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.6.latam">
     <title lang="es">MonoMax 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.7.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.7.latam">
     <title lang="es">MonoMax 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.8.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.8.latam">
     <title lang="es">MonoMax 8 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="monomax.9.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="monomax.9.latam">
     <title lang="es">MonoMax 9 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32496,7 +33376,7 @@
     <title lang="es">Morning News Now MV 2 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.01.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.01.latam">
     <title lang="es">Peacock 01 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32504,7 +33384,7 @@
     <title lang="es">Morning News Now MV 1 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.02.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.02.latam">
     <title lang="es">Peacock 02 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32512,7 +33392,7 @@
     <title lang="es">Morning News Now LL 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.03.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.03.latam">
     <title lang="es">Peacock 03 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32520,7 +33400,7 @@
     <title lang="es">Morning News Now ISO 2 V 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.04.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.04.latam">
     <title lang="es">Peacock 04 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32528,7 +33408,7 @@
     <title lang="es">Morning News Now CC V 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.05.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.05.latam">
     <title lang="es">Peacock 05 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32536,7 +33416,7 @@
     <title lang="es">Morning News Now ISO 1 V 9.16.26</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.06.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.06.latam">
     <title lang="es">Peacock 06 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32548,7 +33428,7 @@
     <title lang="es">Womens Quarterfinals</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.07.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.07.latam">
     <title lang="es">Peacock 07 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32556,7 +33436,7 @@
     <title lang="es">Morning News Now AM 1135</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.08.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.08.latam">
     <title lang="es">Peacock 08 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -32564,11 +33444,11 @@
     <title lang="es">Morning News Now AM 1133</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.09.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.09.latam">
     <title lang="es">Peacock 09 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="peacock.10.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="peacock.10.latam">
     <title lang="es">Peacock 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33408,7 +34288,7 @@
     <title lang="es">Norwich vs. Birmingham</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="sky.sports.1.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="sky.sports.1.latam">
     <title lang="es">Sky Sports+ 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33416,7 +34296,7 @@
     <title lang="es">Derby vs. West Brom</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="sky.sports.2.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="sky.sports.2.latam">
     <title lang="es">Sky Sports+ 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33424,7 +34304,7 @@
     <title lang="es">Everton vs Wolves</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="sky.sports.6.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="sky.sports.6.latam">
     <title lang="es">Sky Sports+ 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33432,7 +34312,7 @@
     <title lang="es">Fleetwood vs Sheffield United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918083626 +0000" stop="20260921083626 +0000" channel="sky.sports.7.latam">
+  <programme start="20260918124010 +0000" stop="20260921124010 +0000" channel="sky.sports.7.latam">
     <title lang="es">Sky Sports+ 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35056,14 +35936,6 @@
     <title lang="es">Falsa identidad</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260918080000 +0000" stop="20260918090000 +0000" channel="telemundo.deportes.ahora.usa.latam">
-    <title lang="es">Puesta a punto</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260918090000 +0000" stop="20260918100000 +0000" channel="telemundo.deportes.ahora.usa.latam">
-    <title lang="es">Zona Premier League</title>
-    <category lang="es">Deportes</category>
-  </programme>
   <programme start="20260918100000 +0000" stop="20260918120000 +0000" channel="telemundo.deportes.ahora.usa.latam">
     <title lang="es">Copa Mundial Femenina Sub-20 de la FIFA 2026</title>
     <category lang="es">Deportes</category>
@@ -35245,6 +36117,14 @@
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260920190000 +0000" stop="20260920210000 +0000" channel="telemundo.deportes.ahora.usa.latam">
+    <title lang="es">Fútbol Serie A</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920210000 +0000" stop="20260920230000 +0000" channel="telemundo.deportes.ahora.usa.latam">
+    <title lang="es">Fútbol Serie A</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260920230000 +0000" stop="20260921010000 +0000" channel="telemundo.deportes.ahora.usa.latam">
     <title lang="es">Fútbol Serie A</title>
     <category lang="es">Deportes</category>
   </programme>
