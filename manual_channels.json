@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-18T16:28:00Z",
+  "updated_at": "2026-09-18T16:44:00Z",
   "channels": {
     "Peacock 01": [
       {
@@ -288,51 +288,51 @@
     "Setanta 1": [
       {
         "title": "EuroLeague Supercup 2026, Olympiacos - Fenerbahce",
-        "start": "2026-09-18T14:55:09Z",
-        "stop": "2026-09-18T19:00:09Z"
+        "start": "2026-09-18T13:55:09Z",
+        "stop": "2026-09-18T18:00:09Z"
       },
       {
         "title": "Bayern Munich - Union Berlin",
-        "start": "2026-09-18T19:25:20Z",
-        "stop": "2026-09-18T23:30:20Z"
+        "start": "2026-09-18T18:25:20Z",
+        "stop": "2026-09-18T22:30:20Z"
       },
       {
         "title": "NASCAR EURO SERIES, Grand Prix Italy - Semi-Final 1",
-        "start": "2026-09-19T09:35:46Z",
-        "stop": "2026-09-19T17:40:46Z"
+        "start": "2026-09-19T08:35:46Z",
+        "stop": "2026-09-19T16:40:46Z"
       }
     ],
     "Setanta 2": [
       {
         "title": "EuroLeague Supercup 2026, Dubai - Real Madrid",
-        "start": "2026-09-18T17:55:09Z",
-        "stop": "2026-09-18T22:00:09Z"
+        "start": "2026-09-18T16:55:09Z",
+        "stop": "2026-09-18T21:00:09Z"
       },
       {
         "title": "Holstein Kiel - VfL Osnabruck",
-        "start": "2026-09-19T11:55:29Z",
-        "stop": "2026-09-19T15:00:29Z"
+        "start": "2026-09-19T10:55:29Z",
+        "stop": "2026-09-19T14:00:29Z"
       }
     ],
     "Setanta 3": [
       {
         "title": "Monaco - Lens",
-        "start": "2026-09-18T19:40:17Z",
-        "stop": "2026-09-19T00:45:17Z"
+        "start": "2026-09-18T18:40:17Z",
+        "stop": "2026-09-18T23:45:17Z"
       }
     ],
     "Setanta 4": [
       {
         "title": "Espanyol - Elche",
-        "start": "2026-09-18T19:55:12Z",
-        "stop": "2026-09-18T23:30:12Z"
+        "start": "2026-09-18T18:55:12Z",
+        "stop": "2026-09-18T22:30:12Z"
       }
     ],
     "Setanta 5": [
       {
         "title": "Brentford - Chelsea",
-        "start": "2026-09-18T19:55:26Z",
-        "stop": "2026-09-18T23:00:26Z"
+        "start": "2026-09-18T18:55:26Z",
+        "stop": "2026-09-18T22:00:26Z"
       }
     ],
     "MonoMax 1": [
