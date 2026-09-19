@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-19T12:30:00Z",
+  "updated_at": "2026-09-19T13:30:00Z",
   "channels": {
     "Peacock 01": [
       {
@@ -679,6 +679,61 @@
         "title": "Udinese - Cagliari",
         "start": "2026-09-19T12:55:21Z",
         "stop": "2026-09-19T16:00:21Z"
+      }
+    ],
+    "Premier League+ 1": [
+      {
+        "title": "Tottenham Hotspur vs Aston Villa",
+        "start": "2026-09-19T11:30:00Z",
+        "stop": "2026-09-19T14:00:00Z"
+      },
+      {
+        "title": "Brighton and Hove Albion vs Arsenal",
+        "start": "2026-09-19T14:00:00Z",
+        "stop": "2026-09-19T16:30:00Z"
+      },
+      {
+        "title": "Nottingham Forest vs Coventry City",
+        "start": "2026-09-19T16:30:00Z",
+        "stop": "2026-09-19T19:00:00Z"
+      },
+      {
+        "title": "Bournemouth vs Liverpool",
+        "start": "2026-09-20T13:00:00Z",
+        "stop": "2026-09-20T15:30:00Z"
+      },
+      {
+        "title": "Fulham vs Manchester United",
+        "start": "2026-09-20T15:30:00Z",
+        "stop": "2026-09-20T18:00:00Z"
+      }
+    ],
+    "Premier League+ 2": [
+      {
+        "title": "Everton vs Ipswich Town",
+        "start": "2026-09-19T14:00:00Z",
+        "stop": "2026-09-19T16:30:00Z"
+      }
+    ],
+    "Premier League+ 3": [
+      {
+        "title": "Leeds United vs Crystal Palace",
+        "start": "2026-09-20T13:00:00Z",
+        "stop": "2026-09-20T15:30:00Z"
+      }
+    ],
+    "Premier League+ 4": [
+      {
+        "title": "Manchester City vs Sunderland",
+        "start": "2026-09-20T13:00:00Z",
+        "stop": "2026-09-20T15:30:00Z"
+      }
+    ],
+    "Premier League+ 5": [
+      {
+        "title": "Newcastle United vs Hull City",
+        "start": "2026-09-19T14:00:00Z",
+        "stop": "2026-09-19T16:30:00Z"
       }
     ]
   }
