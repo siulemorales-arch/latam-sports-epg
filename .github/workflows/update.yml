@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scraper.py"
+      - "la1_scraper.py"
       - "manual_channels.json"
       - "requirements.txt"
       - ".github/workflows/update.yml"
@@ -35,6 +36,8 @@ jobs:
       - run: pip install -r requirements.txt
       - run: playwright install --with-deps chromium
       - run: python scraper.py
+      - name: Añadir LA 1 desde Movistar Plus
+        run: python la1_scraper.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
@@ -46,7 +49,7 @@ jobs:
           names={c.findtext('display-name') for c in channels}
           required={
               'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)',
-              'DAZN 2 Italia',
+              'DAZN 2 Italia','LA 1 (España)',
           }
           missing=required-names
           assert not missing, f'Faltan señales críticas: {sorted(missing)}'
