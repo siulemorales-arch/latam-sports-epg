@@ -55,8 +55,8 @@
   </channel>
   <channel id="caza.y.pesca.espana.latam">
     <display-name lang="es">Caza y Pesca (España)</display-name>
-    <display-name lang="es">Caza y Pesca</display-name>
     <display-name lang="es">CAZA Y PESCA</display-name>
+    <display-name lang="es">Caza y Pesca</display-name>
     <display-name lang="es">CAZA Y PESCA FHD</display-name>
     <display-name lang="es">Caza y Pesca FHD</display-name>
     <display-name lang="es">Caza y Pesca HD</display-name>
@@ -198,12 +198,12 @@
     <display-name lang="es">DAZN Baloncesto (España)</display-name>
     <display-name lang="es">DAZN Baloncesto</display-name>
     <display-name lang="es">DAZN BALONCESTO</display-name>
-    <display-name lang="es">DAZN BALONCESTO FHD</display-name>
     <display-name lang="es">DAZN Baloncesto FHD</display-name>
+    <display-name lang="es">DAZN BALONCESTO FHD</display-name>
     <display-name lang="es">DAZN BALONCESTO HD</display-name>
     <display-name lang="es">DAZN Baloncesto HD</display-name>
-    <display-name lang="es">DAZN BALONCESTO SD</display-name>
     <display-name lang="es">DAZN Baloncesto SD</display-name>
+    <display-name lang="es">DAZN BALONCESTO SD</display-name>
   </channel>
   <channel id="dazn.baloncesto.2.espana.latam">
     <display-name lang="es">DAZN Baloncesto 2 (España)</display-name>
@@ -211,17 +211,17 @@
     <display-name lang="es">DAZN BALONCESTO 2</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 FHD</display-name>
     <display-name lang="es">DAZN Baloncesto 2 FHD</display-name>
-    <display-name lang="es">DAZN Baloncesto 2 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 HD</display-name>
+    <display-name lang="es">DAZN Baloncesto 2 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 2 SD</display-name>
     <display-name lang="es">DAZN Baloncesto 2 SD</display-name>
   </channel>
   <channel id="dazn.baloncesto.3.espana.latam">
     <display-name lang="es">DAZN Baloncesto 3 (España)</display-name>
-    <display-name lang="es">DAZN BALONCESTO 3</display-name>
     <display-name lang="es">DAZN Baloncesto 3</display-name>
-    <display-name lang="es">DAZN BALONCESTO 3 FHD</display-name>
+    <display-name lang="es">DAZN BALONCESTO 3</display-name>
     <display-name lang="es">DAZN Baloncesto 3 FHD</display-name>
+    <display-name lang="es">DAZN BALONCESTO 3 FHD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 HD</display-name>
     <display-name lang="es">DAZN BALONCESTO 3 HD</display-name>
     <display-name lang="es">DAZN Baloncesto 3 SD</display-name>
@@ -256,14 +256,14 @@
   </channel>
   <channel id="dazn.motogp.espana.latam">
     <display-name lang="es">DAZN MotoGP (España)</display-name>
-    <display-name lang="es">DAZN MOTOGP</display-name>
     <display-name lang="es">DAZN MotoGP</display-name>
+    <display-name lang="es">DAZN MOTOGP</display-name>
     <display-name lang="es">DAZN MotoGP FHD</display-name>
     <display-name lang="es">DAZN MOTOGP FHD</display-name>
-    <display-name lang="es">DAZN MOTOGP HD</display-name>
     <display-name lang="es">DAZN MotoGP HD</display-name>
-    <display-name lang="es">DAZN MOTOGP SD</display-name>
+    <display-name lang="es">DAZN MOTOGP HD</display-name>
     <display-name lang="es">DAZN MotoGP SD</display-name>
+    <display-name lang="es">DAZN MOTOGP SD</display-name>
   </channel>
   <channel id="discovery.channel.venezuela.latam">
     <display-name lang="es">Discovery Channel (Venezuela)</display-name>
@@ -452,23 +452,23 @@
     <display-name lang="es">Eurosport 1 (España)</display-name>
     <display-name lang="es">EUROSPORT 1</display-name>
     <display-name lang="es">Eurosport 1</display-name>
-    <display-name lang="es">EUROSPORT 1 FHD</display-name>
     <display-name lang="es">Eurosport 1 FHD</display-name>
-    <display-name lang="es">EUROSPORT 1 HD</display-name>
+    <display-name lang="es">EUROSPORT 1 FHD</display-name>
     <display-name lang="es">Eurosport 1 HD</display-name>
-    <display-name lang="es">EUROSPORT 1 SD</display-name>
+    <display-name lang="es">EUROSPORT 1 HD</display-name>
     <display-name lang="es">Eurosport 1 SD</display-name>
+    <display-name lang="es">EUROSPORT 1 SD</display-name>
   </channel>
   <channel id="eurosport.2.espana.latam">
     <display-name lang="es">Eurosport 2 (España)</display-name>
-    <display-name lang="es">EUROSPORT 2</display-name>
     <display-name lang="es">Eurosport 2</display-name>
+    <display-name lang="es">EUROSPORT 2</display-name>
     <display-name lang="es">EUROSPORT 2 FHD</display-name>
     <display-name lang="es">Eurosport 2 FHD</display-name>
-    <display-name lang="es">Eurosport 2 HD</display-name>
     <display-name lang="es">EUROSPORT 2 HD</display-name>
-    <display-name lang="es">EUROSPORT 2 SD</display-name>
+    <display-name lang="es">Eurosport 2 HD</display-name>
     <display-name lang="es">Eurosport 2 SD</display-name>
+    <display-name lang="es">EUROSPORT 2 SD</display-name>
   </channel>
   <channel id="fox.one.mexico.latam">
     <display-name lang="es">FOX One México</display-name>
@@ -645,10 +645,10 @@
     <display-name lang="es">M+ Baloncesto (España)</display-name>
     <display-name lang="es">M+ BALONCESTO</display-name>
     <display-name lang="es">M+ Baloncesto</display-name>
-    <display-name lang="es">M+ Baloncesto FHD</display-name>
     <display-name lang="es">M+ BALONCESTO FHD</display-name>
-    <display-name lang="es">M+ Baloncesto HD</display-name>
+    <display-name lang="es">M+ Baloncesto FHD</display-name>
     <display-name lang="es">M+ BALONCESTO HD</display-name>
+    <display-name lang="es">M+ Baloncesto HD</display-name>
     <display-name lang="es">M+ Baloncesto SD</display-name>
     <display-name lang="es">M+ BALONCESTO SD</display-name>
   </channel>
@@ -658,28 +658,28 @@
     <display-name lang="es">M+ BALONCESTO 2</display-name>
     <display-name lang="es">M+ Baloncesto 2 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 2 FHD</display-name>
-    <display-name lang="es">M+ BALONCESTO 2 HD</display-name>
     <display-name lang="es">M+ Baloncesto 2 HD</display-name>
-    <display-name lang="es">M+ BALONCESTO 2 SD</display-name>
+    <display-name lang="es">M+ BALONCESTO 2 HD</display-name>
     <display-name lang="es">M+ Baloncesto 2 SD</display-name>
+    <display-name lang="es">M+ BALONCESTO 2 SD</display-name>
   </channel>
   <channel id="m.baloncesto.3.espana.latam">
     <display-name lang="es">M+ Baloncesto 3 (España)</display-name>
-    <display-name lang="es">M+ BALONCESTO 3</display-name>
     <display-name lang="es">M+ Baloncesto 3</display-name>
-    <display-name lang="es">M+ BALONCESTO 3 FHD</display-name>
+    <display-name lang="es">M+ BALONCESTO 3</display-name>
     <display-name lang="es">M+ Baloncesto 3 FHD</display-name>
+    <display-name lang="es">M+ BALONCESTO 3 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 3 HD</display-name>
     <display-name lang="es">M+ Baloncesto 3 HD</display-name>
-    <display-name lang="es">M+ BALONCESTO 3 SD</display-name>
     <display-name lang="es">M+ Baloncesto 3 SD</display-name>
+    <display-name lang="es">M+ BALONCESTO 3 SD</display-name>
   </channel>
   <channel id="m.baloncesto.4.espana.latam">
     <display-name lang="es">M+ Baloncesto 4 (España)</display-name>
-    <display-name lang="es">M+ Baloncesto 4</display-name>
     <display-name lang="es">M+ BALONCESTO 4</display-name>
-    <display-name lang="es">M+ Baloncesto 4 FHD</display-name>
+    <display-name lang="es">M+ Baloncesto 4</display-name>
     <display-name lang="es">M+ BALONCESTO 4 FHD</display-name>
+    <display-name lang="es">M+ Baloncesto 4 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 4 HD</display-name>
     <display-name lang="es">M+ Baloncesto 4 HD</display-name>
     <display-name lang="es">M+ Baloncesto 4 SD</display-name>
@@ -689,12 +689,12 @@
     <display-name lang="es">M+ Baloncesto 5 (España)</display-name>
     <display-name lang="es">M+ BALONCESTO 5</display-name>
     <display-name lang="es">M+ Baloncesto 5</display-name>
-    <display-name lang="es">M+ Baloncesto 5 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 5 FHD</display-name>
+    <display-name lang="es">M+ Baloncesto 5 FHD</display-name>
     <display-name lang="es">M+ BALONCESTO 5 HD</display-name>
     <display-name lang="es">M+ Baloncesto 5 HD</display-name>
-    <display-name lang="es">M+ Baloncesto 5 SD</display-name>
     <display-name lang="es">M+ BALONCESTO 5 SD</display-name>
+    <display-name lang="es">M+ Baloncesto 5 SD</display-name>
   </channel>
   <channel id="m.deportes.espana.latam">
     <display-name lang="es">M+ Deportes (España)</display-name>
@@ -710,18 +710,18 @@
     <display-name lang="es">M DEPORTES 1 FHD</display-name>
     <display-name lang="es">M DEPORTES 1 HD</display-name>
     <display-name lang="es">M DEPORTES 1 SD</display-name>
-    <display-name lang="es">M+ DEPORTES</display-name>
     <display-name lang="es">M+ Deportes</display-name>
+    <display-name lang="es">M+ DEPORTES</display-name>
     <display-name lang="es">M+ DEPORTES 1</display-name>
     <display-name lang="es">M+ DEPORTES 1 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 1 HD</display-name>
     <display-name lang="es">M+ DEPORTES 1 SD</display-name>
-    <display-name lang="es">M+ DEPORTES FHD</display-name>
     <display-name lang="es">M+ Deportes FHD</display-name>
-    <display-name lang="es">M+ DEPORTES HD</display-name>
+    <display-name lang="es">M+ DEPORTES FHD</display-name>
     <display-name lang="es">M+ Deportes HD</display-name>
-    <display-name lang="es">M+ DEPORTES SD</display-name>
+    <display-name lang="es">M+ DEPORTES HD</display-name>
     <display-name lang="es">M+ Deportes SD</display-name>
+    <display-name lang="es">M+ DEPORTES SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 1</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 1 FHD</display-name>
@@ -743,12 +743,12 @@
     <display-name lang="es">M DEPORTES 2 SD</display-name>
     <display-name lang="es">M+ DEPORTES 2</display-name>
     <display-name lang="es">M+ Deportes 2</display-name>
-    <display-name lang="es">M+ Deportes 2 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 2 FHD</display-name>
+    <display-name lang="es">M+ Deportes 2 FHD</display-name>
     <display-name lang="es">M+ Deportes 2 HD</display-name>
     <display-name lang="es">M+ DEPORTES 2 HD</display-name>
-    <display-name lang="es">M+ DEPORTES 2 SD</display-name>
     <display-name lang="es">M+ Deportes 2 SD</display-name>
+    <display-name lang="es">M+ DEPORTES 2 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2 FHD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 2 HD</display-name>
@@ -768,8 +768,8 @@
     <display-name lang="es">M+ DEPORTES 3</display-name>
     <display-name lang="es">M+ DEPORTES 3 FHD</display-name>
     <display-name lang="es">M+ Deportes 3 FHD</display-name>
-    <display-name lang="es">M+ DEPORTES 3 HD</display-name>
     <display-name lang="es">M+ Deportes 3 HD</display-name>
+    <display-name lang="es">M+ DEPORTES 3 HD</display-name>
     <display-name lang="es">M+ Deportes 3 SD</display-name>
     <display-name lang="es">M+ DEPORTES 3 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 3</display-name>
@@ -791,10 +791,10 @@
     <display-name lang="es">M+ DEPORTES 4</display-name>
     <display-name lang="es">M+ DEPORTES 4 FHD</display-name>
     <display-name lang="es">M+ Deportes 4 FHD</display-name>
-    <display-name lang="es">M+ Deportes 4 HD</display-name>
     <display-name lang="es">M+ DEPORTES 4 HD</display-name>
-    <display-name lang="es">M+ Deportes 4 SD</display-name>
+    <display-name lang="es">M+ Deportes 4 HD</display-name>
     <display-name lang="es">M+ DEPORTES 4 SD</display-name>
+    <display-name lang="es">M+ Deportes 4 SD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 4</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 4 FHD</display-name>
     <display-name lang="es">MOVISTAR DEPORTES 4 HD</display-name>
@@ -833,10 +833,10 @@
     <display-name lang="es">M DEPORTES 6 FHD</display-name>
     <display-name lang="es">M DEPORTES 6 HD</display-name>
     <display-name lang="es">M DEPORTES 6 SD</display-name>
-    <display-name lang="es">M+ DEPORTES 6</display-name>
     <display-name lang="es">M+ Deportes 6</display-name>
-    <display-name lang="es">M+ Deportes 6 FHD</display-name>
+    <display-name lang="es">M+ DEPORTES 6</display-name>
     <display-name lang="es">M+ DEPORTES 6 FHD</display-name>
+    <display-name lang="es">M+ Deportes 6 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 6 HD</display-name>
     <display-name lang="es">M+ Deportes 6 HD</display-name>
     <display-name lang="es">M+ Deportes 6 SD</display-name>
@@ -858,8 +858,8 @@
     <display-name lang="es">M DEPORTES 7 SD</display-name>
     <display-name lang="es">M+ Deportes 7</display-name>
     <display-name lang="es">M+ DEPORTES 7</display-name>
-    <display-name lang="es">M+ DEPORTES 7 FHD</display-name>
     <display-name lang="es">M+ Deportes 7 FHD</display-name>
+    <display-name lang="es">M+ DEPORTES 7 FHD</display-name>
     <display-name lang="es">M+ DEPORTES 7 HD</display-name>
     <display-name lang="es">M+ Deportes 7 HD</display-name>
     <display-name lang="es">M+ DEPORTES 7 SD</display-name>
@@ -877,8 +877,8 @@
     <display-name lang="es">M+ Golf</display-name>
     <display-name lang="es">M+ GOLF FHD</display-name>
     <display-name lang="es">M+ Golf FHD</display-name>
-    <display-name lang="es">M+ GOLF HD</display-name>
     <display-name lang="es">M+ Golf HD</display-name>
+    <display-name lang="es">M+ GOLF HD</display-name>
     <display-name lang="es">M+ GOLF SD</display-name>
     <display-name lang="es">M+ Golf SD</display-name>
   </channel>
@@ -886,10 +886,10 @@
     <display-name lang="es">M+ Golf 2 (España)</display-name>
     <display-name lang="es">M+ GOLF 2</display-name>
     <display-name lang="es">M+ Golf 2</display-name>
-    <display-name lang="es">M+ Golf 2 FHD</display-name>
     <display-name lang="es">M+ GOLF 2 FHD</display-name>
-    <display-name lang="es">M+ Golf 2 HD</display-name>
+    <display-name lang="es">M+ Golf 2 FHD</display-name>
     <display-name lang="es">M+ GOLF 2 HD</display-name>
+    <display-name lang="es">M+ Golf 2 HD</display-name>
     <display-name lang="es">M+ Golf 2 SD</display-name>
     <display-name lang="es">M+ GOLF 2 SD</display-name>
   </channel>
@@ -978,8 +978,8 @@
     <display-name lang="es">LIGA DE CAMPEONES POR M+ SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES</display-name>
     <display-name lang="es">M+ Liga de Campeones</display-name>
-    <display-name lang="es">M+ Liga de Campeones FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES HD</display-name>
     <display-name lang="es">M+ Liga de Campeones SD</display-name>
@@ -994,8 +994,8 @@
     <display-name lang="es">M+ LIGA DE CAMPEONES 10</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 10 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 10 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 10 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 10 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 10 SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 10 SD</display-name>
   </channel>
@@ -1006,20 +1006,20 @@
     <display-name lang="es">LIGA DE CAMPEONES 11 POR M+ SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11</display-name>
     <display-name lang="es">M+ Liga de Campeones 11</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 11 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 11 FHD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 11 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 11 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 11 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 11 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 11 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 11 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 11 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.12.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 12 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 12 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 12 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 12 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 12</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 12</display-name>
+    <display-name lang="es">M+ Liga de Campeones 12</display-name>
     <display-name lang="es">M+ Liga de Campeones 12 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 12 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 12 HD</display-name>
@@ -1034,40 +1034,40 @@
     <display-name lang="es">LIGA DE CAMPEONES 13 POR M+ SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 13</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 13</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 13 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 13 FHD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 13 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 13 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 13 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 13 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 13 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 13 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.2.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 2 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 2 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 2</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2</display-name>
-    <display-name lang="es">M+ Liga de Campeones 2 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 2</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 2 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 2 HD</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 2 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 2 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 2 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.3.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 3 (España)</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 3 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 3 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 3 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 3</display-name>
     <display-name lang="es">M+ Liga de Campeones 3</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 3 FHD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 3</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 3 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 3 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 3 HD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 3 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 3 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 3 SD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 3 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.4.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 4 (España)</display-name>
@@ -1088,12 +1088,12 @@
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 5 POR M+ SD</display-name>
-    <display-name lang="es">M+ Liga de Campeones 5</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 5 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 5</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 FHD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 5 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 5 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 HD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 5 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 5 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 5 SD</display-name>
   </channel>
@@ -1104,12 +1104,12 @@
     <display-name lang="es">LIGA DE CAMPEONES 6 POR M+ SD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6</display-name>
     <display-name lang="es">M+ Liga de Campeones 6</display-name>
-    <display-name lang="es">M+ Liga de Campeones 6 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6 FHD</display-name>
+    <display-name lang="es">M+ Liga de Campeones 6 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 6 HD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 6 HD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 6 SD</display-name>
     <display-name lang="es">M+ Liga de Campeones 6 SD</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 6 SD</display-name>
   </channel>
   <channel id="m.liga.de.campeones.7.espana.latam">
     <display-name lang="es">M+ Liga de Campeones 7 (España)</display-name>
@@ -1130,8 +1130,8 @@
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 8 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 8</display-name>
     <display-name lang="es">M+ Liga de Campeones 8</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 8</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 8 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 8 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 8 HD</display-name>
@@ -1144,8 +1144,8 @@
     <display-name lang="es">LIGA DE CAMPEONES 9 POR M+ FHD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 9 POR M+ HD</display-name>
     <display-name lang="es">LIGA DE CAMPEONES 9 POR M+ SD</display-name>
-    <display-name lang="es">M+ LIGA DE CAMPEONES 9</display-name>
     <display-name lang="es">M+ Liga de Campeones 9</display-name>
+    <display-name lang="es">M+ LIGA DE CAMPEONES 9</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 9 FHD</display-name>
     <display-name lang="es">M+ Liga de Campeones 9 FHD</display-name>
     <display-name lang="es">M+ LIGA DE CAMPEONES 9 HD</display-name>
@@ -1159,17 +1159,17 @@
     <display-name lang="es">M+ VAMOS</display-name>
     <display-name lang="es">M+ Vamos FHD</display-name>
     <display-name lang="es">M+ VAMOS FHD</display-name>
-    <display-name lang="es">M+ Vamos HD</display-name>
     <display-name lang="es">M+ VAMOS HD</display-name>
-    <display-name lang="es">M+ VAMOS SD</display-name>
+    <display-name lang="es">M+ Vamos HD</display-name>
     <display-name lang="es">M+ Vamos SD</display-name>
+    <display-name lang="es">M+ VAMOS SD</display-name>
   </channel>
   <channel id="m.vamos.2.espana.latam">
     <display-name lang="es">M+ Vamos 2 (España)</display-name>
     <display-name lang="es">M+ Vamos 2</display-name>
     <display-name lang="es">M+ VAMOS 2</display-name>
-    <display-name lang="es">M+ Vamos 2 FHD</display-name>
     <display-name lang="es">M+ VAMOS 2 FHD</display-name>
+    <display-name lang="es">M+ Vamos 2 FHD</display-name>
     <display-name lang="es">M+ Vamos 2 HD</display-name>
     <display-name lang="es">M+ VAMOS 2 HD</display-name>
     <display-name lang="es">M+ VAMOS 2 SD</display-name>
@@ -1181,10 +1181,10 @@
     <display-name lang="es">M+ VAMOS 3</display-name>
     <display-name lang="es">M+ Vamos 3 FHD</display-name>
     <display-name lang="es">M+ VAMOS 3 FHD</display-name>
-    <display-name lang="es">M+ VAMOS 3 HD</display-name>
     <display-name lang="es">M+ Vamos 3 HD</display-name>
-    <display-name lang="es">M+ Vamos 3 SD</display-name>
+    <display-name lang="es">M+ VAMOS 3 HD</display-name>
     <display-name lang="es">M+ VAMOS 3 SD</display-name>
+    <display-name lang="es">M+ Vamos 3 SD</display-name>
   </channel>
   <channel id="max.anime.latinoamerica.latam">
     <display-name lang="es">Max Anime (Latinoamérica)</display-name>
@@ -1491,12 +1491,12 @@
     <display-name lang="es">Real Madrid TV (España)</display-name>
     <display-name lang="es">REAL MADRID TV</display-name>
     <display-name lang="es">Real Madrid TV</display-name>
-    <display-name lang="es">REAL MADRID TV FHD</display-name>
     <display-name lang="es">Real Madrid TV FHD</display-name>
-    <display-name lang="es">Real Madrid TV HD</display-name>
+    <display-name lang="es">REAL MADRID TV FHD</display-name>
     <display-name lang="es">REAL MADRID TV HD</display-name>
-    <display-name lang="es">Real Madrid TV SD</display-name>
+    <display-name lang="es">Real Madrid TV HD</display-name>
     <display-name lang="es">REAL MADRID TV SD</display-name>
+    <display-name lang="es">Real Madrid TV SD</display-name>
   </channel>
   <channel id="setanta.1.latam">
     <display-name lang="es">Setanta 1</display-name>
@@ -1670,10 +1670,10 @@
     <display-name lang="es">Teledeporte</display-name>
     <display-name lang="es">Teledeporte FHD</display-name>
     <display-name lang="es">TELEDEPORTE FHD</display-name>
-    <display-name lang="es">TELEDEPORTE HD</display-name>
     <display-name lang="es">Teledeporte HD</display-name>
-    <display-name lang="es">Teledeporte SD</display-name>
+    <display-name lang="es">TELEDEPORTE HD</display-name>
     <display-name lang="es">TELEDEPORTE SD</display-name>
+    <display-name lang="es">Teledeporte SD</display-name>
   </channel>
   <channel id="telemundo.venezuela.latam">
     <display-name lang="es">Telemundo (Venezuela)</display-name>
@@ -5817,7 +5817,7 @@
     <title lang="es">Jeonbuk vs Gwangju</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.1.latam">
     <title lang="es">Coupang Play 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5825,7 +5825,7 @@
     <title lang="es">Hamburger SV vs FC Köln</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.10.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.10.latam">
     <title lang="es">Coupang Play 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5833,7 +5833,7 @@
     <title lang="es">Eintracht Frankfurt vs SC Freiburg</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.11.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.11.latam">
     <title lang="es">Coupang Play 11 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5841,7 +5841,7 @@
     <title lang="es">SV Werder Bremen vs FC Augsburg</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.12.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.12.latam">
     <title lang="es">Coupang Play 12 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5849,7 +5849,7 @@
     <title lang="es">CA Osasuna vs Rayo Vallecano</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.13.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.13.latam">
     <title lang="es">Coupang Play 13 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5857,7 +5857,7 @@
     <title lang="es">Millwall vs West Ham United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.14.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.14.latam">
     <title lang="es">Coupang Play 14 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5869,7 +5869,7 @@
     <title lang="es">Gangwon vs Jeju SK FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.2.latam">
     <title lang="es">Coupang Play 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5885,7 +5885,7 @@
     <title lang="es">Pohang vs Seoul</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.3.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.3.latam">
     <title lang="es">Coupang Play 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5901,7 +5901,7 @@
     <title lang="es">Incheon vs Daejeon</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.4.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.4.latam">
     <title lang="es">Coupang Play 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5917,7 +5917,7 @@
     <title lang="es">Ansan vs Chungbuk Cheongju</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.5.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.5.latam">
     <title lang="es">Coupang Play 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5933,7 +5933,7 @@
     <title lang="es">Yongin FC vs Gyeongnam</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.6.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.6.latam">
     <title lang="es">Coupang Play 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5949,7 +5949,7 @@
     <title lang="es">Seongnam vs Hwaseong</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.7.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.7.latam">
     <title lang="es">Coupang Play 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5961,7 +5961,7 @@
     <title lang="es">Gimhae FC vs Paju Frontier</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.8.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.8.latam">
     <title lang="es">Coupang Play 8 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -5973,7 +5973,7 @@
     <title lang="es">Getafe vs Málaga</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="coupang.play.9.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="coupang.play.9.latam">
     <title lang="es">Coupang Play 9 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -9791,34 +9791,6 @@
   </programme>
   <programme start="20260924233500 -0500" stop="20260925000000 -0500" channel="dreamworks.channel.venezuela.latam">
     <title lang="es">Viva el rey Julien</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="dsports.latam">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DSPORTS | AR">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DSPORTS | CO">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DIRECTV SPORTS ARGENTINA">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DIRECTV SPORTS CHILE">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DIRECTV SPORTS URUGUAY">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924170000 +0000" stop="20260924200000 +0000" channel="DIRECTV SPORTS PERU">
-    <title lang="es">XIII Juegos Suramericanos Santa Fe 2026</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260924200000 +0000" stop="20260924213000 +0000" channel="dsports.latam">
@@ -23077,7 +23049,7 @@
     <title lang="es">Bare Knuckle Fighting Championship</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.1.latam">
     <title lang="es">Fubo Sports 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23085,7 +23057,7 @@
     <title lang="es">Venezia vs SS Lazio</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.10.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.10.latam">
     <title lang="es">Fubo Sports 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23097,7 +23069,7 @@
     <title lang="es">Upcoming Bournemouth vs Liverpool</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.2.latam">
     <title lang="es">Fubo Sports 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23109,7 +23081,7 @@
     <title lang="es">Upcoming Parma vs Genoa</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.3.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.3.latam">
     <title lang="es">Fubo Sports 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23121,15 +23093,15 @@
     <title lang="es">Upcoming Frosinone vs Como</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.4.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.4.latam">
     <title lang="es">Fubo Sports 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.5.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.5.latam">
     <title lang="es">Fubo Sports 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.6.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.6.latam">
     <title lang="es">Fubo Sports 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23141,7 +23113,7 @@
     <title lang="es">Upcoming Manchester City vs Sunderland</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.7.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.7.latam">
     <title lang="es">Fubo Sports 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23153,7 +23125,7 @@
     <title lang="es">Upcoming Leeds United vs Newcastle United FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.8.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.8.latam">
     <title lang="es">Fubo Sports 8 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -23161,7 +23133,7 @@
     <title lang="es">Nottingham Forest vs Coventry City</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="fubo.sports.9.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="fubo.sports.9.latam">
     <title lang="es">Fubo Sports 9 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -28365,14 +28337,6 @@
     <title lang="es">M+ Deportes 6</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924205500 +0200" stop="20260924214000 +0200" channel="m.deportes.7.espana.latam">
-    <title lang="es">Telediario 2</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924214000 +0200" stop="20260924214500 +0200" channel="m.deportes.7.espana.latam">
-    <title lang="es">Deportes 2</title>
-    <category lang="es">Deportes</category>
-  </programme>
   <programme start="20260924214500 +0200" stop="20260924230000 +0200" channel="m.deportes.7.espana.latam">
     <title lang="es">La revuelta: Episodio 331</title>
     <category lang="es">Deportes</category>
@@ -33329,15 +33293,15 @@
     <title lang="es">Brentford - Chelsea</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.1.latam">
     <title lang="es">MonoMax 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.10.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.10.latam">
     <title lang="es">MonoMax 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.11.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.11.latam">
     <title lang="es">MonoMax 11 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33345,7 +33309,7 @@
     <title lang="es">Bristol City - Watford</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.12.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.12.latam">
     <title lang="es">MonoMax 12 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33353,7 +33317,7 @@
     <title lang="es">Brazil - USA</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.13.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.13.latam">
     <title lang="es">MonoMax 13 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33361,7 +33325,7 @@
     <title lang="es">Ayutthaya United - Uthai Thani FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.14.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.14.latam">
     <title lang="es">MonoMax 14 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33369,11 +33333,11 @@
     <title lang="es">Spain - Portugal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.15.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.15.latam">
     <title lang="es">MonoMax 15 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.16.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.16.latam">
     <title lang="es">MonoMax 16 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33381,7 +33345,7 @@
     <title lang="es">Everton - Wolverhampton Wanderers</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.17.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.17.latam">
     <title lang="es">MonoMax 17 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33389,7 +33353,7 @@
     <title lang="es">Manchester United - Brighton &amp; Hove Albion</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.18.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.18.latam">
     <title lang="es">MonoMax 18 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33397,11 +33361,11 @@
     <title lang="es">Coventry City - Aston Villa</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.19.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.19.latam">
     <title lang="es">MonoMax 19 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.2.latam">
     <title lang="es">MonoMax 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33409,7 +33373,7 @@
     <title lang="es">Uttaradit FC - Nongbua Pitchaya FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.20.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.20.latam">
     <title lang="es">MonoMax 20 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33417,7 +33381,7 @@
     <title lang="es">Chainat Hornbill - Pattaya United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.21.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.21.latam">
     <title lang="es">MonoMax 21 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33425,7 +33389,7 @@
     <title lang="es">Nakhonpathom United - Kanchanaburi Power FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.22.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.22.latam">
     <title lang="es">MonoMax 22 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33433,11 +33397,11 @@
     <title lang="es">Mahasarakham CC FC - Nakhonratchasima Mazda FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.23.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.23.latam">
     <title lang="es">MonoMax 23 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.3.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.3.latam">
     <title lang="es">MonoMax 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -33445,27 +33409,27 @@
     <title lang="es">FC Groningen - Ajax Amsterdam</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.4.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.4.latam">
     <title lang="es">MonoMax 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.5.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.5.latam">
     <title lang="es">MonoMax 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.6.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.6.latam">
     <title lang="es">MonoMax 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.7.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.7.latam">
     <title lang="es">MonoMax 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.8.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.8.latam">
     <title lang="es">MonoMax 8 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="monomax.9.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="monomax.9.latam">
     <title lang="es">MonoMax 9 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34329,7 +34293,7 @@
     <title lang="es">Men &amp; Womens Half Marathon</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.01.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.01.latam">
     <title lang="es">Peacock 01 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34349,7 +34313,7 @@
     <title lang="es">Home Feed: NYY at AZ</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.02.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.02.latam">
     <title lang="es">Peacock 02 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34369,7 +34333,7 @@
     <title lang="es">Away Feed: NYY at AZ</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.03.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.03.latam">
     <title lang="es">Peacock 03 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34385,7 +34349,7 @@
     <title lang="es">M Gold: AUS vs. ITA</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.04.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.04.latam">
     <title lang="es">Peacock 04 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34401,7 +34365,7 @@
     <title lang="es">Rd. 30 Playoff 2: Los Angeles</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.05.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.05.latam">
     <title lang="es">Peacock 05 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34417,7 +34381,7 @@
     <title lang="es">Western Kentucky vs. Indiana</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.06.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.06.latam">
     <title lang="es">Peacock 06 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34433,7 +34397,7 @@
     <title lang="es">Michigan State vs. Notre Dame</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.07.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.07.latam">
     <title lang="es">Peacock 07 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34449,7 +34413,7 @@
     <title lang="es">Ascent FC v. Brooklyn FC</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.08.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.08.latam">
     <title lang="es">Peacock 08 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34461,7 +34425,7 @@
     <title lang="es">Venezia vs. Lazio (Español)</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.09.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.09.latam">
     <title lang="es">Peacock 09 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34473,7 +34437,7 @@
     <title lang="es">W Gold: CAN vs. USA</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.10.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.10.latam">
     <title lang="es">Peacock 10 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34485,7 +34449,7 @@
     <title lang="es">IMSA Indianapolis Qualifying</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="peacock.11.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="peacock.11.latam">
     <title lang="es">Peacock 11 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34509,7 +34473,7 @@
     <title lang="es">Fulham vs Manchester United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="premier.league.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="premier.league.1.latam">
     <title lang="es">Premier League+ 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34517,7 +34481,7 @@
     <title lang="es">Everton vs Ipswich Town</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="premier.league.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="premier.league.2.latam">
     <title lang="es">Premier League+ 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34525,7 +34489,7 @@
     <title lang="es">Leeds United vs Crystal Palace</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="premier.league.3.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="premier.league.3.latam">
     <title lang="es">Premier League+ 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34533,7 +34497,7 @@
     <title lang="es">Manchester City vs Sunderland</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="premier.league.4.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="premier.league.4.latam">
     <title lang="es">Premier League+ 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -34541,7 +34505,7 @@
     <title lang="es">Newcastle United vs Hull City</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="premier.league.5.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="premier.league.5.latam">
     <title lang="es">Premier League+ 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35053,7 +35017,7 @@
     <title lang="es">NASCAR EURO SERIES, Grand Prix Italy - Semi-Final 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.1.latam">
     <title lang="es">Setanta 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35061,7 +35025,7 @@
     <title lang="es">Holstein Kiel - VfL Osnabruck</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.2.latam">
     <title lang="es">Setanta 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35069,7 +35033,7 @@
     <title lang="es">Tottenham - Aston Villa</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.3.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.3.latam">
     <title lang="es">Setanta 3 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35077,7 +35041,7 @@
     <title lang="es">Millwall - West Ham</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.4.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.4.latam">
     <title lang="es">Setanta 4 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35085,7 +35049,7 @@
     <title lang="es">Osasuna - Rayo Vallecano</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.5.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.5.latam">
     <title lang="es">Setanta 5 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35093,7 +35057,7 @@
     <title lang="es">Udinese - Cagliari</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="setanta.6.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="setanta.6.latam">
     <title lang="es">Setanta 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35381,7 +35345,7 @@
     <title lang="es">Norwich vs. Birmingham</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="sky.sports.1.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="sky.sports.1.latam">
     <title lang="es">Sky Sports+ 1 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35389,7 +35353,7 @@
     <title lang="es">Derby vs. West Brom</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="sky.sports.2.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="sky.sports.2.latam">
     <title lang="es">Sky Sports+ 2 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35397,7 +35361,7 @@
     <title lang="es">Everton vs Wolves</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="sky.sports.6.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="sky.sports.6.latam">
     <title lang="es">Sky Sports+ 6 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -35405,7 +35369,7 @@
     <title lang="es">Fleetwood vs Sheffield United</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260924190653 +0000" stop="20260927190653 +0000" channel="sky.sports.7.latam">
+  <programme start="20260924203620 +0000" stop="20260927203620 +0000" channel="sky.sports.7.latam">
     <title lang="es">Sky Sports+ 7 — No event scheduled</title>
     <category lang="es">Deportes</category>
   </programme>
@@ -36947,10 +36911,6 @@
   </programme>
   <programme start="20260924220000 -0500" stop="20260925000000 -0500" channel="telemundo.venezuela.latam">
     <title lang="es">Top Chef VIP</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260924180000 +0000" stop="20260924183000 +0000" channel="telemundo.deportes.ahora.usa.latam">
-    <title lang="es">Repaso de la Serie A</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260924183000 +0000" stop="20260924203000 +0000" channel="telemundo.deportes.ahora.usa.latam">
