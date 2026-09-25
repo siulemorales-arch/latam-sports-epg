@@ -6,6 +6,7 @@ on:
     paths:
       - "scraper.py"
       - "la1_scraper.py"
+      - "gato_mexico_scraper.py"
       - "manual_channels.json"
       - "requirements.txt"
       - ".github/workflows/update.yml"
@@ -40,12 +41,15 @@ jobs:
           if ! python scraper.py; then
             echo "::warning::El generador completo falló; se conserva el último EPG válido y se actualizan los canales oficiales de Movistar Plus"
           fi
+      - name: Actualizar TVC y Fox Sports México desde GatoTV
+        run: python gato_mexico_scraper.py
       - name: Actualizar LA 1 y Eurosport desde Movistar Plus
         run: python la1_scraper.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
           import xml.etree.ElementTree as ET
+          from datetime import datetime, timedelta, timezone
           root=ET.parse('epg.xml').getroot()
           channels=root.findall('channel'); programmes=root.findall('programme')
           assert len(channels) >= 80, f'Solo {len(channels)} canales'
@@ -61,7 +65,19 @@ jobs:
           eurosport_ids={'eurosport.1.espana.latam','eurosport.2.espana.latam'}
           euro_counts={cid: sum(p.get('channel') == cid for p in programmes) for cid in eurosport_ids}
           assert all(euro_counts.values()), f'Eurosport sin programación: {euro_counts}'
-          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}')
+          mexico_ids={
+              'tvc.deportes.latam',
+              'fox.sports.cono.norte.latam',
+              'fox.sports.2.cono.norte.latam',
+              'fox.sports.3.cono.norte.latam',
+          }
+          mexico={cid: [p for p in programmes if p.get('channel') == cid] for cid in mexico_ids}
+          mexico_counts={cid: len(items) for cid, items in mexico.items()}
+          assert all(mexico_counts.values()), f'Canales mexicanos sin programación: {mexico_counts}'
+          limit=datetime.now(timezone.utc) + timedelta(hours=24)
+          future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
+          assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
+          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}')
           PY
       - name: Guardar XML actualizado
         run: |
