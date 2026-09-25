@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Añade LA 1 (España) al XMLTV usando la guía oficial de Movistar Plus."""
+"""Actualiza canales seleccionados usando la guía oficial de Movistar Plus."""
 
 import re
 from datetime import datetime, timedelta
@@ -11,9 +11,38 @@ import requests
 from bs4 import BeautifulSoup
 
 
-CHANNEL_NAME = "LA 1 (España)"
-CHANNEL_ID = "la.1.espana.latam"
-GUIDE_URL = "https://www.movistarplus.es/programacion-tv/tve"
+CHANNELS = (
+    {
+        "name": "LA 1 (España)",
+        "id": "la.1.espana.latam",
+        "slug": "tve",
+        "category": "Generalista",
+        "aliases": ("LA 1", "LA 1 HD", "TVE LA 1", "TVE 1", "ES| LA 1"),
+    },
+    {
+        "name": "Eurosport 1 (España)",
+        "id": "eurosport.1.espana.latam",
+        "slug": "esp",
+        "category": "Deportes",
+        "aliases": (
+            "EUROSPORT 1", "Eurosport 1", "EUROSPORT 1 FHD",
+            "Eurosport 1 FHD", "EUROSPORT 1 HD", "Eurosport 1 HD",
+            "EUROSPORT 1 SD", "Eurosport 1 SD",
+        ),
+    },
+    {
+        "name": "Eurosport 2 (España)",
+        "id": "eurosport.2.espana.latam",
+        "slug": "esp2",
+        "category": "Deportes",
+        "aliases": (
+            "EUROSPORT 2", "Eurosport 2", "EUROSPORT 2 FHD",
+            "Eurosport 2 FHD", "EUROSPORT 2 HD", "Eurosport 2 HD",
+            "EUROSPORT 2 SD", "Eurosport 2 SD",
+        ),
+    },
+)
+GUIDE_ROOT = "https://www.movistarplus.es/programacion-tv"
 USER_AGENT = (
     "Mozilla/5.0 (compatible; latam-sports-epg/1.0; "
     "+https://github.com/siulemorales-arch/latam-sports-epg)"
@@ -32,8 +61,8 @@ def parse_clock(value, day, tz):
     return datetime(day.year, day.month, day.day, hour, minute, tzinfo=tz)
 
 
-def fetch_day(day, tz):
-    url = f"{GUIDE_URL}/{day.isoformat()}"
+def fetch_day(slug, day, tz):
+    url = f"{GUIDE_ROOT}/{slug}/{day.isoformat()}"
     response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
     response.raise_for_status()
     soup = BeautifulSoup(response.text, "html.parser")
@@ -63,53 +92,65 @@ def fetch_day(day, tz):
     return shows
 
 
-def main():
-    tz = ZoneInfo("Europe/Madrid")
-    today = datetime.now(tz).date()
+def fetch_channel(channel, today, tz):
     shows = []
     for offset in range(-1, 6):
-        shows.extend(fetch_day(today + timedelta(days=offset), tz))
-
+        shows.extend(fetch_day(channel["slug"], today + timedelta(days=offset), tz))
     unique = {}
     for start, stop, title in shows:
         unique[(start.isoformat(), title.casefold())] = (start, stop, title)
     shows = sorted(unique.values(), key=lambda item: item[0])
     if not shows:
-        raise SystemExit("Movistar Plus no devolvió programación para LA 1")
+        raise SystemExit(f"Movistar Plus no devolvió programación para {channel['name']}")
+    return shows
 
-    xml_path = Path("epg.xml")
-    tree = ET.parse(xml_path)
-    root = tree.getroot()
+
+def replace_channel(root, channel, shows):
+    channel_id = channel["id"]
     for node in list(root.findall("channel")):
-        if node.get("id") == CHANNEL_ID:
+        if node.get("id") == channel_id:
             root.remove(node)
     for node in list(root.findall("programme")):
-        if node.get("channel") == CHANNEL_ID:
+        if node.get("channel") == channel_id:
             root.remove(node)
 
-    channel = ET.Element("channel", {"id": CHANNEL_ID})
-    for display_name in (
-        CHANNEL_NAME, "LA 1", "LA 1 HD", "TVE LA 1", "TVE 1", "ES| LA 1",
-    ):
-        ET.SubElement(channel, "display-name", {"lang": "es"}).text = display_name
+    channel_node = ET.Element("channel", {"id": channel_id})
+    for display_name in (channel["name"], *channel["aliases"]):
+        ET.SubElement(channel_node, "display-name", {"lang": "es"}).text = display_name
     first_programme = root.find("programme")
     insert_at = list(root).index(first_programme) if first_programme is not None else len(root)
-    root.insert(insert_at, channel)
+    root.insert(insert_at, channel_node)
 
     for start, stop, title in shows:
         programme = ET.SubElement(root, "programme", {
             "start": start.strftime("%Y%m%d%H%M%S %z"),
             "stop": stop.strftime("%Y%m%d%H%M%S %z"),
-            "channel": CHANNEL_ID,
+            "channel": channel_id,
         })
         ET.SubElement(programme, "title", {"lang": "es"}).text = title
-        ET.SubElement(programme, "category", {"lang": "es"}).text = "Generalista"
+        ET.SubElement(programme, "category", {"lang": "es"}).text = channel["category"]
+
+
+def main():
+    tz = ZoneInfo("Europe/Madrid")
+    today = datetime.now(tz).date()
+    schedules = {channel["id"]: fetch_channel(channel, today, tz) for channel in CHANNELS}
+
+    xml_path = Path("epg.xml")
+    tree = ET.parse(xml_path)
+    root = tree.getroot()
+    for channel in CHANNELS:
+        replace_channel(root, channel, schedules[channel["id"]])
 
     ET.indent(root, space="  ")
     temp_path = xml_path.with_suffix(".xml.tmp")
     tree.write(temp_path, encoding="utf-8", xml_declaration=True)
     temp_path.replace(xml_path)
-    print(f"LA 1 añadida: {len(shows)} programas oficiales de Movistar Plus")
+    summary = ", ".join(
+        f"{channel['name']}: {len(schedules[channel['id']])}"
+        for channel in CHANNELS
+    )
+    print(f"Canales oficiales de Movistar Plus actualizados: {summary}")
 
 
 if __name__ == "__main__":

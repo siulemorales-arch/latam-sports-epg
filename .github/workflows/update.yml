@@ -35,8 +35,12 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: playwright install --with-deps chromium
-      - run: python scraper.py
-      - name: Añadir LA 1 desde Movistar Plus
+      - name: Generar EPG completo
+        run: |
+          if ! python scraper.py; then
+            echo "::warning::El generador completo falló; se conserva el último EPG válido y se actualizan los canales oficiales de Movistar Plus"
+          fi
+      - name: Actualizar LA 1 y Eurosport desde Movistar Plus
         run: python la1_scraper.py
       - name: Validar XMLTV
         run: |
