@@ -50,10 +50,14 @@ jobs:
           required={
               'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)',
               'DAZN 2 Italia','LA 1 (España)',
+              'Eurosport 1 (España)','Eurosport 2 (España)',
           }
           missing=required-names
           assert not missing, f'Faltan señales críticas: {sorted(missing)}'
-          print(f'{len(channels)} canales, {len(programmes)} programas')
+          eurosport_ids={'eurosport.1.espana.latam','eurosport.2.espana.latam'}
+          euro_counts={cid: sum(p.get('channel') == cid for p in programmes) for cid in eurosport_ids}
+          assert all(euro_counts.values()), f'Eurosport sin programación: {euro_counts}'
+          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}')
           PY
       - name: Guardar XML actualizado
         run: |
