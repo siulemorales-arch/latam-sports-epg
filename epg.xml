@@ -41465,23 +41465,15 @@
     <title lang="es">Cine</title>
     <category lang="es">Generalista</category>
   </programme>
-  <programme start="20260926191000 +0200" stop="20260926205500 +0200" channel="la.1.espana.latam">
+  <programme start="20260926191000 +0200" stop="20260926204500 +0200" channel="la.1.espana.latam">
     <title lang="es">Cine</title>
     <category lang="es">Generalista</category>
   </programme>
-  <programme start="20260926205500 +0200" stop="20260926212500 +0200" channel="la.1.espana.latam">
-    <title lang="es">Telediario 2 Fin de Semana</title>
+  <programme start="20260926204500 +0200" stop="20260926224500 +0200" channel="la.1.espana.latam">
+    <title lang="es">UEFA Nations League (T26/27): Inglaterra - España</title>
     <category lang="es">Generalista</category>
   </programme>
-  <programme start="20260926212500 +0200" stop="20260926213000 +0200" channel="la.1.espana.latam">
-    <title lang="es">Deportes 2</title>
-    <category lang="es">Generalista</category>
-  </programme>
-  <programme start="20260926213000 +0200" stop="20260926220500 +0200" channel="la.1.espana.latam">
-    <title lang="es">Informe Semanal</title>
-    <category lang="es">Generalista</category>
-  </programme>
-  <programme start="20260926220500 +0200" stop="20260926230000 +0200" channel="la.1.espana.latam">
+  <programme start="20260926224500 +0200" stop="20260926230000 +0200" channel="la.1.espana.latam">
     <title lang="es">La amiga estupenda</title>
     <category lang="es">Generalista</category>
   </programme>
@@ -41925,76 +41917,168 @@
     <title lang="es">Mundial de Resistencia de la FIA - 6 Horas de Austin (T2026): Carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926050000 +0200" stop="20260926100000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926050000 +0200" stop="20260926063000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 4 - Pula - Rijeka</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926100000 +0200" stop="20260926140000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926063000 +0200" stop="20260926070000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Quebec</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926140000 +0200" stop="20260926180000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926070000 +0200" stop="20260926073000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Pitzal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926180000 +0200" stop="20260926220000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926073000 +0200" stop="20260926080000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Sierre - Zinal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926220000 +0200" stop="20260927020000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926080000 +0200" stop="20260926083000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Myoko</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927020000 +0200" stop="20260927030000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926083000 +0200" stop="20260926100000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Ruud - Cerúndolo</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927060000 +0200" stop="20260927100000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926100000 +0200" stop="20260926120000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Mensik - Nakashima</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927100000 +0200" stop="20260927140000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926120000 +0200" stop="20260926130000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta Júnior F</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927140000 +0200" stop="20260927180000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926130000 +0200" stop="20260926150000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 5 - Karlovac - Sveta Nedelja</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927180000 +0200" stop="20260927220000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926150000 +0200" stop="20260926201500 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta F</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927220000 +0200" stop="20260928020000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926201500 +0200" stop="20260926220000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">La montonera (T2026): Mundial - Ruta F</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928020000 +0200" stop="20260928030000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260926220000 +0200" stop="20260927000000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 4</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928060000 +0200" stop="20260928100000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927000000 +0200" stop="20260927013000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928100000 +0200" stop="20260928140000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927013000 +0200" stop="20260927033000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 2</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928140000 +0200" stop="20260928180000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927033000 +0200" stop="20260927103000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928180000 +0200" stop="20260928220000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927103000 +0200" stop="20260927120000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 2</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928220000 +0200" stop="20260929020000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927120000 +0200" stop="20260927130000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta F</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260929020000 +0200" stop="20260929030000 +0200" channel="eurosport.1.espana.latam">
-    <title lang="es">Eurosport 1</title>
+  <programme start="20260927130000 +0200" stop="20260927150000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 6 - Samobor - Zagreb</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927150000 +0200" stop="20260927214500 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927214500 +0200" stop="20260927220000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">La montonera (T2026): Mundial - Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927220000 +0200" stop="20260927230000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso F</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927230000 +0200" stop="20260928011500 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928011500 +0200" stop="20260928013000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Cycling Show (T2026): 30/06/2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928013000 +0200" stop="20260928030000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928030000 +0200" stop="20260928050000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928050000 +0200" stop="20260928063000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928063000 +0200" stop="20260928080000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Gran Bretaña de snooker (T26/27): Mark Selby vs Jak Jones</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928080000 +0200" stop="20260928110000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 1</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928110000 +0200" stop="20260928123000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928123000 +0200" stop="20260928133000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 1</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928133000 +0200" stop="20260928163000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928163000 +0200" stop="20260928173000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928173000 +0200" stop="20260928180000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928180000 +0200" stop="20260928200000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Global Champions Tour - Viena (T2026): Viena</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928200000 +0200" stop="20260928210000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928210000 +0200" stop="20260928220000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Golden Trail World Series (T2026): Gran Muralla</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928220000 +0200" stop="20260928230000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 6 - Samobor - Zagreb</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928230000 +0200" stop="20260929000000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929000000 +0200" stop="20260929013000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta F</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929013000 +0200" stop="20260929030000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929030000 +0200" stop="20260929040000 +0200" channel="eurosport.1.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta F</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260929060000 +0200" stop="20260929100000 +0200" channel="eurosport.1.espana.latam">
@@ -42165,80 +42249,220 @@
     <title lang="es">Mundial de Resistencia de la FIA - 6 Horas de Austin (T2026): Carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926033000 +0200" stop="20260926040000 +0200" channel="eurosport.2.espana.latam">
+  <programme start="20260926033000 +0200" stop="20260926050000 +0200" channel="eurosport.2.espana.latam">
     <title lang="es">Abierto de Gran Bretaña de snooker (T26/27): Mark Selby vs Jak Jones</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926040000 +0200" stop="20260926080000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926050000 +0200" stop="20260926070000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de Resistencia de la FIA - 6 Horas de Austin (T2026): Carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926080000 +0200" stop="20260926120000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926070000 +0200" stop="20260926083000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 4 - Pula - Rijeka</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926120000 +0200" stop="20260926160000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926083000 +0200" stop="20260926100000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Inglaterra de snooker (T26/27): Ali Carter vs Mark Williams</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926160000 +0200" stop="20260926200000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926100000 +0200" stop="20260926110000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 4 - Pula - Rijeka</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926200000 +0200" stop="20260927000000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926110000 +0200" stop="20260926120000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta Sub - 23 M</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927000000 +0200" stop="20260927040000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926120000 +0200" stop="20260926130000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Jódar - Bublik</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927040000 +0200" stop="20260927080000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926130000 +0200" stop="20260926140000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Alcaraz/Mensik - Fritz/Bublik</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927080000 +0200" stop="20260927120000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926140000 +0200" stop="20260926160000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 1</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927120000 +0200" stop="20260927160000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926160000 +0200" stop="20260926180000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 2</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927160000 +0200" stop="20260927200000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926180000 +0200" stop="20260926183000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de motocross - Australia (T2026): MX2 - Segunda carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260927200000 +0200" stop="20260928000000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926183000 +0200" stop="20260926185500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de motocross - Australia (T2026): MXGP - Segunda carrera</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928000000 +0200" stop="20260928040000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926185500 +0200" stop="20260926204500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">ASOBAL (T26/27): Villa de Aranda - Bidasoa</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928040000 +0200" stop="20260928080000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926204500 +0200" stop="20260926210000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">The Power of Sport (T2026): 26/09/2026</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928080000 +0200" stop="20260928120000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926210000 +0200" stop="20260926213000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Quebec</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928120000 +0200" stop="20260928160000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926213000 +0200" stop="20260926220000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Pitzal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928160000 +0200" stop="20260928200000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926220000 +0200" stop="20260926223000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Sierre - Zinal</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260928200000 +0200" stop="20260929000000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926223000 +0200" stop="20260926230000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Myoko</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260929000000 +0200" stop="20260929040000 +0200" channel="eurosport.2.espana.latam">
-    <title lang="es">Eurosport 2</title>
+  <programme start="20260926230000 +0200" stop="20260927000000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">El club de la UFC (T2026): 26/09/2026</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927000000 +0200" stop="20260927050000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">UFC Fight Night: Rosas Jr. vs Barcelos (T2026): Main Card</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927050000 +0200" stop="20260927061500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Inglaterra de snooker (T26/27): Ali Carter vs Mark Williams</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927061500 +0200" stop="20260927064500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Quebec</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927064500 +0200" stop="20260927071500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Pitzal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927071500 +0200" stop="20260927074500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Sierre - Zinal</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927074500 +0200" stop="20260927081500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series - Resumen (T2026): Myoko</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927081500 +0200" stop="20260927104500 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series (T2026): Gran Muralla</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927104500 +0200" stop="20260927120000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 5 - Karlovac - Sveta Nedelja</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927120000 +0200" stop="20260927130000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 2 - Partido 4</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927130000 +0200" stop="20260927150000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 1</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927150000 +0200" stop="20260927170000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927170000 +0200" stop="20260927190000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 3</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927190000 +0200" stop="20260927210000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 4</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927210000 +0200" stop="20260927220000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Golden Trail World Series (T2026): Gran Muralla</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927220000 +0200" stop="20260927230000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Inglaterra de snooker (T26/27): Ali Carter vs Mark Williams</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260927230000 +0200" stop="20260928003000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">UFC 331: Van vs Pantoja 2 (T2026): Main Card</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928003000 +0200" stop="20260928013000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928013000 +0200" stop="20260928030000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928030000 +0200" stop="20260928050000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Gran Bretaña de snooker (T26/27): Mark Selby vs Jak Jones</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928050000 +0200" stop="20260928070000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928070000 +0200" stop="20260928080000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 6 - Samobor - Zagreb</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928080000 +0200" stop="20260928093000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928093000 +0200" stop="20260928110000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928110000 +0200" stop="20260928120000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 6 - Samobor - Zagreb</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928120000 +0200" stop="20260928133000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928133000 +0200" stop="20260928143000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928143000 +0200" stop="20260928163000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928163000 +0200" stop="20260928183000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928183000 +0200" stop="20260928200000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Laver Cup (T2026): Día 3 - Partido 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928200000 +0200" stop="20260928210000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Copa del mundo de bicicleta de montaña - Whistler (T2026): Descenso M</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928210000 +0200" stop="20260928220000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">CRO Race (T2026): Etapa 6 - Samobor - Zagreb</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928220000 +0200" stop="20260929000000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">6 Horas de Fuji - Mundial de Resistencia de la FIA (T2026): Carrera</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929000000 +0200" stop="20260929013000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 2</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929013000 +0200" stop="20260929030000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Mundial de ciclismo en carretera (T2026): Ruta F</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929030000 +0200" stop="20260929040000 +0200" channel="eurosport.2.espana.latam">
+    <title lang="es">Abierto de Shenzhen de snooker (T26/27): Día 1 - Ronda 2</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260929040000 +0200" stop="20260929080000 +0200" channel="eurosport.2.espana.latam">
