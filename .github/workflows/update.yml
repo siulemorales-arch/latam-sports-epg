@@ -7,6 +7,7 @@ on:
       - "scraper.py"
       - "la1_scraper.py"
       - "gato_mexico_scraper.py"
+      - "sky_plus_aliases.py"
       - "manual_channels.json"
       - "requirements.txt"
       - ".github/workflows/update.yml"
@@ -45,6 +46,8 @@ jobs:
         run: python gato_mexico_scraper.py
       - name: Actualizar LA 1 y Eurosport desde Movistar Plus
         run: python la1_scraper.py
+      - name: Asociar Sky Sports+ 11 a 13
+        run: python sky_plus_aliases.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
