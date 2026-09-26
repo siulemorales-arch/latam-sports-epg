@@ -1,173 +1,93 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-19T13:30:00Z",
+  "updated_at": "2026-09-26T13:10:40.298Z",
   "channels": {
     "Peacock 01": [
       {
-        "title": "Men & Womens 5k",
-        "start": "2026-09-19T12:10:00Z",
-        "stop": "2026-09-19T13:40:00Z"
+        "title": "Acrobatic World Champs: Day 2",
+        "start": "2026-09-26T09:00:00Z",
+        "stop": "2026-09-26T11:20:00Z"
       },
       {
-        "title": "Newcastle v. Hull City",
-        "start": "2026-09-19T13:50:00Z",
-        "stop": "2026-09-19T16:30:00Z"
+        "title": "Presidents Cup: Day 3",
+        "start": "2026-09-26T13:00:00Z",
+        "stop": "2026-09-26T23:30:00Z"
       },
       {
-        "title": "Race Day Live: Los Angeles",
-        "start": "2026-09-19T17:00:00Z",
-        "stop": "2026-09-19T21:00:00Z"
-      },
-      {
-        "title": "IMSA Lambo Indianapolis R1",
-        "start": "2026-09-19T22:40:00Z",
-        "stop": "2026-09-20T00:05:00Z"
-      },
-      {
-        "title": "Men & Womens Half Marathon",
-        "start": "2026-09-20T07:10:00Z",
-        "stop": "2026-09-20T08:50:00Z"
+        "title": "Tigres vs. Puebla (Español)",
+        "start": "2026-09-27T02:55:00Z",
+        "stop": "2026-09-27T05:30:00Z"
       }
     ],
     "Peacock 02": [
       {
-        "title": "Udinese vs. Cagliari (Español)",
-        "start": "2026-09-19T12:50:00Z",
-        "stop": "2026-09-19T15:25:00Z"
+        "title": "Acrobatic Champs: Finals Day 1",
+        "start": "2026-09-26T14:00:00Z",
+        "stop": "2026-09-26T18:20:00Z"
       },
       {
-        "title": "Roma vs. Inter (Español)",
-        "start": "2026-09-19T15:55:00Z",
-        "stop": "2026-09-19T19:00:00Z"
-      },
-      {
-        "title": "Home Feed: BOS at TB",
-        "start": "2026-09-19T20:00:00Z",
-        "stop": "2026-09-19T23:30:00Z"
-      },
-      {
-        "title": "Home Feed: NYY at AZ",
-        "start": "2026-09-20T00:00:00Z",
-        "stop": "2026-09-20T03:30:00Z"
+        "title": "USA vs. Peru (Español)",
+        "start": "2026-09-26T19:30:00Z",
+        "stop": "2026-09-26T23:00:00Z"
       }
     ],
     "Peacock 03": [
       {
-        "title": "Bologna vs. Torino (Español)",
-        "start": "2026-09-19T12:50:00Z",
-        "stop": "2026-09-19T15:25:00Z"
+        "title": "Race Day Live: Ridgedale",
+        "start": "2026-09-26T17:00:00Z",
+        "stop": "2026-09-26T21:00:00Z"
       },
       {
-        "title": "VfB Stuttgart vs. Borussia Dortmund (Español)",
-        "start": "2026-09-19T16:00:00Z",
-        "stop": "2026-09-19T19:00:00Z"
-      },
-      {
-        "title": "Away Feed: BOS at TB",
-        "start": "2026-09-19T20:00:00Z",
-        "stop": "2026-09-19T23:30:00Z"
-      },
-      {
-        "title": "Away Feed: NYY at AZ",
-        "start": "2026-09-20T00:00:00Z",
-        "stop": "2026-09-20T03:30:00Z"
+        "title": "World Championship Final",
+        "start": "2026-09-26T22:30:00Z",
+        "stop": "2026-09-27T03:00:00Z"
       }
     ],
     "Peacock 04": [
       {
-        "title": "Werder Bremen vs. Augsburg (Español)",
-        "start": "2026-09-19T13:20:00Z",
-        "stop": "2026-09-19T15:55:00Z"
+        "title": "Notre Dame vs. Purdue",
+        "start": "2026-09-26T17:30:00Z",
+        "stop": "2026-09-26T22:00:00Z"
       },
       {
-        "title": "Nottm Forest v. Coventry City",
-        "start": "2026-09-19T16:00:00Z",
-        "stop": "2026-09-19T20:00:00Z"
-      },
-      {
-        "title": "M Gold: AUS vs. ITA",
-        "start": "2026-09-19T20:45:00Z",
-        "stop": "2026-09-19T23:15:00Z"
+        "title": "Chivas vs. Queretaro (Español)",
+        "start": "2026-09-26T22:30:00Z",
+        "stop": "2026-09-27T01:30:00Z"
       }
     ],
     "Peacock 05": [
       {
-        "title": "Borussia Mönchengladbach vs. Mainz (Español)",
-        "start": "2026-09-19T13:20:00Z",
-        "stop": "2026-09-19T15:55:00Z"
-      },
-      {
-        "title": "Eastern Michigan vs. Wisconsin",
-        "start": "2026-09-19T16:00:00Z",
-        "stop": "2026-09-19T20:30:00Z"
-      },
-      {
-        "title": "Rd. 30 Playoff 2: Los Angeles",
-        "start": "2026-09-19T21:00:00Z",
-        "stop": "2026-09-20T03:00:00Z"
+        "title": "Home Feed: LAD at SF",
+        "start": "2026-09-26T20:00:00Z",
+        "stop": "2026-09-26T23:30:00Z"
       }
     ],
     "Peacock 06": [
       {
-        "title": "Hamburg vs. Cologne (Español)",
-        "start": "2026-09-19T13:20:00Z",
-        "stop": "2026-09-19T15:55:00Z"
-      },
-      {
-        "title": "W Bronze: NED vs. GBR",
-        "start": "2026-09-19T16:15:00Z",
-        "stop": "2026-09-19T18:45:00Z"
-      },
-      {
-        "title": "Western Kentucky vs. Indiana",
-        "start": "2026-09-19T20:00:00Z",
-        "stop": "2026-09-20T00:00:00Z"
+        "title": "Away Feed: LAD at SF",
+        "start": "2026-09-26T20:00:00Z",
+        "stop": "2026-09-26T23:30:00Z"
       }
     ],
     "Peacock 07": [
       {
-        "title": "Eintracht Frankfurt vs. Freiburg (Español)",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T16:30:00Z"
-      },
-      {
-        "title": "Southern Illinois vs. Illinois",
-        "start": "2026-09-19T18:00:00Z",
-        "stop": "2026-09-19T22:00:00Z"
-      },
-      {
-        "title": "Michigan State vs. Notre Dame",
-        "start": "2026-09-19T23:00:00Z",
-        "stop": "2026-09-20T03:30:00Z"
+        "title": "Wisconsin vs. Penn State",
+        "start": "2026-09-26T21:00:00Z",
+        "stop": "2026-09-27T01:00:00Z"
       }
     ],
     "Peacock 08": [
       {
-        "title": "Everton v. Ipswich Town",
-        "start": "2026-09-19T13:50:00Z",
-        "stop": "2026-09-19T16:30:00Z"
-      },
-      {
-        "title": "IMSA MPC at Indianapolis",
-        "start": "2026-09-19T18:23:00Z",
-        "stop": "2026-09-19T21:00:00Z"
-      },
-      {
-        "title": "Ascent FC v. Brooklyn FC",
-        "start": "2026-09-19T23:00:00Z",
-        "stop": "2026-09-20T01:30:00Z"
+        "title": "Ascent FC v. Sporting JAX",
+        "start": "2026-09-26T23:00:00Z",
+        "stop": "2026-09-27T01:30:00Z"
       }
     ],
     "Peacock 09": [
       {
-        "title": "Goal Rush: Matchweek 5",
-        "start": "2026-09-19T13:50:00Z",
-        "stop": "2026-09-19T16:30:00Z"
-      },
-      {
-        "title": "Venezia vs. Lazio (Español)",
-        "start": "2026-09-19T18:30:00Z",
-        "stop": "2026-09-19T21:30:00Z"
+        "title": "Oregon vs. USC",
+        "start": "2026-09-26T23:00:00Z",
+        "stop": "2026-09-27T03:30:00Z"
       }
     ],
     "Peacock 10": [
@@ -510,16 +430,16 @@
     "MonoMax 10": [],
     "Sky Sports+ 1": [
       {
-        "title": "Norwich vs. Birmingham",
-        "start": "2026-09-09T18:30:00Z",
-        "stop": "2026-09-09T21:30:00Z"
+        "title": "Plymouth vs Burton",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
       }
     ],
     "Sky Sports+ 2": [
       {
-        "title": "Derby vs. West Brom",
-        "start": "2026-09-09T18:30:00Z",
-        "stop": "2026-09-09T21:30:00Z"
+        "title": "Stockport vs Peterborough",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
       }
     ],
     "MonoMax 11": [],
@@ -603,16 +523,16 @@
     ],
     "Sky Sports+ 6": [
       {
-        "title": "Everton vs Wolves",
-        "start": "2026-09-16T18:30:00Z",
-        "stop": "2026-09-16T21:30:00Z"
+        "title": "Fleetwood vs Rochdale",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
       }
     ],
     "Sky Sports+ 7": [
       {
-        "title": "Fleetwood vs Sheffield United",
-        "start": "2026-09-16T18:30:00Z",
-        "stop": "2026-09-16T21:30:00Z"
+        "title": "Newport vs Grimsby",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
       }
     ],
     "Peacock 11": [
@@ -734,6 +654,69 @@
         "title": "Newcastle United vs Hull City",
         "start": "2026-09-19T14:00:00Z",
         "stop": "2026-09-19T16:30:00Z"
+      }
+    ],
+    "Sky Sports+ 3": [
+      {
+        "title": "Wycombe vs Reading",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 4": [
+      {
+        "title": "Bristol Rovers vs Exeter",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 5": [
+      {
+        "title": "Cheltenham vs Chesterfield",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 8": [
+      {
+        "title": "Rotherham vs Crewe",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 9": [
+      {
+        "title": "Shrewsbury vs Colchester",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 10": [
+      {
+        "title": "Swindon vs Accrington",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 11": [
+      {
+        "title": "Tranmere vs Walsall",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 12": [
+      {
+        "title": "York vs Gillingham",
+        "start": "2026-09-26T13:45:00Z",
+        "stop": "2026-09-26T16:15:00Z"
+      }
+    ],
+    "Sky Sports+ 13": [
+      {
+        "title": "Charlton vs Man City",
+        "start": "2026-09-26T12:15:00Z",
+        "stop": "2026-09-26T14:45:00Z"
       }
     ]
   }
