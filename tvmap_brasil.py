@@ -13,7 +13,7 @@ from zoneinfo import ZoneInfo
 ET = ZoneInfo("America/New_York")
 BASE = "https://tvmap.com.br/api"
 CHANNELS = (
-    ("ge.tv.brasil.latam", "GE TV", "GE"),
+    ("ge.tv.brasil.latam", "GETV", "GE"),
     ("premiere.1.brasil.latam", "Premiere 1", "Premiere-HD"),
     ("premiere.2.brasil.latam", "Premiere 2", "Premiere-HD-2"),
     ("premiere.3.brasil.latam", "Premiere 3", "Premiere-3"),
@@ -62,7 +62,7 @@ def main():
     path = Path("epg.xml")
     document = XML.parse(path)
     root = document.getroot()
-    existing = {c.get("id") for c in root.findall("channel")}
+    existing = {c.get("id"): c for c in root.findall("channel")}
     insert_at = len(root.findall("channel"))
     for channel_id, name, _slug in CHANNELS:
         if channel_id not in existing:
@@ -70,6 +70,12 @@ def main():
             XML.SubElement(channel, "display-name", {"lang": "pt"}).text = name
             root.insert(insert_at, channel)
             insert_at += 1
+    getv = next(c for c in root.findall("channel") if c.get("id") == "ge.tv.brasil.latam")
+    if getv is not None:
+        for display in getv.findall("display-name"):
+            getv.remove(display)
+        XML.SubElement(getv, "display-name", {"lang": "pt"}).text = "GETV"
+        XML.SubElement(getv, "display-name", {"lang": "pt"}).text = "GE TV"
     targets = set(schedules)
     for programme in list(root.findall("programme")):
         if programme.get("channel") in targets:
