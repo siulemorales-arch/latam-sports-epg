@@ -15,6 +15,7 @@ on:
       - "tvmap_brasil.py"
       - "globo_sp.py"
       - "manual_channels.json"
+      - "manual_overlay.py"
       - "requirements.txt"
       - ".github/workflows/update.yml"
   schedule:
@@ -66,6 +67,8 @@ jobs:
         run: python tvmap_brasil.py
       - name: Actualizar Globo SP
         run: python globo_sp.py
+      - name: Aplicar capturas manuales verificadas
+        run: python manual_overlay.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
