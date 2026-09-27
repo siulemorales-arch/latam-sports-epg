@@ -60,6 +60,7 @@ jobs:
       - name: Agregar Claro Sports Premium México
         run: python claro_premium.py
       - name: Actualizar Claro Sports México lineal
+        continue-on-error: true
         run: python claro_lineal.py
       - name: Actualizar Globo RJ, SporTV, ESPN Brasil y Premiere Clubes
         run: python meuguia_brasil.py
