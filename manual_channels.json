@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-26T13:10:40.298Z",
+  "updated_at": "2026-09-27T14:20:52.745Z",
   "channels": {
     "Peacock 01": [
       {
@@ -17,6 +17,21 @@
         "title": "Tigres vs. Puebla (Español)",
         "start": "2026-09-27T02:55:00Z",
         "stop": "2026-09-27T05:30:00Z"
+      },
+      {
+        "title": "Acrobatic World Champs: Day 3",
+        "start": "2026-09-27T09:00:00Z",
+        "stop": "2026-09-27T12:10:00Z"
+      },
+      {
+        "title": "Acrobatic Champs: Finals Day 2",
+        "start": "2026-09-27T13:00:00Z",
+        "stop": "2026-09-27T17:15:00Z"
+      },
+      {
+        "title": "MLB Sunday Stretch: 9.27.26",
+        "start": "2026-09-27T19:00:00Z",
+        "stop": "2026-09-27T22:30:00Z"
       }
     ],
     "Peacock 02": [
@@ -29,6 +44,11 @@
         "title": "USA vs. Peru (Español)",
         "start": "2026-09-26T19:30:00Z",
         "stop": "2026-09-26T23:00:00Z"
+      },
+      {
+        "title": "Presidents Cup: Day 4",
+        "start": "2026-09-27T16:00:00Z",
+        "stop": "2026-09-27T22:30:00Z"
       }
     ],
     "Peacock 03": [
@@ -41,6 +61,11 @@
         "title": "World Championship Final",
         "start": "2026-09-26T22:30:00Z",
         "stop": "2026-09-27T03:00:00Z"
+      },
+      {
+        "title": "Away Feed: AZ at SD",
+        "start": "2026-09-27T19:00:00Z",
+        "stop": "2026-09-27T22:30:00Z"
       }
     ],
     "Peacock 04": [
@@ -53,6 +78,11 @@
         "title": "Chivas vs. Queretaro (Español)",
         "start": "2026-09-26T22:30:00Z",
         "stop": "2026-09-27T01:30:00Z"
+      },
+      {
+        "title": "Home Feed: AZ at SD",
+        "start": "2026-09-27T19:00:00Z",
+        "stop": "2026-09-27T22:30:00Z"
       }
     ],
     "Peacock 05": [
@@ -60,6 +90,11 @@
         "title": "Home Feed: LAD at SF",
         "start": "2026-09-26T20:00:00Z",
         "stop": "2026-09-26T23:30:00Z"
+      },
+      {
+        "title": "Astros at Athletics",
+        "start": "2026-09-27T19:00:00Z",
+        "stop": "2026-09-27T22:30:00Z"
       }
     ],
     "Peacock 06": [
@@ -260,6 +295,11 @@
         "title": "Jeonbuk vs Gwangju",
         "start": "2026-09-20T07:30:00Z",
         "stop": "2026-09-20T10:30:00Z"
+      },
+      {
+        "title": "Patriots vs Jaguars",
+        "start": "2026-09-27T17:00:00Z",
+        "stop": "2026-09-27T20:00:00Z"
       }
     ],
     "Coupang Play 2": [
@@ -272,6 +312,11 @@
         "title": "Gangwon vs Jeju SK FC",
         "start": "2026-09-20T07:30:00Z",
         "stop": "2026-09-20T10:30:00Z"
+      },
+      {
+        "title": "Hollywood Casino 400",
+        "start": "2026-09-27T19:00:00Z",
+        "stop": "2026-09-27T22:00:00Z"
       }
     ],
     "Coupang Play 3": [
@@ -289,6 +334,11 @@
         "title": "Pohang vs Seoul",
         "start": "2026-09-20T10:00:00Z",
         "stop": "2026-09-20T13:00:00Z"
+      },
+      {
+        "title": "Cardinals vs 49ers",
+        "start": "2026-09-27T20:05:00Z",
+        "stop": "2026-09-27T23:05:00Z"
       }
     ],
     "Coupang Play 4": [
@@ -717,6 +767,18 @@
         "title": "Charlton vs Man City",
         "start": "2026-09-26T12:15:00Z",
         "stop": "2026-09-26T14:45:00Z"
+      },
+      {
+        "title": "Birmingham vs Crystal Palace",
+        "start": "2026-09-27T12:45:00Z",
+        "stop": "2026-09-27T15:15:00Z"
+      }
+    ],
+    "Sky Sports+ 14": [
+      {
+        "title": "Spurs vs Aston Villa",
+        "start": "2026-09-27T12:45:00Z",
+        "stop": "2026-09-27T15:15:00Z"
       }
     ]
   }
