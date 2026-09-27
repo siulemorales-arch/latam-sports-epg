@@ -1900,36 +1900,6 @@
     <display-name lang="es">Claro Sports Premium (México)</display-name>
     <display-name lang="es">Claro Sports Premium México</display-name>
   </channel>
-  <channel id="la.1.espana.latam">
-    <display-name lang="es">LA 1 (España)</display-name>
-    <display-name lang="es">LA 1</display-name>
-    <display-name lang="es">LA 1 HD</display-name>
-    <display-name lang="es">TVE LA 1</display-name>
-    <display-name lang="es">TVE 1</display-name>
-    <display-name lang="es">ES| LA 1</display-name>
-  </channel>
-  <channel id="eurosport.1.espana.latam">
-    <display-name lang="es">Eurosport 1 (España)</display-name>
-    <display-name lang="es">EUROSPORT 1</display-name>
-    <display-name lang="es">Eurosport 1</display-name>
-    <display-name lang="es">EUROSPORT 1 FHD</display-name>
-    <display-name lang="es">Eurosport 1 FHD</display-name>
-    <display-name lang="es">EUROSPORT 1 HD</display-name>
-    <display-name lang="es">Eurosport 1 HD</display-name>
-    <display-name lang="es">EUROSPORT 1 SD</display-name>
-    <display-name lang="es">Eurosport 1 SD</display-name>
-  </channel>
-  <channel id="eurosport.2.espana.latam">
-    <display-name lang="es">Eurosport 2 (España)</display-name>
-    <display-name lang="es">EUROSPORT 2</display-name>
-    <display-name lang="es">Eurosport 2</display-name>
-    <display-name lang="es">EUROSPORT 2 FHD</display-name>
-    <display-name lang="es">Eurosport 2 FHD</display-name>
-    <display-name lang="es">EUROSPORT 2 HD</display-name>
-    <display-name lang="es">Eurosport 2 HD</display-name>
-    <display-name lang="es">EUROSPORT 2 SD</display-name>
-    <display-name lang="es">Eurosport 2 SD</display-name>
-  </channel>
   <channel id="globo.rj.brasil.latam">
     <display-name lang="pt">Globo RJ</display-name>
   </channel>
@@ -1965,6 +1935,7 @@
     <display-name lang="pt">SporTV 4 (Globoplay)</display-name>
   </channel>
   <channel id="ge.tv.brasil.latam">
+    <display-name lang="pt">GETV</display-name>
     <display-name lang="pt">GE TV</display-name>
   </channel>
   <channel id="premiere.1.brasil.latam">
@@ -1997,6 +1968,36 @@
   <channel id="globo.sp.brasil.latam">
     <display-name lang="pt">Globo SP</display-name>
     <display-name lang="pt">TV Globo São Paulo</display-name>
+  </channel>
+  <channel id="la.1.espana.latam">
+    <display-name lang="es">LA 1 (España)</display-name>
+    <display-name lang="es">LA 1</display-name>
+    <display-name lang="es">LA 1 HD</display-name>
+    <display-name lang="es">TVE LA 1</display-name>
+    <display-name lang="es">TVE 1</display-name>
+    <display-name lang="es">ES| LA 1</display-name>
+  </channel>
+  <channel id="eurosport.1.espana.latam">
+    <display-name lang="es">Eurosport 1 (España)</display-name>
+    <display-name lang="es">EUROSPORT 1</display-name>
+    <display-name lang="es">Eurosport 1</display-name>
+    <display-name lang="es">EUROSPORT 1 FHD</display-name>
+    <display-name lang="es">Eurosport 1 FHD</display-name>
+    <display-name lang="es">EUROSPORT 1 HD</display-name>
+    <display-name lang="es">Eurosport 1 HD</display-name>
+    <display-name lang="es">EUROSPORT 1 SD</display-name>
+    <display-name lang="es">Eurosport 1 SD</display-name>
+  </channel>
+  <channel id="eurosport.2.espana.latam">
+    <display-name lang="es">Eurosport 2 (España)</display-name>
+    <display-name lang="es">EUROSPORT 2</display-name>
+    <display-name lang="es">Eurosport 2</display-name>
+    <display-name lang="es">EUROSPORT 2 FHD</display-name>
+    <display-name lang="es">Eurosport 2 FHD</display-name>
+    <display-name lang="es">EUROSPORT 2 HD</display-name>
+    <display-name lang="es">Eurosport 2 HD</display-name>
+    <display-name lang="es">EUROSPORT 2 SD</display-name>
+    <display-name lang="es">Eurosport 2 SD</display-name>
   </channel>
   <programme start="20260927000000 -0700" stop="20260927002000 -0700" channel="a.e.venezuela.latam">
     <title lang="es">Live PD, patrulla policial</title>
@@ -41556,70 +41557,6 @@
     <title lang="es">México vs Colombia</title>
     <category lang="es">Deportes</category>
   </programme>
-  <programme start="20260926013000 -0400" stop="20260926023000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Jugando Claro</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926023000 -0400" stop="20260926043000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Ciclismo</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926043000 -0400" stop="20260926063000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">TNA iMPACT!</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926063000 -0400" stop="20260926070000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">3 rounds</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926070000 -0400" stop="20260926090000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Ciclismo</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926090000 -0400" stop="20260926100000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">El camino hasta aquí</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926100000 -0400" stop="20260926110000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Claro Sports en W Radio</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926110000 -0400" stop="20260926120000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Jugando Claro</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926120000 -0400" stop="20260926130000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">El camino hasta aquí</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926130000 -0400" stop="20260926153000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Juegos Olímpicos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926153000 -0400" stop="20260926180000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Juegos Olímpicos</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926180000 -0400" stop="20260926190000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">El camino hasta aquí</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926190000 -0400" stop="20260926210000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Jugando Claro</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926210000 -0400" stop="20260926230000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">México vs Colombia</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260926230000 -0400" stop="20260927010000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Jugando Claro</title>
-    <category lang="es">Deportes</category>
-  </programme>
-  <programme start="20260927010000 -0400" stop="20260927020000 -0400" channel="claro.sports.mexico.latam">
-    <title lang="es">Deportes en Claro</title>
-    <category lang="es">Deportes</category>
-  </programme>
   <programme start="20260927020000 -0400" stop="20260927040000 -0400" channel="claro.sports.mexico.latam">
     <title lang="es">Fútbol masculino amistosos internacionales</title>
     <category lang="es">Deportes</category>
@@ -41682,6 +41619,86 @@
   </programme>
   <programme start="20260928003000 -0400" stop="20260928010000 -0400" channel="claro.sports.mexico.latam">
     <title lang="es">TNA iMPACT!</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928010000 -0400" stop="20260928020000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">El camino hasta aquí</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928020000 -0400" stop="20260928040000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Ciclismo</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928040000 -0400" stop="20260928050000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Deportes en Claro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928050000 -0400" stop="20260928060000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Trucks México Series</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928060000 -0400" stop="20260928080000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">NASCAR Mexico Series</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928080000 -0400" stop="20260928100000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Noticias Claro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928100000 -0400" stop="20260928103000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Fit for life</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928103000 -0400" stop="20260928110000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Fit for life</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928110000 -0400" stop="20260928130000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Peloteando</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928130000 -0400" stop="20260928133000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Gol, Gol, Gol</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928133000 -0400" stop="20260928140000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">TNA iMPACT!</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928140000 -0400" stop="20260928160000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">NASCAR Mexico Series</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928160000 -0400" stop="20260928170000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Deportes en Claro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928170000 -0400" stop="20260928190000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Claro Sports en W Radio</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928190000 -0400" stop="20260928200000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Deportes en Claro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928200000 -0400" stop="20260928210000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Playbook</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928210000 -0400" stop="20260928220000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">NASCAR Mexico Series</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928220000 -0400" stop="20260928230000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Deportes en Claro</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260928230000 -0400" stop="20260929000000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">As en W</title>
+    <category lang="es">Deportes</category>
+  </programme>
+  <programme start="20260929000000 -0400" stop="20260929010000 -0400" channel="claro.sports.mexico.latam">
+    <title lang="es">Jugando Claro</title>
     <category lang="es">Deportes</category>
   </programme>
   <programme start="20260927013000 -0400" stop="20260927021000 -0400" channel="globo.rj.brasil.latam">
@@ -42988,10 +43005,6 @@
     <title lang="pt">Altas Horas</title>
     <category lang="pt">Variedades/Diversos</category>
   </programme>
-  <programme start="20260927010000 -0400" stop="20260927020000 -0400" channel="sportv.1.brasil.latam">
-    <title lang="pt">VT - Brasil x Austrália</title>
-    <category lang="pt">Esporte/Futebol</category>
-  </programme>
   <programme start="20260927020000 -0400" stop="20260927030000 -0400" channel="sportv.1.brasil.latam">
     <title lang="pt">VT - México x Colômbia</title>
     <category lang="pt">Esporte/Futebol</category>
@@ -44004,10 +44017,6 @@
     <title lang="pt">Programação sportv</title>
     <category lang="pt">Variedades/Diversos</category>
   </programme>
-  <programme start="20260926230000 -0400" stop="20260927020000 -0400" channel="sportv.2.brasil.latam">
-    <title lang="pt">NFL: Pittsburgh Steelers x New England Patriots</title>
-    <category lang="pt">Esporte/Futebol Americano</category>
-  </programme>
   <programme start="20260927020000 -0400" stop="20260927040000 -0400" channel="sportv.2.brasil.latam">
     <title lang="pt">VT - Sesc RJ Flamengo x Praia Clube</title>
     <category lang="pt">Esporte/Vôlei Feminino</category>
@@ -44731,10 +44740,6 @@
   <programme start="20261010200000 -0400" stop="20261010210000 -0400" channel="sportv.2.brasil.latam">
     <title lang="pt">NFL: Atlanta Falcons x Green Bay Packers</title>
     <category lang="pt">Esporte/Futebol Americano</category>
-  </programme>
-  <programme start="20260927000000 -0400" stop="20260927015500 -0400" channel="sportv.3.brasil.latam">
-    <title lang="pt">Fórmula 1 - GP da Espanha</title>
-    <category lang="pt">Esporte/Automobilismo</category>
   </programme>
   <programme start="20260927015500 -0400" stop="20260927035500 -0400" channel="sportv.3.brasil.latam">
     <title lang="pt">Diamond League - 15ª Etapa - Dia 1 - Bruxelas, Bélgica</title>
@@ -48100,10 +48105,6 @@
     <title lang="pt">UEFA Nations League Preview</title>
     <category lang="pt">Esporte/Futebol</category>
   </programme>
-  <programme start="20260927013000 -0400" stop="20260927020000 -0400" channel="espn.4.brasil.latam">
-    <title lang="pt">Premier League Stories</title>
-    <category lang="pt">Documentário/Esportivo</category>
-  </programme>
   <programme start="20260927020000 -0400" stop="20260927040000 -0400" channel="espn.4.brasil.latam">
     <title lang="pt">VT - Goiás x Atlético-GO</title>
     <category lang="pt">Esporte/Futebol</category>
@@ -49048,10 +49049,6 @@
     <title lang="pt">VT - Sérvia x Grécia</title>
     <category lang="pt">Esporte/Futebol</category>
   </programme>
-  <programme start="20260927000000 -0400" stop="20260927020000 -0400" channel="espn.5.brasil.latam">
-    <title lang="pt">VT - Operário-PR x Ceará</title>
-    <category lang="pt">Esporte/Futebol</category>
-  </programme>
   <programme start="20260927020000 -0400" stop="20260927033000 -0400" channel="espn.5.brasil.latam">
     <title lang="pt">MotoGP: GP da Áustria</title>
     <category lang="pt">Esporte/Motociclismo</category>
@@ -49806,10 +49803,6 @@
   </programme>
   <programme start="20261010220000 -0400" stop="20261010230000 -0400" channel="espn.5.brasil.latam">
     <title lang="pt">VT - Cuiabá x Náutico</title>
-    <category lang="pt">Esporte/Futebol</category>
-  </programme>
-  <programme start="20260927013000 -0400" stop="20260927020000 -0400" channel="premiere.clubes.brasil.latam">
-    <title lang="pt">VT - Flamengo x Bragantino</title>
     <category lang="pt">Esporte/Futebol</category>
   </programme>
   <programme start="20260927020000 -0400" stop="20260927023000 -0400" channel="premiere.clubes.brasil.latam">
