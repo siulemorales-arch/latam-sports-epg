@@ -8,6 +8,7 @@ on:
       - "la1_scraper.py"
       - "gato_mexico_scraper.py"
       - "gato_mega_scraper.py"
+      - "claro_premium.py"
       - "sky_plus_aliases.py"
       - "manual_channels.json"
       - "requirements.txt"
@@ -51,6 +52,8 @@ jobs:
         run: python la1_scraper.py
       - name: Asociar Sky Sports+ 11 a 13
         run: python sky_plus_aliases.py
+      - name: Agregar Claro Sports Premium México
+        run: python claro_premium.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
@@ -87,6 +90,10 @@ jobs:
           assert mega, 'Mega Chile sin programación'
           mega_until=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in mega)
           assert mega_until >= datetime.now(timezone.utc) + timedelta(hours=12), f'Mega Chile sin cobertura vigente: {mega_until}'
+          claro_id='claro.sports.premium.mexico.latam'
+          claro=[p for p in programmes if p.get('channel') == claro_id]
+          assert len([c for c in channels if c.get('id') == claro_id]) == 1, 'Claro Sports Premium ausente o duplicado'
+          assert any(p.findtext('title') == 'México vs Colombia' and p.get('start') == '20260926204500 -0400' for p in claro), 'Falta México vs Colombia en ET'
           limit=datetime.now(timezone.utc) + timedelta(hours=24)
           future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
           assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
