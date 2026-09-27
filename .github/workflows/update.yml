@@ -11,6 +11,9 @@ on:
       - "claro_premium.py"
       - "claro_lineal.py"
       - "sky_plus_aliases.py"
+      - "meuguia_brasil.py"
+      - "tvmap_brasil.py"
+      - "globo_sp.py"
       - "manual_channels.json"
       - "requirements.txt"
       - ".github/workflows/update.yml"
@@ -57,10 +60,17 @@ jobs:
         run: python claro_premium.py
       - name: Actualizar Claro Sports México lineal
         run: python claro_lineal.py
+      - name: Actualizar Globo RJ, SporTV, ESPN Brasil y Premiere Clubes
+        run: python meuguia_brasil.py
+      - name: Actualizar GE TV y Premiere 1 a 9
+        run: python tvmap_brasil.py
+      - name: Actualizar Globo SP
+        run: python globo_sp.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
           import xml.etree.ElementTree as ET
+          from collections import Counter
           from datetime import datetime, timedelta, timezone
           root=ET.parse('epg.xml').getroot()
           channels=root.findall('channel'); programmes=root.findall('programme')
@@ -77,12 +87,7 @@ jobs:
           eurosport_ids={'eurosport.1.espana.latam','eurosport.2.espana.latam'}
           euro_counts={cid: sum(p.get('channel') == cid for p in programmes) for cid in eurosport_ids}
           assert all(euro_counts.values()), f'Eurosport sin programación: {euro_counts}'
-          mexico_ids={
-              'tvc.deportes.latam',
-              'fox.sports.cono.norte.latam',
-              'fox.sports.2.cono.norte.latam',
-              'fox.sports.3.cono.norte.latam',
-          }
+          mexico_ids={'tvc.deportes.latam','fox.sports.cono.norte.latam','fox.sports.2.cono.norte.latam','fox.sports.3.cono.norte.latam'}
           mexico={cid: [p for p in programmes if p.get('channel') == cid] for cid in mexico_ids}
           mexico_counts={cid: len(items) for cid, items in mexico.items()}
           assert all(mexico_counts.values()), f'Canales mexicanos sin programación: {mexico_counts}'
@@ -104,7 +109,21 @@ jobs:
           limit=datetime.now(timezone.utc) + timedelta(hours=24)
           future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
           assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
-          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}')
+          brazil_ids={
+              'globo.rj.brasil.latam','globo.sp.brasil.latam','ge.tv.brasil.latam',
+              'sportv.1.brasil.latam','sportv.2.brasil.latam','sportv.3.brasil.latam','sportv.4.brasil.latam',
+              *{f'espn.{n}.brasil.latam' for n in range(1,6)},
+              *{f'premiere.{n}.brasil.latam' for n in range(1,10)},
+              'premiere.clubes.brasil.latam',
+          }
+          ids=Counter(c.get('id') for c in channels)
+          duplicates={cid: ids[cid] for cid in brazil_ids if ids[cid] != 1}
+          assert not duplicates, f'Señales Brasil ausentes o duplicadas: {duplicates}'
+          brazil_counts={cid: sum(p.get('channel') == cid for p in programmes) for cid in brazil_ids}
+          scheduled=brazil_ids-{'sportv.4.brasil.latam'}
+          empty={cid: brazil_counts[cid] for cid in scheduled if not brazil_counts[cid]}
+          assert not empty, f'Señales Brasil sin programación: {empty}'
+          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; Brasil: {brazil_counts}')
           PY
       - name: Guardar XML actualizado
         run: |
