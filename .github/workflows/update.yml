@@ -9,6 +9,7 @@ on:
       - "gato_mexico_scraper.py"
       - "gato_mega_scraper.py"
       - "claro_premium.py"
+      - "claro_lineal.py"
       - "sky_plus_aliases.py"
       - "manual_channels.json"
       - "requirements.txt"
@@ -54,6 +55,8 @@ jobs:
         run: python sky_plus_aliases.py
       - name: Agregar Claro Sports Premium México
         run: python claro_premium.py
+      - name: Actualizar Claro Sports México lineal
+        run: python claro_lineal.py
       - name: Validar XMLTV
         run: |
           python - <<'PY'
@@ -94,6 +97,10 @@ jobs:
           claro=[p for p in programmes if p.get('channel') == claro_id]
           assert len([c for c in channels if c.get('id') == claro_id]) == 1, 'Claro Sports Premium ausente o duplicado'
           assert any(p.findtext('title') == 'México vs Colombia' and p.get('start') == '20260926204500 -0400' for p in claro), 'Falta México vs Colombia en ET'
+          lineal_id='claro.sports.mexico.latam'
+          lineal=[p for p in programmes if p.get('channel') == lineal_id]
+          assert len([c for c in channels if c.get('id') == lineal_id]) == 1 and len(lineal) >= 15, f'Claro Sports México sin guía completa: {len(lineal)}'
+          assert max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in lineal) >= datetime.now(timezone.utc) + timedelta(hours=12), 'Guía lineal de Claro Sports desactualizada'
           limit=datetime.now(timezone.utc) + timedelta(hours=24)
           future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
           assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
