@@ -19,6 +19,8 @@ def channel_id(name):
         return f"peacock.{int(name.split()[-1]):02d}.latam"
     if name.startswith("Coupang Play "):
         return f"coupang.play.{int(name.split()[-1])}.latam"
+    if name.startswith("Amazon UK "):
+        return f"amazon.uk.{int(name.split()[-1])}.latam"
     return None
 
 
@@ -64,6 +66,16 @@ def main():
             root.insert(len(root.findall("channel")), channel)
             channels[name] = channel
             ids.add(cid)
+        if name.startswith("Amazon UK "):
+            number = int(name.split()[-1])
+            aliases = [f"AMAZON UK {number}", f"AMAZON PRIME UK {number}",
+                       f"UK| AMAZON PRIME PPV {number:02d}"]
+            if number == 1:
+                aliases.append("UK| AMAZON PRIME PPV")
+            present = {node.text for node in channel.findall("display-name")}
+            for alias in aliases:
+                if alias not in present:
+                    XML.SubElement(channel, "display-name", {"lang": "es"}).text = alias
         cid = channel.get("id")
         for event_start, event_stop, title in events:
             for previous in list(root.findall("programme")):
