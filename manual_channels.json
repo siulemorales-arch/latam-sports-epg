@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-29T12:11:17.986Z",
+  "updated_at": "2026-09-30T23:23:58.361Z",
   "channels": {
     "Peacock 01": [
       {
@@ -47,6 +47,16 @@
         "title": "Game 1: Cubs at Padres",
         "start": "2026-09-30T02:00:00Z",
         "stop": "2026-09-30T06:00:00Z"
+      },
+      {
+        "title": "Morning News Now PV 9.30.26",
+        "start": "2026-09-30T10:00:00Z",
+        "stop": "2026-09-30T20:30:00Z"
+      },
+      {
+        "title": "Juego 2: CWS vs. HOU (Español)",
+        "start": "2026-09-30T21:00:00Z",
+        "stop": "2026-10-01T00:30:00Z"
       }
     ],
     "Peacock 02": [
@@ -74,6 +84,11 @@
         "title": "USA vs. Chile (Español)",
         "start": "2026-09-29T23:30:00Z",
         "stop": "2026-09-30T02:30:00Z"
+      },
+      {
+        "title": "Morning News Now LL 9.30.26",
+        "start": "2026-09-30T10:00:00Z",
+        "stop": "2026-09-30T22:30:00Z"
       }
     ],
     "Peacock 03": [
@@ -101,6 +116,11 @@
         "title": "Game 1: Red Sox at Yankees",
         "start": "2026-09-30T00:00:00Z",
         "stop": "2026-09-30T03:30:00Z"
+      },
+      {
+        "title": "Morning News Now ISO 2 V 9.30.26",
+        "start": "2026-09-30T11:00:00Z",
+        "stop": "2026-09-30T23:30:00Z"
       }
     ],
     "Peacock 04": [
@@ -123,6 +143,11 @@
         "title": "Morning News Now ISO 2 V 9.29.26",
         "start": "2026-09-29T11:00:00Z",
         "stop": "2026-09-29T23:30:00Z"
+      },
+      {
+        "title": "Morning News Now ISO 1 V 9.30.26",
+        "start": "2026-09-30T11:00:00Z",
+        "stop": "2026-09-30T23:30:00Z"
       }
     ],
     "Peacock 05": [
@@ -140,6 +165,11 @@
         "title": "Morning News Now CC V 9.29.26",
         "start": "2026-09-29T11:00:00Z",
         "stop": "2026-09-29T23:30:00Z"
+      },
+      {
+        "title": "Morning News Now CC V 9.30.26",
+        "start": "2026-09-30T11:00:00Z",
+        "stop": "2026-09-30T23:30:00Z"
       }
     ],
     "Peacock 06": [
@@ -152,6 +182,16 @@
         "title": "Game 1: Phillies at Braves",
         "start": "2026-09-29T17:30:00Z",
         "stop": "2026-09-29T21:30:00Z"
+      },
+      {
+        "title": "Morning News Now AM 1134",
+        "start": "2026-09-30T14:00:00Z",
+        "stop": "2026-09-30T19:30:00Z"
+      },
+      {
+        "title": "Game 2: White Sox at Astros",
+        "start": "2026-09-30T21:00:00Z",
+        "stop": "2026-10-01T00:30:00Z"
       }
     ],
     "Peacock 07": [
@@ -164,6 +204,11 @@
         "title": "Juego 1: PHI at ATL (Español)",
         "start": "2026-09-29T18:00:00Z",
         "stop": "2026-09-29T21:30:00Z"
+      },
+      {
+        "title": "Game 2: Phillies at Braves",
+        "start": "2026-09-30T17:30:00Z",
+        "stop": "2026-09-30T21:30:00Z"
       }
     ],
     "Peacock 08": [
@@ -171,6 +216,11 @@
         "title": "Ascent FC v. Sporting JAX",
         "start": "2026-09-26T23:00:00Z",
         "stop": "2026-09-27T01:30:00Z"
+      },
+      {
+        "title": "Juego 2: PHI at ATL (Español)",
+        "start": "2026-09-30T18:00:00Z",
+        "stop": "2026-09-30T21:30:00Z"
       }
     ],
     "Peacock 09": [
