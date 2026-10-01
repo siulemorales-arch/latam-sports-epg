@@ -21,6 +21,8 @@ def channel_id(name):
         return f"coupang.play.{int(name.split()[-1])}.latam"
     if name.startswith("Amazon UK "):
         return f"amazon.uk.{int(name.split()[-1])}.latam"
+    if name.startswith("DAZN Canadá "):
+        return f"dazn.{int(name.split()[-1]):02d}.canada.latam"
     return None
 
 
@@ -46,8 +48,11 @@ def main():
         events = []
         for item in items:
             start = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
-            stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
-            if stop > window_start and start < horizon and stop > start:
+            stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00")) if item.get("stop") else None
+            if stop is None:
+                if window_start <= start < horizon:
+                    events.append((start, None, item["title"]))
+            elif stop > window_start and start < horizon and stop > start:
                 events.append((start, stop, item["title"]))
         if not events:
             continue
@@ -61,6 +66,11 @@ def main():
             if name.startswith("Sky Sports+ "):
                 number = int(name.split("+ ")[1])
                 aliases += [f"SKY SPORTS+ {number}", f"SKY SPORT+ {number}", f"UK| SKY SPORT+ {number:02d}"]
+            if name.startswith("DAZN Canadá "):
+                number = int(name.split()[-1])
+                aliases += [f"DAZN CA {number}", f"CA| DAZN PPV {number:02d}"]
+                if number == 1:
+                    aliases += ["CA| DAZN PPV", "CA| DAZN PPV VIP"]
             for alias in aliases:
                 XML.SubElement(channel, "display-name", {"lang": "es"}).text = alias
             root.insert(len(root.findall("channel")), channel)
@@ -81,8 +91,15 @@ def main():
             for previous in list(root.findall("programme")):
                 if previous.get("channel") != cid:
                     continue
-                old_start, old_stop = parse(previous.get("start")), parse(previous.get("stop"))
-                if old_stop <= event_start or old_start >= event_stop:
+                old_start = parse(previous.get("start"))
+                old_stop = parse(previous.get("stop")) if previous.get("stop") else None
+                if event_stop is None:
+                    if old_start == event_start and old_stop is None and previous.findtext("title") == title:
+                        root.remove(previous)
+                    continue
+                if old_stop is not None and old_stop <= event_start:
+                    continue
+                if old_start >= event_stop:
                     continue
                 if old_start == event_start and old_stop == event_stop and previous.findtext("title") == title:
                     root.remove(previous)
@@ -99,9 +116,10 @@ def main():
                             "start": fmt(part_start), "stop": fmt(part_stop), "channel": cid,
                         })
                         XML.SubElement(piece, "title", {"lang": "es"}).text = old_title
-            programme = XML.SubElement(root, "programme", {
-                "start": fmt(event_start), "stop": fmt(event_stop), "channel": cid,
-            })
+            attributes = {"start": fmt(event_start), "channel": cid}
+            if event_stop is not None:
+                attributes["stop"] = fmt(event_stop)
+            programme = XML.SubElement(root, "programme", attributes)
             XML.SubElement(programme, "title", {"lang": "es"}).text = title
             XML.SubElement(programme, "category", {"lang": "es"}).text = "Deportes"
             count += 1
@@ -113,12 +131,13 @@ def main():
     for name, items in payload["channels"].items():
         for item in items:
             start = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
-            stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
-            if stop <= window_start or start >= horizon:
+            stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00")) if item.get("stop") else None
+            if (stop is not None and stop <= window_start) or start >= horizon or (stop is None and start < window_start):
                 continue
             cid = channels[name].get("id")
             assert any(p.get("channel") == cid and p.findtext("title") == item["title"]
-                       and parse(p.get("start")) == start and parse(p.get("stop")) == stop
+                       and parse(p.get("start")) == start
+                       and (parse(p.get("stop")) if p.get("stop") else None) == stop
                        for p in root.findall("programme")), f"Captura no publicada: {name}: {item['title']}"
 
 

@@ -1,6 +1,6 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-09-30T23:23:58.361Z",
+  "updated_at": "2026-10-01T18:50:32.645Z",
   "channels": {
     "Peacock 01": [
       {
@@ -923,6 +923,132 @@
         "title": "Porto - Early Rounds - 2",
         "start": "2026-09-29T10:00:00Z",
         "stop": "2026-09-29T18:00:00Z"
+      }
+    ],
+    "DAZN Canadá 1": [
+      {
+        "title": "Rally Italia Sardegna Shakedown Monte Baranta",
+        "start": "2026-10-01T06:58:00Z"
+      },
+      {
+        "title": "Rally Italia Sardegna Pre Show from Alghero Sea Front",
+        "start": "2026-10-01T12:58:00Z"
+      },
+      {
+        "title": "Steelers @ Browns",
+        "start": "2026-10-02T00:13:00Z"
+      }
+    ],
+    "DAZN Canadá 2": [
+      {
+        "title": "Whittaker vs. Wallace Press Conference",
+        "start": "2026-10-01T12:58:00Z"
+      },
+      {
+        "title": "Germany vs. Serbia",
+        "start": "2026-10-01T18:43:00Z"
+      },
+      {
+        "title": "Beijing Open Day 3",
+        "start": "2026-10-02T02:58:00Z"
+      }
+    ],
+    "DAZN Canadá 3": [
+      {
+        "title": "Indonesia vs. Bangladesh",
+        "start": "2026-10-01T12:28:00Z"
+      },
+      {
+        "title": "Israel vs. Kosovo",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 4": [
+      {
+        "title": "Malaysia vs. Singapore",
+        "start": "2026-10-01T12:28:00Z"
+      },
+      {
+        "title": "Malta vs. Gibraltar",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 5": [
+      {
+        "title": "Rally Italia Sardegna Stage 1",
+        "start": "2026-10-01T13:58:00Z"
+      },
+      {
+        "title": "Inside The Ring – Oct 1",
+        "start": "2026-10-01T18:58:00Z"
+      },
+      {
+        "title": "Grand Prix of Shanghai Pole Position",
+        "start": "2026-10-02T02:13:00Z"
+      }
+    ],
+    "DAZN Canadá 6": [
+      {
+        "title": "Azerbaijan vs. Liechtenstein",
+        "start": "2026-10-01T15:58:00Z"
+      },
+      {
+        "title": "Steelers @ Browns (In French)",
+        "start": "2026-10-02T00:13:00Z"
+      }
+    ],
+    "DAZN Canadá 7": [
+      {
+        "title": "EFC 138 Djikasa vs. Born",
+        "start": "2026-10-01T16:58:00Z"
+      }
+    ],
+    "DAZN Canadá 8": [
+      {
+        "title": "Carter Efe vs. Speed",
+        "start": "2026-10-01T17:28:00Z"
+      }
+    ],
+    "DAZN Canadá 9": [
+      {
+        "title": "Denmark vs. Portugal",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 10": [
+      {
+        "title": "Greece vs. Netherlands",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 11": [
+      {
+        "title": "Republic of Ireland vs. Austria",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 12": [
+      {
+        "title": "Wales vs. Norway",
+        "start": "2026-10-01T18:43:00Z"
+      }
+    ],
+    "DAZN Canadá 13": [
+      {
+        "title": "Vertex Cup London 2026 Matchday 1",
+        "start": "2026-10-01T12:58:00Z"
+      }
+    ],
+    "DAZN Canadá 14": [
+      {
+        "title": "U15 Baseball World Cup 2026 Day 6 Beto Avila",
+        "start": "2026-10-01T15:28:00Z"
+      }
+    ],
+    "DAZN Canadá 15": [
+      {
+        "title": "U15 Baseball World Cup 2026 Day 6 Kukulkan",
+        "start": "2026-10-01T16:28:00Z"
       }
     ]
   }
