@@ -16,6 +16,7 @@ on:
       - "globo_sp.py"
       - "manual_channels.json"
       - "manual_overlay.py"
+      - "preserve_channels.py"
       - "requirements.txt"
       - ".github/workflows/update.yml"
   schedule:
@@ -44,11 +45,15 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: playwright install --with-deps chromium
+      - name: Conservar copia de la guía publicada
+        run: cp epg.xml epg.previous.xml
       - name: Generar EPG completo
         run: |
           if ! python scraper.py; then
             echo "::warning::El generador completo falló; se conserva el último EPG válido y se actualizan los canales oficiales de Movistar Plus"
           fi
+      - name: Recuperar canales y alias existentes
+        run: python preserve_channels.py
       - name: Actualizar TVC y Fox Sports México desde GatoTV
         run: python gato_mexico_scraper.py
       - name: Actualizar Mega Chile desde GatoTV
@@ -80,6 +85,8 @@ jobs:
           channels=root.findall('channel'); programmes=root.findall('programme')
           assert len(channels) >= 80, f'Solo {len(channels)} canales'
           assert len(programmes) >= 1500, f'Solo {len(programmes)} programas'
+          baseline={c.get('id') for c in ET.parse('epg.previous.xml').getroot().findall('channel')}
+          assert baseline <= {c.get('id') for c in channels}, 'El generador perdió canales existentes'
           names={c.findtext('display-name') for c in channels}
           required={
               'DSPORTS','ESPN Sur','M+ LALIGA (España)','DAZN F1 (España)',
@@ -129,6 +136,8 @@ jobs:
           assert not empty, f'Señales Brasil sin programación: {empty}'
           print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; Brasil: {brazil_counts}')
           PY
+      - name: Limpiar copia temporal
+        run: rm epg.previous.xml
       - name: Guardar XML actualizado
         run: |
           git config user.name github-actions[bot]
