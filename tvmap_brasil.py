@@ -70,17 +70,26 @@ def main():
             XML.SubElement(channel, "display-name", {"lang": "pt"}).text = name
             root.insert(insert_at, channel)
             insert_at += 1
-    getv = next(c for c in root.findall("channel") if c.get("id") == "ge.tv.brasil.latam")
-    if getv is not None:
-        for display in getv.findall("display-name"):
-            getv.remove(display)
-        XML.SubElement(getv, "display-name", {"lang": "pt"}).text = "GETV"
-        XML.SubElement(getv, "display-name", {"lang": "pt"}).text = "GE TV"
+    output_channels = list(CHANNELS)
+    # Conserva los dos IDs existentes y publica la misma guía en ambos.
+    if "getv.latam" in existing:
+        schedules["getv.latam"] = schedules["ge.tv.brasil.latam"]
+        output_channels.append(("getv.latam", "GETV", "GE"))
+    aliases = ("GETV", "GE TV", "ge tv", "GE", "GETV Brasil", "GE TV Brasil",
+               "GETV HD", "GETV FHD", "GE TV HD", "GE TV FHD",
+               "BR| GETV", "BR| GE TV", "BR| GETV HD", "BR| GE TV HD")
+    for getv in root.findall("channel"):
+        if getv.get("id") not in {"ge.tv.brasil.latam", "getv.latam"}:
+            continue
+        present = {display.text for display in getv.findall("display-name")}
+        for alias in aliases:
+            if alias not in present:
+                XML.SubElement(getv, "display-name", {"lang": "pt"}).text = alias
     targets = set(schedules)
     for programme in list(root.findall("programme")):
         if programme.get("channel") in targets:
             root.remove(programme)
-    for channel_id, _name, _slug in CHANNELS:
+    for channel_id, _name, _slug in output_channels:
         for start, stop, title, category in schedules[channel_id]:
             programme = XML.SubElement(root, "programme", {
                 "start": start.strftime("%Y%m%d%H%M%S %z"),
