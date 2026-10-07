@@ -1,0 +1,54 @@
+name: Refresh Sports TV agenda
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/sports-tv-refresh.yml'
+permissions:
+  contents: read
+concurrency:
+  group: sports-tv-agenda-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Refresh and verify saved country agendas
+        shell: python
+        run: |
+          import concurrent.futures, json, time, urllib.request
+          origin = 'https://sports-tv-morales.siulemorales.chatgpt.site'
+          countries = ['AR','AU','BR','CA','CO','ES','US','IT','MX','PT','GB','UY','VE']
+          def read(url, timeout=90):
+              req = urllib.request.Request(url, headers={'User-Agent':'SportsTVScheduledRefresh/1.0'})
+              with urllib.request.urlopen(req, timeout=timeout) as response:
+                  return json.load(response)
+          def refresh(code):
+              path = '/api/brasil' if code == 'BR' else '/api/agenda?country=' + code + '&view=all'
+              url = origin + path
+              error = None
+              for attempt in range(3):
+                  try:
+                      fresh = read(url + ('&' if '?' in url else '?') + 'refresh=1')
+                      if not fresh.get('serverPrepared') or not fresh.get('preparedAt'):
+                          raise ValueError('Server did not confirm persisted agenda')
+                      saved = read(url, 30)
+                      if not saved.get('serverPrepared') or saved.get('preparedAt') != fresh['preparedAt']:
+                          raise ValueError('Saved agenda readback differs')
+                      print(json.dumps({'country':code,'events':len(saved.get('games',[])),
+                                        'partial':bool(saved.get('partial')),
+                                        'preparedAt':saved['preparedAt']}), flush=True)
+                      return True
+                  except Exception as exc:
+                      error = str(exc)
+                      if attempt < 2:
+                          time.sleep(5 * (attempt + 1))
+              print(json.dumps({'country':code,'error':error}), flush=True)
+              return False
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+              results = list(pool.map(refresh,countries))
+          if not all(results):
+              raise SystemExit('Some country refreshes failed; previous agendas remain saved.')
