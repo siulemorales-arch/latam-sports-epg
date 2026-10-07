@@ -21,7 +21,7 @@ jobs:
         run: |
           import concurrent.futures, json, time, urllib.request
           origin = 'https://sports-tv-morales.siulemorales.chatgpt.site'
-          countries = ['AR','AU','BR','CA','CO','ES','US','IT','MX','PT','GB','UY','VE']
+          countries = ['AR','AU','BR','CA','CO','ES','US','IT','MX','PT','GB','TR','UY','VE']
           def read(url, timeout=90):
               req = urllib.request.Request(url, headers={'User-Agent':'SportsTVScheduledRefresh/1.0'})
               with urllib.request.urlopen(req, timeout=timeout) as response:
