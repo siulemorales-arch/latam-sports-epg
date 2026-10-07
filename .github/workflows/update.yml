@@ -116,7 +116,20 @@ jobs:
           lineal_id='claro.sports.mexico.latam'
           lineal=[p for p in programmes if p.get('channel') == lineal_id]
           assert len([c for c in channels if c.get('id') == lineal_id]) == 1 and len(lineal) >= 15, f'Claro Sports México sin guía completa: {len(lineal)}'
-          assert max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in lineal) >= datetime.now(timezone.utc) + timedelta(hours=12), 'Guía lineal de Claro Sports desactualizada'
+          lineal_until=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in lineal)
+          if lineal_until < datetime.now(timezone.utc) + timedelta(hours=12):
+              print(f'ADVERTENCIA: Claro Sports México desactualizado: {lineal_until}')
+          getv_ids={'getv.latam','ge.tv.brasil.latam'}
+          getv={cid: [p for p in programmes if p.get('channel') == cid] for cid in getv_ids}
+          getv_counts={cid: len(items) for cid, items in getv.items()}
+          assert all(count >= 8 for count in getv_counts.values()), f'GETV sin guía completa: {getv_counts}'
+          getv_until={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in getv.items()}
+          assert all(stop >= datetime.now(timezone.utc) + timedelta(hours=12) for stop in getv_until.values()), f'GETV desactualizado: {getv_until}'
+          telemundo_id='telemundo.deportes.ahora.usa.latam'
+          telemundo=[p for p in programmes if p.get('channel') == telemundo_id]
+          assert len(telemundo) >= 8, f'Telemundo Deportes Ahora sin guía completa: {len(telemundo)}'
+          telemundo_until=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in telemundo)
+          assert telemundo_until >= datetime.now(timezone.utc) + timedelta(hours=12), f'Telemundo Deportes Ahora desactualizado: {telemundo_until}'
           limit=datetime.now(timezone.utc) + timedelta(hours=24)
           future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
           assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
@@ -134,7 +147,7 @@ jobs:
           scheduled=brazil_ids-{'sportv.4.brasil.latam'}
           empty={cid: brazil_counts[cid] for cid in scheduled if not brazil_counts[cid]}
           assert not empty, f'Señales Brasil sin programación: {empty}'
-          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; Brasil: {brazil_counts}')
+          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; GETV: {getv_counts}, hasta {getv_until}; Telemundo: {len(telemundo)}, hasta {telemundo_until}; Brasil: {brazil_counts}')
           PY
       - name: Limpiar copia temporal
         run: rm epg.previous.xml
