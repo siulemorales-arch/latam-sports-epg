@@ -19,6 +19,8 @@ def channel_id(name):
         return f"peacock.{int(name.split()[-1]):02d}.latam"
     if name.startswith("Coupang Play "):
         return f"coupang.play.{int(name.split()[-1])}.latam"
+    if name.startswith("MonoMax "):
+        return f"monomax.{int(name.split()[-1])}.latam"
     if name.startswith("Amazon UK "):
         return f"amazon.uk.{int(name.split()[-1])}.latam"
     if name.startswith("DAZN Canadá "):
@@ -71,11 +73,41 @@ def main():
                 aliases += [f"DAZN CA {number}", f"CA| DAZN PPV {number:02d}"]
                 if number == 1:
                     aliases += ["CA| DAZN PPV", "CA| DAZN PPV VIP"]
+            if name.startswith("Coupang Play "):
+                number = int(name.split()[-1])
+                aliases += [f"COUPANG PLAY {number}", f"COUPANG PLAY {number:02d}",
+                            f"KR| COUPANG PLAY PPV {number:02d}"]
+                if number == 1:
+                    aliases.append("KR| COUPANG PLAY PPV")
+            if name.startswith("MonoMax "):
+                number = int(name.split()[-1])
+                aliases += [f"MONOMAX {number}", f"MONOMAX {number:02d}",
+                            f"MONO MAX {number}", f"MONO MAX {number:02d}",
+                            f"UK| MONO MAX PPV {number:02d}"]
+                if number == 1:
+                    aliases.append("UK| MONO MAX PPV")
             for alias in aliases:
                 XML.SubElement(channel, "display-name", {"lang": "es"}).text = alias
             root.insert(len(root.findall("channel")), channel)
             channels[name] = channel
             ids.add(cid)
+        if name.startswith("Coupang Play ") or name.startswith("MonoMax "):
+            number = int(name.split()[-1])
+            if name.startswith("Coupang Play "):
+                aliases = [f"COUPANG PLAY {number}", f"COUPANG PLAY {number:02d}",
+                           f"KR| COUPANG PLAY PPV {number:02d}"]
+                if number == 1:
+                    aliases.append("KR| COUPANG PLAY PPV")
+            else:
+                aliases = [f"MONOMAX {number}", f"MONOMAX {number:02d}",
+                           f"MONO MAX {number}", f"MONO MAX {number:02d}",
+                           f"UK| MONO MAX PPV {number:02d}"]
+                if number == 1:
+                    aliases.append("UK| MONO MAX PPV")
+            present = {node.text for node in channel.findall("display-name")}
+            for alias in aliases:
+                if alias not in present:
+                    XML.SubElement(channel, "display-name", {"lang": "es"}).text = alias
         if name.startswith("Amazon UK "):
             number = int(name.split()[-1])
             aliases = [f"AMAZON UK {number}", f"AMAZON PRIME UK {number}",

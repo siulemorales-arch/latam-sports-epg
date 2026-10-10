@@ -1,529 +1,446 @@
 {
   "timezone": "UTC",
-  "updated_at": "2026-10-01T18:50:32.645Z",
+  "updated_at": "2026-10-10T15:53:06.196Z",
   "channels": {
     "Peacock 01": [
       {
-        "title": "Acrobatic World Champs: Day 2",
-        "start": "2026-09-26T09:00:00Z",
-        "stop": "2026-09-26T11:20:00Z"
+        "title": "Genoa vs. Fiorentina (Español)",
+        "start": "2026-10-10T12:55:00Z",
+        "stop": "2026-10-10T15:30:00Z"
       },
       {
-        "title": "Presidents Cup: Day 3",
-        "start": "2026-09-26T13:00:00Z",
-        "stop": "2026-09-26T23:30:00Z"
+        "title": "Inter vs. Parma (Español)",
+        "start": "2026-10-10T15:55:00Z",
+        "stop": "2026-10-10T19:00:00Z"
       },
       {
-        "title": "Tigres vs. Puebla (Español)",
-        "start": "2026-09-27T02:55:00Z",
-        "stop": "2026-09-27T05:30:00Z"
+        "title": "Brooklyn FC v. Trinity FC",
+        "start": "2026-10-10T20:00:00Z",
+        "stop": "2026-10-10T22:30:00Z"
       },
       {
-        "title": "Acrobatic World Champs: Day 3",
-        "start": "2026-09-27T09:00:00Z",
-        "stop": "2026-09-27T12:10:00Z"
-      },
-      {
-        "title": "Acrobatic Champs: Finals Day 2",
-        "start": "2026-09-27T13:00:00Z",
-        "stop": "2026-09-27T17:15:00Z"
-      },
-      {
-        "title": "MLB Sunday Stretch: 9.27.26",
-        "start": "2026-09-27T19:00:00Z",
-        "stop": "2026-09-27T22:30:00Z"
-      },
-      {
-        "title": "Morning News Now PV 9.29.26",
-        "start": "2026-09-29T10:00:00Z",
-        "stop": "2026-09-29T20:30:00Z"
-      },
-      {
-        "title": "Game 1: White Sox at Astros",
-        "start": "2026-09-29T21:00:00Z",
-        "stop": "2026-09-30T00:30:00Z"
-      },
-      {
-        "title": "Game 1: Cubs at Padres",
-        "start": "2026-09-30T02:00:00Z",
-        "stop": "2026-09-30T06:00:00Z"
-      },
-      {
-        "title": "Morning News Now PV 9.30.26",
-        "start": "2026-09-30T10:00:00Z",
-        "stop": "2026-09-30T20:30:00Z"
-      },
-      {
-        "title": "Juego 2: CWS vs. HOU (Español)",
-        "start": "2026-09-30T21:00:00Z",
-        "stop": "2026-10-01T00:30:00Z"
+        "title": "USC vs. Penn State",
+        "start": "2026-10-10T23:00:00Z",
+        "stop": "2026-10-11T03:30:00Z"
       }
     ],
     "Peacock 02": [
       {
-        "title": "Acrobatic Champs: Finals Day 1",
-        "start": "2026-09-26T14:00:00Z",
-        "stop": "2026-09-26T18:20:00Z"
+        "title": "Augsburg vs. Bayern Munich (Español)",
+        "start": "2026-10-10T13:00:00Z",
+        "stop": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "USA vs. Peru (Español)",
-        "start": "2026-09-26T19:30:00Z",
-        "stop": "2026-09-26T23:00:00Z"
+        "title": "RB Leipzig vs. Eintracht Frankfurt (Español)",
+        "start": "2026-10-10T16:25:00Z",
+        "stop": "2026-10-10T19:00:00Z"
       },
       {
-        "title": "Presidents Cup: Day 4",
-        "start": "2026-09-27T16:00:00Z",
-        "stop": "2026-09-27T22:30:00Z"
-      },
-      {
-        "title": "Morning News Now LL 9.29.26",
-        "start": "2026-09-29T10:00:00Z",
-        "stop": "2026-09-29T22:30:00Z"
-      },
-      {
-        "title": "USA vs. Chile (Español)",
-        "start": "2026-09-29T23:30:00Z",
-        "stop": "2026-09-30T02:30:00Z"
-      },
-      {
-        "title": "Morning News Now LL 9.30.26",
-        "start": "2026-09-30T10:00:00Z",
-        "stop": "2026-09-30T22:30:00Z"
+        "title": "Sun FC v. Ascent FC",
+        "start": "2026-10-10T22:00:00Z",
+        "stop": "2026-10-11T00:30:00Z"
       }
     ],
     "Peacock 03": [
       {
-        "title": "Race Day Live: Ridgedale",
-        "start": "2026-09-26T17:00:00Z",
-        "stop": "2026-09-26T21:00:00Z"
+        "title": "Swimming WC: Tashkent Day 3",
+        "start": "2026-10-10T13:00:00Z",
+        "stop": "2026-10-10T15:05:00Z"
       },
       {
-        "title": "World Championship Final",
-        "start": "2026-09-26T22:30:00Z",
-        "stop": "2026-09-27T03:00:00Z"
+        "title": "Man United v. Spurs",
+        "start": "2026-10-10T16:30:00Z",
+        "stop": "2026-10-10T19:30:00Z"
       },
       {
-        "title": "Away Feed: AZ at SD",
-        "start": "2026-09-27T19:00:00Z",
-        "stop": "2026-09-27T22:30:00Z"
-      },
-      {
-        "title": "Morning News Now ISO 1 V 9.29.26",
-        "start": "2026-09-29T11:00:00Z",
-        "stop": "2026-09-29T23:30:00Z"
-      },
-      {
-        "title": "Game 1: Red Sox at Yankees",
-        "start": "2026-09-30T00:00:00Z",
-        "stop": "2026-09-30T03:30:00Z"
-      },
-      {
-        "title": "Morning News Now ISO 2 V 9.30.26",
-        "start": "2026-09-30T11:00:00Z",
-        "stop": "2026-09-30T23:30:00Z"
+        "title": "Juárez vs. Tijuana (Español)",
+        "start": "2026-10-10T22:30:00Z",
+        "stop": "2026-10-11T01:30:00Z"
       }
     ],
     "Peacock 04": [
       {
-        "title": "Notre Dame vs. Purdue",
-        "start": "2026-09-26T17:30:00Z",
-        "stop": "2026-09-26T22:00:00Z"
+        "title": "Mainz vs. Bayer Leverkusen (Español)",
+        "start": "2026-10-10T13:25:00Z",
+        "stop": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "Chivas vs. Queretaro (Español)",
-        "start": "2026-09-26T22:30:00Z",
-        "stop": "2026-09-27T01:30:00Z"
-      },
-      {
-        "title": "Home Feed: AZ at SD",
-        "start": "2026-09-27T19:00:00Z",
-        "stop": "2026-09-27T22:30:00Z"
-      },
-      {
-        "title": "Morning News Now ISO 2 V 9.29.26",
-        "start": "2026-09-29T11:00:00Z",
-        "stop": "2026-09-29T23:30:00Z"
-      },
-      {
-        "title": "Morning News Now ISO 1 V 9.30.26",
-        "start": "2026-09-30T11:00:00Z",
-        "stop": "2026-09-30T23:30:00Z"
+        "title": "Morning News Now PV 10.10.26",
+        "start": "2026-10-10T16:30:00Z",
+        "stop": "2026-10-10T19:30:00Z"
       }
     ],
     "Peacock 05": [
       {
-        "title": "Home Feed: LAD at SF",
-        "start": "2026-09-26T20:00:00Z",
-        "stop": "2026-09-26T23:30:00Z"
+        "title": "Hoffenheim vs. Hamburg (Español)",
+        "start": "2026-10-10T13:25:00Z",
+        "stop": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "Astros at Athletics",
-        "start": "2026-09-27T19:00:00Z",
-        "stop": "2026-09-27T22:30:00Z"
-      },
-      {
-        "title": "Morning News Now CC V 9.29.26",
-        "start": "2026-09-29T11:00:00Z",
-        "stop": "2026-09-29T23:30:00Z"
-      },
-      {
-        "title": "Morning News Now CC V 9.30.26",
-        "start": "2026-09-30T11:00:00Z",
-        "stop": "2026-09-30T23:30:00Z"
+        "title": "USA vs. Spain (Español)",
+        "start": "2026-10-10T18:30:00Z",
+        "stop": "2026-10-10T21:30:00Z"
       }
     ],
     "Peacock 06": [
       {
-        "title": "Away Feed: LAD at SF",
-        "start": "2026-09-26T20:00:00Z",
-        "stop": "2026-09-26T23:30:00Z"
+        "title": "Union Berlin vs. Elversberg (Español)",
+        "start": "2026-10-10T13:25:00Z",
+        "stop": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "Game 1: Phillies at Braves",
-        "start": "2026-09-29T17:30:00Z",
-        "stop": "2026-09-29T21:30:00Z"
-      },
-      {
-        "title": "Morning News Now AM 1134",
-        "start": "2026-09-30T14:00:00Z",
-        "stop": "2026-09-30T19:30:00Z"
-      },
-      {
-        "title": "Game 2: White Sox at Astros",
-        "start": "2026-09-30T21:00:00Z",
-        "stop": "2026-10-01T00:30:00Z"
+        "title": "Napoli vs. Frosinone (Español)",
+        "start": "2026-10-10T18:40:00Z",
+        "stop": "2026-10-10T21:15:00Z"
       }
     ],
     "Peacock 07": [
       {
-        "title": "Wisconsin vs. Penn State",
-        "start": "2026-09-26T21:00:00Z",
-        "stop": "2026-09-27T01:00:00Z"
+        "title": "Paderborn vs. VfB Stuttgart (Español)",
+        "start": "2026-10-10T13:25:00Z",
+        "stop": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "Juego 1: PHI at ATL (Español)",
-        "start": "2026-09-29T18:00:00Z",
-        "stop": "2026-09-29T21:30:00Z"
-      },
-      {
-        "title": "Game 2: Phillies at Braves",
-        "start": "2026-09-30T17:30:00Z",
-        "stop": "2026-09-30T21:30:00Z"
+        "title": "Stanford vs. Notre Dame",
+        "start": "2026-10-10T19:00:00Z",
+        "stop": "2026-10-10T23:30:00Z"
       }
     ],
     "Peacock 08": [
       {
-        "title": "Ascent FC v. Sporting JAX",
-        "start": "2026-09-26T23:00:00Z",
-        "stop": "2026-09-27T01:30:00Z"
-      },
-      {
-        "title": "Juego 2: PHI at ATL (Español)",
-        "start": "2026-09-30T18:00:00Z",
-        "stop": "2026-09-30T21:30:00Z"
+        "title": "Chelsea v. Bournemouth",
+        "start": "2026-10-10T13:50:00Z",
+        "stop": "2026-10-10T16:30:00Z"
       }
     ],
     "Peacock 09": [
       {
-        "title": "Oregon vs. USC",
-        "start": "2026-09-26T23:00:00Z",
-        "stop": "2026-09-27T03:30:00Z"
+        "title": "Ipswich Town v. Fulham",
+        "start": "2026-10-10T13:50:00Z",
+        "stop": "2026-10-10T16:30:00Z"
       }
     ],
     "Peacock 10": [
       {
-        "title": "M Bronze: GER vs. GBR",
-        "start": "2026-09-19T14:00:00Z",
-        "stop": "2026-09-19T16:30:00Z"
-      },
-      {
-        "title": "W Gold: CAN vs. USA",
-        "start": "2026-09-19T18:30:00Z",
-        "stop": "2026-09-19T21:00:00Z"
+        "title": "Sunderland v. Brighton",
+        "start": "2026-10-10T13:50:00Z",
+        "stop": "2026-10-10T16:30:00Z"
       }
     ],
     "Fubo Sports 1": [
       {
-        "title": "Premier League Review",
-        "start": "2026-09-19T10:00:00Z",
-        "stop": "2026-09-19T11:00:00Z"
-      },
-      {
-        "title": "Fubo Sports Network Presents",
-        "start": "2026-09-19T11:00:00Z",
-        "stop": "2026-09-19T11:15:00Z"
-      },
-      {
-        "title": "Tottenham Hotspur FC vs Aston Villa",
-        "start": "2026-09-19T11:15:00Z",
-        "stop": "2026-09-19T13:30:00Z"
+        "title": "Arsenal FC vs Leeds United",
+        "start": "2026-10-10T11:15:00Z"
       },
       {
         "title": "Fubo Sports News",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T14:00:00Z"
+        "start": "2026-10-10T13:30:00Z"
       },
       {
         "title": "The Fantasy Life Show",
-        "start": "2026-09-19T14:00:00Z",
-        "stop": "2026-09-19T15:00:00Z"
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "The Iconic",
-        "start": "2026-09-19T15:00:00Z",
-        "stop": "2026-09-19T15:30:00Z"
+        "title": "Footballs Greatest Stage",
+        "start": "2026-10-10T15:00:00Z"
+      },
+      {
+        "title": "Footballs Greatest Stage",
+        "start": "2026-10-10T15:30:00Z"
       },
       {
         "title": "Fubo Sports Network Presents",
-        "start": "2026-09-19T15:30:00Z",
-        "stop": "2026-09-19T15:45:00Z"
+        "start": "2026-10-10T16:00:00Z"
       },
       {
-        "title": "AS Roma vs Internazionale",
-        "start": "2026-09-19T15:45:00Z",
-        "stop": "2026-09-19T18:00:00Z"
+        "title": "Manchester United vs Tottenham Hotspur FC",
+        "start": "2026-10-10T16:15:00Z"
       },
       {
-        "title": "Bare Knuckle Fighting Championship",
-        "start": "2026-09-19T18:00:00Z",
-        "stop": "2026-09-19T20:00:00Z"
+        "title": "Premier League Match Highlights",
+        "start": "2026-10-10T18:30:00Z"
       },
       {
-        "title": "Bare Knuckle Fighting Championship",
-        "start": "2026-09-19T20:00:00Z",
-        "stop": "2026-09-19T22:00:00Z"
+        "title": "Premier League Match Highlights",
+        "start": "2026-10-10T19:00:00Z"
       },
       {
-        "title": "Bare Knuckle Fighting Championship",
-        "start": "2026-09-19T22:00:00Z",
-        "stop": "2026-09-20T00:00:00Z"
+        "title": "Premier League Match Highlights",
+        "start": "2026-10-10T19:30:00Z"
       },
       {
-        "title": "Bare Knuckle Fighting Championship",
-        "start": "2026-09-20T00:00:00Z",
-        "stop": "2026-09-20T02:00:00Z"
+        "title": "Premier League Match Highlights",
+        "start": "2026-10-10T20:00:00Z"
+      },
+      {
+        "title": "SFT Combat",
+        "start": "2026-10-10T20:30:00Z"
+      },
+      {
+        "title": "PFL 3 Welterweights & Lightweights",
+        "start": "2026-10-10T23:30:00Z"
+      },
+      {
+        "title": "PFL 4 Featherweights & Light Heavyweights",
+        "start": "2026-10-11T02:30:00Z"
+      },
+      {
+        "title": "PFL 5 Heavyweights & Womens Featherweights",
+        "start": "2026-10-11T05:30:00Z"
+      },
+      {
+        "title": "PFL 2025 Season",
+        "start": "2026-10-11T08:00:00Z"
+      },
+      {
+        "title": "PFL 2025 Season",
+        "start": "2026-10-11T09:00:00Z"
+      },
+      {
+        "title": "Fubo Sports Network Presents",
+        "start": "2026-10-11T10:00:00Z"
+      },
+      {
+        "title": "Como vs AS Roma",
+        "start": "2026-10-11T10:15:00Z"
       }
     ],
     "Fubo Sports 2": [
       {
-        "title": "Udinese vs Cagliari",
-        "start": "2026-09-19T12:45:00Z",
-        "stop": "2026-09-19T15:15:00Z"
+        "title": "Upcoming Genoa vs Fiorentina",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Upcoming Bournemouth vs Liverpool",
-        "start": "2026-09-19T15:15:00Z",
-        "stop": "2026-09-19T18:15:00Z"
+        "title": "Genoa vs Fiorentina",
+        "start": "2026-10-10T12:45:00Z"
+      },
+      {
+        "title": "Upcoming Crystal Palace vs Nottingham Forest",
+        "start": "2026-10-10T15:15:00Z"
       }
     ],
     "Fubo Sports 3": [
       {
-        "title": "Bologna vs Torino",
-        "start": "2026-09-19T12:45:00Z",
-        "stop": "2026-09-19T15:15:00Z"
-      },
-      {
-        "title": "Upcoming Parma vs Genoa",
-        "start": "2026-09-19T15:15:00Z",
-        "stop": "2026-09-19T18:15:00Z"
+        "title": "Upcoming Hull City vs Everton FC",
+        "start": "2026-10-10T11:30:00Z"
       }
     ],
     "Fubo Sports 4": [
       {
-        "title": "Everton FC vs Ipswich Town",
-        "start": "2026-09-19T13:45:00Z",
-        "stop": "2026-09-19T16:15:00Z"
+        "title": "Upcoming Ipswich Town vs Fulham",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Upcoming Frosinone vs Como",
-        "start": "2026-09-19T16:15:00Z",
-        "stop": "2026-09-19T19:15:00Z"
+        "title": "Ipswich Town vs Fulham",
+        "start": "2026-10-10T13:45:00Z"
+      },
+      {
+        "title": "Upcoming SS Lazio vs Monza",
+        "start": "2026-10-10T16:15:00Z"
       }
     ],
-    "Fubo Sports 5": [],
-    "Fubo Sports 6": [],
-    "Fubo Sports 7": [
+    "Fubo Sports 5": [
       {
-        "title": "Brighton & Hove Albion vs Arsenal FC",
-        "start": "2026-09-19T13:45:00Z",
-        "stop": "2026-09-19T16:15:00Z"
+        "title": "Upcoming Aston Villa vs Brentford",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Upcoming Manchester City vs Sunderland",
-        "start": "2026-09-19T16:15:00Z",
-        "stop": "2026-09-19T19:15:00Z"
+        "title": "Aston Villa vs Brentford",
+        "start": "2026-10-10T13:45:00Z"
+      },
+      {
+        "title": "Upcoming Lecce vs Bologna",
+        "start": "2026-10-10T16:15:00Z"
+      }
+    ],
+    "Fubo Sports 6": [
+      {
+        "title": "Upcoming Chelsea FC vs Bournemouth",
+        "start": "2026-10-10T11:30:00Z"
+      },
+      {
+        "title": "Chelsea FC vs Bournemouth",
+        "start": "2026-10-10T13:45:00Z"
+      },
+      {
+        "title": "Upcoming Sassuolo vs AC Milan",
+        "start": "2026-10-10T16:15:00Z"
+      }
+    ],
+    "Fubo Sports 7": [
+      {
+        "title": "Upcoming Sunderland vs Brighton & Hove Albion",
+        "start": "2026-10-10T11:30:00Z"
+      },
+      {
+        "title": "Sunderland vs Brighton & Hove Albion",
+        "start": "2026-10-10T13:45:00Z"
+      },
+      {
+        "title": "Upcoming Cagliari vs Juventus FC",
+        "start": "2026-10-10T16:15:00Z"
       }
     ],
     "Fubo Sports 8": [
       {
-        "title": "Newcastle United FC vs Hull City",
-        "start": "2026-09-19T13:45:00Z",
-        "stop": "2026-09-19T16:15:00Z"
+        "title": "Upcoming Internazionale vs Parma",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Upcoming Leeds United vs Newcastle United FC",
-        "start": "2026-09-19T16:15:00Z",
-        "stop": "2026-09-19T19:15:00Z"
+        "title": "Internazionale vs Parma",
+        "start": "2026-10-10T15:45:00Z"
       }
     ],
     "Fubo Sports 9": [
       {
-        "title": "Nottingham Forest vs Coventry City",
-        "start": "2026-09-19T16:15:00Z",
-        "stop": "2026-09-19T19:15:00Z"
+        "title": "Upcoming Napoli vs Frosinone",
+        "start": "2026-10-10T11:30:00Z"
+      },
+      {
+        "title": "Napoli vs Frosinone",
+        "start": "2026-10-10T18:30:00Z"
       }
     ],
     "Fubo Sports 10": [
       {
-        "title": "Venezia vs SS Lazio",
-        "start": "2026-09-19T18:30:00Z",
-        "stop": "2026-09-19T21:30:00Z"
+        "title": "Upcoming Xtra Select",
+        "start": "2026-10-10T11:30:00Z"
       }
     ],
     "Coupang Play 1": [
       {
-        "title": "Brighton Hove Albion vs Arsenal",
-        "start": "2026-09-19T14:00:00Z",
-        "stop": "2026-09-19T17:00:00Z"
+        "title": "Arsenal vs Leeds United",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Lyon vs Rennes",
-        "start": "2026-09-19T18:45:00Z",
-        "stop": "2026-09-19T21:45:00Z"
+        "title": "Manchester United vs Tottenham Hotspur",
+        "start": "2026-10-10T16:30:00Z"
       },
       {
-        "title": "San Jose Earthquakes vs Los Angeles FC",
-        "start": "2026-09-19T23:30:00Z",
-        "stop": "2026-09-20T02:30:00Z"
+        "title": "Los Angeles FC vs Vancouver Whitecaps FC",
+        "start": "2026-10-11T02:30:00Z"
       },
       {
-        "title": "Jeonbuk vs Gwangju",
-        "start": "2026-09-20T07:30:00Z",
-        "stop": "2026-09-20T10:30:00Z"
+        "title": "Hull City vs Everton",
+        "start": "2026-10-11T13:00:00Z"
       },
       {
-        "title": "Patriots vs Jaguars",
-        "start": "2026-09-27T17:00:00Z",
-        "stop": "2026-09-27T20:00:00Z"
+        "title": "Real Racing Club de Santander vs Valencia CF",
+        "start": "2026-10-11T19:00:00Z"
       }
     ],
     "Coupang Play 2": [
       {
-        "title": "Paris FC vs Strasbourg",
-        "start": "2026-09-19T15:15:00Z",
-        "stop": "2026-09-19T18:15:00Z"
+        "title": "Chelsea vs Bournemouth",
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "Gangwon vs Jeju SK FC",
-        "start": "2026-09-20T07:30:00Z",
-        "stop": "2026-09-20T10:30:00Z"
+        "title": "Real Madrid vs Villarreal CF",
+        "start": "2026-10-10T19:00:00Z"
       },
       {
-        "title": "Hollywood Casino 400",
-        "start": "2026-09-27T19:00:00Z",
-        "stop": "2026-09-27T22:00:00Z"
+        "title": "Gwangju vs Ulsan",
+        "start": "2026-10-11T05:00:00Z"
+      },
+      {
+        "title": "Crystal Palace vs Nottingham Forest",
+        "start": "2026-10-11T13:00:00Z"
+      },
+      {
+        "title": "Troyes vs Marseille",
+        "start": "2026-10-11T18:45:00Z"
       }
     ],
     "Coupang Play 3": [
       {
-        "title": "Gimpo vs Busan",
-        "start": "2026-09-19T10:00:00Z",
-        "stop": "2026-09-19T13:00:00Z"
+        "title": "Ipswich Town vs Fulham",
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "VfB Stuttgart vs Borussia Dortmund",
-        "start": "2026-09-19T16:30:00Z",
-        "stop": "2026-09-19T19:30:00Z"
+        "title": "Monaco vs Toulouse",
+        "start": "2026-10-10T18:45:00Z"
       },
       {
-        "title": "Pohang vs Seoul",
-        "start": "2026-09-20T10:00:00Z",
-        "stop": "2026-09-20T13:00:00Z"
+        "title": "Suwon vs Ansan",
+        "start": "2026-10-11T05:00:00Z"
       },
       {
-        "title": "Cardinals vs 49ers",
-        "start": "2026-09-27T20:05:00Z",
-        "stop": "2026-09-27T23:05:00Z"
+        "title": "Southampton vs Portsmouth",
+        "start": "2026-10-11T11:00:00Z"
+      },
+      {
+        "title": "Liverpool vs Manchester City",
+        "start": "2026-10-11T15:30:00Z"
       }
     ],
     "Coupang Play 4": [
       {
-        "title": "Seoul Eland vs Daegu",
-        "start": "2026-09-19T10:00:00Z",
-        "stop": "2026-09-19T13:00:00Z"
+        "title": "Sunderland vs Brighton Hove Albion",
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "Nottingham Forest vs Coventry City",
-        "start": "2026-09-19T16:30:00Z",
-        "stop": "2026-09-19T19:30:00Z"
+        "title": "PSG vs Le Mans",
+        "start": "2026-10-10T18:45:00Z"
       },
       {
-        "title": "Incheon vs Daejeon",
-        "start": "2026-09-20T10:00:00Z",
-        "stop": "2026-09-20T13:00:00Z"
+        "title": "Dallas Mavericks vs Houston Rockets",
+        "start": "2026-10-11T10:00:00Z"
       }
     ],
     "Coupang Play 5": [
       {
-        "title": "Newcastle United vs Hull City",
-        "start": "2026-09-19T14:00:00Z",
-        "stop": "2026-09-19T17:00:00Z"
+        "title": "Gimhae FC vs Chungnam Asan",
+        "start": "2026-10-10T07:30:00Z"
       },
       {
-        "title": "Sevilla FC vs FC Barcelona",
-        "start": "2026-09-19T19:00:00Z",
-        "stop": "2026-09-19T22:00:00Z"
+        "title": "Aston Villa vs Brentford",
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "Ansan vs Chungbuk Cheongju",
-        "start": "2026-09-20T07:30:00Z",
-        "stop": "2026-09-20T10:30:00Z"
+        "title": "Singapore Grand Prix Race",
+        "start": "2026-10-11T10:45:00Z"
       }
     ],
     "Coupang Play 6": [
       {
-        "title": "Anyang vs Ulsan",
-        "start": "2026-09-19T10:00:00Z",
-        "stop": "2026-09-19T13:00:00Z"
+        "title": "West Bromwich Albion vs Birmingham City",
+        "start": "2026-10-10T11:30:00Z"
       },
       {
-        "title": "Athletic Club vs Deportivo Alavés",
-        "start": "2026-09-19T14:15:00Z",
-        "stop": "2026-09-19T17:15:00Z"
+        "title": "RB Leipzig vs Eintracht Frankfurt",
+        "start": "2026-10-10T16:30:00Z"
       },
       {
-        "title": "Yongin FC vs Gyeongnam",
-        "start": "2026-09-20T07:30:00Z",
-        "stop": "2026-09-20T10:30:00Z"
+        "title": "FC Köln vs Borussia Mönchengladbach",
+        "start": "2026-10-11T13:30:00Z"
       }
     ],
     "Coupang Play 7": [
       {
-        "title": "Tottenham Hotspur vs Aston Villa",
-        "start": "2026-09-19T11:30:00Z",
-        "stop": "2026-09-19T14:30:00Z"
+        "title": "Cheonan vs Gyeongnam",
+        "start": "2026-10-10T07:30:00Z"
       },
       {
-        "title": "Celta Vigo vs Real Racing Club de Santander",
-        "start": "2026-09-19T16:30:00Z",
-        "stop": "2026-09-19T19:30:00Z"
+        "title": "Bolton vs Stoke City",
+        "start": "2026-10-10T14:00:00Z"
       },
       {
-        "title": "Seongnam vs Hwaseong",
-        "start": "2026-09-20T10:00:00Z",
-        "stop": "2026-09-20T13:00:00Z"
+        "title": "SC Freiburg vs FC Schalke 04",
+        "start": "2026-10-11T15:30:00Z"
       }
     ],
     "Coupang Play 8": [
       {
-        "title": "Everton vs Ipswich Town",
-        "start": "2026-09-19T14:00:00Z",
-        "stop": "2026-09-19T17:00:00Z"
+        "title": "Singapore Grand Prix Sprint",
+        "start": "2026-10-10T08:45:00Z"
       },
       {
-        "title": "Gimhae FC vs Paju Frontier",
-        "start": "2026-09-20T10:00:00Z",
-        "stop": "2026-09-20T13:00:00Z"
+        "title": "Elche CF vs Celta Vigo",
+        "start": "2026-10-11T12:00:00Z"
+      },
+      {
+        "title": "Real Betis Balompié vs CA Osasuna",
+        "start": "2026-10-11T16:30:00Z"
       }
     ],
     "Setanta 1": [
@@ -583,26 +500,96 @@
     ],
     "MonoMax 1": [
       {
-        "title": "Brentford - Chelsea",
-        "start": "2026-09-18T19:00:00Z",
-        "stop": "2026-09-18T22:00:00Z"
+        "title": "Chiangrai TSC FC - Khelang United",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Aston Villa - Brentford",
+        "start": "2026-10-10T14:00:00Z"
       }
     ],
-    "MonoMax 2": [],
+    "MonoMax 2": [
+      {
+        "title": "PITCHAYA BUNDIT COLLEGE - Udon Banjan United",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Chelsea - AFC Bournemouth",
+        "start": "2026-10-10T14:00:00Z"
+      }
+    ],
     "MonoMax 3": [
       {
-        "title": "FC Groningen - Ajax Amsterdam",
-        "start": "2026-10-18T14:45:00Z",
-        "stop": "2026-10-18T17:45:00Z"
+        "title": "BANBUENG FOOTBALL CLUB - MNK Soccer Club",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Ipswich Town - Fulham",
+        "start": "2026-10-10T14:00:00Z"
       }
     ],
-    "MonoMax 4": [],
-    "MonoMax 5": [],
-    "MonoMax 6": [],
-    "MonoMax 7": [],
-    "MonoMax 8": [],
-    "MonoMax 9": [],
-    "MonoMax 10": [],
+    "MonoMax 4": [
+      {
+        "title": "Angthong FC - Ayutthaya PK FC",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Sunderland - Brighton & Hove Albion",
+        "start": "2026-10-10T14:00:00Z"
+      }
+    ],
+    "MonoMax 5": [
+      {
+        "title": "Chamchuri United - Prime Bangkok",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Manchester United - Tottenham Hotspur",
+        "start": "2026-10-10T16:30:00Z"
+      }
+    ],
+    "MonoMax 6": [
+      {
+        "title": "LOPBURI POMA FC - Pathumthani University",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Manchester United - Tottenham Hotspur",
+        "start": "2026-10-10T16:30:00Z"
+      }
+    ],
+    "MonoMax 7": [
+      {
+        "title": "Assumption United - Royal Thai Army FC",
+        "start": "2026-10-10T08:30:00Z"
+      },
+      {
+        "title": "Bolton Wanderers - Stoke City",
+        "start": "2026-10-10T14:00:00Z"
+      }
+    ],
+    "MonoMax 8": [
+      {
+        "title": "Arsenal - Leeds United",
+        "start": "2026-10-10T11:30:00Z"
+      }
+    ],
+    "MonoMax 9": [
+      {
+        "title": "Arsenal - Leeds United",
+        "start": "2026-10-10T11:30:00Z"
+      },
+      {
+        "title": "Ajax Amsterdam - NEC Nijmegen",
+        "start": "2026-10-10T19:00:00Z"
+      }
+    ],
+    "MonoMax 10": [
+      {
+        "title": "West Bromwich Albion - Birmingham City",
+        "start": "2026-10-10T11:30:00Z"
+      }
+    ],
     "Sky Sports+ 1": [
       {
         "title": "Plymouth vs Burton",
@@ -663,9 +650,8 @@
     ],
     "MonoMax 19": [
       {
-        "title": "Coventry City - Aston Villa",
-        "start": "2026-09-16T19:00:00Z",
-        "stop": "2026-09-16T22:00:00Z"
+        "title": "SAGA Hisamitsu Springs - ALEEZA AICHI",
+        "start": "2026-10-10T09:05:00Z"
       }
     ],
     "MonoMax 20": [
@@ -712,61 +698,57 @@
     ],
     "Peacock 11": [
       {
-        "title": "IMSA Carrera Cup Indianapolis 1",
-        "start": "2026-09-19T16:30:00Z",
-        "stop": "2026-09-19T17:45:00Z"
-      },
-      {
-        "title": "IMSA Indianapolis Qualifying",
-        "start": "2026-09-19T21:00:00Z",
-        "stop": "2026-09-19T22:50:00Z"
+        "title": "Goal Rush: Matchweek 6",
+        "start": "2026-10-10T13:50:00Z",
+        "stop": "2026-10-10T16:30:00Z"
       }
     ],
     "Coupang Play 9": [
       {
-        "title": "Borussia Mönchengladbach vs 1. FSV Mainz 05",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T16:30:00Z"
+        "title": "Singapore Grand Prix Qualifying",
+        "start": "2026-10-10T12:00:00Z"
       },
       {
-        "title": "Getafe vs Málaga",
-        "start": "2026-09-20T12:00:00Z",
-        "stop": "2026-09-20T15:00:00Z"
+        "title": "Real Sociedad vs Deportivo de La Coruña",
+        "start": "2026-10-11T14:15:00Z"
       }
     ],
     "Coupang Play 10": [
       {
-        "title": "Hamburger SV vs FC Köln",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T16:30:00Z"
+        "title": "FC Augsburg vs FC Bayern München",
+        "start": "2026-10-10T13:30:00Z"
+      },
+      {
+        "title": "Nice vs Strasbourg",
+        "start": "2026-10-11T13:00:00Z"
       }
     ],
     "Coupang Play 11": [
       {
-        "title": "Eintracht Frankfurt vs SC Freiburg",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T16:30:00Z"
+        "title": "1. FC Union Berlin vs SV Elversberg",
+        "start": "2026-10-10T13:30:00Z"
+      },
+      {
+        "title": "Beşiktaş JK vs Kocaelispor",
+        "start": "2026-10-11T16:00:00Z"
       }
     ],
     "Coupang Play 12": [
       {
-        "title": "SV Werder Bremen vs FC Augsburg",
-        "start": "2026-09-19T13:30:00Z",
-        "stop": "2026-09-19T16:30:00Z"
+        "title": "1. FSV Mainz 05 vs Bayer 04 Leverkusen",
+        "start": "2026-10-10T13:30:00Z"
       }
     ],
     "Coupang Play 13": [
       {
-        "title": "CA Osasuna vs Rayo Vallecano",
-        "start": "2026-09-19T12:00:00Z",
-        "stop": "2026-09-19T15:00:00Z"
+        "title": "SC Paderborn 07 vs VfB Stuttgart",
+        "start": "2026-10-10T13:30:00Z"
       }
     ],
     "Coupang Play 14": [
       {
-        "title": "Millwall vs West Ham United",
-        "start": "2026-09-19T11:30:00Z",
-        "stop": "2026-09-19T14:30:00Z"
+        "title": "TSG Hoffenheim vs Hamburger SV",
+        "start": "2026-10-10T13:30:00Z"
       }
     ],
     "Setanta 6": [
@@ -1049,6 +1031,116 @@
       {
         "title": "U15 Baseball World Cup 2026 Day 6 Kukulkan",
         "start": "2026-10-01T16:28:00Z"
+      }
+    ],
+    "MonoMax 30": [
+      {
+        "title": "Uthai Thani FC - Rasisalai United",
+        "start": "2026-10-10T12:00:00Z"
+      }
+    ],
+    "MonoMax 32": [
+      {
+        "title": "Nakhonpathom United - Muangthong United",
+        "start": "2026-10-10T11:00:00Z"
+      }
+    ],
+    "MonoMax 33": [
+      {
+        "title": "Police Tero FC - Nakhonratchasima Mazda FC",
+        "start": "2026-10-10T11:30:00Z"
+      }
+    ],
+    "MonoMax 34": [
+      {
+        "title": "Muang Loei United - Pattaya United",
+        "start": "2026-10-10T12:00:00Z"
+      }
+    ],
+    "MonoMax 35": [
+      {
+        "title": "Chiangmai United - Kasetsart FC",
+        "start": "2026-10-10T12:30:00Z"
+      }
+    ],
+    "MonoMax 36": [
+      {
+        "title": "Kamphaengphet FC - PAKNAMPHO FC",
+        "start": "2026-10-10T10:00:00Z"
+      }
+    ],
+    "MonoMax 38": [
+      {
+        "title": "Padriew City - BFB Pattaya City",
+        "start": "2026-10-10T10:00:00Z"
+      }
+    ],
+    "MonoMax 39": [
+      {
+        "title": "Burapha United - Customs United",
+        "start": "2026-10-10T10:00:00Z"
+      }
+    ],
+    "MonoMax 40": [
+      {
+        "title": "PSU Suratthani City - FC Yala",
+        "start": "2026-10-10T10:00:00Z"
+      }
+    ],
+    "MonoMax 41": [
+      {
+        "title": "Chiangmai FC - Northern Nakhonmaesot United",
+        "start": "2026-10-10T11:00:00Z"
+      }
+    ],
+    "MonoMax 42": [
+      {
+        "title": "Suphanburi FC - Samutsongkhram City",
+        "start": "2026-10-10T11:00:00Z"
+      }
+    ],
+    "MonoMax 43": [
+      {
+        "title": "Thapluang United - Samutsakhon City",
+        "start": "2026-10-10T11:00:00Z"
+      }
+    ],
+    "MonoMax 44": [
+      {
+        "title": "Nakhonsi United - YALA CITY",
+        "start": "2026-10-10T11:00:00Z"
+      }
+    ],
+    "MonoMax 45": [
+      {
+        "title": "Nara FC - Samui United",
+        "start": "2026-10-10T12:00:00Z"
+      }
+    ],
+    "Coupang Play 15": [
+      {
+        "title": "Rayo Vallecano vs Athletic Club",
+        "start": "2026-10-10T12:00:00Z"
+      },
+      {
+        "title": "FC Barcelona vs Getafe",
+        "start": "2026-10-10T16:30:00Z"
+      }
+    ],
+    "Coupang Play 16": [
+      {
+        "title": "Deportivo Alavés vs Atlético de Madrid",
+        "start": "2026-10-10T13:45:00Z"
+      }
+    ],
+    "Coupang Play 17": [
+      {
+        "title": "SV Darmstadt 98 vs FC Energie Cottbus",
+        "start": "2026-10-10T11:00:00Z"
+      },
+      {
+        "title": "LOSC vs Le Havre",
+        "start": "2026-10-10T15:15:00Z"
       }
     ]
   }
