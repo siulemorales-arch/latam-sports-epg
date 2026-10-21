@@ -10,7 +10,7 @@ from xml.etree import ElementTree as XML
 from zoneinfo import ZoneInfo
 
 
-CHANNEL_ID = "globo.sp.brasil.latam"
+CHANNEL_IDS = ("globo.sp.brasil.latam", "globo.sp.latam")
 NAME = "Globo SP"
 GUIDE = "https://americatvguide.com/pt/br/channel/tv_globo_sao_paulo"
 BRAZIL = ZoneInfo("America/Sao_Paulo")
@@ -51,24 +51,28 @@ def main():
     path = Path("epg.xml")
     document = XML.parse(path)
     root = document.getroot()
-    channels = [c for c in root.findall("channel") if c.get("id") == CHANNEL_ID]
-    if len(channels) > 1:
-        raise SystemExit(f"ID duplicado: {CHANNEL_ID}")
-    if not channels:
-        channel = XML.Element("channel", {"id": CHANNEL_ID})
-        XML.SubElement(channel, "display-name", {"lang": "pt"}).text = NAME
-        XML.SubElement(channel, "display-name", {"lang": "pt"}).text = "TV Globo São Paulo"
-        root.insert(len(root.findall("channel")), channel)
+    existing = {c.get("id"): c for c in root.findall("channel")}
+    for channel_id in CHANNEL_IDS:
+        channels = [c for c in root.findall("channel") if c.get("id") == channel_id]
+        if len(channels) > 1:
+            raise SystemExit(f"ID duplicado: {channel_id}")
+        if not channels:
+            channel = XML.Element("channel", {"id": channel_id})
+            XML.SubElement(channel, "display-name", {"lang": "pt"}).text = NAME
+            XML.SubElement(channel, "display-name", {"lang": "pt"}).text = "TV Globo São Paulo"
+            root.insert(len(root.findall("channel")), channel)
+            existing[channel_id] = channel
     for programme in list(root.findall("programme")):
-        if programme.get("channel") == CHANNEL_ID:
+        if programme.get("channel") in CHANNEL_IDS:
             root.remove(programme)
-    for start, stop, title in shows:
-        programme = XML.SubElement(root, "programme", {
-            "start": start.strftime("%Y%m%d%H%M%S %z"),
-            "stop": stop.strftime("%Y%m%d%H%M%S %z"),
-            "channel": CHANNEL_ID,
-        })
-        XML.SubElement(programme, "title", {"lang": "pt"}).text = title
+    for channel_id in CHANNEL_IDS:
+        for start, stop, title in shows:
+            programme = XML.SubElement(root, "programme", {
+                "start": start.strftime("%Y%m%d%H%M%S %z"),
+                "stop": stop.strftime("%Y%m%d%H%M%S %z"),
+                "channel": channel_id,
+            })
+            XML.SubElement(programme, "title", {"lang": "pt"}).text = title
     XML.indent(root, space="  ")
     temporary = path.with_suffix(".xml.tmp")
     document.write(temporary, encoding="utf-8", xml_declaration=True)

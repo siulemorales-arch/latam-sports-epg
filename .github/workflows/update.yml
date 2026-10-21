@@ -130,6 +130,29 @@ jobs:
           assert len(telemundo) >= 8, f'Telemundo Deportes Ahora sin guía completa: {len(telemundo)}'
           telemundo_until=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in telemundo)
           assert telemundo_until >= datetime.now(timezone.utc) + timedelta(hours=12), f'Telemundo Deportes Ahora desactualizado: {telemundo_until}'
+          # Evita volver a publicar vacías las señales lineales reportadas por
+          # el usuario. Los canales PPV/manuales se excluyen porque solo tienen
+          # eventos cuando el proveedor anuncia una transmisión.
+          monitored={
+              'televen.venezuela.latam': (8, 12),
+              'caracol.colombia.latam': (4, 6),
+              'caracol.internacional.latam': (4, 6),
+              'cinemax.venezuela.latam': (3, 6),
+              'cinemax.mexico.latam': (3, 6),
+              'cinemax.panregional.latam': (3, 6),
+              'max.anime.latinoamerica.latam': (3, 6),
+              'max.anime.mexico.latam': (3, 6),
+              'max.anime.venezuela.latam': (3, 6),
+              'globo.sp.latam': (20, 12),
+              'globo.sp.brasil.latam': (20, 12),
+          }
+          monitored_status={}
+          for cid, (minimum, horizon_hours) in monitored.items():
+              items=[p for p in programmes if p.get('channel') == cid]
+              assert len(items) >= minimum, f'{cid} sin guía completa: {len(items)}'
+              coverage=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items)
+              assert coverage >= datetime.now(timezone.utc) + timedelta(hours=horizon_hours), f'{cid} desactualizado: {coverage}'
+              monitored_status[cid]=(len(items), coverage)
           limit=datetime.now(timezone.utc) + timedelta(hours=24)
           future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
           assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
@@ -147,7 +170,7 @@ jobs:
           scheduled=brazil_ids-{'sportv.4.brasil.latam'}
           empty={cid: brazil_counts[cid] for cid in scheduled if not brazil_counts[cid]}
           assert not empty, f'Señales Brasil sin programación: {empty}'
-          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; GETV: {getv_counts}, hasta {getv_until}; Telemundo: {len(telemundo)}, hasta {telemundo_until}; Brasil: {brazil_counts}')
+          print(f'{len(channels)} canales, {len(programmes)} programas; Eurosport: {euro_counts}; México: {mexico_counts}; Mega Chile: {len(mega)}; GETV: {getv_counts}, hasta {getv_until}; Telemundo: {len(telemundo)}, hasta {telemundo_until}; vigilados: {monitored_status}; Brasil: {brazil_counts}')
           PY
       - name: Limpiar copia temporal
         run: rm epg.previous.xml
