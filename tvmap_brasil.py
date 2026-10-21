@@ -2,6 +2,7 @@
 """Actualiza GE TV y Premiere 1–9 desde la API pública de TVMap."""
 
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -9,9 +10,12 @@ from urllib.request import Request, urlopen
 from xml.etree import ElementTree as XML
 from zoneinfo import ZoneInfo
 
+from bs4 import BeautifulSoup
+
 
 ET = ZoneInfo("America/New_York")
 BASE = "https://tvmap.com.br/api"
+GETV_BACKUP = "https://www.guiadetv.com/canal/ge-tv"
 CHANNELS = (
     ("ge.tv.brasil.latam", "GETV", "GE"),
     ("premiere.1.brasil.latam", "Premiere 1", "Premiere-HD"),
@@ -47,6 +51,38 @@ def fetch(slug):
     return sorted(unique.values())
 
 
+def fetch_getv_backup():
+    """Lee la parrilla fechada de GE TV cuando TVMap publica el canal vacío."""
+    request = Request(GETV_BACKUP, headers={"User-Agent": "Mozilla/5.0 (latam-sports-epg)"})
+    with urlopen(request, timeout=30) as response:
+        page = BeautifulSoup(response.read(), "html.parser")
+
+    unique = {}
+    for row in page.select("li"):
+        clock = row.find("time", attrs={"datetime": True})
+        link = row.select_one('a[href^="/programa/"]')
+        if clock is None or link is None:
+            continue
+        try:
+            start = datetime.fromisoformat(clock["datetime"]).astimezone(ET)
+        except (TypeError, ValueError):
+            continue
+        title = " ".join(link.get_text(" ", strip=True).split())
+        duration = clock.find_next_sibling("span")
+        duration_text = duration.get_text(" ", strip=True).lower() if duration else ""
+        hours = re.search(r"(\d+)\s*h", duration_text)
+        minutes = re.search(r"(\d+)\s*min", duration_text)
+        length = timedelta(
+            hours=int(hours.group(1)) if hours else 0,
+            minutes=int(minutes.group(1)) if minutes else 0,
+        )
+        if not title or length <= timedelta(0):
+            continue
+        stop = start + length
+        unique[(start, title)] = (start, stop, title, "")
+    return sorted(unique.values())
+
+
 def main():
     schedules = {}
     unavailable = {}
@@ -63,11 +99,20 @@ def main():
                 unavailable[name] = "sin programación"
                 continue
             schedules[channel_id] = shows
-    # GE TV es la señal crítica de este extractor. Una guía vacía de un
-    # Premiere no debe bloquear GE TV ni los demás canales válidos; en ese
-    # caso se conserva la programación previa de la señal afectada.
+    # GE TV es la señal crítica de este extractor. TVMap a veces mantiene
+    # el canal publicado pero devuelve exhibitions vacío; en ese caso usamos
+    # la parrilla fechada de Guia de TV y conservamos los mismos IDs/alias.
     if len(schedules.get("ge.tv.brasil.latam", [])) < 8:
-        raise SystemExit("TVMap devolvió programación insuficiente para GE TV")
+        try:
+            backup = fetch_getv_backup()
+        except Exception as exc:
+            backup = []
+            unavailable["GETV respaldo"] = str(exc)
+        if len(backup) >= 8:
+            schedules["ge.tv.brasil.latam"] = backup
+            unavailable.pop("GETV", None)
+        else:
+            raise SystemExit("GE TV no tuvo programación suficiente en TVMap ni en la fuente de respaldo")
     path = Path("epg.xml")
     document = XML.parse(path)
     root = document.getroot()
