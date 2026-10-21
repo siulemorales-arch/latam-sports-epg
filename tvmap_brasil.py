@@ -49,15 +49,24 @@ def fetch(slug):
 
 def main():
     schedules = {}
+    unavailable = {}
     with ThreadPoolExecutor(max_workers=6) as executor:
         pending = {executor.submit(fetch, slug): (channel_id, name) for channel_id, name, slug in CHANNELS}
         for future in as_completed(pending):
             channel_id, name = pending[future]
-            shows = future.result()
+            try:
+                shows = future.result()
+            except Exception as exc:
+                unavailable[name] = str(exc)
+                continue
             if not shows:
-                raise SystemExit(f"TVMap no devolvió programación para {name}")
+                unavailable[name] = "sin programación"
+                continue
             schedules[channel_id] = shows
-    if len(schedules["ge.tv.brasil.latam"]) < 8:
+    # GE TV es la señal crítica de este extractor. Una guía vacía de un
+    # Premiere no debe bloquear GE TV ni los demás canales válidos; en ese
+    # caso se conserva la programación previa de la señal afectada.
+    if len(schedules.get("ge.tv.brasil.latam", [])) < 8:
         raise SystemExit("TVMap devolvió programación insuficiente para GE TV")
     path = Path("epg.xml")
     document = XML.parse(path)
@@ -70,7 +79,7 @@ def main():
             XML.SubElement(channel, "display-name", {"lang": "pt"}).text = name
             root.insert(insert_at, channel)
             insert_at += 1
-    output_channels = list(CHANNELS)
+    output_channels = [item for item in CHANNELS if item[0] in schedules]
     # Conserva los dos IDs existentes y publica la misma guía en ambos.
     if "getv.latam" in existing:
         schedules["getv.latam"] = schedules["ge.tv.brasil.latam"]
@@ -103,7 +112,14 @@ def main():
     temporary = path.with_suffix(".xml.tmp")
     document.write(temporary, encoding="utf-8", xml_declaration=True)
     temporary.replace(path)
-    print("TVMap Brasil: " + ", ".join(f"{name}: {len(schedules[channel_id])}" for channel_id, name, _slug in CHANNELS))
+    print("TVMap Brasil: " + ", ".join(
+        f"{name}: {len(schedules[channel_id])}"
+        for channel_id, name, _slug in CHANNELS if channel_id in schedules
+    ))
+    if unavailable:
+        print("TVMap sin datos; se conservó la guía anterior: " + ", ".join(
+            f"{name} ({reason})" for name, reason in sorted(unavailable.items())
+        ))
 
 
 if __name__ == "__main__":

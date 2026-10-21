@@ -1062,8 +1062,15 @@ def load_previous_guide(path="epg.xml"):
             title = clean(programme.findtext("title"))
             if not name or not title:
                 continue
-            start = parse_xmltv_datetime(programme.get("start", ""))
-            stop = parse_xmltv_datetime(programme.get("stop", ""))
+            start_raw = programme.get("start", "")
+            stop_raw = programme.get("stop", "")
+            if not start_raw or not stop_raw:
+                continue
+            try:
+                start = parse_xmltv_datetime(start_raw)
+                stop = parse_xmltv_datetime(stop_raw)
+            except (TypeError, ValueError):
+                continue
             if stop > now and stop > start:
                 previous.setdefault(name, []).append(
                     (start, stop, title, "Última guía válida")
