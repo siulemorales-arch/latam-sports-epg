@@ -7,11 +7,14 @@ from zoneinfo import ZoneInfo
 import json
 import re
 import xml.etree.ElementTree as ET
+from urllib.parse import parse_qs, urlparse
 
 import requests
+from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+from playwright.sync_api import sync_playwright
 
 
-SOURCE_URL = "https://www.youtube.com/@SBTNews/streams?hl=pt-BR&gl=BR"
+SOURCE_URL = "https://www.youtube.com/@SBTNews/streams?hl=en&gl=US"
 WATCH_URL = "https://www.youtube.com/watch?v={video_id}&hl=pt-BR&gl=BR"
 CHANNEL_ID = "sbt.news.brasil.latam"
 DISPLAY_NAMES = ("SBT News Brasil", "SBT News")
@@ -41,38 +44,6 @@ def extract_json(html, markers):
     return None
 
 
-def text_value(value):
-    if not isinstance(value, dict):
-        return ""
-    if value.get("simpleText"):
-        return value["simpleText"].strip()
-    return "".join(run.get("text", "") for run in value.get("runs", [])).strip()
-
-
-def walk(value):
-    if isinstance(value, dict):
-        yield value
-        for child in value.values():
-            yield from walk(child)
-    elif isinstance(value, list):
-        for child in value:
-            yield from walk(child)
-
-
-def is_live_now(renderer):
-    for node in walk(renderer):
-        if node.get("style") in {"BADGE_STYLE_TYPE_LIVE_NOW", "LIVE"}:
-            return True
-        label = node.get("label") or node.get("simpleText")
-        if isinstance(label, str) and label.casefold() in {
-            "ao vivo",
-            "live",
-            "live now",
-        }:
-            return True
-    return False
-
-
 def live_start(video_id, session):
     response = session.get(
         WATCH_URL.format(video_id=video_id),
@@ -99,38 +70,62 @@ def live_start(video_id, session):
 
 def official_events():
     session = requests.Session()
-    response = session.get(SOURCE_URL, timeout=30, headers=HEADERS)
-    response.raise_for_status()
-    data = extract_json(
-        response.text,
-        ("var ytInitialData =", "ytInitialData ="),
-    )
-    if not data:
-        raise RuntimeError("YouTube no devolvió los datos de SBT News")
-
     events = {}
-    for renderer in walk(data):
-        video_id = renderer.get("videoId")
-        title = text_value(renderer.get("title"))
-        if not video_id or not title:
-            continue
+    schedule_pattern = re.compile(
+        r"Scheduled for\s+(\d{1,2}/\d{1,2}/\d{2,4},\s+\d{1,2}:\d{2}\s+[AP]M)",
+        re.IGNORECASE,
+    )
+    try:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(
+                headless=True,
+                args=["--no-sandbox", "--disable-dev-shm-usage"],
+            )
+            context = browser.new_context(
+                locale="en-US",
+                timezone_id="America/New_York",
+            )
+            page = context.new_page()
+            page.goto(SOURCE_URL, wait_until="domcontentloaded", timeout=60000)
+            cards = page.locator("ytd-rich-item-renderer")
+            cards.first.wait_for(state="attached", timeout=30000)
+            page.wait_for_timeout(2500)
 
-        upcoming = renderer.get("upcomingEventData", {})
-        raw_start = upcoming.get("startTime")
-        start = None
-        if raw_start:
-            try:
-                start = datetime.fromtimestamp(int(raw_start), timezone.utc)
-            except (TypeError, ValueError, OverflowError):
-                pass
-        elif is_live_now(renderer):
-            try:
-                start = live_start(video_id, session)
-            except requests.RequestException:
+            for index in range(min(cards.count(), 80)):
+                card = cards.nth(index)
+                links = card.locator("a#video-title-link, a#video-title")
+                if not links.count():
+                    continue
+                link = links.first
+                title = (link.get_attribute("title") or link.inner_text()).strip()
+                href = link.get_attribute("href") or ""
+                video_id = parse_qs(urlparse(href).query).get("v", [""])[0]
+                if not video_id or not title:
+                    continue
+
+                metadata = card.inner_text()
+                match = schedule_pattern.search(metadata)
                 start = None
+                if match:
+                    raw_start = match.group(1)
+                    year_format = "%Y" if len(raw_start.split(",", 1)[0].split("/")[-1]) == 4 else "%y"
+                    start = datetime.strptime(
+                        raw_start,
+                        f"%m/%d/{year_format}, %I:%M %p",
+                    ).replace(tzinfo=ET_ZONE)
+                elif "watching" in metadata.casefold():
+                    try:
+                        start = live_start(video_id, session)
+                    except requests.RequestException:
+                        start = None
 
-        if start:
-            events[video_id] = (start.astimezone(ET_ZONE), title)
+                if start:
+                    events[video_id] = (start.astimezone(ET_ZONE), title)
+
+            context.close()
+            browser.close()
+    except PlaywrightTimeoutError as exc:
+        raise RuntimeError("YouTube no cargó la agenda oficial de SBT News") from exc
 
     return sorted(events.values(), key=lambda item: item[0])
 
@@ -171,6 +166,10 @@ def main():
         for event in events
         if event[0].astimezone(timezone.utc) >= now - timedelta(hours=8)
     ]
+    print(
+        f"SBT News detectó {len(events)} emisiones oficiales; "
+        f"{len(future)} vigentes o futuras"
+    )
     if (
         len(future) < 5
         or max(start for start, _title in future).astimezone(timezone.utc)
