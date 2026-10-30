@@ -137,7 +137,7 @@ jobs:
           # el usuario. Los canales PPV/manuales se excluyen porque solo tienen
           # eventos cuando el proveedor anuncia una transmisión.
           monitored={
-              'televen.venezuela.latam': (8, 12),
+              'televen.venezuela.latam': (8, 6),
               'caracol.colombia.latam': (4, 6),
               'caracol.internacional.latam': (4, 6),
               'cinemax.venezuela.latam': (3, 6),
