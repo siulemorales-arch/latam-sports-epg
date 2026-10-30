@@ -93,11 +93,23 @@ def official_events():
 
             for index in range(min(cards.count(), 80)):
                 card = cards.nth(index)
-                links = card.locator("a#video-title-link, a#video-title")
+                # YouTube migró las tarjetas de emisiones al componente
+                # yt-lockup-view-model. Conservamos también los selectores
+                # anteriores para que el extractor tolere ambos diseños.
+                links = card.locator(
+                    "a.ytLockupMetadataViewModelTitle, "
+                    "h3 a[href*='/watch?v='], "
+                    "a#video-title-link, a#video-title"
+                )
                 if not links.count():
                     continue
                 link = links.first
-                title = (link.get_attribute("title") or link.inner_text()).strip()
+                heading = card.locator("h3[title]")
+                title = (
+                    (heading.first.get_attribute("title") if heading.count() else None)
+                    or link.get_attribute("title")
+                    or link.inner_text()
+                ).strip()
                 href = link.get_attribute("href") or ""
                 video_id = parse_qs(urlparse(href).query).get("v", [""])[0]
                 if not video_id or not title:
