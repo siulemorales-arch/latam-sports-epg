@@ -285,7 +285,7 @@ def scrape_gato_channel(url, name):
         html = get(page_url)
         soup = BeautifulSoup(html, "html.parser")
         target = None
-        for table in soup.find_all("table"):
+        for table in soup.select("table.tbl_EPG"):
             heads = clean(table.get_text(" "))
             if "Hora Inicio" in heads and "Hora Fin" in heads and "Programa" in heads:
                 target = table; break
@@ -307,7 +307,13 @@ def scrape_gato_channel(url, name):
                 start = parse_clock(times[0], guide_day, tz)
                 stop = parse_clock(times[1], guide_day, tz)
             except ValueError: continue
-            if stop <= start: stop += timedelta(days=1)
+            if stop <= start:
+                if tr.select_one(".tbl_EPG_TimesColumnOutOfSchedule"):
+                    # Overnight carry-in belongs to the previous date, not
+                    # the end of this date. GatoTV marks it explicitly.
+                    start -= timedelta(days=1)
+                else:
+                    stop += timedelta(days=1)
             out.append((start, stop, title, "GatoTV"))
     return out
 
@@ -995,38 +1001,28 @@ def load_manual_channels(path=MANUAL_CHANNELS):
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
         result = {}
-        now = datetime.now(timezone.utc)
-        window_stop = now + timedelta(days=3)
         for name, items in payload.get("channels", {}).items():
             shows = []
             for item in items:
                 title = clean(item.get("title"))
                 if not title:
                     continue
-                start = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
-                stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
-                if stop > start:
-                    shows.append((start, stop, title, "Captura manual verificada"))
-            shows.sort(key=lambda item: item[0])
-            fillers = []
-            cursor = now
-            for show_start, show_stop, _title, _source in shows:
-                if show_stop <= now or show_start >= window_stop:
+                try:
+                    if not isinstance(item.get("start"), str) or not isinstance(item.get("stop"), str):
+                        raise ValueError("inicio o fin ausente/no válido")
+                    start = datetime.fromisoformat(item["start"].replace("Z", "+00:00"))
+                    stop = datetime.fromisoformat(item["stop"].replace("Z", "+00:00"))
+                    if start.tzinfo is None or stop.tzinfo is None or stop <= start:
+                        raise ValueError("intervalo inválido")
+                except (KeyError, TypeError, ValueError) as exc:
+                    print(f"Captura omitida en {name}: {title}: {exc}", file=sys.stderr)
                     continue
-                if show_start > cursor:
-                    fillers.append((
-                        cursor, show_start,
-                        f"{name} — No event scheduled",
-                        "Relleno manual explícito",
-                    ))
-                cursor = max(cursor, show_stop)
-            if cursor < window_stop:
-                fillers.append((
-                    cursor, window_stop,
-                    f"{name} — No event scheduled",
-                    "Relleno manual explícito",
-                ))
-            result[name] = shows + fillers
+                shows.append((start, stop, title, "Captura manual verificada"))
+            shows.sort(key=lambda item: item[0])
+            # No inventar una parrilla 'sin eventos' a partir de capturas
+            # ausentes o antiguas. manual_overlay conserva inicios verificados
+            # sin hora final, sin inferir su duración.
+            result[name] = shows
         return result
     except Exception as e:
         print(f"Programación manual omitida: {e}", file=sys.stderr)
@@ -1136,7 +1132,16 @@ def main():
         channels[name] = shows
     for name, shows in scrape_telemundo_sports().items():
         channels[name] = shows
-    for name, shows in scrape_venezuela_epg().items():
+    venezuela = scrape_venezuela_epg()
+    televen = venezuela.get("Televen (Venezuela)", [])
+    if (len(televen) < 8 or
+            max((show[1] for show in televen), default=datetime.min.replace(tzinfo=timezone.utc))
+            < datetime.now(timezone.utc) + timedelta(hours=6)):
+        # Independent, dated guide for the same Venezuelan feed. Never use
+        # stale official data to overwrite a verified current alternative.
+        from televen_fallback import fetch as scrape_televen
+        venezuela.update(scrape_televen())
+    for name, shows in venezuela.items():
         channels[name] = shows
     for name, shows in scrape_fox_one_mexico().items():
         channels[name] = shows

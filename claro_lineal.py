@@ -3,6 +3,9 @@
 
 import html
 import re
+import time
+from http.client import IncompleteRead
+from urllib.error import HTTPError, URLError
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -19,10 +22,26 @@ ITEM = re.compile(r'href="/es/mx/c/claro-sports/(\d{6})/[^\"]+" title="([^\"]+)"
 HEADING = re.compile(r'<h5>Hoy - (\d{1,2})/(\d{1,2})/(\d{2})')
 
 
+def fetch_page():
+    """Retry transient transport failures without accepting stale/empty data."""
+    for attempt, timeout in enumerate((30, 45, 60)):
+        request = Request(GUIDE, headers={"User-Agent": "Mozilla/5.0 (latam-sports-epg)"})
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                return response.read().decode("utf-8")
+        except HTTPError as exc:
+            # Access denial and other permanent errors need a real source fix.
+            if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (URLError, TimeoutError, ConnectionError, IncompleteRead):
+            if attempt == 2:
+                raise
+        print(f"{NAME}: fallo temporal de fuente; reintento {attempt + 2}/3")
+        time.sleep(2 * (attempt + 1))
+
+
 def schedule():
-    request = Request(GUIDE, headers={"User-Agent": "Mozilla/5.0 (latam-sports-epg)"})
-    with urlopen(request, timeout=30) as response:
-        page = response.read().decode("utf-8")
+    page = fetch_page()
     today = HEADING.search(page)
     if not today:
         raise ValueError("La guía de Claro Sports no publicó la fecha de hoy")

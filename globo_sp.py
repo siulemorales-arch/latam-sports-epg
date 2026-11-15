@@ -3,6 +3,9 @@
 
 import html
 import re
+import time
+from http.client import IncompleteRead
+from urllib.error import HTTPError, URLError
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -19,10 +22,26 @@ ITEM = re.compile(r'href="/pt/br/c/tv-globo-sao-paulo/(\d{6})/[^\"]+" title="([^
 HEADING = re.compile(r'<h5>Hoje - (\d{1,2})/(\d{1,2})/(\d{2})')
 
 
+def fetch_page():
+    """Retry transient transport failures without accepting stale/empty data."""
+    for attempt, timeout in enumerate((30, 45, 60)):
+        request = Request(GUIDE, headers={"User-Agent": "Mozilla/5.0 (latam-sports-epg)"})
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                return response.read().decode("utf-8")
+        except HTTPError as exc:
+            # Access denial and other permanent errors need a real source fix.
+            if exc.code not in (408, 429, 500, 502, 503, 504) or attempt == 2:
+                raise
+        except (URLError, TimeoutError, ConnectionError, IncompleteRead):
+            if attempt == 2:
+                raise
+        print(f"{NAME}: fallo temporal de fuente; reintento {attempt + 2}/3")
+        time.sleep(2 * (attempt + 1))
+
+
 def fetch():
-    request = Request(GUIDE, headers={"User-Agent": "Mozilla/5.0 (latam-sports-epg)"})
-    with urlopen(request, timeout=30) as response:
-        page = response.read().decode("utf-8")
+    page = fetch_page()
     match = HEADING.search(page)
     if not match:
         raise SystemExit("La guía de Globo SP no publicó su fecha")
@@ -41,12 +60,15 @@ def fetch():
         start = datetime(on_date.year, on_date.month, on_date.day, hour, minute, tzinfo=BRAZIL)
         starts.append((start.astimezone(ET), title))
     starts = sorted(set(starts))
-    return [(start, starts[index + 1][0], title) for index, (start, title) in enumerate(starts[:-1])]
+    return [(start, starts[index + 1][0], title)
+            for index, (start, title) in enumerate(starts[:-1])
+            if starts[index + 1][0] > start and title]
 
 
 def main():
     shows = fetch()
-    if len(shows) < 20:
+    if (len(shows) < 20 or
+            max(stop for _start, stop, _title in shows) < datetime.now(ET) + timedelta(hours=12)):
         raise SystemExit(f"Guía de Globo SP incompleta: {len(shows)}")
     path = Path("epg.xml")
     document = XML.parse(path)
