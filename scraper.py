@@ -278,7 +278,10 @@ def scrape_gato_channel(url, name):
     out = []
     fallback_tz = timezone_for(name)
     today = datetime.now(fallback_tz).date()
-    guide_days = 5 if name.upper().startswith("ESPN") else 1
+    # These monitored linear feeds need tomorrow's dated schedule too;
+    # today's page alone cannot satisfy the six-hour horizon late in the day.
+    monitored_linear = name.startswith(("Caracol", "Cinemax", "Max Anime"))
+    guide_days = 5 if name.upper().startswith("ESPN") else (2 if monitored_linear else 1)
     for day_offset in range(guide_days):
         guide_day = today + timedelta(days=day_offset)
         page_url = f"{url.rstrip('/')}/{guide_day.isoformat()}" if guide_days > 1 else url

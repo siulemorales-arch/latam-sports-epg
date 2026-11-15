@@ -32,6 +32,16 @@ class ScraperTests(unittest.TestCase):
             p=Path(d)/'manual.json';p.write_text(json.dumps(payload));r=scraper.load_manual_channels(p)
         self.assertEqual(len(r['A']),1); self.assertEqual(r['A'][0][2],'Valid');self.assertEqual(r['B'],[])
 
+    def test_monitored_linear_requests_tomorrow(self):
+        page = '<table class="tbl_EPG"><tr><th>Hora Inicio Hora Fin Programa</th></tr><tr><td><time>10:00</time></td><td><time>11:00</time></td><td>Real show</td></tr></table>'
+        with patch.object(scraper, 'get', return_value=page) as get:
+            shows = scraper.scrape_gato_channel('https://example.test/caracol', 'Caracol Colombia')
+        self.assertEqual(len(shows), 2)
+        self.assertEqual(shows[1][0] - shows[0][0], timedelta(days=1))
+        self.assertEqual(get.call_count, 2)
+        tomorrow = (datetime.now(scraper.timezone_for('Caracol Colombia')).date() + timedelta(days=1)).isoformat()
+        self.assertTrue(get.call_args_list[-1].args[0].endswith(tomorrow))
+
     def test_gap_validation_remains(self):
         now=datetime.now(timezone.utc)
         channels={'ESPN Sur':[(now,now+timedelta(hours=1),'a','s'),(now+timedelta(hours=3),now+timedelta(hours=4),'b','s')]}
