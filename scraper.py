@@ -308,7 +308,7 @@ def scrape_gato_channel(url, name):
                 stop = parse_clock(times[1], guide_day, tz)
             except ValueError: continue
             if stop <= start:
-                if tr.select_one(".tbl_EPG_TimesColumnOutOfSchedule"):
+                if tr.find("time").find_parent(class_="tbl_EPG_TimesColumnOutOfSchedule"):
                     # Overnight carry-in belongs to the previous date, not
                     # the end of this date. GatoTV marks it explicitly.
                     start -= timedelta(days=1)

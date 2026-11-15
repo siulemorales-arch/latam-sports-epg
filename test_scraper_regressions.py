@@ -20,10 +20,11 @@ class ScraperTests(unittest.TestCase):
         self.assertEqual(shows[0][1]-shows[0][0],timedelta(hours=1,minutes=30))
 
     def test_normal_midnight_crossing(self):
-        page = '<table class="tbl_EPG"><tr><th>Hora Inicio Hora Fin Programa</th></tr><tr><td><time>23:00</time></td><td><time>01:00</time></td><td>Live</td></tr></table>'
+        page = '<table class="tbl_EPG"><tr><th>Hora Inicio Hora Fin Programa</th></tr><tr><td><time>23:00</time></td><td class="tbl_EPG_TimesColumnOutOfSchedule"><time>01:00</time></td><td>Live</td></tr></table>'
         with patch.object(scraper,'get',return_value=page):
             shows=scraper.scrape_gato_channel('https://example.test','Test')
         self.assertEqual(shows[0][1]-shows[0][0],timedelta(hours=2))
+        self.assertEqual(shows[0][0].date(),datetime.now(scraper.timezone_for('Test')).date())
 
     def test_bad_manual_item_does_not_drop_valid_channels_or_make_fillers(self):
         payload={'channels':{'A':[{'title':'Incomplete','start':'2026-11-15T10:00:00Z'}, {'title':'Valid','start':'2026-11-15T11:00:00Z','stop':'2026-11-15T12:00:00Z'}], 'B':[{'title':'No final','start':'2026-11-15T10:00:00Z','stop':None}]}}
