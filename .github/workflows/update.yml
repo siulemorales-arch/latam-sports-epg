@@ -11,6 +11,7 @@ on:
       - "test_televen_fallback.py"
       - "la1_scraper.py"
       - "gato_mexico_scraper.py"
+      - "test_gato_mexico_scraper.py"
       - "gato_mega_scraper.py"
       - "claro_premium.py"
       - "claro_lineal.py"
@@ -61,8 +62,10 @@ jobs:
           fi
       - name: Recuperar canales y alias existentes
         run: python preserve_channels.py
-      - name: Actualizar TVC y Fox Sports México desde GatoTV
-        run: python gato_mexico_scraper.py
+      - name: Actualizar TVC Deportes desde GatoTV
+        run: python gato_mexico_scraper.py --source tvc
+      - name: Actualizar Fox Sports México cuando haya programación verificable
+        run: python gato_mexico_scraper.py --source fox
       - name: Actualizar Mega Chile desde GatoTV
         run: python gato_mega_scraper.py
       - name: Actualizar LA 1 y Eurosport desde Movistar Plus
@@ -90,6 +93,7 @@ jobs:
           import xml.etree.ElementTree as ET
           from collections import Counter
           from datetime import datetime, timedelta, timezone
+          from gato_mexico_scraper import FOX_IDS, MIN_FUTURE_COVERAGE, TVC_ID
           root=ET.parse('epg.xml').getroot()
           channels=root.findall('channel'); programmes=root.findall('programme')
           assert len(channels) >= 80, f'Solo {len(channels)} canales'
@@ -107,10 +111,12 @@ jobs:
           eurosport_ids={'eurosport.1.espana.latam','eurosport.2.espana.latam'}
           euro_counts={cid: sum(p.get('channel') == cid for p in programmes) for cid in eurosport_ids}
           assert all(euro_counts.values()), f'Eurosport sin programación: {euro_counts}'
-          mexico_ids={'tvc.deportes.latam','fox.sports.cono.norte.latam','fox.sports.2.cono.norte.latam','fox.sports.3.cono.norte.latam'}
+          mexico_ids={TVC_ID, *FOX_IDS}
+          mexico_channels=Counter(c.get('id') for c in channels if c.get('id') in mexico_ids)
+          assert all(mexico_channels[cid] == 1 for cid in mexico_ids), f'Canales mexicanos ausentes o duplicados: {mexico_channels}'
           mexico={cid: [p for p in programmes if p.get('channel') == cid] for cid in mexico_ids}
           mexico_counts={cid: len(items) for cid, items in mexico.items()}
-          assert all(mexico_counts.values()), f'Canales mexicanos sin programación: {mexico_counts}'
+          assert mexico_counts[TVC_ID], 'TVC Deportes sin programación'
           mega_id='mega.chile.latam'
           mega_channels=[c for c in channels if c.get('id') == mega_id]
           assert len(mega_channels) == 1 and mega_channels[0].findtext('display-name') == 'Mega Chile', 'Mega Chile ausente o duplicado'
@@ -168,9 +174,12 @@ jobs:
           assert len(sbt) >= 5, f'SBT News Brasil sin guía oficial completa: {len(sbt)}'
           sbt_until=max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in sbt)
           assert sbt_until >= datetime.now(timezone.utc) + timedelta(hours=24), f'SBT News Brasil desactualizado: {sbt_until}'
-          limit=datetime.now(timezone.utc) + timedelta(hours=24)
-          future={cid: max(datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items) for cid, items in mexico.items()}
-          assert all(stop >= limit for stop in future.values()), f'Cobertura mexicana insuficiente: {future}'
+          limit=datetime.now(timezone.utc) + MIN_FUTURE_COVERAGE
+          future={cid: max((datetime.strptime(p.get('stop'), '%Y%m%d%H%M%S %z') for p in items), default=None) for cid, items in mexico.items()}
+          assert future[TVC_ID] >= limit, f'TVC Deportes sin cobertura suficiente: {future[TVC_ID]}'
+          for cid in sorted(FOX_IDS):
+              if future[cid] is None or future[cid] < limit:
+                  print(f'::warning::{cid} sin cobertura verificable de 24 horas: {future[cid]}')
           brazil_ids={
               'globo.rj.brasil.latam','globo.sp.brasil.latam','ge.tv.brasil.latam',
               'sportv.1.brasil.latam','sportv.2.brasil.latam','sportv.3.brasil.latam','sportv.4.brasil.latam',

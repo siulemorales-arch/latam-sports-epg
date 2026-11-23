@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Actualiza TVC Deportes y Fox Sports México desde GatoTV por varios días."""
 
+import argparse
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlsplit
 from xml.etree import ElementTree as XML
 
 import requests
@@ -16,6 +18,9 @@ CHANNELS = (
     ("fox.sports.2.cono.norte.latam", "Fox Sports México 2", "fox_sports_2_cono_norte"),
     ("fox.sports.3.cono.norte.latam", "Fox Sports México 3", "fox_sports_3_cono_norte"),
 )
+TVC_ID = CHANNELS[0][0]
+FOX_IDS = frozenset(channel_id for channel_id, _name, _slug in CHANNELS[1:])
+MIN_FUTURE_COVERAGE = timedelta(hours=24)
 GUIDE_ROOT = "https://www.gatotv.com/canal"
 ET_ZONE = timezone(timedelta(hours=-4))
 USER_AGENT = (
@@ -41,10 +46,25 @@ def parse_clock(value, day, tz):
 
 def fetch_day(slug, day):
     url = f"{GUIDE_ROOT}/{slug}/{day.isoformat()}"
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+    response = requests.get(
+        url, headers={"User-Agent": USER_AGENT}, timeout=30, allow_redirects=False
+    )
     response.raise_for_status()
+    requested = urlsplit(url)
+    actual = urlsplit(response.url)
+    if response.status_code != 200 or (actual.netloc, actual.path) != (requested.netloc, requested.path):
+        return []
+
     html = response.text
     soup = BeautifulSoup(html, "html.parser")
+    # HTTP 200 alone is not evidence of this day's guide. The programme
+    # table has time-only cells; never relabel rows from a different day.
+    displayed_days = {
+        tag["datetime"] for tag in soup.select("time[datetime]")
+        if re.fullmatch(r"\d{4}-\d{2}-\d{2}", tag["datetime"])
+    }
+    if displayed_days != {day.isoformat()}:
+        return []
     offset = re.search(r"utcOffset\s*:\s*(-?\d+(?:\.\d+)?)", html)
     tz = timezone(timedelta(hours=float(offset.group(1)))) if offset else ET_ZONE
 
@@ -88,30 +108,41 @@ def fetch_channel(slug, today):
     return sorted(unique.values(), key=lambda item: item[0])
 
 
-def main():
-    today = datetime.now(ET_ZONE).date()
-    schedules = {}
-    for channel_id, name, slug in CHANNELS:
-        shows = fetch_channel(slug, today)
-        if not shows:
-            raise SystemExit(f"GatoTV no devolvió programación para {name}")
-        schedules[channel_id] = shows
-
-    xml_path = Path("epg.xml")
+def update(xml_path, channels, now):
     document = XML.parse(xml_path)
     root = document.getroot()
-    existing_ids = {node.get("id") for node in root.findall("channel")}
-    missing = {channel_id for channel_id, _name, _slug in CHANNELS} - existing_ids
-    if missing:
-        raise SystemExit(f"Faltan canales existentes en el XMLTV: {sorted(missing)}")
+    existing_ids = [node.get("id") for node in root.findall("channel")]
+    invalid = {cid for cid, _name, _slug in channels if existing_ids.count(cid) != 1}
+    if invalid:
+        raise SystemExit(f"Canales ausentes o duplicados en el XMLTV: {sorted(invalid)}")
+
+    today = now.astimezone(ET_ZONE).date()
+    minimum = now + MIN_FUTURE_COVERAGE
+    schedules = {}
+    for channel_id, name, slug in channels:
+        try:
+            shows = fetch_channel(slug, today)
+            coverage = max((stop for _start, stop, _title in shows), default=None)
+            if coverage is None or coverage < minimum:
+                raise ValueError(f"cobertura insuficiente o vacía: {coverage}")
+        except (requests.RequestException, ValueError) as exc:
+            if channel_id not in FOX_IDS:
+                raise SystemExit(f"No se pudo actualizar {name} desde GatoTV: {exc}") from exc
+            print(f"::warning::{name}: GatoTV no ofrece cobertura verificable "
+                  f"de 24 horas; se conserva el XML anterior: {exc}")
+            continue
+        schedules[channel_id] = shows
+
+    if not schedules:
+        return
 
     target_ids = set(schedules)
     for node in list(root.findall("programme")):
         if node.get("channel") in target_ids:
             root.remove(node)
 
-    for channel_id, name, _slug in CHANNELS:
-        for start, stop, title in schedules[channel_id]:
+    for channel_id, shows in schedules.items():
+        for start, stop, title in shows:
             programme = XML.SubElement(root, "programme", {
                 "start": start.strftime("%Y%m%d%H%M%S %z"),
                 "stop": stop.strftime("%Y%m%d%H%M%S %z"),
@@ -126,9 +157,17 @@ def main():
     temp_path.replace(xml_path)
     summary = ", ".join(
         f"{name}: {len(schedules[channel_id])}"
-        for channel_id, name, _slug in CHANNELS
+        for channel_id, name, _slug in channels if channel_id in schedules
     )
     print(f"Canales mexicanos actualizados desde GatoTV: {summary}")
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source", choices=("tvc", "fox", "all"), default="all")
+    args = parser.parse_args()
+    groups = {"tvc": CHANNELS[:1], "fox": CHANNELS[1:], "all": CHANNELS}
+    update(Path("epg.xml"), groups[args.source], datetime.now(timezone.utc))
 
 
 if __name__ == "__main__":
